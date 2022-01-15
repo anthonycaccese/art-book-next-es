@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="splash">
+      <splash name="splash">
+         <backgroundColor>111111</backgroundColor>
+      </splash>
+      <image name="background">
+         <!-- Leave default for better OS/device portability -->
+      </image>
+      <image name="progressbar">
+         <color>333333</color>
+         <colorEnd>333333</colorEnd>
+         <roundCorners>0.01</roundCorners>
+      </image>
+      <image name="progressbar:active">
+         <color>777777</color>
+         <colorEnd>777777</colorEnd>
+      </image>
+      <text name="label">
+         <alignment>center</alignment>
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <color>ffffff</color>
+      </text>
+   </view>
+</theme>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:    Art Book Next
+author:        Anthony Caccese
+contributor:   Szalik
+license:       creative commons CC-BY-NC-SA
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <variables>
+      <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
+      <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+   </variables>
+
+   <view name="system,basic,detailed,video">
+      <helpsystem name="help">
+         <pos>1 1</pos>
+      </helpsystem>
+      <image name="logo">
+         <path>./_inc/systems/${system.theme}.svg</path>
+      </image>
+      <text name="logoText">
+         <fontPath>${logoFont}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <lineSpacing>1</lineSpacing>
+         <alignment>center</alignment>
+         <fontSize>0.1</fontSize>
+         <color>ffffff</color>
+      </text>
+   </view>
+
+   <view name="system">
+      <carousel name="systemcarousel">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <type>horizontal</type>
+         <color>00000000</color>
+         <size>1 1</size>
+         <logoSize>0.55 0.425</logoSize>
+         <logoScale>1</logoScale>
+         <maxLogoCount>1</maxLogoCount>
+      </carousel>
+      <image name="background" extra="true">
+         <color>111111</color>
+      </image>
+      <image name="background-art" extra="true">
+         <origin>.5 0</origin>
+         <pos>0.5 0</pos>
+         <path>./_inc/systems/${system.theme}-art.png</path>
+         <tile>false</tile>
+         <color>ffffffcc</color>
+         <zIndex>2</zIndex>
+      </image>
+      <text name="systemInfo">
+         <pos>1 1</pos>
+      </text>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>111111</color>
+         <zIndex>0</zIndex>
+      </image>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <zIndex>2</zIndex>
+         <color>AAAAAA</color>
+      </image>
+      <text name="logoText">
+         <color>ffffffcc</color>
+         <zIndex>2</zIndex>
+      </text>
+      <image name="gamelist-background" extra="true">
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>111111</color>
+         <zIndex>1</zIndex>
+      </image>
+      <image name="gamelist-border" extra="true">
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>1</zIndex>
+      </image>
+      <textlist name="gamelist">
+         <origin>0 0</origin>
+         <alignment>left</alignment>
+         <scrollSound>./_inc/sounds/select.wav</scrollSound>
+         <fontPath>${bodyFont}</fontPath>
+         <horizontalMargin>0.008</horizontalMargin>
+         <selectorColor>111111</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+         <primaryColor>444444</primaryColor>
+         <secondaryColor>444444</secondaryColor>
+         <zIndex>2</zIndex>
+      </textlist>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>0</zIndex>
+      </image>
+   </view>
+
+   <view name="detailed,video">
+      <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
+         <visible>false</visible>
+         <fontPath>${bodyFont}</fontPath>
+         <alignment>left</alignment>
+         <color>ffffff</color>
+      </text>
+      <text name="md_genre,md_lbl_players,md_players">
+         <color>777777</color>
+      </text>
+      <text name="md_description">
+         <color>999999</color>
+      </text>
+      <text name="md_lbl_lastplayed,md_lbl_playcount,md_playcount,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_gametime,md_gametime">
+         <color>444444</color>
+      </text>
+      <datetime name="md_releasedate,md_lastplayed">
+         <visible>false</visible>
+         <fontPath>${bodyFont}</fontPath>
+         <color>444444</color>
+         <alignment>left</alignment>
+      </datetime>
+      <rating name="md_rating">
+         <visible>false</visible>
+         <fontPath>${bodyFont}</fontPath>
+         <color>444444</color>
+         <alignment>left</alignment>
+      </rating>
+      <image name="md_image">
+         <visible>false</visible>
+      </image>
+      <image name="md_thumbnail">
+         <origin>0.5 0.5</origin>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_marquee">
+         <visible>false</visible>
+      </image>
+      <image name="md_image">
+         <visible>false</visible>
+      </image>
+      <image name="md_thumbnail">
+         <origin>1 1</origin>
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <delay>0.0</delay>
+         <showSnapshotDelay>false</showSnapshotDelay>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <snapshotSource>image</snapshotSource>
+         <snapshotSource>thumbnail</snapshotSource>
+         <zIndex>0</zIndex>
+      </video>
+   </view>
+
+   <view name="menu">
+      <menuText name="menutitle">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.034375</fontSize>
+         <color>ffffff</color>
+      </menuText>
+      <menuText name="menufooter">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.0325</fontSize>
+         <color>666666</color>
+      </menuText>
+      <menuText name="menutext">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.036</fontSize>
+         <color>444444</color>
+         <separatorColor>222222</separatorColor>
+         <selectorColor>555555</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+      </menuText>
+      <menuTextSmall name="menutextsmall">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.03</fontSize>
+         <color>777777</color>
+      </menuTextSmall>
+      <menuBackground name="menubg">
+         <color>111111</color>
+         <cornerSize>20 20</cornerSize>
+      </menuBackground>
+   </view>
+
+   <view name="screen">
+      <text name="clock">
+         <visible>false</visible>
+      </text>
+      <batteryIndicator name="batteryIndicator">
+         <full>./_inc/images/battery-100.svg</full>
+         <at75>./_inc/images/battery-75.svg</at75>
+         <at50>./_inc/images/battery-50.svg</at50>
+         <at25>./_inc/images/battery-25.svg</at25>
+         <empty>./_inc/images/battery-0.svg</empty>
+         <incharge>./_inc/images/battery-charging.svg</incharge>
+         <networkIcon>./_inc/images/wifi.svg</networkIcon>
+         <color>999999bb</color>
+      </batteryIndicator>
+      <controllerActivity name="controllerActivity">
+         <visible>false</visible>
+      </controllerActivity>
+   </view>
+
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <include ifArch="rg351p,rg351m" name="3-2" displayName="3:2">./_inc/layouts/3-2.xml</include>
+      <include ifArch="odroidgoa" name="4-3" displayName="4:3">./_inc/layouts/4-3.xml</include>
+      <include ifArch="rg552" name="5=3" displayName="5:3">./_inc/layouts/5-3.xml</include>
+   </subset>
+
+</theme>
