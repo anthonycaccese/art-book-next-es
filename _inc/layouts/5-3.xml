@@ -11,6 +11,9 @@ license:        creative commons CC-BY-NC-SA
       <image name="background-art" extra="true">
          <size>0.25140712945591 1</size><!-- 134  -->
       </image>
+      <text name="logoText">
+         <fontSize>0.15</fontSize>
+      </text>
    </view>
 
    <view name="basic,detailed,video">
@@ -19,9 +22,9 @@ license:        creative commons CC-BY-NC-SA
          <maxSize>0.281425891181989 0.1</maxSize><!-- 155 32 -->
       </image>
       <text name="logoText">
-         <pos>0.05 0.14</pos>
-         <size>0.9 0.075</size>
-         <fontSize>0.06</fontSize>
+         <pos>0.195121951219512 0.1375</pos><!-- 104 44 -->
+         <size>0.281425891181989 0.1</size><!-- 155 32 -->
+         <fontSize>0.075</fontSize>
       </text>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>
@@ -37,14 +40,6 @@ license:        creative commons CC-BY-NC-SA
          <lineSpacing>1.56</lineSpacing>
          <fontSize>0.034375</fontSize><!-- 11 -->
       </textlist>
-      <!--<image name="gamelist-background-testing" extra="true">
-         <pos>0.054166666666667 0.234375</pos>
-         <size>0.35 0.68125</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>FF0000</color>
-         <zIndex>1</zIndex>
-      </image>-->
    </view>
 
    <view name="detailed,video">

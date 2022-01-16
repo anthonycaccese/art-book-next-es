@@ -26,12 +26,20 @@ license:       creative commons CC-BY-NC-SA
          <forceUppercase>true</forceUppercase>
          <lineSpacing>1</lineSpacing>
          <alignment>center</alignment>
-         <fontSize>0.1</fontSize>
          <color>ffffff</color>
       </text>
    </view>
 
    <view name="system">
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>111111</color>
+         <zIndex>0</zIndex>
+      </image>
       <carousel name="systemcarousel">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -42,9 +50,6 @@ license:       creative commons CC-BY-NC-SA
          <logoScale>1</logoScale>
          <maxLogoCount>1</maxLogoCount>
       </carousel>
-      <image name="background" extra="true">
-         <color>111111</color>
-      </image>
       <image name="background-art" extra="true">
          <origin>.5 0</origin>
          <pos>0.5 0</pos>
@@ -56,15 +61,6 @@ license:       creative commons CC-BY-NC-SA
       <text name="systemInfo">
          <pos>1 1</pos>
       </text>
-      <image name="background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>111111</color>
-         <zIndex>0</zIndex>
-      </image>
    </view>
 
    <view name="basic,detailed,video">
@@ -74,6 +70,7 @@ license:       creative commons CC-BY-NC-SA
          <color>AAAAAA</color>
       </image>
       <text name="logoText">
+         <origin>0.5 0.5</origin>
          <color>ffffffcc</color>
          <zIndex>2</zIndex>
       </text>
@@ -222,8 +219,8 @@ license:       creative commons CC-BY-NC-SA
 
    <subset name="aspect-ratio" displayName="Aspect Ratio">
       <include ifArch="rg351p,rg351m" name="3-2" displayName="3:2">./_inc/layouts/3-2.xml</include>
-      <include ifArch="odroidgoa" name="4-3" displayName="4:3">./_inc/layouts/4-3.xml</include>
-      <include ifArch="rg552" name="5=3" displayName="5:3">./_inc/layouts/5-3.xml</include>
+      <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/layouts/4-3.xml</include>
+      <include ifArch="odroidgoa,rg552" name="5=3" displayName="5:3">./_inc/layouts/5-3.xml</include>
    </subset>
 
 </theme>
