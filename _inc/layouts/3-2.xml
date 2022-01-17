@@ -12,7 +12,7 @@ license:        creative commons CC-BY-NC-SA
          <size>0.279166666666667 1</size><!-- 134  -->
       </image>
       <text name="logoText">
-         <fontSize>0.15</fontSize>
+         <fontSize>0.1</fontSize>
       </text>
    </view>
 
@@ -24,7 +24,7 @@ license:        creative commons CC-BY-NC-SA
       <text name="logoText">
          <pos>0.229166666666667 0.1375</pos><!-- 110 44 -->
          <maxSize>0.325 0.1</maxSize><!-- 156 32 -->
-         <fontSize>0.075</fontSize>
+         <fontSize>0.05</fontSize>
       </text>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>

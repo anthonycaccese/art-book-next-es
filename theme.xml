@@ -220,7 +220,7 @@ license:       creative commons CC-BY-NC-SA
    <subset name="aspect-ratio" displayName="Aspect Ratio">
       <include ifArch="rg351p,rg351m" name="3-2" displayName="3:2">./_inc/layouts/3-2.xml</include>
       <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/layouts/4-3.xml</include>
-      <include ifArch="odroidgoa,rg552" name="5=3" displayName="5:3">./_inc/layouts/5-3.xml</include>
+      <include ifArch="odroidgoa,rg552" name="5-3" displayName="5:3">./_inc/layouts/5-3.xml</include>
    </subset>
 
 </theme>
