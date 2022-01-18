@@ -71,6 +71,13 @@ license:        creative commons CC-BY-NC-SA
          <pos>0.927400468384075 0.0125</pos><!-- 396 4 -->
          <size>0.056206088992974 0.075</size><!-- 24 24 -->
       </batteryIndicator>
+      <text name="device-testing" extra="true">
+         <pos>0.008333333333333 0.0125</pos>
+         <text>TESTING - RG351MP,RG351V - 4:3 Theme</text>
+         <color>FFFF0022</color>
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.025</fontSize>
+      </text>
    </view>
 
 </theme>
