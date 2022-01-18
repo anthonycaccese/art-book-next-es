@@ -11,7 +11,7 @@ license:       creative commons CC-BY-NC-SA
    <variables>
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
       <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
-      <spacerImage>./_inc/images/space.png</spacerImage>
+      <spacerImage>./_inc/images/utility/space.png</spacerImage>
    </variables>
 
    <view name="system,basic,detailed,video">
@@ -19,7 +19,7 @@ license:       creative commons CC-BY-NC-SA
          <pos>1 1</pos>
       </helpsystem>
       <image name="logo">
-         <path>./_inc/systems/${system.theme}.svg</path>
+         <path>./_inc/images/systems/${system.theme}.svg</path>
       </image>
       <text name="logoText">
          <fontPath>${logoFont}</fontPath>
@@ -53,7 +53,7 @@ license:       creative commons CC-BY-NC-SA
       <image name="background-art" extra="true">
          <origin>.5 0</origin>
          <pos>0.5 0</pos>
-         <path>./_inc/systems/${system.theme}-art.png</path>
+         <path>./_inc/images/systems/${system.theme}-art.png</path>
          <tile>false</tile>
          <color>ffffffcc</color>
          <zIndex>2</zIndex>
@@ -203,13 +203,13 @@ license:       creative commons CC-BY-NC-SA
          <visible>false</visible>
       </text>
       <batteryIndicator name="batteryIndicator">
-         <full>./_inc/images/battery-100.svg</full>
-         <at75>./_inc/images/battery-75.svg</at75>
-         <at50>./_inc/images/battery-50.svg</at50>
-         <at25>./_inc/images/battery-25.svg</at25>
-         <empty>./_inc/images/battery-0.svg</empty>
-         <incharge>./_inc/images/battery-charging.svg</incharge>
-         <networkIcon>./_inc/images/wifi.svg</networkIcon>
+         <full>./_inc/images/icons/battery-100.svg</full>
+         <at75>./_inc/images/icons/battery-75.svg</at75>
+         <at50>./_inc/images/icons/battery-50.svg</at50>
+         <at25>./_inc/images/icons/battery-25.svg</at25>
+         <empty>./_inc/images/icons/battery-0.svg</empty>
+         <incharge>./_inc/images/icons/battery-charging.svg</incharge>
+         <networkIcon>./_inc/images/icons/wifi.svg</networkIcon>
          <color>999999bb</color>
       </batteryIndicator>
       <controllerActivity name="controllerActivity">
@@ -218,9 +218,9 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include ifArch="rg351p,rg351m" name="3-2" displayName="3:2">./_inc/layouts/3-2.xml</include>
-      <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/layouts/4-3.xml</include>
-      <include ifArch="odroidgoa,rg552" name="5-3" displayName="5:3">./_inc/layouts/5-3.xml</include>
+      <include ifArch="odroidgoa,rg552" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
+      <include ifArch="rg351p,rg351m" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+      <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
    </subset>
 
 </theme>
