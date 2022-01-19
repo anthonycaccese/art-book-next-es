@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     Art Book Next 16:9
+author:         Anthony Caccese
+license:        creative commons CC-BY-NC-SA
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="system">
+      <text name="logoText">
+         <fontSize>0.15</fontSize>
+      </text>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <pos>0.1827768014059754 0.1375</pos><!-- 104 44 -->
+         <maxSize>0.2724077328646749 0.1</maxSize><!-- 155 32 -->
+      </image>
+      <text name="logoText">
+         <pos>0.1827768014059754 0.1375</pos><!-- 104 44 -->
+         <size>0.2724077328646749 0.1</size><!-- 155 32 -->
+         <fontSize>0.075</fontSize>
+      </text>
+      <image name="gamelist-background" extra="true">
+         <pos>0 0</pos>
+         <size>0.3655536028119508 1</size><!-- 208 320 -->
+      </image>
+      <image name="gamelist-border" extra="true">
+         <pos>0.3655536028119508 0</pos><!-- 208 -->
+         <size>0.0035149384885764 1</size><!-- 2 320 -->
+      </image>
+      <textlist name="gamelist">
+         <pos>0.0351493848857645 0.25</pos><!-- 20 80 -->
+         <size>0.2952548330404218 0.7</size><!-- 168 224 -->
+         <lineSpacing>1.56</lineSpacing>
+         <fontSize>0.034375</fontSize><!-- 11 -->
+      </textlist>
+   </view>
+
+   <view name="detailed,video">
+      <image name="md_thumbnail">
+         <pos>0.6889279437609842 0.525</pos><!-- 392 168 -->
+         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_thumbnail">
+         <visible>false</visible>
+         <pos>0.962476547842402 0.9375</pos><!-- 513 300 -->
+         <maxSize>0.225140712945591 0.375</maxSize><!-- 120 120 -->
+      </image>
+      <image name="md_marquee">
+         <visible>true</visible>
+         <pos>0.6889279437609842 0.525</pos><!-- 392 168 -->
+         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+      </image>
+      <video name="md_video">
+         <pos>0.6889279437609842 0.5</pos><!-- 392 160 -->
+         <maxSize>1.041666666666667 1.171875</maxSize><!-- 500 375 -->
+      </video>
+   </view>
+
+   <view name="screen">
+      <batteryIndicator name="batteryIndicator">
+         <pos>0.941838649155722 0.0125</pos><!-- 502 4 -->
+         <size>0.045028142589118 0.075</size><!-- 24 24 -->
+      </batteryIndicator>
+   </view>
+
+   <subset name="background-art" displayName="System View Style">
+      <include name="centered" displayName="Centered Artwork">./subsets/background-art-centered.xml</include>
+      <include name="full-screen" displayName="Full Screen Artwork">./subsets/background-art-fullscreen.xml</include>
+      <include name="off" displayName="No Artwork">./subsets/background-art-off.xml</include>
+   </subset>
+
+</theme>

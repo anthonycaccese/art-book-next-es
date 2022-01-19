@@ -216,10 +216,15 @@ license:       creative commons CC-BY-NC-SA
       </controllerActivity>
    </view>
 
+   <!-- Aspect Ratio Switch -->
    <subset name="aspect-ratios" displayName="Aspect Ratio">
-      <include ifArch="odroidgoa,rg552" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
+      <include ifArch="rg552" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
       <include ifArch="rg351p" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
       <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
+      <include name="16-9" displayName="16:9">./_inc/aspect-ratios/16-9/16-9.xml</include>
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
    </subset>
 
 </theme>
