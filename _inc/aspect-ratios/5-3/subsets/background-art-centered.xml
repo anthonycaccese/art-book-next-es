@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="system">
+      <image name="background-art" extra="true">
+         <path>./../../../../_inc/images/systems/${system.theme}-art.png</path>
+         <size>0.25140712945591 1</size><!-- 134  -->
+      </image>
+   </view>
+</theme>

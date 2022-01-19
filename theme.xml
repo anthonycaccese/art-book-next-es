@@ -53,7 +53,6 @@ license:       creative commons CC-BY-NC-SA
       <image name="background-art" extra="true">
          <origin>.5 0</origin>
          <pos>0.5 0</pos>
-         <path>./_inc/images/systems/${system.theme}-art.png</path>
          <tile>false</tile>
          <color>ffffffcc</color>
          <zIndex>2</zIndex>
@@ -217,9 +216,9 @@ license:       creative commons CC-BY-NC-SA
       </controllerActivity>
    </view>
 
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
+   <subset name="aspect-ratios" displayName="Aspect Ratio">
       <include ifArch="odroidgoa,rg552" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-      <include ifArch="rg351p,rg351m" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+      <include ifArch="rg351p" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
       <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
    </subset>
 

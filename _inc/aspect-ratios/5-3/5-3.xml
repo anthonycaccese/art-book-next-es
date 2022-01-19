@@ -8,9 +8,6 @@ license:        creative commons CC-BY-NC-SA
    <formatVersion>7</formatVersion>
 
    <view name="system">
-      <image name="background-art" extra="true">
-         <size>0.25140712945591 1</size><!-- 134  -->
-      </image>
       <text name="logoText">
          <fontSize>0.15</fontSize>
       </text>
@@ -71,13 +68,12 @@ license:        creative commons CC-BY-NC-SA
          <pos>0.941838649155722 0.0125</pos><!-- 502 4 -->
          <size>0.045028142589118 0.075</size><!-- 24 24 -->
       </batteryIndicator>
-      <text name="device-testing" extra="true">
-         <pos>0.008333333333333 0.0125</pos>
-         <text>TESTING - RG552 - 5:3 Theme</text>
-         <color>FFFF0022</color>
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.025</fontSize>
-      </text>
    </view>
+
+   <subset name="background-art" displayName="System View Style">
+      <include name="centered" displayName="Centered Artwork">./subsets/background-art-centered.xml</include>
+      <include name="full-screen" displayName="Full Screen Artwork">./subsets/background-art-fullscreen.xml</include>
+      <include name="off" displayName="No Artwork">./subsets/background-art-off.xml</include>
+   </subset>
 
 </theme>
