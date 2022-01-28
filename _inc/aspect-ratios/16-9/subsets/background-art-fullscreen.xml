@@ -4,6 +4,7 @@
    <view name="system">
 		<image name="background-art" extra="true">
 			<!-- Temporary use 3:2 aspect ratio graphics -->
+			<path>./../../../../_inc/images/systems/default/3-2-fullscreen.jpg</path>
 			<path>./../../../../_inc/images/systems/3-2/fullscreen/${system.theme}-art-fs.jpg</path>
 			<size>1 0</size>
 		</image>

@@ -4,6 +4,7 @@
    <view name="system">
       <image name="background-art" extra="true">
 			<!-- Temporary use 3:2 aspect ratio graphics -->
+			<path>./../../../../_inc/images/systems/default/3-2-centered.png</path>
 			<path>./../../../../_inc/images/systems/3-2/centered/${system.theme}-art.png</path>
 			<size>0.25140712945591 1</size><!-- 134  -->
       </image>
