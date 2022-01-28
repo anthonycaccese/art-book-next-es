@@ -3,8 +3,8 @@
    <formatVersion>7</formatVersion>
    <view name="system">
       <image name="background-art" extra="true">
-         <path>./../../../../_inc/images/systems/${system.theme}-art-fs.jpg</path>
-         <size>0 1</size>
+         <path>./../../../../_inc/images/systems/4-3/fullscreen/${system.theme}-art-fs.jpg</path>
+         <size>1 1</size>
       </image>
    </view>
 </theme>
