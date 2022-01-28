@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-   <formatVersion>7</formatVersion>
-   <view name="system">
-		<image name="background-art" extra="true">
+	<formatVersion>7</formatVersion>
+		<view name="system">
+			<image name="background-art" extra="true">
 			<!-- Temporary use 3:2 aspect ratio graphics -->
-			<path>./../../../../_inc/images/systems/default/5-3-fullscreen.jpg</path>
-			<path>./../../../../_inc/images/systems/5-3/fullscreen/${system.theme}-art-fs.jpg</path>
-			<size>1 1</size>
+			<path>./../../../../_inc/images/systems/default/3-2-fullscreen.jpg</path>
+			<path>./../../../../_inc/images/systems/3-2/fullscreen/${system.theme}-art-fs.jpg</path>
+			<size>1 0</size>
 		</image>
-   </view>
+	</view>
 </theme>
