@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed,video">
+      <image name="md_thumbnail">
+         <origin>0 1</origin>
+         <pos>0.420262664165103 0.95625</pos><!-- 224 306 -->
+         <size>0.138836772983114 0</size><!-- 74 ~ -->
+      </image>
+      <text name="md_description">
+         <visible>true</visible>
+         <pos>0.592870544090056 0.775</pos><!-- 316 248 -->
+         <size>0.25140712945591 0.175</size><!-- 134 56 -->
+         <fontSize>0.03</fontSize><!-- 9.6 -->
+      </text>
+      <rating name="md_rating">
+         <visible>true</visible>
+         <pos>0.872420262664165 0.79375</pos><!-- 465 254 -->
+         <size>0 0.03125</size><!-- x 10 -->
+         <filledPath>./_inc/images/star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/star-empty.svg</unfilledPath>
+      </rating>
+      <datetime name="md_releasedate">
+         <visible>true</visible>
+         <pos>0.872420262664165 0.8375</pos><!-- 465 268 -->
+         <size>0.187353629976581 0.05</size><!-- 80 16 -->
+         <fontSize>0.028125</fontSize><!-- 9 -->
+      </datetime>
+      <text name="md_genre">
+         <visible>true</visible>
+         <pos>0.872420262664165 0.8875</pos><!-- 465 284 -->
+         <size>0.101313320825516 0.05</size><!-- 54 16 -->
+         <fontSize>0.028125</fontSize><!-- 9 -->
+      </text>
+      <image name="metadata-background" extra="true">
+         <pos>0.390243902439024 0.73125</pos><!-- 208 234 -->
+         <size>0.609756097560976 0.26875</size><!-- 325 86 -->
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_marquee">
+         <visible>false</visible>
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.694183864915572 0.3625</pos><!-- 370 116 -->
+         <maxSize>1.041666666666667 1.171875</maxSize><!-- 500 375 -->
+      </video>
+   </view>
+
+</theme>

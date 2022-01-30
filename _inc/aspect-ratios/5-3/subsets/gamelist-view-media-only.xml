@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed,video">
+      <image name="md_thumbnail">
+         <pos>0.705440900562852 0.525</pos><!-- 376 168 -->
+         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_thumbnail">
+         <visible>false</visible>
+         <!--<pos>0.962476547842402 0.9375</pos> 513 300 -->
+         <!--<maxSize>0.225140712945591 0.375</maxSize> 120 120 -->
+      </image>
+      <image name="md_marquee">
+         <visible>true</visible>
+         <pos>0.705440900562852 0.525</pos><!-- 376 168 -->
+         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+      </image>
+      <video name="md_video">
+         <pos>0.705440900562852 0.5</pos><!-- 376 160 -->
+         <maxSize>1.041666666666667 1.171875</maxSize><!-- 500 375 -->
+      </video>
+   </view>
+
+</theme>

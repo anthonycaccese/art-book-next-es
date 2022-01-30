@@ -118,10 +118,10 @@ license:       creative commons CC-BY-NC-SA
          <color>ffffff</color>
       </text>
       <text name="md_genre,md_lbl_players,md_players">
-         <color>777777</color>
+         <color>333333</color>
       </text>
       <text name="md_description">
-         <color>999999</color>
+         <color>888888</color>
       </text>
       <text name="md_lbl_lastplayed,md_lbl_playcount,md_playcount,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_gametime,md_gametime">
          <color>444444</color>
@@ -129,13 +129,13 @@ license:       creative commons CC-BY-NC-SA
       <datetime name="md_releasedate,md_lastplayed">
          <visible>false</visible>
          <fontPath>${bodyFont}</fontPath>
-         <color>444444</color>
+         <color>333333</color>
          <alignment>left</alignment>
       </datetime>
       <rating name="md_rating">
          <visible>false</visible>
          <fontPath>${bodyFont}</fontPath>
-         <color>444444</color>
+         <color>333333</color>
          <alignment>left</alignment>
       </rating>
       <image name="md_image">
