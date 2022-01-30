@@ -39,30 +39,6 @@ license:        creative commons CC-BY-NC-SA
       </textlist>
    </view>
 
-   <view name="detailed,video">
-      <image name="md_thumbnail">
-         <pos>0.754098360655738 0.525</pos><!-- 322 168 -->
-         <maxSize>0.374707259953162 0.75</maxSize><!-- 160 240 -->
-      </image>
-   </view>
-
-   <view name="video">
-      <image name="md_thumbnail">
-         <visible>false</visible>
-         <pos>0.953161592505855 0.9375</pos><!-- 407 280 -->
-         <maxSize>0.281030444964871 0.375</maxSize><!-- 120 120 -->
-      </image>
-      <image name="md_marquee">
-         <visible>true</visible>
-         <pos>0.754098360655738 0.525</pos><!-- 322 168 -->
-         <maxSize>0.374707259953162 0.75</maxSize><!-- 160 240 -->
-      </image>
-      <video name="md_video">
-         <pos>0.754098360655738 0.5</pos><!-- 322 160 -->
-         <maxSize>1.041666666666667 1.171875</maxSize><!-- 500 375 -->
-      </video>
-   </view>
-
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
          <pos>0.927400468384075 0.0125</pos><!-- 396 4 -->
@@ -70,10 +46,15 @@ license:        creative commons CC-BY-NC-SA
       </batteryIndicator>
    </view>
 
-   <subset name="background-art" displayName="System View Style">
-      <include name="centered" displayName="Centered Artwork">./subsets/background-art-centered.xml</include>
-      <include name="full-screen" displayName="Full Screen Artwork">./subsets/background-art-fullscreen.xml</include>
-      <include name="off" displayName="No Artwork">./subsets/background-art-off.xml</include>
+   <subset name="system-view" displayName="System View">
+      <include name="centered" displayName="Centered Artwork">./subsets/system-view-centered-artwork.xml</include>
+      <include name="full-screen" displayName="Full Screen Artwork">./subsets/system-view-fullscreen-artwork.xml</include>
+      <include name="no-artwork" displayName="No Artwork">./subsets/system-view-no-artwork.xml</include>
+   </subset>
+
+   <subset name="gamelist-view" displayName="Gamelist View">
+      <include name="media-only" displayName="Media Only">./subsets/gamelist-view-media-only.xml</include>
+      <include name="metadata-min" displayName="Minimum Metadata">./subsets/gamelist-view-metadata-min.xml</include>
    </subset>
 
 </theme>

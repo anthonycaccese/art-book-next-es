@@ -202,14 +202,14 @@ license:       creative commons CC-BY-NC-SA
          <visible>false</visible>
       </text>
       <batteryIndicator name="batteryIndicator">
-         <full>./_inc/images/icons/battery-100.svg</full>
-         <at75>./_inc/images/icons/battery-75.svg</at75>
-         <at50>./_inc/images/icons/battery-50.svg</at50>
-         <at25>./_inc/images/icons/battery-25.svg</at25>
-         <empty>./_inc/images/icons/battery-0.svg</empty>
-         <incharge>./_inc/images/icons/battery-charging.svg</incharge>
-         <networkIcon>./_inc/images/icons/wifi.svg</networkIcon>
-         <color>999999bb</color>
+         <full>./_inc/images/utility/battery-100.svg</full>
+         <at75>./_inc/images/utility/battery-75.svg</at75>
+         <at50>./_inc/images/utility/battery-50.svg</at50>
+         <at25>./_inc/images/utility/battery-25.svg</at25>
+         <empty>./_inc/images/utility/battery-0.svg</empty>
+         <incharge>./_inc/images/utility/battery-charging.svg</incharge>
+         <networkIcon>./_inc/images/utility/wifi.svg</networkIcon>
+         <color>ffffffbb</color>
       </batteryIndicator>
       <controllerActivity name="controllerActivity">
          <visible>false</visible>
@@ -217,14 +217,14 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
    <!-- Aspect Ratio Switch -->
-   <subset name="aspect-ratios" displayName="Aspect Ratio">
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
       <include ifArch="rg552" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
       <include ifArch="rg351p" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
       <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
-      <include name="16-9" displayName="16:9">./_inc/aspect-ratios/16-9/16-9.xml</include>
+      <include ifNotArch="rg351p,rg351mp,rg351v" name="16-9" displayName="16:9">./_inc/aspect-ratios/16-9/16-9.xml</include>
       <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
       <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
    </subset>
 
 </theme>

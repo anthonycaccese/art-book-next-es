@@ -70,10 +70,10 @@ license:        creative commons CC-BY-NC-SA
       </batteryIndicator>
    </view>
 
-   <subset name="background-art" displayName="System View Style">
-      <include name="centered" displayName="Centered Artwork">./subsets/background-art-centered.xml</include>
-      <include name="full-screen" displayName="Full Screen Artwork">./subsets/background-art-fullscreen.xml</include>
-      <include name="off" displayName="No Artwork">./subsets/background-art-off.xml</include>
+   <subset name="system-view" displayName="System View">
+      <include name="centered" displayName="Centered Artwork">./subsets/system-view-centered-artwork.xml</include>
+      <include name="full-screen" displayName="Full Screen Artwork">./subsets/system-view-fullscreen-artwork.xml</include>
+      <include name="no-artwork" displayName="No Artwork">./subsets/system-view-no-artwork.xml</include>
    </subset>
 
 </theme>
