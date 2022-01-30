@@ -28,7 +28,7 @@ license:        creative commons CC-BY-NC-SA
          <size>0.390243902439024 1</size><!-- 208 320 -->
       </image>
       <image name="gamelist-border" extra="true">
-         <pos>0.386491557223265 0</pos><!-- 206 -->
+         <pos>0.390243902439024 0</pos><!-- 208 -->
          <size>0.00375234521576 1</size><!-- 2 320 -->
       </image>
       <textlist name="gamelist">
@@ -41,8 +41,8 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
-         <pos>0.941838649155722 0.0125</pos><!-- 502 4 -->
-         <size>0.045028142589118 0.075</size><!-- 24 24 -->
+         <pos>0.953095684803002 0.0125</pos><!-- 508 4 -->
+         <size>0.037523452157598 0.0625</size><!-- 20 20 -->
       </batteryIndicator>
    </view>
 

@@ -12,8 +12,6 @@
    <view name="video">
       <image name="md_thumbnail">
          <visible>false</visible>
-         <!--<pos>0.962476547842402 0.9375</pos> 513 300 -->
-         <!--<maxSize>0.225140712945591 0.375</maxSize> 120 120 -->
       </image>
       <image name="md_marquee">
          <visible>true</visible>
@@ -22,7 +20,7 @@
       </image>
       <video name="md_video">
          <pos>0.705440900562852 0.5</pos><!-- 376 160 -->
-         <maxSize>1.041666666666667 1.171875</maxSize><!-- 500 375 -->
+         <maxSize>0.938086303939962 1.875</maxSize><!-- 500 600 -->
       </video>
    </view>
 
