@@ -33,9 +33,9 @@ license:        creative commons CC-BY-NC-SA
       </image>
       <textlist name="gamelist">
          <pos>0.037523452157598 0.2625</pos><!-- 20 84 -->
-         <size>0.315196998123827 0.7</size><!-- 168 224 -->
+         <size>0.307692307692308 0.7</size><!-- 164 224 -->
          <lineSpacing>1.56</lineSpacing>
-         <fontSize>0.034375</fontSize><!-- 11 -->
+         <fontSize>0.04375</fontSize><!-- 14 -->
       </textlist>
    </view>
 
