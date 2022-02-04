@@ -11,7 +11,7 @@ Built and tested with the [351ELEC](https://351elec.de).
 
 | Centered | Fullscreen | 
 |----|----|
-|![fullscreen](https://user-images.githubusercontent.com/77732736/152505521-15d15b7e-d4c3-48e0-89b9-662a7f90da50.png)| ![centered](https://user-images.githubusercontent.com/77732736/152505291-69f35b3a-e5bd-4a10-8444-7dcbe0382890.png) |
+| ![centered](https://user-images.githubusercontent.com/77732736/152505291-69f35b3a-e5bd-4a10-8444-7dcbe0382890.png) | ![fullscreen](https://user-images.githubusercontent.com/77732736/152505521-15d15b7e-d4c3-48e0-89b9-662a7f90da50.png)|
 
 * Metadata preview
 
