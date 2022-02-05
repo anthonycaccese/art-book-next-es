@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
    <formatVersion>7</formatVersion>
-   <view name="system,basic">
+   <view name="system">
       <image name="background-art" extra="true">
          <path>./../../../../_inc/images/systems/default/default-centered-background.png</path>
          <path>./../../../../_inc/images/systems/3-2/centered/${system.theme}-art.png</path>
          <size>0 1</size>
-      </image>
-   </view>
-   <view name="basic">
-      <textlist name="gamelist">
-         <size>0.70 0.7</size><!-- ~ 224 -->
-      </textlist>
-      <image name="gamelist-background" extra="true">
-         <pos>0 0</pos>
-         <size>1 1</size><!-- 208 320 -->
-      </image>
-      <image name="gamelist-border" extra="true">
-         <visible>false</visible>
-      </image>
-      <image name="background-art" extra="true">
-         <pos>0.83 0</pos>
-         <zIndex>1</zIndex>
-         <color>ffffffcc</color>
       </image>
    </view>
 </theme>

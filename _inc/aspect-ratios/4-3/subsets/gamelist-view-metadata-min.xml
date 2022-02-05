@@ -4,46 +4,42 @@
 
    <view name="detailed,video">
       <image name="md_thumbnail">
-         <origin>0.5 0</origin>
-         <pos>0.754098360655738 0.125</pos><!-- 322 40 -->
-         <maxSize>0.374707259953162 0.45</maxSize><!-- 160 144 -->
+         <origin>0 1</origin>
+         <pos>0.524590163934426 0.95625</pos><!-- 224 306 -->
+         <size>0.173302107728337 0</size><!-- 74 ~ -->
       </image>
+      <text name="md_description">
+         <visible>true</visible>
+         <pos>0.740046838407494 0.775</pos><!-- 316 248 -->
+         <size>0.229508196721311 0.103125</size><!-- 98 33 -->
+         <fontSize>0.03</fontSize><!-- 9.6 -->
+      </text>
       <rating name="md_rating">
          <visible>true</visible>
-         <pos>0.585480093676815 0.628125</pos><!-- 250 201 -->
-         <size>0 0.04375</size><!-- x 14 -->
+         <pos>0.740046838407494 0.9</pos><!-- 316 288 -->
+         <size>0 0.03125</size><!-- x 10 -->
          <filledPath>./_inc/images/star-filled.svg</filledPath>
          <unfilledPath>./_inc/images/star-empty.svg</unfilledPath>
       </rating>
-      <datetime name="md_releasedate">
-         <visible>true</visible>
-         <pos>0.763466042154567 0.625</pos><!-- 326 200 -->
-         <size>0.187353629976581 0.05</size><!-- 80 16 -->
-         <fontSize>0.03</fontSize><!-- 9.6 -->
-      </datetime>
-      <text name="md_description">
-         <visible>true</visible>
-         <pos>0.552693208430913 0.70625</pos><!-- 236 226 -->
-         <size>0.398126463700234 0.21875</size><!-- 170 68 -->
-         <fontSize>0.03</fontSize><!-- 9.6 -->
-      </text>
+      <image name="metadata-background" extra="true">
+         <pos>0.48711943793911 0.73125</pos><!-- 208 234 -->
+         <size>0.637002341920375 0.26875</size><!-- 272 86 -->
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>1</zIndex>
+      </image>
    </view>
 
    <view name="video">
-      <image name="md_thumbnail">
-         <visible>false</visible>
-         <!--<pos>0.953161592505855 0.9375</pos> 407 280 -->
-         <!--<maxSize>0.281030444964871 0.375</maxSize> 120 120 -->
-      </image>
       <image name="md_marquee">
-         <visible>true</visible>
-         <pos>0.754098360655738 0.208333333333333</pos><!-- 322 100 -->
-         <maxSize>0.208333333333333 0.1875</maxSize><!-- 100 60 -->
+         <visible>false</visible>
       </image>
       <video name="md_video">
-         <origin>0.5 0</origin>
-         <pos>0.754098360655738 0.125</pos><!-- 322 40 -->
-         <maxSize>0.374707259953162 0.45</maxSize><!-- 160 144 -->
+         <origin>0.5 0.5</origin>
+         <pos>0.754098360655738 0.3625</pos><!-- 322 116 -->
+         <maxSize>0.866510538641686 1.46875</maxSize><!-- 370 470 -->
       </video>
    </view>
 

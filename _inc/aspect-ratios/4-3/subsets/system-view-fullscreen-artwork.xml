@@ -8,4 +8,10 @@
          <size>0 1</size>
       </image>
    </view>
+   <view name="basic">
+      <image name="background-art" extra="true">
+         <zIndex>0</zIndex>
+         <color>ffffffcc</color>
+      </image>
+   </view>
 </theme>
