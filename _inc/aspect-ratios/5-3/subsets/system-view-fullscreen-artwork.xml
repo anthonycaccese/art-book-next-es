@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
    <formatVersion>7</formatVersion>
-   <view name="system">
+   <view name="system,basic">
       <image name="background-art" extra="true">
          <path>./../../../../_inc/images/systems/default/default-fullscreen-background.jpg</path>
          <path>./../../../../_inc/images/systems/5-3/fullscreen/${system.theme}-art-fs.jpg</path>
          <size>0 1</size>
+      </image>
+   </view>
+   <view name="basic">
+      <image name="background-art" extra="true">
+         <zIndex>0</zIndex>
+         <color>ffffffcc</color>
       </image>
    </view>
 </theme>
