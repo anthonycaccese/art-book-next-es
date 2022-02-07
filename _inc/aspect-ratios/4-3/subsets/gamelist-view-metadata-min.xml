@@ -11,16 +11,9 @@
       <text name="md_description">
          <visible>true</visible>
          <pos>0.740046838407494 0.775</pos><!-- 316 248 -->
-         <size>0.229508196721311 0.103125</size><!-- 98 33 -->
+         <size>0.229508196721311 0.175</size><!-- 98 56 -->
          <fontSize>0.03</fontSize><!-- 9.6 -->
       </text>
-      <rating name="md_rating">
-         <visible>true</visible>
-         <pos>0.740046838407494 0.9</pos><!-- 316 288 -->
-         <size>0 0.03125</size><!-- x 10 -->
-         <filledPath>./_inc/images/star-filled.svg</filledPath>
-         <unfilledPath>./_inc/images/star-empty.svg</unfilledPath>
-      </rating>
       <image name="metadata-background" extra="true">
          <pos>0.48711943793911 0.73125</pos><!-- 208 234 -->
          <size>0.637002341920375 0.26875</size><!-- 272 86 -->

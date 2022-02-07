@@ -29,9 +29,6 @@ license:        creative commons CC-BY-NC-SA
          <lineSpacing>1.56</lineSpacing>
          <fontSize>0.04375</fontSize><!-- 14 -->
       </textlist>
-   </view>
-
-   <view name="basic,detailed,video">
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>
          <size>0.390243902439024 1</size><!-- 208 320 -->

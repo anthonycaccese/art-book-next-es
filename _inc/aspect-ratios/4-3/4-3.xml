@@ -15,28 +15,28 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="basic,detailed,video">
       <image name="logo">
-         <pos>0.24824355971897 0.15625</pos><!-- 106 50 -->
-         <maxSize>0.365339578454333 0.1</maxSize><!-- 156 32 -->
+         <pos>0.243559718969555 0.1375</pos><!-- 104 44 -->
+         <maxSize>0.362997658079625 0.1</maxSize><!-- 155 32 -->
       </image>
       <text name="logoText">
-         <pos>0.24824355971897 0.15625</pos><!-- 106 50 -->
-         <maxSize>0.365339578454333 0.1</maxSize><!-- 156 32 -->
+         <pos>0.243559718969555 0.1375</pos><!-- 104 44 -->
+         <maxSize>0.362997658079625 0.1</maxSize><!-- 155 32 -->
          <fontSize>0.05</fontSize>
       </text>
+      <textlist name="gamelist">
+         <pos>0.046838407494145 0.2625</pos><!-- 20 84 -->
+         <size>0.384074941451991 0.7</size><!-- 164 228 -->
+         <lineSpacing>1.56</lineSpacing>
+         <fontSize>0.03125</fontSize><!-- 10 -->
+      </textlist>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>
-         <size>0.5 1</size><!-- 213.5 320 -->
+         <size>0.48711943793911 1</size><!-- 208 320 -->
       </image>
       <image name="gamelist-border" extra="true">
-         <pos>0.5 0</pos><!-- 213.5 -->
+         <pos>0.48711943793911 0</pos><!-- 208 -->
          <size>0.004683840749415 1</size><!-- 2 320 -->
       </image>
-      <textlist name="gamelist">
-         <pos>0.046838407494145 0.28125</pos><!-- 20 90 -->
-         <size>0.39344262295082 0.7</size><!-- 168 224 -->
-         <lineSpacing>1.56</lineSpacing>
-         <fontSize>0.034375</fontSize><!-- 11 -->
-      </textlist>
    </view>
 
    <view name="screen">
