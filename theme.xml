@@ -5,7 +5,7 @@ author:        Anthony Caccese
 contributor:   Szalik
 license:       creative commons CC-BY-NC-SA
 -->
-<theme>
+<theme defaultTransition="instant">
    <formatVersion>7</formatVersion>
 
    <variables>
@@ -158,11 +158,12 @@ license:       creative commons CC-BY-NC-SA
       </image>
       <video name="md_video">
          <origin>0.5 0.5</origin>
-         <delay>0.0</delay>
+         <delay>0.2</delay>
+         <effect>none</effect>
          <showSnapshotDelay>false</showSnapshotDelay>
-         <showSnapshotNoVideo>false</showSnapshotNoVideo>
-         <snapshotSource>image</snapshotSource>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <snapshotSource>thumbnail</snapshotSource>
+         <snapshotSource>image</snapshotSource>
          <zIndex>0</zIndex>
       </video>
    </view>
