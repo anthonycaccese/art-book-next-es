@@ -2,31 +2,53 @@
 <theme>
    <formatVersion>7</formatVersion>
 
-   <view name="detailed,video">
-      <image name="md_thumbnail">
-         <pos>0.705440900562852 0.525</pos><!-- 376 168 -->
+   <view name="detailed">
+      <image name="md_image,md_thumbnail,md_titleshot,md_marquee,md_boxart,md_fanart">
+         <pos>0.696060037523452 0.525</pos><!-- 371 168 -->
          <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+         <visible>false</visible>
+      </image>
+      <image name="md_thumbnail" ifSubset="detail-view-image-source:thumbnail">
+         <visible>true</visible>
+      </image>
+      <image name="md_image" ifSubset="detail-view-image-source:image">
+         <visible>true</visible>
+      </image>
+      <image name="md_titleshot" ifSubset="detail-view-image-source:titleshot">
+         <visible>true</visible>
+      </image>
+      <image name="md_marquee" ifSubset="detail-view-image-source:marquee">
+         <visible>true</visible>
+      </image>
+      <image name="md_boxart" ifSubset="detail-view-image-source:boxart">
+         <visible>true</visible>
+      </image>
+      <image name="md_fanart" ifSubset="detail-view-image-source:fanart">
+         <visible>true</visible>
+         <pos>0.696060037523452 0.5</pos><!-- 371 160 -->
+         <size>0 1</size>
+         <zIndex>0</zIndex>
       </image>
    </view>
 
    <view name="video">
-      <image name="md_thumbnail">
+      <image name="md_image,md_thumbnail,md_titleshot,md_marquee,md_boxart,md_fanart">
          <visible>false</visible>
       </image>
-      <image name="md_marquee">
+      <image name="md_marquee" ifSubset="video-view-marquee:centered|bottom">
          <visible>true</visible>
-         <pos>0.705440900562852 0.74</pos><!-- 376 168 -->
-         <maxSize>0.337711069418386 0.5625</maxSize><!-- 180 180 -->
-         <pos>0.705440900562852 0.525</pos><!-- 376 168 -->
-         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
-
          <origin>0.5 0.5</origin>
-         <pos>0.705440900562852 0.75</pos><!-- 376 240 -->
+      </image>
+      <image name="md_marquee" ifSubset="video-view-marquee:centered">
+         <pos>0.696060037523452 0.525</pos><!-- 371 168 -->
+         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+      </image>
+      <image name="md_marquee" ifSubset="video-view-marquee:bottom">
+         <pos>0.696060037523452 0.75</pos><!-- 371 240 -->
          <maxSize>0.356472795497186 0.3125</maxSize><!-- 190 100 -->
-
       </image>
       <video name="md_video">
-         <pos>0.705440900562852 0.5</pos><!-- 376 160 -->
+         <pos>0.696060037523452 0.5</pos><!-- 371 160 -->
          <maxSize>0.938086303939962 1.875</maxSize><!-- 500 600 -->
       </video>
    </view>
