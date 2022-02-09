@@ -15,6 +15,8 @@
       </image>
       <image name="md_marquee">
          <visible>true</visible>
+         <pos>0.705440900562852 0.74</pos><!-- 376 168 -->
+         <maxSize>0.337711069418386 0.5625</maxSize><!-- 180 180 -->
          <pos>0.705440900562852 0.525</pos><!-- 376 168 -->
          <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
       </image>

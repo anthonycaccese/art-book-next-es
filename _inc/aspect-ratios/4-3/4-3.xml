@@ -26,8 +26,8 @@ license:        creative commons CC-BY-NC-SA
       <textlist name="gamelist">
          <pos>0.046838407494145 0.2625</pos><!-- 20 84 -->
          <size>0.384074941451991 0.7</size><!-- 164 228 -->
-         <lineSpacing>1.56</lineSpacing>
-         <fontSize>0.03125</fontSize><!-- 10 -->
+         <lineSpacing>1.64</lineSpacing>
+         <fontSize>0.034375</fontSize><!-- 11 -->
       </textlist>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>

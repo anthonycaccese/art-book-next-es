@@ -15,33 +15,33 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="basic,detailed,video">
       <image name="logo">
-         <pos>0.229166666666667 0.1375</pos><!-- 110 44 -->
-         <maxSize>0.325 0.1</maxSize><!-- 156 32 -->
+         <pos>0.216666666666667 0.1375</pos><!-- 104 44 -->
+         <maxSize>0.322916666666667 0.1</maxSize><!-- 155 32 -->
       </image>
       <text name="logoText">
-         <pos>0.229166666666667 0.1375</pos><!-- 110 44 -->
-         <maxSize>0.325 0.1</maxSize><!-- 156 32 -->
+         <pos>0.216666666666667 0.1375</pos><!-- 104 44 -->
+         <maxSize>0.322916666666667 0.1</maxSize><!-- 155 32 -->
          <fontSize>0.05</fontSize>
       </text>
+      <textlist name="gamelist">
+         <pos>0.041666666666667 0.2625</pos><!-- 20 84 -->
+         <size>0.341666666666667 0.7125</size><!-- 164 228 -->
+         <lineSpacing>1.6</lineSpacing>
+         <fontSize>0.0375</fontSize><!-- 12 -->
+      </textlist>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>
-         <size>0.458333333333333 1</size><!-- 220 320 -->
+         <size>0.433333333333333 1</size><!-- 208 320 -->
       </image>
       <image name="gamelist-border" extra="true">
-         <pos>0.454166666666667 0</pos><!-- 218 -->
+         <pos>0.433333333333333 0</pos><!-- 208 -->
          <size>0.004166666666667 1</size><!-- 2 320 -->
       </image>
-      <textlist name="gamelist">
-         <pos>0.041666666666667 0.25</pos><!-- 20 80 -->
-         <size>0.35 0.7</size><!-- 168 224 -->
-         <lineSpacing>1.56</lineSpacing>
-         <fontSize>0.034375</fontSize><!-- 11 -->
-      </textlist>
    </view>
 
    <view name="detailed,video">
       <image name="md_thumbnail">
-         <pos>0.7375 0.525</pos><!-- 354 168 -->
+         <pos>0.716666666666667 0.525</pos><!-- 344 168 -->
          <maxSize>0.416666666666667 0.75</maxSize><!-- 200 240 -->
       </image>
    </view>
@@ -54,7 +54,7 @@ license:        creative commons CC-BY-NC-SA
       </image>
       <image name="md_marquee">
          <visible>true</visible>
-         <pos>0.7375 0.525</pos><!-- 354 168 -->
+         <pos>0.716666666666667 0.525</pos><!-- 344 168 -->
          <maxSize>0.416666666666667 0.75</maxSize><!-- 200 240 -->
       </image>
       <video name="md_video">
