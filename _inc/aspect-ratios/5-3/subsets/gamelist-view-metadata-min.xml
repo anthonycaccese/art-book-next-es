@@ -2,6 +2,16 @@
 <theme>
    <formatVersion>7</formatVersion>
 
+   <view name="detailed">
+      <image name="md_image">
+         <visible>true</visible>
+         <origin>0.5 0.5</origin>
+         <pos>0.696060037523452 0.3625</pos><!-- 371 116 -->
+         <maxSize>0.696060037523452 1.46875</maxSize><!-- 371 470 -->
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
    <view name="detailed,video">
       <image name="md_thumbnail">
          <origin>0 1</origin>
@@ -50,8 +60,8 @@
       </image>
       <video name="md_video">
          <origin>0.5 0.5</origin>
-         <pos>0.694183864915572 0.3625</pos><!-- 370 116 -->
-         <maxSize>0.694183864915572 1.46875</maxSize><!-- 370 470 -->
+         <pos>0.696060037523452 0.3625</pos><!-- 371 116 -->
+         <maxSize>0.696060037523452 1.46875</maxSize><!-- 371 470 -->
       </video>
    </view>
 
