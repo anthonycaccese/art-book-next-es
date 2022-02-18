@@ -14,6 +14,12 @@ license:       creative commons CC-BY-NC-SA
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
    </variables>
 
+   <!-- Alt Backgrounds -->
+   <subset name="alternative-background-images" displayName="Alt Backgrounds">
+      <include name="off" displayName="Off" />
+      <include name="on" displayName="On" />
+   </subset>
+
    <view name="system,basic,detailed,video">
       <helpsystem name="help">
          <pos>1 1</pos>

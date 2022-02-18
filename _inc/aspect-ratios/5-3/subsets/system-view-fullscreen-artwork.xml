@@ -4,7 +4,8 @@
    <view name="system,basic">
       <image name="background-art" extra="true">
          <path>./../../../../_inc/images/systems/default/default-fullscreen-background.jpg</path>
-         <path>./../../../../_inc/images/systems/5-3/fullscreen/${system.theme}-art-fs.jpg</path>
+         <path>./../../../../_inc/images/systems/fullscreen/1920x1152/${system.theme}-art-fs.jpg</path>
+         <path ifSubset="alternative-background-images:on">./../../../../_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}-art-fs.jpg</path>
          <size>0 1</size>
       </image>
    </view>
