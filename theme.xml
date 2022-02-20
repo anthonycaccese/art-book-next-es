@@ -14,10 +14,16 @@ license:       creative commons CC-BY-NC-SA
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
    </variables>
 
-   <!-- Alt Backgrounds -->
-   <subset name="alternative-background-images" displayName="Alt Backgrounds">
+   <!-- Alternative Backgrounds -->
+   <subset name="alternative-background-images" displayName="Alternative Backgrounds">
       <include name="off" displayName="Off" />
       <include name="on" displayName="On" />
+   </subset>
+
+   <!-- Battery Style -->
+   <subset name="battery-style" displayName="Battery Style">
+      <include name="horizontal" displayName="Horizontal" />
+      <include name="vertical" displayName="Vertical" />
    </subset>
 
    <view name="system,basic,detailed,video">
@@ -208,13 +214,23 @@ license:       creative commons CC-BY-NC-SA
       <text name="clock">
          <visible>false</visible>
       </text>
-      <batteryIndicator name="batteryIndicator">
+      <batteryIndicator name="batteryIndicator" ifSubset="battery-style:horizontal">
          <full>./_inc/images/utility/battery-100.svg</full>
          <at75>./_inc/images/utility/battery-75.svg</at75>
          <at50>./_inc/images/utility/battery-50.svg</at50>
          <at25>./_inc/images/utility/battery-25.svg</at25>
          <empty>./_inc/images/utility/battery-0.svg</empty>
          <incharge>./_inc/images/utility/battery-charging.svg</incharge>
+         <networkIcon>./_inc/images/utility/wifi.svg</networkIcon>
+         <color>ffffffbb</color>
+      </batteryIndicator>
+      <batteryIndicator name="batteryIndicator" ifSubset="battery-style:vertical">
+         <full>./_inc/images/utility/battery-100-vert.svg</full>
+         <at75>./_inc/images/utility/battery-75-vert.svg</at75>
+         <at50>./_inc/images/utility/battery-50-vert.svg</at50>
+         <at25>./_inc/images/utility/battery-25-vert.svg</at25>
+         <empty>./_inc/images/utility/battery-0-vert.svg</empty>
+         <incharge>./_inc/images/utility/battery-charging-vert.svg</incharge>
          <networkIcon>./_inc/images/utility/wifi.svg</networkIcon>
          <color>ffffffbb</color>
       </batteryIndicator>
