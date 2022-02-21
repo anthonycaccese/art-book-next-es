@@ -41,8 +41,10 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
-         <pos>0.953095684803002 0.0125</pos><!-- 508 4 -->
-         <size>0.037523452157598 0.0625</size><!-- 20 20 -->
+         <pos ifSubset="battery-style:horizontal">0.953095684803002 0.0125</pos><!-- 508 4 -->
+         <size ifSubset="battery-style:horizontal">0.037523452157598 0.0625</size><!-- 20 20 -->
+         <pos ifSubset="battery-style:vertical">0.971857410881801 0.0125</pos><!-- 518 4 -->
+         <size ifSubset="battery-style:vertical">0.022514071294559 0.05</size><!-- 12 16 -->
       </batteryIndicator>
    </view>
 

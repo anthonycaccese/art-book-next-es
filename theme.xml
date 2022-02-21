@@ -231,7 +231,7 @@ license:       creative commons CC-BY-NC-SA
          <at25>./_inc/images/utility/battery-25-vert.svg</at25>
          <empty>./_inc/images/utility/battery-0-vert.svg</empty>
          <incharge>./_inc/images/utility/battery-charging-vert.svg</incharge>
-         <networkIcon>./_inc/images/utility/wifi.svg</networkIcon>
+         <networkIcon>./_inc/images/utility/wifi-vert.svg</networkIcon>
          <color>ffffffbb</color>
       </batteryIndicator>
       <controllerActivity name="controllerActivity">
