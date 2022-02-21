@@ -41,10 +41,16 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
-         <pos ifSubset="battery-style:horizontal">0.953095684803002 0.0125</pos><!-- 508 4 -->
-         <size ifSubset="battery-style:horizontal">0.037523452157598 0.0625</size><!-- 20 20 -->
-         <pos ifSubset="battery-style:vertical">0.971857410881801 0.0125</pos><!-- 518 4 -->
-         <size ifSubset="battery-style:vertical">0.022514071294559 0.05</size><!-- 12 16 -->
+         <pos>0.015009380863039 0.025</pos><!-- 8 8 -->
+         <size>0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
+         <full>./_inc/images/utility/icons/5-3/battery-100-vertical.svg</full>
+         <at75>./_inc/images/utility/icons/5-3/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/utility/icons/5-3/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/utility/icons/5-3/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/utility/icons/5-3/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/utility/icons/5-3/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/utility/icons/5-3/wifi-vertical.svg</networkIcon>
+         <itemSpacing>0</itemSpacing>
       </batteryIndicator>
    </view>
 
