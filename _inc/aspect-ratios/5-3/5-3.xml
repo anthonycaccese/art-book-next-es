@@ -52,7 +52,7 @@ license:        creative commons CC-BY-NC-SA
       <include name="no-artwork" displayName="No Artwork">./subsets/system-view-no-artwork.xml</include>
    </subset>
 
-   <subset name="detail-view-image-source" displayName="Detail View: Image Source" appliesTo="detailed">
+   <subset name="detail-view-image-source" displayName="Image Source" appliesTo="detailed">
       <include name="thumbnail" displayName="Thumbnail" />
       <include name="image" displayName="Image" />
       <include name="titleshot" displayName="Title Screen" />
@@ -61,7 +61,7 @@ license:        creative commons CC-BY-NC-SA
       <include name="fanart" displayName="Fanart" />
    </subset>
 
-   <subset name="video-view-marquee" displayName="Video View: Marquee Display" appliesTo="video">
+   <subset name="video-view-marquee" displayName="Marquee Display" appliesTo="video">
       <include name="off" displayName="Off" />
       <include name="centered" displayName="Centered" />
       <include name="bottom" displayName="Bottom" />

@@ -15,28 +15,28 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="basic,detailed,video">
       <image name="logo">
-         <pos>0.1827768014059754 0.1375</pos><!-- 104 44 -->
-         <maxSize>0.2724077328646749 0.1</maxSize><!-- 155 32 -->
+         <pos>0.182776801405975 0.1375</pos><!-- 104 44 -->
+         <maxSize>0.272407732864675 0.1</maxSize><!-- 155 32 -->
       </image>
       <text name="logoText">
-         <pos>0.1827768014059754 0.1375</pos><!-- 104 44 -->
-         <size>0.2724077328646749 0.1</size><!-- 155 32 -->
+         <pos>0.182776801405975 0.1375</pos><!-- 104 44 -->
+         <size>0.272407732864675 0.1</size><!-- 155 32 -->
          <fontSize>0.075</fontSize>
       </text>
+      <textlist name="gamelist">
+         <pos>0.035149384885764 0.25625</pos><!-- 20 82 -->
+         <size>0.288224956063269 0.7</size><!-- 164 224 -->
+         <lineSpacing>1.56</lineSpacing>
+         <fontSize>0.04375</fontSize><!-- 14 -->
+      </textlist>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>
-         <size>0.3655536028119508 1</size><!-- 208 320 -->
+         <size>0.365553602811951 1</size><!-- 208 320 -->
       </image>
       <image name="gamelist-border" extra="true">
-         <pos>0.3655536028119508 0</pos><!-- 208 -->
-         <size>0.0035149384885764 1</size><!-- 2 320 -->
+         <pos>0.365553602811951 0</pos><!-- 208 -->
+         <size>0.003514938488576 1</size><!-- 2 320 -->
       </image>
-      <textlist name="gamelist">
-         <pos>0.0351493848857645 0.25</pos><!-- 20 80 -->
-         <size>0.2952548330404218 0.7</size><!-- 168 224 -->
-         <lineSpacing>1.56</lineSpacing>
-         <fontSize>0.034375</fontSize><!-- 11 -->
-      </textlist>
    </view>
 
    <view name="detailed,video">
@@ -65,8 +65,8 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
-         <pos>0.941838649155722 0.0125</pos><!-- 502 4 -->
-         <size>0.045028142589118 0.075</size><!-- 24 24 -->
+         <pos>0.949033391915641 0.0125</pos><!-- 540 4 -->
+         <size>0.035149384885764 0.0625</size><!-- 20 20 -->
       </batteryIndicator>
    </view>
 
