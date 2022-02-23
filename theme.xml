@@ -18,6 +18,7 @@ license:       creative commons CC-BY-NC-SA
    <subset name="alternative-background-images" displayName="Alternative Backgrounds">
       <include name="off" displayName="Off" />
       <include name="on" displayName="On" />
+      <include name="custom" displayName="Custom" />
    </subset>
 
    <view name="system,basic,detailed,video">
