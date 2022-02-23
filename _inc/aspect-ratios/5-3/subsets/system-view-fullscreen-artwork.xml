@@ -6,6 +6,9 @@
          <path>./../../../../_inc/images/systems/default/default-fullscreen-background.jpg</path>
          <path>./../../../../_inc/images/systems/fullscreen/1920x1152/${system.theme}-art-fs.jpg</path>
          <path ifSubset="alternative-background-images:on">./../../../../_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}-art-fs.jpg</path>
+         <!-- Custom Image Support -->
+         <path ifSubset="alternative-background-images:custom">~/roms/themes/art-book-next/custom/${system.theme}.jpg</path>
+         <path ifSubset="alternative-background-images:custom">~/roms/themes/art-book-next/custom/${system.theme}.png</path>
          <size>0 1</size>
       </image>
    </view>
