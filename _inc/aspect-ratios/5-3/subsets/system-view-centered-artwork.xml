@@ -4,8 +4,8 @@
    <view name="system,basic">
       <image name="background-art" extra="true">
          <path>./../../../../_inc/images/systems/default/default-centered-background.png</path>
-         <path>./../../../../_inc/images/systems/centered/${system.theme}-art.png</path>
-         <path ifSubset="background-art-source:alternative">./../../../../_inc/images/systems/centered/alt/${system.theme}-art.png</path>
+         <path>./../../../../_inc/images/systems/centered/${system.theme}.png</path>
+         <path ifSubset="background-art-source:alternative">./../../../../_inc/images/systems/centered/alt/${system.theme}.png</path>
          <!-- Custom Image Support -->
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}${system.theme}.jpg</path>
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}${system.theme}.png</path>

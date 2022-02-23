@@ -4,8 +4,8 @@
    <view name="system,basic">
       <image name="background-art" extra="true">
          <path>./../../../../_inc/images/systems/default/default-fullscreen-background.jpg</path>
-         <path>./../../../../_inc/images/systems/fullscreen/640x480/${system.theme}-art-fs.jpg</path>
-         <path ifSubset="background-art-source:alternative">./../../../../_inc/images/systems/fullscreen/640x480/alt/${system.theme}-art-fs.jpg</path>
+         <path>./../../../../_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
+         <path ifSubset="background-art-source:alternative">./../../../../_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
          <!-- Custom Image Support -->
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}${system.theme}.jpg</path>
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}${system.theme}.png</path>
