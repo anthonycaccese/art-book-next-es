@@ -12,12 +12,13 @@ license:       creative commons CC-BY-NC-SA
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
       <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
+      <themeCustomizationsPath>~/roms/351elec/theme-customizations/art-book-next/backgrounds/</themeCustomizationsPath>
    </variables>
 
-   <!-- Alternative Backgrounds -->
-   <subset name="alternative-background-images" displayName="Alternative Backgrounds">
-      <include name="off" displayName="Off" />
-      <include name="on" displayName="On" />
+   <!-- Background Art -->
+   <subset name="background-art-source" displayName="Background Art Source" appliesTo="system">
+      <include name="default" displayName="Default" />
+      <include name="alternative" displayName="Alternative" />
       <include name="custom" displayName="Custom" />
    </subset>
 

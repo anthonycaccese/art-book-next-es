@@ -65,14 +65,22 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
-         <pos>0.949033391915641 0.0125</pos><!-- 540 4 -->
-         <size>0.035149384885764 0.0625</size><!-- 20 20 -->
+         <pos>0.015009380863039 0.025</pos><!-- 8 8 -->
+         <size>0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
+         <full>./_inc/images/utility/icons/5-3/battery-100-vertical.svg</full>
+         <at75>./_inc/images/utility/icons/5-3/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/utility/icons/5-3/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/utility/icons/5-3/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/utility/icons/5-3/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/utility/icons/5-3/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/utility/icons/5-3/wifi-vertical.svg</networkIcon>
+         <itemSpacing>0</itemSpacing>
       </batteryIndicator>
    </view>
 
-   <subset name="system-view" displayName="System View">
-      <include name="centered" displayName="Centered Artwork">./subsets/system-view-centered-artwork.xml</include>
-      <include name="full-screen" displayName="Full Screen Artwork">./subsets/system-view-fullscreen-artwork.xml</include>
+   <subset name="background-art-style" displayName="Background Art Style" appliesTo="system">
+      <include name="centered" displayName="Centered">./subsets/system-view-centered-artwork.xml</include>
+      <include name="full-screen" displayName="Full Screen">./subsets/system-view-fullscreen-artwork.xml</include>
       <include name="no-artwork" displayName="No Artwork">./subsets/system-view-no-artwork.xml</include>
    </subset>
 
