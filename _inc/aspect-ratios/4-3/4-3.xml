@@ -43,13 +43,13 @@ license:        creative commons CC-BY-NC-SA
       <batteryIndicator name="batteryIndicator">
          <pos>0.025 0.033333333333333</pos><!-- 16 16 -->
          <size>0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
-         <full>./_inc/images/utility/icons/4-3/battery-100-vertical.svg</full>
-         <at75>./_inc/images/utility/icons/4-3/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/utility/icons/4-3/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/utility/icons/4-3/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/utility/icons/4-3/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/utility/icons/4-3/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/utility/icons/4-3/wifi-vertical.svg</networkIcon>
+         <full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
+         <at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/utility/icons/tinyscreen/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/utility/icons/tinyscreen/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/utility/icons/tinyscreen/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/utility/icons/tinyscreen/wifi-vertical.svg</networkIcon>
          <itemSpacing>0</itemSpacing>
       </batteryIndicator>
    </view>
