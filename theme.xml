@@ -128,13 +128,13 @@ license:       creative commons CC-BY-NC-SA
       <textlist name="gamelist">
          <origin>0 0</origin>
          <alignment>left</alignment>
-         <scrollSound>./_inc/sounds/select.wav</scrollSound>
          <fontPath>${bodyFont}</fontPath>
          <horizontalMargin>0.008</horizontalMargin>
          <selectorColor>111111</selectorColor>
          <selectedColor>ffffff</selectedColor>
          <primaryColor>444444</primaryColor>
          <secondaryColor>444444</secondaryColor>
+         <scrollSound>./_inc/sounds/select.wav</scrollSound>
          <zIndex>2</zIndex>
       </textlist>
       <image name="gamelist-background" extra="true">
