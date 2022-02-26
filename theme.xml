@@ -40,12 +40,20 @@ license:       creative commons CC-BY-NC-SA
       <include name="custom" displayName="Custom" />
    </subset>
 
+   <!-- Logo Source -->
+   <subset name="logo-source" displayName="Logo Source">
+      <include name="default" displayName="Default" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+
    <view name="system,basic,detailed,video">
       <helpsystem name="help">
          <pos>1 1</pos>
       </helpsystem>
       <image name="logo">
          <path>./_inc/images/systems/logos/${system.theme}.svg</path>
+         <path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
       </image>
       <text name="logoText">
          <fontPath>${logoFont}</fontPath>
@@ -315,5 +323,8 @@ license:       creative commons CC-BY-NC-SA
    <include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
    <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
    <include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
+
+   <!-- User Customizations -->
+   <include>${themeCustomizationsPath}theme.xml</include>
 
 </theme>
