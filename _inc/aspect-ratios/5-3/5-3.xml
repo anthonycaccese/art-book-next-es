@@ -39,22 +39,7 @@ license:        creative commons CC-BY-NC-SA
       </image>
    </view>
 
-   <view name="screen">
-      <batteryIndicator name="batteryIndicator">
-         <pos>0.015009380863039 0.025</pos><!-- 8 8 -->
-         <size>0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
-         <full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
-         <at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/utility/icons/bigscreen/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/utility/icons/bigscreen/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/utility/icons/bigscreen/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
-         <itemSpacing>0</itemSpacing>
-      </batteryIndicator>
-   </view>
-
-   <subset name="detail-view-image-source" displayName="Image Source">
+   <subset name="detail-view-image-source" displayName="Gamelist Image Source">
       <include name="thumbnail" displayName="Thumbnail" />
       <include name="image" displayName="Image" />
       <include name="titleshot" displayName="Title Screen" />
@@ -63,13 +48,13 @@ license:        creative commons CC-BY-NC-SA
       <include name="fanart" displayName="Fanart" />
    </subset>
 
-   <subset name="video-view-marquee" displayName="Marquee Display">
+   <subset name="video-view-marquee" displayName="Gamelist Marquee Display">
       <include name="off" displayName="Off" />
       <include name="centered" displayName="Centered" />
       <include name="bottom" displayName="Bottom" />
    </subset>
 
-   <subset name="gamelist-view" displayName="Gamelist View">
+   <subset name="gamelist-layout" displayName="Gamelist Layout">
       <include name="media-only" displayName="Media Only">./subsets/gamelist-view-media-only.xml</include>
       <include name="metadata-min" displayName="Minimum Metadata">./subsets/gamelist-view-metadata-min.xml</include>
    </subset>

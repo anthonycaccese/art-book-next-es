@@ -15,6 +15,17 @@ license:       creative commons CC-BY-NC-SA
       <themeCustomizationsPath>~/roms/351elec/theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
+   <!-- Aspect Ratio -->
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <include ifArch="rg552" name="5-3" displayName="5:3" />
+      <include ifArch="rg351p" name="3-2" displayName="3:2" />
+      <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3" />
+      <include ifNotArch="rg351p,rg351mp,rg351v" name="16-9" displayName="16:9" />
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="4-3" displayName="4:3" />
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="3-2" displayName="3:2" />
+      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="5-3" displayName="5:3" />
+   </subset>
+
    <!-- Background Art Style -->
    <subset name="background-art-style" displayName="Background Art Style">
       <include name="centered" displayName="Centered" />
@@ -114,6 +125,18 @@ license:       creative commons CC-BY-NC-SA
          <color>ffffffcc</color>
          <zIndex>2</zIndex>
       </text>
+      <textlist name="gamelist">
+         <origin>0 0</origin>
+         <alignment>left</alignment>
+         <scrollSound>./_inc/sounds/select.wav</scrollSound>
+         <fontPath>${bodyFont}</fontPath>
+         <horizontalMargin>0.008</horizontalMargin>
+         <selectorColor>111111</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+         <primaryColor>444444</primaryColor>
+         <secondaryColor>444444</secondaryColor>
+         <zIndex>2</zIndex>
+      </textlist>
       <image name="gamelist-background" extra="true">
          <origin>0 0</origin>
          <path>${spacerImage}</path>
@@ -128,18 +151,6 @@ license:       creative commons CC-BY-NC-SA
          <color>000000</color>
          <zIndex>1</zIndex>
       </image>
-      <textlist name="gamelist">
-         <origin>0 0</origin>
-         <alignment>left</alignment>
-         <scrollSound>./_inc/sounds/select.wav</scrollSound>
-         <fontPath>${bodyFont}</fontPath>
-         <horizontalMargin>0.008</horizontalMargin>
-         <selectorColor>111111</selectorColor>
-         <selectedColor>ffffff</selectedColor>
-         <primaryColor>444444</primaryColor>
-         <secondaryColor>444444</secondaryColor>
-         <zIndex>2</zIndex>
-      </textlist>
       <image name="background" extra="true">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -266,29 +277,43 @@ license:       creative commons CC-BY-NC-SA
          <visible>false</visible>
       </text>
       <batteryIndicator name="batteryIndicator">
-         <full>./_inc/images/utility/battery-100.svg</full>
-         <at75>./_inc/images/utility/battery-75.svg</at75>
-         <at50>./_inc/images/utility/battery-50.svg</at50>
-         <at25>./_inc/images/utility/battery-25.svg</at25>
-         <empty>./_inc/images/utility/battery-0.svg</empty>
-         <incharge>./_inc/images/utility/battery-charging.svg</incharge>
-         <networkIcon>./_inc/images/utility/wifi.svg</networkIcon>
          <color>ffffffbb</color>
+         <itemSpacing>0</itemSpacing>
+      </batteryIndicator>
+      <batteryIndicator ifSubset="aspect-ratio:5-3|16-9" name="batteryIndicator">
+         <pos>0.015009380863039 0.025</pos><!-- 8 8 -->
+         <size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
+         <size ifSubset="aspect-ratio:16-9">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
+         <full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
+         <at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/utility/icons/bigscreen/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/utility/icons/bigscreen/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/utility/icons/bigscreen/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
+      </batteryIndicator>
+      <batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
+         <pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos><!-- 8 8 -->
+         <size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size><!-- 464 20 - sized off of 480x320 to make the icon clear -->
+         <pos ifSubset="aspect-ratio:4-3">0.025 0.033333333333333</pos><!-- 16 16 -->
+         <size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
+         <full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
+         <at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/utility/icons/tinyscreen/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/utility/icons/tinyscreen/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/utility/icons/tinyscreen/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/utility/icons/tinyscreen/wifi-vertical.svg</networkIcon>
       </batteryIndicator>
       <controllerActivity name="controllerActivity">
          <visible>false</visible>
       </controllerActivity>
    </view>
 
-   <!-- Aspect Ratio Switch -->
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include ifArch="rg552" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-      <include ifArch="rg351p" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
-      <include ifArch="rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
-      <include ifNotArch="rg351p,rg351mp,rg351v" name="16-9" displayName="16:9">./_inc/aspect-ratios/16-9/16-9.xml</include>
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="4-3" displayName="4:3">./_inc/aspect-ratios/4-3/4-3.xml</include>
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="3-2" displayName="3:2">./_inc/aspect-ratios/3-2/3-2.xml</include>
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v" name="5-3" displayName="5:3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-   </subset>
+   <!-- Aspect Ratio -->
+   <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+   <include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
+   <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
+   <include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
 
 </theme>
