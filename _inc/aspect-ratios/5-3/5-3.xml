@@ -54,13 +54,7 @@ license:        creative commons CC-BY-NC-SA
       </batteryIndicator>
    </view>
 
-   <subset name="background-art-style" displayName="Background Art Style" appliesTo="system">
-      <include name="centered" displayName="Centered">./subsets/system-view-centered-artwork.xml</include>
-      <include name="full-screen" displayName="Full Screen">./subsets/system-view-fullscreen-artwork.xml</include>
-      <include name="no-artwork" displayName="No Artwork">./subsets/system-view-no-artwork.xml</include>
-   </subset>
-
-   <subset name="detail-view-image-source" displayName="Image Source" appliesTo="detailed">
+   <subset name="detail-view-image-source" displayName="Image Source">
       <include name="thumbnail" displayName="Thumbnail" />
       <include name="image" displayName="Image" />
       <include name="titleshot" displayName="Title Screen" />
@@ -69,7 +63,7 @@ license:        creative commons CC-BY-NC-SA
       <include name="fanart" displayName="Fanart" />
    </subset>
 
-   <subset name="video-view-marquee" displayName="Marquee Display" appliesTo="video">
+   <subset name="video-view-marquee" displayName="Marquee Display">
       <include name="off" displayName="Off" />
       <include name="centered" displayName="Centered" />
       <include name="bottom" displayName="Bottom" />

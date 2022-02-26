@@ -12,11 +12,18 @@ license:       creative commons CC-BY-NC-SA
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
       <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
-      <themeCustomizationsPath>~/roms/351elec/theme-customizations/art-book-next/backgrounds/</themeCustomizationsPath>
+      <themeCustomizationsPath>~/roms/351elec/theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
-   <!-- Background Art -->
-   <subset name="background-art-source" displayName="Background Art Source" appliesTo="system">
+   <!-- Background Art Style -->
+   <subset name="background-art-style" displayName="Background Art Style">
+      <include name="centered" displayName="Centered" />
+      <include name="full-screen" displayName="Full Screen" />
+      <include name="no-artwork" displayName="No Artwork" />
+   </subset>
+
+   <!-- Background Art Source -->
+   <subset name="background-art-source" displayName="Background Art Source">
       <include name="default" displayName="Default" />
       <include name="alternative" displayName="Alternative" />
       <include name="custom" displayName="Custom" />
@@ -46,7 +53,6 @@ license:       creative commons CC-BY-NC-SA
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>111111</color>
-         <zIndex>0</zIndex>
       </image>
       <carousel name="systemcarousel">
          <origin>0 0</origin>
@@ -58,23 +64,50 @@ license:       creative commons CC-BY-NC-SA
          <logoScale>1</logoScale>
          <maxLogoCount>1</maxLogoCount>
       </carousel>
-      <image name="background-art" extra="true">
-         <origin>.5 0</origin>
-         <pos>0.5 0</pos>
-         <tile>false</tile>
-         <color>ffffffcc</color>
-         <zIndex>2</zIndex>
-      </image>
       <text name="systemInfo">
          <pos>1 1</pos>
       </text>
+      <image ifSubset="background-art-style:centered" name="background-art" extra="true">
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>0 1</size>
+         <color>ffffffcc</color>
+         <path>./_inc/images/systems/default/default-centered-background.png</path>
+         <path>./_inc/images/systems/centered/${system.theme}.png</path>
+         <path ifSubset="background-art-source:alternative">./_inc/images/systems/centered/alt/${system.theme}.png</path>
+         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
+      </image>
+      <image ifSubset="background-art-style:full-screen" name="background-art" extra="true">
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>0 1</size>
+         <color>ffffffcc</color>
+         <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
+         <path ifSubset="aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+         <path ifSubset="aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
+      </image>
+      <image ifSubset="background-art-style:centered,background-art-source:custom" name="background-art-mask" extra="true">
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>0 1</size>
+         <path>./_inc/images/utility/centered-background-custom-mask.svg</path>
+      </image>
    </view>
 
    <view name="basic,detailed,video">
       <image name="logo">
          <origin>0.5 0.5</origin>
          <zIndex>2</zIndex>
-         <color>AAAAAA</color>
+         <color>aaaaaa</color>
       </image>
       <text name="logoText">
          <origin>0.5 0.5</origin>
@@ -114,6 +147,28 @@ license:       creative commons CC-BY-NC-SA
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>000000</color>
+         <zIndex>0</zIndex>
+      </image>
+   </view>
+
+   <view name="basic">
+      <image name="background-art" extra="true">
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>>0 1</size>
+         <tile>false</tile>
+         <color>ffffffcc</color>
+         <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
          <zIndex>0</zIndex>
       </image>
    </view>

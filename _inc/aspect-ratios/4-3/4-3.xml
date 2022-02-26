@@ -54,12 +54,6 @@ license:        creative commons CC-BY-NC-SA
       </batteryIndicator>
    </view>
 
-   <subset name="background-art-style" displayName="Background Art Style" appliesTo="system">
-      <include name="centered" displayName="Centered">./subsets/system-view-centered-artwork.xml</include>
-      <include name="full-screen" displayName="Full Screen">./subsets/system-view-fullscreen-artwork.xml</include>
-      <include name="no-artwork" displayName="No Artwork">./subsets/system-view-no-artwork.xml</include>
-   </subset>
-
    <subset name="gamelist-view" displayName="Gamelist View">
       <include name="media-only" displayName="Media Only">./subsets/gamelist-view-media-only.xml</include>
       <include name="metadata-min" displayName="Minimum Metadata">./subsets/gamelist-view-metadata-min.xml</include>
