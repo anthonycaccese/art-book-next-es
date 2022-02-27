@@ -10,7 +10,8 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- Distribution -->
    <subset name="distribution" displayName="Distribution">
-      <include ifArch="rg552,rg351p,rg351mp,rg351v" name="351elec" displayName="351ELEC" />
+      <include name="351elec" displayName="351ELEC" />
+      <include name="batocera" displayName="Batocera" />
       <include name="retrobat" displayName="RetroBat" />
    </subset>
 
@@ -18,8 +19,9 @@ license:       creative commons CC-BY-NC-SA
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
       <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
-      <distributionPath ifSubset="distribution:351elec">~/roms/351elec/</distributionPath>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
+      <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
+      <distributionPath ifSubset="distribution:351elec">~/roms/351elec/</distributionPath>
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
@@ -95,8 +97,8 @@ license:       creative commons CC-BY-NC-SA
          <pos>1 1</pos>
       </text>
       <image ifSubset="background-art-style:centered" name="background-art" extra="true">
-         <origin>0.5 0</origin>
-         <pos>0.5 0</pos>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
          <size>0 1</size>
          <color>ffffffcc</color>
          <path>./_inc/images/systems/default/default-centered-background.png</path>
@@ -106,9 +108,10 @@ license:       creative commons CC-BY-NC-SA
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
       </image>
       <image ifSubset="background-art-style:full-screen" name="background-art" extra="true">
-         <origin>0.5 0</origin>
-         <pos>0.5 0</pos>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
          <size>0 1</size>
+         <size ifSubset="aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
          <color>ffffffcc</color>
          <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
          <path ifSubset="aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
@@ -180,9 +183,10 @@ license:       creative commons CC-BY-NC-SA
 
    <view name="basic">
       <image name="background-art" extra="true">
-         <origin>0.5 0</origin>
-         <pos>0.5 0</pos>
-         <size>>0 1</size>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>0 1</size>
+         <size ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
          <tile>false</tile>
          <color>ffffffcc</color>
          <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
