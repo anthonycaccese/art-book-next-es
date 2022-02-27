@@ -28,6 +28,10 @@ license:        creative commons CC-BY-NC-SA
          <size>0.307692307692308 0.7</size><!-- 164 224 -->
          <lineSpacing>1.56</lineSpacing>
          <fontSize>0.04375</fontSize><!-- 14 -->
+         <!--<horizontalMargin>0.008</horizontalMargin>
+         <selectorHeight>0.0625</selectorHeight>
+         <selectorColor>F9CD65</selectorColor>
+         <selectorImagePath>./_inc/images/utility/selector.svg</selectorImagePath>-->
       </textlist>
       <image name="gamelist-background" extra="true">
          <pos>0 0</pos>

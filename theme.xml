@@ -8,11 +8,19 @@ license:       creative commons CC-BY-NC-SA
 <theme defaultTransition="instant">
    <formatVersion>7</formatVersion>
 
+   <!-- Distribution -->
+   <subset name="distribution" displayName="Distribution">
+      <include ifArch="rg552,rg351p,rg351mp,rg351v" name="351elec" displayName="351ELEC" />
+      <include name="retrobat" displayName="RetroBat" />
+   </subset>
+
    <variables>
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
       <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
-      <themeCustomizationsPath>~/roms/351elec/theme-customizations/art-book-next/</themeCustomizationsPath>
+      <distributionPath ifSubset="distribution:351elec">~/roms/351elec/</distributionPath>
+      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
+      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
    <!-- Aspect Ratio -->
@@ -319,10 +327,10 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
    <!-- Aspect Ratio -->
+   <include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
+   <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
    <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
    <include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
-   <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-   <include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
 
    <!-- User Customizations -->
    <include>${themeCustomizationsPath}theme.xml</include>
