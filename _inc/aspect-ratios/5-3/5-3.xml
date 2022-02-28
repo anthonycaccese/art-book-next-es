@@ -43,16 +43,16 @@ license:        creative commons CC-BY-NC-SA
       </image>
    </view>
 
-   <subset name="detail-view-image-source" displayName="Gamelist Image Source">
-      <include name="thumbnail" displayName="Thumbnail" />
+   <subset name="gamelist-image-source" displayName="Gamelist Image Source">
       <include name="image" displayName="Image" />
       <include name="titleshot" displayName="Title Screen" />
+      <include name="fanart" displayName="Fanart" />
+      <include name="thumbnail" displayName="Thumbnail" />
       <include name="marquee" displayName="Marquee" />
       <include name="boxart" displayName="Boxart" />
-      <include name="fanart" displayName="Fanart" />
    </subset>
 
-   <subset name="video-view-marquee" displayName="Gamelist Marquee Display">
+   <subset name="gamelist-marquee-display" displayName="Gamelist Marquee Display">
       <include name="off" displayName="Off" />
       <include name="centered" displayName="Centered" />
       <include name="bottom" displayName="Bottom" />

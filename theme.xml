@@ -232,24 +232,9 @@ license:       creative commons CC-BY-NC-SA
          <color>333333</color>
          <alignment>left</alignment>
       </rating>
-      <image name="md_image">
-         <visible>false</visible>
-      </image>
-      <image name="md_thumbnail">
-         <origin>0.5 0.5</origin>
-      </image>
    </view>
 
    <view name="video">
-      <image name="md_marquee">
-         <visible>false</visible>
-      </image>
-      <image name="md_image">
-         <visible>false</visible>
-      </image>
-      <image name="md_thumbnail">
-         <origin>1 1</origin>
-      </image>
       <video name="md_video">
          <origin>0.5 0.5</origin>
          <delay>0.2</delay>

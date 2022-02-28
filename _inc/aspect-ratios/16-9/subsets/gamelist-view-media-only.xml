@@ -9,20 +9,20 @@
       </image>
       <image ifSubset="gamelist-marquee-display:off|centered" name="md_marquee">
          <visible>false</visible>
-         <pos>0.696060037523452 0.525</pos><!-- 371 168 -->
-         <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
+         <pos>0.685413005272408 0.525</pos><!-- 390 168 -->
+         <maxSize>0.421792618629174 0.75</maxSize><!-- 240 240 -->
       </image>
       <image ifSubset="gamelist-marquee-display:bottom" name="md_marquee">
          <visible>false</visible>
-         <pos>0.696060037523452 0.75</pos><!-- 371 240 -->
-         <maxSize>0.356472795497186 0.3125</maxSize><!-- 190 100 -->
+         <pos>0.685413005272408 0.75</pos><!-- 390 240 -->
+         <maxSize>0.333919156414763 0.3125</maxSize><!-- 190 100 -->
       </image>
    </view>
 
    <view name="detailed">
       <image name="md_image,md_titleshot,md_fanart">
          <visible>false</visible>
-         <pos>0.696060037523452 0.5</pos><!-- 371 160 -->
+         <pos>0.685413005272408 0.5</pos><!-- 390 160 -->
          <size>0 1</size>
          <zIndex>1</zIndex>
       </image>
@@ -32,7 +32,7 @@
       </image>
       <image name="md_thumbnail,md_boxart">
          <visible>false</visible>
-         <pos>0.696060037523452 0.525</pos><!-- 371 168 -->
+         <pos>0.685413005272408 0.525</pos><!-- 390 168 -->
          <maxSize>0.450281425891182 0.75</maxSize><!-- 240 240 -->
       </image>
    </view>
@@ -90,8 +90,8 @@
          <visible>true</visible>
       </image>
       <video name="md_video">
-         <pos>0.696060037523452 0.5</pos><!-- 371 160 -->
-         <maxSize>0.938086303939962 1.875</maxSize><!-- 500 600 -->
+         <pos>0.685413005272408 0.5</pos><!-- 390 160 -->
+         <maxSize>1.041666666666667 1.171875</maxSize><!-- 592 375 -->
       </video>
    </view>
 
