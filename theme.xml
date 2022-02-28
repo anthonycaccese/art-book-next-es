@@ -13,6 +13,7 @@ license:       creative commons CC-BY-NC-SA
       <include name="351elec" displayName="351ELEC" />
       <include name="batocera" displayName="Batocera" />
       <include name="retrobat" displayName="RetroBat" />
+      <include name="jelos" displayName="JELOS" />
    </subset>
 
    <variables>
@@ -21,6 +22,7 @@ license:       creative commons CC-BY-NC-SA
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
+      <distributionPath ifSubset="distribution:jelos">~/roms/jelos/</distributionPath>
       <distributionPath ifSubset="distribution:351elec">~/roms/351elec/</distributionPath>
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
@@ -239,7 +241,7 @@ license:       creative commons CC-BY-NC-SA
          <origin>0.5 0.5</origin>
          <delay>0.2</delay>
          <effect>none</effect>
-         <showSnapshotDelay>false</showSnapshotDelay>
+         <showSnapshotDelay>true</showSnapshotDelay>
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <snapshotSource>thumbnail</snapshotSource>
          <snapshotSource>image</snapshotSource>
