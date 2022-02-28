@@ -22,7 +22,7 @@ license:       creative commons CC-BY-NC-SA
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
-      <distributionPath ifSubset="distribution:jelos">~/roms/jelos/</distributionPath>
+      <distributionPath ifSubset="distribution:jelos">~/roms/</distributionPath>
       <distributionPath ifSubset="distribution:351elec">~/roms/351elec/</distributionPath>
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>

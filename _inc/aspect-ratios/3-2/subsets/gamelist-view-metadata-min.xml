@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed">
+      <image name="md_image">
+         <visible>true</visible>
+         <origin>0.5 0.5</origin>
+         <pos>0.716666666666667 0.3625</pos><!-- 344 116 -->
+         <maxSize>0.716666666666667 1.46875</maxSize><!-- 344 470 -->
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
+   <view name="detailed,video">
+      <image name="md_thumbnail">
+         <origin>0 1</origin>
+         <pos>0.466666666666667 0.95625</pos><!-- 224 306 -->
+         <size>0.154166666666667 0</size><!-- 74 ~ -->
+      </image>
+      <text name="md_description">
+         <visible>true</visible>
+         <pos>0.658333333333333 0.775</pos><!-- 316 248 -->
+         <size>0.304166666666667 0.16875</size><!-- 146 54 -->
+         <fontSize>0.03</fontSize><!-- 9.6 -->
+      </text>
+      <image name="metadata-background" extra="true">
+         <pos>0.433333333333333 0.73125</pos><!-- 208 234 -->
+         <size>0.566666666666667 0.26875</size><!-- 272 86 -->
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_marquee">
+         <visible>false</visible>
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.716666666666667 0.3625</pos><!-- 344 116 -->
+         <maxSize>0.716666666666667 1.46875</maxSize><!-- 344 470 -->
+      </video>
+   </view>
+
+</theme>
