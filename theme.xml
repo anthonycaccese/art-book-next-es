@@ -155,7 +155,6 @@ license:       creative commons CC-BY-NC-SA
          <selectedColor>ffffff</selectedColor>
          <primaryColor>444444</primaryColor>
          <secondaryColor>444444</secondaryColor>
-         <scrollSound>./_inc/sounds/select.wav</scrollSound>
          <zIndex>2</zIndex>
       </textlist>
       <image name="gamelist-background" extra="true">
