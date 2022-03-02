@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg id="svg2" enable-background="new 0 0 566.929 104.51" version="1.1" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <g transform="matrix(0.44, 0, 0, 0.438811, 0, 0)">
-    <polygon id="polygon12" points="472.341 59.181 416.322 79.494 472.698 79.494 494.145 67.659" style="fill: rgb(255, 255, 255);" bx:origin="-5.35 -2.913"/>
-    <polygon id="polygon14" points="420.03 0.552 486.576 0.552 575.19 45.474 540.435 45.474 516.006 34.242 500.937 40.371" style="fill: rgb(255, 255, 255);" bx:origin="-2.707 -0.012"/>
-    <polygon id="polygon16" points="543.969 21.132 600 0.828 543.624 0.828 522.189 12.654" style="fill: rgb(255, 255, 255);" bx:origin="-6.711 -0.041"/>
-    <polygon id="polygon18" points="596.301 79.761 529.746 79.761 441.129 34.839 475.887 34.839 500.313 46.071 515.382 39.942" style="fill: rgb(255, 255, 255);" bx:origin="-2.843 -0.776"/>
-    <rect id="rect20" height="53.904" width="44.112" y="0.009" style="fill: rgb(255, 255, 255);" bx:origin="-0.001 0"/>
-    <rect id="rect22" height="16.503" width="113.037" y="60.513" style="fill: rgb(255, 255, 255);" bx:origin="0 -3.667"/>
-    <polygon id="polygon24" points="71.679 0.009 124.071 0.009 159.915 30.255 134.007 49.263" style="fill: rgb(255, 255, 255);" bx:origin="-0.813 0"/>
-    <polygon id="polygon26" points="137.856 52.257 137.856 77.013 179.211 77.013 179.211 52.257 259.161 0.009 220.566 0.009 140.616 52.257" style="fill: rgb(255, 255, 255);" bx:origin="-1.137 0"/>
-    <polygon id="polygon28" points="264.684 8.253 308.79 35.757 308.79 77.013 264.684 77.013" style="fill: rgb(255, 255, 255);" bx:origin="-6.002 -0.12"/>
-    <polygon id="polygon30" points="270.195 0.009 383.238 77.013 408.048 77.013 408.048 0 386.544 0 386.544 54.159 306.039 0.009" style="fill: rgb(255, 255, 255);" bx:origin="-1.96 0"/>
-  </g>
+  <polygon id="polygon12" points="207.83 25.969 183.182 34.883 207.987 34.883 217.424 29.69" style="fill: rgb(255, 255, 255);" bx:origin="-5.35 -2.913"/>
+  <polygon id="polygon14" points="184.813 0.242 214.093 0.242 253.084 19.954 237.791 19.954 227.043 15.026 220.412 17.715" style="fill: rgb(255, 255, 255);" bx:origin="-2.707 -0.012"/>
+  <polygon id="polygon16" points="239.346 9.273 264 0.363 239.195 0.363 229.763 5.553" style="fill: rgb(255, 255, 255);" bx:origin="-6.711 -0.041"/>
+  <polygon id="polygon18" points="262.372 35 233.088 35 194.097 15.288 209.39 15.288 220.138 20.216 226.768 17.527" style="fill: rgb(255, 255, 255);" bx:origin="-2.843 -0.776"/>
+  <rect id="rect20" height="23.654" width="19.409" y="0.004" style="fill: rgb(255, 255, 255);" bx:origin="-0.001 0"/>
+  <rect id="rect22" height="7.242" width="49.736" y="26.554" style="fill: rgb(255, 255, 255);" bx:origin="0 -3.667"/>
+  <polygon id="polygon24" points="31.539 0.004 54.591 0.004 70.363 13.276 58.963 21.617" style="fill: rgb(255, 255, 255);" bx:origin="-0.813 0"/>
+  <polygon id="polygon26" points="60.657 22.931 60.657 33.794 78.853 33.794 78.853 22.931 114.031 0.004 97.049 0.004 61.871 22.931" style="fill: rgb(255, 255, 255);" bx:origin="-1.137 0"/>
+  <polygon id="polygon28" points="116.461 3.622 135.868 15.691 135.868 33.794 116.461 33.794" style="fill: rgb(255, 255, 255);" bx:origin="-6.002 -0.12"/>
+  <polygon id="polygon30" points="118.886 0.004 168.625 33.794 179.541 33.794 179.541 0 170.079 0 170.079 23.766 134.657 0.004" style="fill: rgb(255, 255, 255);" bx:origin="-1.96 0"/>
 </svg>
