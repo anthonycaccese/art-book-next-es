@@ -16,18 +16,9 @@ license:       creative commons CC-BY-NC-SA
       <include name="jelos" displayName="JELOS" />
    </subset>
 
-   <!-- Font Selection -->
-   <subset name="font-selection" displayName="Font Selection">
-      <include name="cabin" displayName="Cabin-Bold" />
-      <include name="oxygen" displayName="Oxygen-Bold" />
-      <include name="nunito" displayName="Nunito-Bold" />
-   </subset>
-
    <variables>
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
-      <bodyFont ifSubset="font-selection:cabin">./_inc/fonts/Cabin-Bold.ttf</bodyFont>
-      <bodyFont ifSubset="font-selection:oxygen">./_inc/fonts/Oxygen-Bold.ttf</bodyFont>
-      <bodyFont ifSubset="font-selection:nunito">./_inc/fonts/Nunito-Bold.ttf</bodyFont>
+      <bodyFont>./_inc/fonts/Oxygen-Bold.ttf</bodyFont>
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
