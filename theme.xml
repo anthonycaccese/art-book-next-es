@@ -155,6 +155,8 @@ license:       creative commons CC-BY-NC-SA
          <selectedColor>ffffff</selectedColor>
          <primaryColor>444444</primaryColor>
          <secondaryColor>444444</secondaryColor>
+         <primaryColor ifarch="rg351mp">666666</primaryColor>
+         <secondaryColor ifarch="rg351mp">666666</secondaryColor>
          <zIndex>2</zIndex>
       </textlist>
       <image name="gamelist-background" extra="true">
@@ -220,6 +222,7 @@ license:       creative commons CC-BY-NC-SA
       </text>
       <text name="md_lbl_lastplayed,md_lbl_playcount,md_playcount,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_gametime,md_gametime">
          <color>444444</color>
+         <color ifArch="rg351mp">666666</color>
       </text>
       <datetime name="md_releasedate,md_lastplayed">
          <visible>false</visible>
@@ -263,6 +266,7 @@ license:       creative commons CC-BY-NC-SA
          <fontPath>${bodyFont}</fontPath>
          <fontSize>0.036</fontSize>
          <color>444444</color>
+         <color ifarch="rg351mp">666666</color>
          <separatorColor>222222</separatorColor>
          <selectorColor>555555</selectorColor>
          <selectedColor>ffffff</selectedColor>
