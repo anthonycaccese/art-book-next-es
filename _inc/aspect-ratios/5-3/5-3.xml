@@ -27,7 +27,8 @@ license:        creative commons CC-BY-NC-SA
          <pos>0.037523452157598 0.2625</pos><!-- 20 84 -->
          <size>0.307692307692308 0.7</size><!-- 164 224 -->
          <lineSpacing>1.56</lineSpacing>
-         <fontSize>0.04375</fontSize><!-- 14 -->
+         <fontSize ifSubset="gamelist-font-size:small">0.03125</fontSize><!-- 10 -->
+         <fontSize ifSubset="gamelist-font-size:large">0.04375</fontSize><!-- 14 -->
          <!--<horizontalMargin>0.008</horizontalMargin>
          <selectorHeight>0.0625</selectorHeight>
          <selectorColor>F9CD65</selectorColor>

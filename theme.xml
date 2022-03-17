@@ -57,6 +57,12 @@ license:       creative commons CC-BY-NC-SA
       <include name="custom" displayName="Custom" />
    </subset>
 
+   <!-- Gamelist Font Size -->
+   <subset name="gamelist-font-size" displayName="Gamelist Font Size">
+      <include name="large" displayName="Large" />
+      <include name="small" displayName="Small" />
+   </subset>
+
    <view name="system,basic,detailed,video">
       <helpsystem name="help">
          <pos>1 1</pos>
