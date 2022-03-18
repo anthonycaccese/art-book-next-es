@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg version="1.1" viewBox="0 0 264 41" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <g transform="matrix(0.439555, 0, 0, 0.43892, 0, 0)">
     <path id="path1922" d="M 60.855 26.64 L 99.795 26.64 L 82.746 44.415 L 60.855 44.415 L 60.855 26.64 Z" style="fill-opacity: 1; fill: rgb(255, 255, 255);" bx:origin="-1.563 -1.499"/>
     <path id="path3805" d="M 60.819 66.777 L 99.756 66.777 L 82.71 49.002 L 60.819 49.002 L 60.819 66.777 Z" style="fill-opacity: 1; fill: rgb(255, 255, 255);" bx:origin="-1.562 -2.757"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.2" viewBox="0 0 264 104" xmlns="http://www.w3.org/2000/svg">
   <g transform="matrix(0.439517, 0, 0, 0.441672, 0, -0.000558)">
     <path id="path6945" d="M 0 0.002 L 186.936 0.002 L 186.936 55.436 L 7.386 55.436 L 7.386 103.484 L 0 103.484 L 0 48.047 L 179.55 48.047 L 179.55 7.385 L 0 7.385 L 0 0.002" style="fill-opacity: 1; fill: rgb(255, 255, 255);"/>
     <path id="path6947" d="M 420.453 55.436 L 420.453 103.484 L 413.067 103.484 L 413.067 48.047 L 592.614 48.047 L 592.614 7.385 L 413.067 7.385 L 413.067 -0.001 L 600 -0.001 L 600 55.436 L 420.453 55.436" style="fill-opacity: 1; fill: rgb(255, 255, 255);"/>
