@@ -1,7 +1,7 @@
-# Art Book Next for 351ELEC & Batocera
+# Art Book Next for AmberELEC & Batocera
 
 A minimal theme with direct support for 16:9, 4:3, 5:3 and 3:2 aspect ratios.  
-Built and tested on [351ELEC](https://351elec.de).  Will also work on [Batocera](https://batocera.org/), [Retrobat](https://github.com/kaylh/RetroBat), [EMUELEC](https://github.com/EmuELEC/EmuELEC) and [JELOS](https://github.com/JustEnoughLinuxOS/distribution)
+Built and tested on [AmberELEC](https://AmberELEC.org).  Will also work on [Batocera](https://batocera.org/), [Retrobat](https://github.com/kaylh/RetroBat), [EMUELEC](https://github.com/EmuELEC/EmuELEC) and [JELOS](https://github.com/JustEnoughLinuxOS/distribution)
 
 ## Preview
 
