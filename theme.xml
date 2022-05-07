@@ -22,7 +22,7 @@ license:       creative commons CC-BY-NC-SA
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
       <distributionPath ifSubset="distribution:jelos">~/roms/</distributionPath>
-      <distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/roms/351elec/</distributionPath>
+      <distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/roms/amberelec/</distributionPath>
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
