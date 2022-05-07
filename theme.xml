@@ -40,7 +40,6 @@ license:       creative commons CC-BY-NC-SA
    <!-- Background Art Style -->
    <subset name="background-art-style" displayName="Background Art Style">
       <include name="centered" displayName="Centered" />
-      <include name="full-screen" displayName="Full Screen" />
       <include name="no-artwork" displayName="No Artwork" />
    </subset>
 
@@ -114,24 +113,6 @@ license:       creative commons CC-BY-NC-SA
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
          <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
       </image>
-      <image ifSubset="background-art-style:full-screen" name="background-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <size>0 1</size>
-         <size ifSubset="aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
-         <color>ffffffcc</color>
-         <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
-         <path ifSubset="aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-      </image>
       <image ifSubset="background-art-style:centered" name="background-art-mask" extra="true">
          <origin>0.5 0</origin>
          <pos>0.5 0</pos>
@@ -185,29 +166,6 @@ license:       creative commons CC-BY-NC-SA
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>000000</color>
-         <zIndex>0</zIndex>
-      </image>
-   </view>
-
-   <view name="basic">
-      <image name="background-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <size>0 1</size>
-         <size ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
-         <tile>false</tile>
-         <color>ffffffcc</color>
-         <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
          <zIndex>0</zIndex>
       </image>
    </view>
