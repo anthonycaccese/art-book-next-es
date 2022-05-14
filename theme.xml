@@ -57,6 +57,12 @@ license:       creative commons CC-BY-NC-SA
       <include name="custom" displayName="Custom" />
    </subset>
 
+   <!-- Display Clock -->
+   <subset name="display-clock" displayName="Display Clock">
+      <include name="no" displayName="No" />
+      <include name="yes" displayName="Yes" />
+   </subset>
+
    <!-- Gamelist Font Size -->
    <subset name="gamelist-font-size" displayName="Gamelist Font Size">
       <include name="large" displayName="Large" />
@@ -289,7 +295,12 @@ license:       creative commons CC-BY-NC-SA
 
    <view name="screen">
       <text name="clock">
-         <visible>false</visible>
+         <pos ifSubset="display-clock:yes">0.015009380863039 0.0125</pos>
+         <pos ifSubset="display-clock:no">1 1</pos>
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.03125</fontSize>
+         <size>0 0</size>
+         <color>ffffffbb</color>
       </text>
       <batteryIndicator name="batteryIndicator">
          <color>ffffffbb</color>
