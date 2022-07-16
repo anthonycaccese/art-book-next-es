@@ -20,19 +20,19 @@ Gamelist Style - Metadata On - 4:3
          <unfilledPath>./_inc/images/utility/star-empty.svg</unfilledPath>
       </rating>
       <text name="md_genre">
-         <pos>0.543580131208997 0.853</pos><!-- 580 686 -->
+         <pos>0.543580131208997 0.857</pos><!-- 580 686 -->
          <size>0.1875 0.025</size><!-- 120 20 -->
          <fontSize>0.025</fontSize><!-- 20 -->
       </text>
       <image name="md_players_icon" extra="true">
          <origin>0 0</origin>
-         <pos>0.543580131208997 0.902</pos><!-- 580 725 -->
+         <pos>0.543580131208997 0.908</pos><!-- 580 725 -->
          <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
          <path>./_inc/images/utility/icon-players.svg</path>
          <color>${metadataIconColor}</color>
       </image>
       <text name="md_players">
-         <pos>0.567947516401125 0.9</pos><!-- 606 720 -->
+         <pos>0.567947516401125 0.908</pos><!-- 606 720 -->
          <size>0.1875 0.025</size><!-- 120 20 -->
          <fontSize>0.025</fontSize><!-- 20 -->
       </text>
@@ -51,25 +51,25 @@ Gamelist Style - Metadata On - 4:3
       </datetime>
       <image name="md_developer_icon" extra="true">
          <origin>0 0</origin>
-         <pos>0.764761012183693 0.855</pos><!-- 816 691 -->
+         <pos>0.764761012183693 0.859</pos><!-- 816 691 -->
          <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
          <path>./_inc/images/utility/icon-wrench.svg</path>
          <color>${metadataIconColor}</color>
       </image>
       <text name="md_developer">
-         <pos>0.78912839737582 0.853</pos><!-- 842 689 -->
+         <pos>0.78912839737582 0.857</pos><!-- 842 689 -->
          <size>0.159325210871603 0.025</size><!-- 170 20 -->
          <fontSize>0.025</fontSize><!-- 20 -->
       </text>
       <image name="md_publisher_icon" extra="true">
          <origin>0 0</origin>
-         <pos>0.764761012183693 0.904</pos><!-- 816 725 -->
+         <pos>0.764761012183693 0.912</pos><!-- 816 725 -->
          <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
          <path>./_inc/images/utility/icon-ship.svg</path>
          <color>${metadataIconColor}</color>
       </image>
       <text name="md_publisher">
-         <pos>0.78912839737582 0.9</pos><!-- 842 725 -->
+         <pos>0.78912839737582 0.908</pos><!-- 842 725 -->
          <size>0.159325210871603 0.025</size><!-- 170 20 -->
          <fontSize>0.025</fontSize><!-- 20 -->
       </text>
@@ -95,12 +95,12 @@ Gamelist Style - Metadata On - 4:3
    <view name="video">
       <image name="md_thumbnail">
          <origin>0 1</origin>
-         <pos>0.543580131208997 0.494</pos><!-- 580 395.2 -->
-         <maxSize>0.131208997188379 0.175</maxSize><!-- 130 130 -->
+         <pos>0.543580131208997 0.5</pos><!-- 580 395.2 -->
+         <maxSize>0.15 0.2</maxSize><!-- 130 130 -->
       </image>
       <image name="md_marquee">
          <origin>1 1</origin>
-         <pos>0.943767572633552 0.494</pos><!-- 1007 395.2 -->
+         <pos>0.943767572633552 0.5</pos><!-- 1007 395.2 -->
          <maxSize>0.1484375 0.2375</maxSize><!-- 190 190 -->
       </image>
       <video name="md_video">
