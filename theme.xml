@@ -272,7 +272,7 @@ license:       creative commons CC-BY-NC-SA
          <itemSpacing>0</itemSpacing>
       </batteryIndicator>
       <batteryIndicator ifSubset="aspect-ratio:5-3|16-9" name="batteryIndicator">
-         <pos>0.016 0.011</pos>
+         <pos>0.022 0.011</pos>
          <size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
          <size ifSubset="aspect-ratio:16-9">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
          <full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
@@ -302,10 +302,10 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
    <!-- Aspect Ratio -->
-   <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:16-10">./_inc/aspect-ratios/16-10/16-10.xml</include>
    <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
    <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+   <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
 
    <!-- User Customizations -->
