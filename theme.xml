@@ -236,27 +236,35 @@ license:       creative commons CC-BY-NC-SA
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.034375</fontSize>
+         <fontSize>0.04</fontSize>
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.0325</fontSize>
-         <color>666666</color>
+         <fontSize>0.025</fontSize>
+         <color>777777ff</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.036</fontSize>
-         <color>444444</color>
-         <separatorColor>222222</separatorColor>
+         <fontSize>0.035</fontSize>
+         <color>777777</color>
+         <separatorColor>111111</separatorColor>
          <selectorColor>555555</selectorColor>
          <selectedColor>ffffff</selectedColor>
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.03</fontSize>
+         <fontSize>0.0325</fontSize>
          <color>777777</color>
       </menuTextSmall>
+      <menuGroup name="menugroup">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.0325</fontSize>
+         <color>ffffff</color>
+         <separatorColor>999999</separatorColor>
+         <backgroundColor>00000000</backgroundColor>
+         <lineSpacing>2.5</lineSpacing>
+      </menuGroup>
       <menuBackground name="menubg">
          <color>111111</color>
          <cornerSize>20 20</cornerSize>
