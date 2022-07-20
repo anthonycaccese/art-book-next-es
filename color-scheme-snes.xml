@@ -1,0 +1,16 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+      <backgroundColor>514689</backgroundColor>
+      <gamelistBackgroundColor>231942</gamelistBackgroundColor>
+      <systemBackgroundColor>231942</systemBackgroundColor>
+      <ratingColor>7C78AC</ratingColor>
+      <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+      <gamelistUnSelectedColor>ffffff33</gamelistUnSelectedColor>
+      <logoColor>ffffffaa</logoColor>
+      <logoTextColor>ffffffaa</logoTextColor>
+      <metadataColor>ffffff88</metadataColor>
+      <metadataIconColor>ffffff33</metadataIconColor>
+      <descriptionColor>ffffffee</descriptionColor>
+   </variables>
+</theme>

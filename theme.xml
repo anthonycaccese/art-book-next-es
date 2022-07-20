@@ -29,26 +29,21 @@ license:       creative commons CC-BY-NC-SA
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifArch="amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/roms/amberelec/</distributionPath>
       <themeCustomizationsPath>${distributionPath}/theme-customizations/art-book-next/</themeCustomizationsPath>
-      <!-- 
-      Color Settings
-      -->
-      <backgroundColor>222222</backgroundColor>
-      <gamelistBackgroundColor>111111</gamelistBackgroundColor>
-      <systemBackgroundColor>111111</systemBackgroundColor>
-      <ratingColor>ffffff33</ratingColor>
-      <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-      <gamelistUnSelectedColor>ffffff33</gamelistUnSelectedColor>
-      <logoColor>ffffffaa</logoColor>
-      <logoTextColor>ffffffaa</logoTextColor>
-      <metadataColor>ffffff88</metadataColor>
-      <metadataIconColor>ffffff33</metadataIconColor>
-      <descriptionColor>ffffffee</descriptionColor>
    </variables>
+
+   <!-- Color Scheme -->
+   <subset name="color-scheme" displayName="Color Scheme">
+      <include name="art-book-next" displayName="Art Book Next">./color-scheme-art-book-next.xml</include>
+      <include name="art-book" displayName="Art Book">./color-scheme-art-book.xml</include>
+      <include name="snes" displayName="SNES">./color-scheme-snes.xml</include>
+      <include name="steam-deck" displayName="Steam Deck">./color-scheme-steam-deck.xml</include>
+      <include name="custom" displayName="Custom" />
+   </subset>
 
    <!-- Aspect Ratio -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
-      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />
+      <!--<include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
+      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />-->
       <include ifArch="rg353p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
       <include ifArch="rg353p,rg503,rg552,amberelec-rg353,amberelec-rg503,amberelec-rg552" name="16-9" displayName="16:9" />
       <include ifNotArch="rg353p,rg503,rg552,rg351p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
