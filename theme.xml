@@ -12,13 +12,14 @@ license:       creative commons CC-BY-NC-SA
    <include>${themeCustomizationsPath}theme.xml</include>
 
    <!-- Distribution -->
-   <subset ifNotArch="amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="distribution" displayName="Distribution">
+   <subset ifNotArch="amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="distribution" displayName="Distribution">
       <include name="batocera" displayName="Batocera" />
       <include name="jelos" displayName="JELOS" />
       <include name="emuelec" displayName="EmuElec" />
       <include name="retrobat" displayName="RetroBat" />
    </subset>
 
+   <!-- Variables -->
    <variables>
       <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
       <bodyFont>./_inc/fonts/Oxygen-Bold.ttf</bodyFont>
@@ -27,9 +28,21 @@ license:       creative commons CC-BY-NC-SA
       <distributionPath ifSubset="distribution:jelos">~/roms/jelos/</distributionPath>
       <distributionPath ifSubset="distribution:emuelec">~/roms/emuelec/</distributionPath>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
-      <distributionPath ifArch="amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/roms/amberelec/</distributionPath>
-      <themeCustomizationsPath>${distributionPath}/theme-customizations/art-book-next/</themeCustomizationsPath>
+      <distributionPath ifArch="amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v">~/roms/amberelec/</distributionPath>
+      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
+
+   <!-- Aspect Ratio -->
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <!--<include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
+      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />-->
+      <include ifArch="rg353p,rg503,rg552,amberelec-rg353,amberelec-rg503,amberelec-rg552" name="16-9" displayName="16:9" />
+      <include ifArch="rg353p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
+      <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
+      <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
+      <!--<include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
+      <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />-->
+   </subset>
 
    <!-- Color Scheme -->
    <subset name="color-scheme" displayName="Color Scheme">
@@ -40,17 +53,10 @@ license:       creative commons CC-BY-NC-SA
       <include name="custom" displayName="Custom" />
    </subset>
 
-   <!-- Aspect Ratio -->
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <!--<include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
-      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />-->
-      <include ifArch="rg353p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <include ifArch="rg353p,rg503,rg552,amberelec-rg353,amberelec-rg503,amberelec-rg552" name="16-9" displayName="16:9" />
-      <include ifNotArch="rg353p,rg503,rg552,rg351p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
-      <include ifNotArch="rg353p,rg503,rg552,rg351p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <!--<include ifNotArch="rg353p,rg503,rg552,rg351p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="16-10" displayName="16:10" />
-      <include ifNotArch="rg353p,rg503,rg552,rg351p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
-      <include ifNotArch="rg353p,rg503,rg552,rg351p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />-->
+   <!-- Scroll Sound -->
+   <subset name="scroll-sound" displayName="Scroll Sound">
+      <include name="steam-deck" displayName="Steam Deck" />
+      <include name="es-de" displayName="ES-DE" />
    </subset>
 
    <!-- Status Bar Display -->
@@ -62,6 +68,7 @@ license:       creative commons CC-BY-NC-SA
    <!-- System View Style -->
    <subset name="system-view" displayName="System View Style">
       <include name="centered-default" displayName="Centered" />
+      <include name="multi" displayName="Multi" />
       <include name="no-artwork" displayName="No Artwork" />
       <include name="centered-custom" displayName="Centered + Custom Artwork" />
       <include name="fullscreen-custom" displayName="Fullscreen + Custom Artwork" />
@@ -111,19 +118,20 @@ license:       creative commons CC-BY-NC-SA
          <size>1 1</size>
          <logoScale>2</logoScale>
          <logoSize>0.25 0.15</logoSize>
-         <maxLogoCount>1</maxLogoCount>
-         <maxLogoCount ifSubset="aspect-ratio:16-9">1.5</maxLogoCount>
+         <maxLogoCount>1.5</maxLogoCount>
       </carousel>
       <text name="systemInfo">
          <pos>1 1</pos>
       </text>
+      <!-- System View Mask: Centered & Centered Custom -->
       <image ifSubset="system-view:centered-default|centered-custom" name="background-art-mask" extra="true">
          <origin>0.5 0</origin>
          <pos>0.5 0</pos>
-         <size>1 1</size>
+         <size>0 1</size>
          <zIndex>2</zIndex>
          <color>${systemBackgroundColor}</color>
       </image>
+      <!-- System View Art: Centered, Centered Custom & Fullscreen Custom -->
       <image ifSubset="system-view:centered-default" name="background-art" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
@@ -144,6 +152,7 @@ license:       creative commons CC-BY-NC-SA
          <path>${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
          <zIndex>1</zIndex>
       </image>
+      <!-- System View: No Artwork -->
       <image ifSubset="system-view:no-artwork" name="background-art" extra="true">
          <origin>0.5 0</origin>
          <pos>0.5 0</pos>
@@ -152,6 +161,25 @@ license:       creative commons CC-BY-NC-SA
          <color>${systemBackgroundColor}</color>
          <path>${spacerImage}</path>
          <zIndex>1</zIndex>
+      </image>
+      <!-- System View: Multi System -->
+      <carousel ifSubset="system-view:multi" name="systemcarousel">
+         <size>1 1</size>
+         <logoScale>1</logoScale>
+         <logoSize>1 1</logoSize>
+         <zIndex>3</zIndex>
+      </carousel>
+      <image ifSubset="system-view:multi" name="logo-art" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <maxSize>0.5 0.3</maxSize>
+         <color>ffffff</color>
+         <path>./_inc/images/systems/${system.theme}.svg</path>
+         <zIndex>50</zIndex>
+      </image>
+      <image ifSubset="system-view:multi" name="logo">
+         <path>./_inc/images/systems/${system.theme}.png</path>
+         <color>ffffffcc</color>
       </image>
    </view>
 
@@ -174,6 +202,8 @@ license:       creative commons CC-BY-NC-SA
          <selectedColor>${gamelistSelectedColor}</selectedColor>
          <primaryColor>${gamelistUnSelectedColor}</primaryColor>
          <secondaryColor>${gamelistUnSelectedColor}</secondaryColor>
+         <scrollSound ifSubset="scroll-sound:es-de">./_inc/sounds/es-de/scroll.wav</scrollSound>
+         <scrollSound ifSubset="scroll-sound:steam-deck">./_inc/sounds/steam-deck/scroll.wav</scrollSound>
          <zIndex>5</zIndex>
       </textlist>
       <image name="gamelist-background" extra="true">
@@ -224,12 +254,10 @@ license:       creative commons CC-BY-NC-SA
    <view name="video">
       <video name="md_video">
          <origin>0.5 0.5</origin>
-         <delay>1</delay>
+         <delay>2</delay>
          <effect>none</effect>
          <showSnapshotDelay>true</showSnapshotDelay>
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
-         <snapshotSource>thumbnail</snapshotSource>
-         <snapshotSource>image</snapshotSource>
          <zIndex>1</zIndex>
       </video>
    </view>
@@ -313,8 +341,7 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
    <!-- Aspect Ratio -->
-   <!--<include ifSubset="aspect-ratio:16-10">./_inc/aspect-ratios/16-10/16-10.xml</include>
-   <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
+   <!--<include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
    <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>-->
    <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>

@@ -11,8 +11,11 @@
          <fontSize>0.15</fontSize>
       </text>
       <image ifSubset="system-view:centered-default|centered-custom" name="background-art-mask" extra="true">
-         <path>./_inc/images/utility/background-art-mask-16-9.svg</path>
+         <path>./_inc/images/utility/background-art-mask-16-9.png</path>
       </image>
+      <carousel ifSubset="system-view:multi" name="systemcarousel">
+         <maxLogoCount>5</maxLogoCount>
+      </carousel>
    </view>
 
    <view name="basic,detailed,video">
@@ -37,8 +40,9 @@
    </view>
 
    <subset name="gamelist-layout" displayName="Gamelist View Style">
-      <include name="metadata-off" displayName="Metadata Off">./gamelist-metadata-off-16-9.xml</include>
       <include name="metadata-on" displayName="Metadata On">./gamelist-metadata-on-16-9.xml</include>
+      <include name="metadata-off" displayName="Metadata Off">./gamelist-metadata-off-16-9.xml</include>
+      <include name="metadata-off-zoomed" displayName="Metadata Off (Zoomed)">./gamelist-metadata-off-zoomed-16-9.xml</include>
    </subset>
 
 </theme>

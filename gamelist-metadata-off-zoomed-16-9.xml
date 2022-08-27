@@ -1,25 +1,31 @@
 <!--
-Gamelist Style - Metadata Off - 4:3
-(based on 1067x800 Resolution)
+Gamelist Style - Metadata Off - 16:9
+(based on 1422x800 Resolution)
 -->
 
 <theme>
    <formatVersion>7</formatVersion>
 
    <subset name="gamelist-image-source" displayName="Gamelist Image Source">
-      <include name="boxart" displayName="Boxart" />
-      <include name="thumbnail" displayName="Thumbnail" />
       <include name="image" displayName="Image" />
-      <include name="titleshot" displayName="Title Screen" />
       <include name="fanart" displayName="Fanart" />
+      <include name="titleshot" displayName="Title Screen" />
+      <include name="thumbnail" displayName="Thumbnail" />
+      <include name="boxart" displayName="Boxart" />
+   </subset>
+
+   <subset name="gamelist-marquee-display" displayName="Gamelist Marquee Display">
+      <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
    </subset>
 
    <view name="detailed,video">
       <image name="md_image,md_titleshot,md_fanart,md_thumbnail,md_marquee,md_boxart">
          <visible>false</visible>
          <origin>0.5 0.5</origin>
-         <pos>0.743673851921275 0.5</pos><!-- 793.5 400 -->
-         <maxSize>0.449859418931584 0.875</maxSize><!-- 480 700 -->
+         <pos>0.682841068917018 0.5</pos><!-- 971 400 -->
+         <maxSize>1.042194092827004 1.1725</maxSize><!-- 1482 938 -->
+         <zIndex>1</zIndex>
       </image>
    </view>
 
@@ -42,14 +48,16 @@ Gamelist Style - Metadata Off - 4:3
    </view>
 
    <view name="video">
-      <image name="md_marquee">
-         <visible>false</visible>
+      <image name="md_marquee" ifSubset="gamelist-marquee-display:on">
+         <visible>true</visible>
+         <pos>0.682841068917018 0.525</pos><!-- 971 400 -->
+         <maxSize>0.421792618629174 0.75</maxSize><!-- 600 600 -->
       </image>
       <video name="md_video">
-         <pos>0.743673851921275 0.5</pos><!-- 793.5 400 -->
-         <maxSize>0.449859418931584 0.875</maxSize><!-- 480 700 -->
-         <snapshotSource>image</snapshotSource>
+         <pos>0.682841068917018 0.5</pos><!-- 971 400 -->
+         <maxSize>1.042194092827004 1.1725</maxSize><!-- 1482 938 -->
          <snapshotSource>thumbnail</snapshotSource>
+         <snapshotSource>image</snapshotSource>
       </video>
    </view>
 

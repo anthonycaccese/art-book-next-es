@@ -11,100 +11,45 @@ Gamelist Style - Metadata Off - 16:9
       <include name="titleshot" displayName="Title Screen" />
       <include name="fanart" displayName="Fanart" />
       <include name="thumbnail" displayName="Thumbnail" />
-      <include name="marquee" displayName="Marquee" />
       <include name="boxart" displayName="Boxart" />
-   </subset>
-
-   <subset name="gamelist-marquee-display" displayName="Gamelist Marquee Display">
-      <include name="off" displayName="Off" />
-      <include name="on" displayName="On" />
    </subset>
 
    <view name="detailed,video">
       <image name="md_image,md_titleshot,md_fanart,md_thumbnail,md_marquee,md_boxart">
          <visible>false</visible>
          <origin>0.5 0.5</origin>
-      </image>
-      <image ifSubset="gamelist-marquee-display:off|on" name="md_marquee">
-         <visible>false</visible>
-         <pos>0.682841068917018 0.525</pos><!-- 971 400 -->
-         <maxSize>0.421792618629174 0.75</maxSize><!-- 240 240 -->
+         <pos>0.682841068917018 0.5</pos><!-- 971 400 -->
+         <maxSize>0.563994374120956 0.9</maxSize><!-- 802 720 -->
       </image>
    </view>
 
    <view name="detailed">
-      <image name="md_image,md_titleshot,md_fanart">
-         <visible>false</visible>
-         <pos>0.682841068917018 0.5</pos><!-- 971 400 -->
-         <size>0 1</size>
-         <zIndex>1</zIndex>
-      </image>
-      <image name="md_titleshot,md_fanart">
-         <visible>false</visible>
-         <zIndex>0</zIndex>
-      </image>
-      <image name="md_thumbnail,md_boxart">
-         <visible>false</visible>
-         <pos>0.682841068917018 0.5</pos><!-- 971 400 -->
-         <maxSize>0.374707259953162 0.75</maxSize><!-- 160 240 -->
-      </image>
-   </view>
-   <view ifSubset="gamelist-image-source:image" name="detailed">
-      <image name="md_image">
+      <image ifSubset="gamelist-image-source:image" name="md_image">
          <visible>true</visible>
       </image>
-   </view>
-   <view ifSubset="gamelist-image-source:titleshot" name="detailed">
-      <image name="md_titleshot">
+      <image ifSubset="gamelist-image-source:titleshot" name="md_titleshot">
          <visible>true</visible>
       </image>
-   </view>
-   <view ifSubset="gamelist-image-source:fanart" name="detailed">
-      <image name="md_fanart">
+      <image ifSubset="gamelist-image-source:fanart" name="md_fanart">
          <visible>true</visible>
       </image>
-   </view>
-   <view ifSubset="gamelist-image-source:thumbnail" name="detailed">
-      <image name="md_thumbnail">
+      <image ifSubset="gamelist-image-source:thumbnail" name="md_thumbnail">
          <visible>true</visible>
       </image>
-   </view>
-   <view ifSubset="gamelist-image-source:marquee" name="detailed">
-      <image name="md_marquee">
-         <visible>true</visible>
-      </image>
-   </view>
-   <view ifSubset="gamelist-image-source:boxart" name="detailed">
-      <image name="md_boxart">
-         <visible>true</visible>
-      </image>
-   </view>
-   <view ifSubset="gamelist-image-source:image,gamelist-marquee-display:on" name="detailed">
-      <image name="md_image">
-         <visible>true</visible>
-         <color>ffffff66</color>
-      </image>
-      <image name="md_marquee">
-         <visible>true</visible>
-      </image>
-   </view>
-   <view ifSubset="gamelist-image-source:fanart,gamelist-marquee-display:on" name="detailed">
-      <image name="md_fanart">
-         <visible>true</visible>
-         <color>ffffff66</color>
-      </image>
-      <image name="md_marquee">
+      <image ifSubset="gamelist-image-source:boxart" name="md_boxart">
          <visible>true</visible>
       </image>
    </view>
 
    <view name="video">
-      <image name="md_marquee" ifSubset="gamelist-marquee-display:on">
-         <visible>true</visible>
+      <image name="md_marquee">
+         <visible>false</visible>
       </image>
       <video name="md_video">
          <pos>0.682841068917018 0.5</pos><!-- 971 400 -->
-         <maxSize>1.041666666666667 1.171875</maxSize><!-- 592 375 -->
+         <maxSize>0.563994374120956 0.9</maxSize><!-- 802 720 -->
+         <snapshotSource>image</snapshotSource>
+         <snapshotSource>thumbnail</snapshotSource>
       </video>
    </view>
 
