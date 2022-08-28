@@ -33,14 +33,14 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- Aspect Ratio -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <!--<include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
-      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />-->
+      <include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
+      <!--<include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />-->
       <include ifArch="rg353p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
       <include ifArch="rg353p,rg503,rg552,amberelec-rg353,amberelec-rg503,amberelec-rg552" name="16-9" displayName="16:9" />
       <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
       <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <!--<include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
-      <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />-->
+      <include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />
+      <!--<include ifNotArch="rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />-->
    </subset>
 
    <!-- Color Scheme -->
@@ -91,6 +91,7 @@ license:       creative commons CC-BY-NC-SA
          <origin>1 0</origin>
          <pos>1 0</pos>
          <size ifSubset="aspect-ratio:4-3">.14 .08</size>
+         <size ifSubset="aspect-ratio:5-3">.110 .08</size>
          <size ifSubset="aspect-ratio:16-9">.115 .08</size>
          <path>${spacerImage}</path>
          <tile>true</tile>
@@ -340,8 +341,8 @@ license:       creative commons CC-BY-NC-SA
    </view>
 
    <!-- Aspect Ratio -->
-   <!--<include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-   <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>-->
+   <include ifSubset="aspect-ratio:5-3">./aspect-ratio-5-3.xml</include>
+   <!--<include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>-->
    <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
 

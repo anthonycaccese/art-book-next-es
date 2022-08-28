@@ -73,15 +73,6 @@ Gamelist Style - Metadata On - 4:3
          <size>0.159325210871603 0.025</size><!-- 170 20 -->
          <fontSize>0.025</fontSize><!-- 20 -->
       </text>
-      <image name="media-background" extra="true">
-         <origin>0 0</origin>
-         <pos>0.534208059981256 0.0625</pos><!-- 570 50 -->
-         <size>0.418931583880037 0.419</size><!-- 447 335.2 -->
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>00000000</color>
-         <zIndex>1</zIndex>
-      </image>
    </view>
 
    <view name="detailed">
