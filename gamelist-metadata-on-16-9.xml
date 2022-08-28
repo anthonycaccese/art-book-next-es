@@ -15,7 +15,7 @@ Gamelist Style - Metadata On - 16:9
       </text>
       <rating name="md_rating">
          <pos>0.756680731364276 0.835</pos><!-- 1076 668 -->
-         <size>0 0.03</size><!-- x 24 -->
+         <size>0 0.026</size><!-- x 24 -->
          <filledPath>./_inc/images/utility/star-filled.svg</filledPath>
          <unfilledPath>./_inc/images/utility/star-empty.svg</unfilledPath>
       </rating>
@@ -26,14 +26,14 @@ Gamelist Style - Metadata On - 16:9
       </text>
       <image name="md_players_icon" extra="true">
          <origin>0 0</origin>
-         <pos>0.756680731364276 0.92125</pos><!-- 1076 737 -->
+         <pos>0.756680731364276 0.924</pos><!-- 1076 737 -->
          <maxSize>0.013671875 0.025</maxSize><!-- 17.5 20 -->
          <path>./_inc/images/utility/icon-players.svg</path>
          <color>${metadataIconColor}</color>
       </image>
       <text name="md_players">
          <pos>0.774964838255977 0.9175</pos><!-- 1102 734 -->
-         <size>0.1015625 0</size><!-- 130 y -->
+         <size>0.1015625 0.0325</size><!-- 130 26 -->
          <fontSize>0.025</fontSize><!-- 20 -->
       </text>
       <image name="md_releasedate_icon" extra="true">
