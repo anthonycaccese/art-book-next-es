@@ -41,8 +41,9 @@
 
    <subset name="gamelist-layout" displayName="Gamelist View Style">
       <include name="metadata-on" displayName="Metadata On">./gamelist-metadata-on-5-3.xml</include>
+      <include name="metadata-on-miximage" displayName="Metadata On (Miximage)">./gamelist-metadata-on-5-3.xml</include>
       <include name="metadata-off" displayName="Metadata Off">./gamelist-metadata-off-5-3.xml</include>
-      <include name="metadata-off-zoomed" displayName="Metadata Off (Zoomed)">./gamelist-metadata-off-zoomed-5-3.xml</include>
+      <include name="metadata-off-zoomed" displayName="Metadata Off (Zoomed)">./gamelist-metadata-off-5-3.xml</include>
    </subset>
 
 </theme>

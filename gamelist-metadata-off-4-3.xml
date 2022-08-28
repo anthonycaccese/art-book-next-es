@@ -6,50 +6,32 @@ Gamelist Style - Metadata Off - 4:3
 <theme>
    <formatVersion>7</formatVersion>
 
-   <subset name="gamelist-image-source" displayName="Gamelist Image Source">
-      <include name="boxart" displayName="Boxart" />
-      <include name="thumbnail" displayName="Thumbnail" />
-      <include name="image" displayName="Image" />
-      <include name="titleshot" displayName="Title Screen" />
-      <include name="fanart" displayName="Fanart" />
+   <subset ifSubset="gamelist-layout:metadata-off-zoomed" name="gamelist-marquee-display" displayName="Gamelist Marquee Display">
+      <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
    </subset>
 
-   <view name="detailed,video">
-      <image name="md_image,md_titleshot,md_fanart,md_thumbnail,md_marquee,md_boxart">
-         <visible>false</visible>
+   <view name="detailed">
+      <image name="md_image">
          <origin>0.5 0.5</origin>
          <pos>0.743673851921275 0.5</pos><!-- 793.5 400 -->
-         <maxSize>0.449859418931584 0.875</maxSize><!-- 480 700 -->
-      </image>
-   </view>
-
-   <view name="detailed">
-      <image ifSubset="gamelist-image-source:image" name="md_image">
-         <visible>true</visible>
-      </image>
-      <image ifSubset="gamelist-image-source:titleshot" name="md_titleshot">
-         <visible>true</visible>
-      </image>
-      <image ifSubset="gamelist-image-source:fanart" name="md_fanart">
-         <visible>true</visible>
-      </image>
-      <image ifSubset="gamelist-image-source:thumbnail" name="md_thumbnail">
-         <visible>true</visible>
-      </image>
-      <image ifSubset="gamelist-image-source:boxart" name="md_boxart">
-         <visible>true</visible>
+         <maxSize ifSubset="gamelist-layout:metadata-off">0.449859418931584 0.875</maxSize><!-- 480 700 -->
+         <maxSize ifSubset="gamelist-layout:metadata-off-zoomed">1.042174320524836 1.1725</maxSize><!-- 1112 938 -->
+         <zIndex>1</zIndex>
       </image>
    </view>
 
    <view name="video">
       <image name="md_marquee">
-         <visible>false</visible>
+         <visible ifSubset="gamelist-marquee-display:on">true</visible>
+         <visible ifSubset="gamelist-marquee-display:off">false</visible>
+         <pos>0.743673851921275 0.5</pos><!-- 793.5 400 -->
+         <maxSize>0.374882849109653 0.75</maxSize><!-- 400 600 -->
       </image>
       <video name="md_video">
          <pos>0.743673851921275 0.5</pos><!-- 793.5 400 -->
-         <maxSize>0.449859418931584 0.875</maxSize><!-- 480 700 -->
-         <snapshotSource>image</snapshotSource>
-         <snapshotSource>thumbnail</snapshotSource>
+         <maxSize ifSubset="gamelist-layout:metadata-off">0.449859418931584 0.875</maxSize><!-- 480 700 -->
+         <maxSize ifSubset="gamelist-layout:metadata-off-zoomed">1.042174320524836 1.1725</maxSize><!-- 1112 938 -->
       </video>
    </view>
 

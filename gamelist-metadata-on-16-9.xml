@@ -1,5 +1,5 @@
 <!--
-Gamelist Style - Metadata On - 16:9
+Gamelist View Style - Metadata On & Metadata On (Miximage) - 16:9
 (based on 1422x800 Resolution)
 -->
 
@@ -85,11 +85,15 @@ Gamelist Style - Metadata On - 16:9
 
    <view name="video">
       <image name="md_thumbnail">
+         <visible ifSubset="gamelist-layout:metadata-on">true</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">false</visible>
          <origin>0 1</origin>
          <pos>0.414908579465541 0.776875</pos><!-- 590 621.5 -->
          <maxSize>0.133614627285513 0.2375</maxSize><!-- 190 190 -->
       </image>
       <image name="md_marquee">
+         <visible ifSubset="gamelist-layout:metadata-on">true</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">false</visible>
          <origin>1 1</origin>
          <pos>0.950773558368495 0.776875</pos><!-- 1352 621.5 -->
          <maxSize>0.1484375 0.2375</maxSize><!-- 190 190 -->
@@ -98,10 +102,6 @@ Gamelist Style - Metadata On - 16:9
          <origin>0.5 0</origin>
          <pos>0.682489451476793 0.05</pos><!-- 970.5 40 -->
          <maxSize>0.562587904360056 0.751875</maxSize><!-- 802 601.5 -->
-         <zIndex>2</zIndex>
-         <delay>1</delay>
-         <showSnapshotDelay>true</showSnapshotDelay>
-         <showSnapshotNoVideo>true</showSnapshotNoVideo>
       </video>
    </view>
 

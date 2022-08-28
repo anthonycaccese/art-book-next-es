@@ -1,5 +1,5 @@
 <!--
-Gamelist Style - Metadata On - 4:3
+Gamelist View Style - Metadata On & Metadata On (Miximage) - 4:3
 (based on 1067x800 Resolution)
 -->
 
@@ -85,11 +85,15 @@ Gamelist Style - Metadata On - 4:3
 
    <view name="video">
       <image name="md_thumbnail">
+         <visible ifSubset="gamelist-layout:metadata-on">true</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">false</visible>
          <origin>0 1</origin>
          <pos>0.543580131208997 0.5</pos><!-- 580 395.2 -->
          <maxSize>0.15 0.2</maxSize><!-- 130 130 -->
       </image>
       <image name="md_marquee">
+         <visible ifSubset="gamelist-layout:metadata-on">true</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">false</visible>
          <origin>1 1</origin>
          <pos>0.943767572633552 0.5</pos><!-- 1007 395.2 -->
          <maxSize>0.1484375 0.2375</maxSize><!-- 190 190 -->
@@ -98,10 +102,6 @@ Gamelist Style - Metadata On - 4:3
          <origin>0.5 0.5</origin>
          <pos>0.743673851921275 0.272</pos><!-- 793.5 217.6 -->
          <maxSize>0.418931583880037 0.419</maxSize><!-- 447 335.2 -->
-         <zIndex>2</zIndex>
-         <delay>1</delay>
-         <showSnapshotDelay>true</showSnapshotDelay>
-         <showSnapshotNoVideo>true</showSnapshotNoVideo>
       </video>
    </view>
 
