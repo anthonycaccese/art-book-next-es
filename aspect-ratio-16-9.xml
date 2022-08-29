@@ -30,7 +30,7 @@
       </text>
       <textlist name="gamelist">
          <pos>0.035161744022504 0.24</pos><!-- 50 192 -->
-         <size>0.288326300984529 0.725</size><!-- 410 542.5 -->
+         <size>0.288326300984529 0.75</size><!-- 410 542.5 -->
          <lineSpacing>1.66</lineSpacing>
          <fontSize>0.04</fontSize><!-- 32 -->
       </textlist>
