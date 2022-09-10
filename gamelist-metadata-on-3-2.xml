@@ -14,15 +14,13 @@ Gamelist View Style - Metadata On & Metadata On (Miximage) - 3:2
          <unfilledPath>./_inc/images/utility/star-empty.svg</unfilledPath>
       </rating>
       <image name="md_releasedate_icon" extra="true">
-         <origin>1 0</origin>
-         <pos>0.82 0.66</pos><!-- 708 532 -->
+         <pos>0.61 0.66</pos><!-- 708 532 -->
          <size>0 0.03</size><!-- 17.5 24 -->
          <path>./_inc/images/utility/icon-calendar.svg</path>
          <color>${metadataIconColor}</color>
       </image>
       <datetime name="md_releasedate">
-         <origin>1 0</origin>
-         <pos>0.95 0.66</pos><!-- 1140 532 -->
+         <pos>0.64 0.66</pos><!-- 1140 532 -->
          <size>0.12 0.03</size><!-- 106 24 -->
          <format>%Y-%m-%d</format>
          <fontSize>0.025</fontSize><!-- 20 -->
@@ -47,15 +45,8 @@ Gamelist View Style - Metadata On & Metadata On (Miximage) - 3:2
       <image name="md_thumbnail">
          <visible ifSubset="gamelist-layout:metadata-on">false</visible>
          <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
-         <origin>0 1</origin>
-         <pos>0.4833333333333333 0.59375</pos><!-- 580 475 -->
-         <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->
-      </image>
-      <image name="md_marquee">
-         <visible ifSubset="gamelist-layout:metadata-on">false</visible>
-         <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
          <origin>1 1</origin>
-         <pos>0.95 0.59375</pos><!-- 1140 475 -->
+         <pos>0.95 0.69375</pos><!-- 580 515 -->
          <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->
       </image>
       <video name="md_video">

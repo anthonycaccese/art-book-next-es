@@ -325,11 +325,11 @@ license:       creative commons CC-BY-NC-SA
          <networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
       </batteryIndicator>
       <batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
-         <pos ifSubset="status-bar:off">1 1</pos>
          <pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos>
          <size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size><!-- 464 20 - sized off of 480x320 to make the icon clear -->
          <pos ifSubset="aspect-ratio:4-3">0.036 0.012</pos>
          <size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
+         <pos ifSubset="status-bar:off">1 1</pos>
          <full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
          <at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
          <at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
