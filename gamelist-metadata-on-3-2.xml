@@ -7,71 +7,31 @@ Gamelist View Style - Metadata On & Metadata On (Miximage) - 3:2
    <formatVersion>7</formatVersion>
 
    <view name="detailed,video">
-      <text name="md_genre">
-         <pos>0.4833333333333333 0.665</pos><!-- 580 532 -->
-         <size>0.3333333333333333 0.0325</size><!-- 400 26 -->
-         <fontSize>0.025</fontSize><!-- 20 -->
-      </text>
-      <text name="md_description">
-         <pos>0.4833333333333333 0.7175</pos><!-- 580 574 -->
-         <size>0.3333333333333333 0.2325</size><!-- 400 186 -->
-         <lineSpacing>1.36</lineSpacing>
-         <fontSize>0.03</fontSize><!-- 24 -->
-      </text>
       <rating name="md_rating">
-         <pos>0.8416666666666667 0.715</pos><!-- 1010 572 -->
-         <size>0 0.026</size><!-- x 24 -->
+         <pos>0.4833333333333333 0.66</pos><!-- 580 532 -->
+         <size>0 0.03</size><!-- x 24 -->
          <filledPath>./_inc/images/utility/star-filled.svg</filledPath>
          <unfilledPath>./_inc/images/utility/star-empty.svg</unfilledPath>
       </rating>
       <image name="md_releasedate_icon" extra="true">
-         <origin>0 0</origin>
-         <pos>0.8416666666666667 0.76875</pos><!-- 1010 615 -->
-         <maxSize>0.0145833333333333 0.025</maxSize><!-- 17.5 20 -->
+         <origin>1 0</origin>
+         <pos>0.82 0.66</pos><!-- 708 532 -->
+         <size>0 0.03</size><!-- 17.5 24 -->
          <path>./_inc/images/utility/icon-calendar.svg</path>
          <color>${metadataIconColor}</color>
       </image>
       <datetime name="md_releasedate">
-         <pos>0.8666666666666667 0.765</pos><!-- 1040 612 -->
-         <size>0.0883333333333333 0.0325</size><!-- 106 26 -->
+         <origin>1 0</origin>
+         <pos>0.95 0.66</pos><!-- 1140 532 -->
+         <size>0.12 0.03</size><!-- 106 24 -->
          <format>%Y-%m-%d</format>
          <fontSize>0.025</fontSize><!-- 20 -->
       </datetime>
-      <image name="md_players_icon" extra="true">
-         <origin>0 0</origin>
-         <pos>0.8416666666666667 0.825</pos><!-- 1010 660 -->
-         <maxSize>0.0145833333333333 0.025</maxSize><!-- 17.5 20 -->
-         <path>./_inc/images/utility/icon-players.svg</path>
-         <color>${metadataIconColor}</color>
-      </image>
-      <text name="md_players">
-         <pos>0.8666666666666667 0.8175</pos><!-- 1040 654 -->
-         <size>0.0795198799699925 0.0325</size><!-- 106 26 -->
-         <fontSize>0.025</fontSize><!-- 20 -->
-      </text>
-      <image name="md_developer_icon" extra="true">
-         <origin>0 0</origin>
-         <pos>0.8416666666666667 0.8725</pos><!-- 1010 698 -->
-         <maxSize>0.0145833333333333 0.025</maxSize><!-- 17.5 20 -->
-         <path>./_inc/images/utility/icon-wrench.svg</path>
-         <color>${metadataIconColor}</color>
-      </image>
-      <text name="md_developer">
-         <pos>0.8666666666666667 0.86625</pos><!-- 1040 693 -->
-         <size>0.0883333333333333 0.0325</size><!-- 106 26 -->
-         <fontSize>0.025</fontSize><!-- 20 -->
-      </text>
-      <image name="md_publisher_icon" extra="true">
-         <origin>0 0</origin>
-         <pos>0.8416666666666667 0.92375</pos><!-- 1010 739 -->
-         <maxSize>0.0145833333333333 0.025</maxSize><!-- 17.5 20 -->
-         <path>./_inc/images/utility/icon-ship.svg</path>
-         <color>${metadataIconColor}</color>
-      </image>
-      <text name="md_publisher">
-         <pos>0.8666666666666667 0.915</pos><!-- 1040 732 -->
-         <size>0.0883333333333333 0.0325</size><!-- 106 26 -->
-         <fontSize>0.025</fontSize><!-- 20 -->
+      <text name="md_description">
+         <pos>0.4833333333333333 0.73375</pos><!-- 580 584 -->
+         <size>0.466666666666667 0.22</size><!-- 560 186 -->
+         <lineSpacing>1.48</lineSpacing>
+         <fontSize>0.03</fontSize><!-- 24 -->
       </text>
    </view>
 
@@ -88,14 +48,14 @@ Gamelist View Style - Metadata On & Metadata On (Miximage) - 3:2
          <visible ifSubset="gamelist-layout:metadata-on">false</visible>
          <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
          <origin>0 1</origin>
-         <pos>0.4833333333333333 0.63125</pos><!-- 580 505 -->
+         <pos>0.4833333333333333 0.59375</pos><!-- 580 475 -->
          <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->
       </image>
       <image name="md_marquee">
          <visible ifSubset="gamelist-layout:metadata-on">false</visible>
          <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
          <origin>1 1</origin>
-         <pos>0.95 0.675</pos><!-- 1140 540 -->
+         <pos>0.95 0.59375</pos><!-- 1140 475 -->
          <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->
       </image>
       <video name="md_video">

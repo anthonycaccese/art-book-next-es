@@ -93,7 +93,7 @@ license:       creative commons CC-BY-NC-SA
          <pos>1 0</pos>
          <size ifSubset="aspect-ratio:4-3">.14 .08</size>
          <size ifSubset="aspect-ratio:5-3">.110 .08</size>
-         <size ifSubset="aspect-ratio:3-2">.110 .08</size>
+         <size ifSubset="aspect-ratio:3-2">.160 .12</size>
          <size ifSubset="aspect-ratio:16-9|16-10">.115 .08</size>
          <path>${spacerImage}</path>
          <tile>true</tile>
