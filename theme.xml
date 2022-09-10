@@ -49,6 +49,7 @@ license:       creative commons CC-BY-NC-SA
       <include name="art-book-next" displayName="Art Book Next">./color-scheme-art-book-next.xml</include>
       <include name="art-book" displayName="Art Book">./color-scheme-art-book.xml</include>
       <include name="snes" displayName="SNES">./color-scheme-snes.xml</include>
+      <include name="famicom" displayName="Famicom">./color-scheme-famicom.xml</include>
       <include name="steam-deck" displayName="Steam Deck">./color-scheme-steam-deck.xml</include>
       <include name="custom" displayName="Custom" />
    </subset>
