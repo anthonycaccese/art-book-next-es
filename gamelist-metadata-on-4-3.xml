@@ -26,7 +26,7 @@ Gamelist View Style - Metadata On & Metadata On (Miximage) - 4:3
       </text>
       <image name="md_players_icon" extra="true">
          <origin>0 0</origin>
-         <pos>0.543580131208997 0.911</pos><!-- 580 725 -->
+         <pos>0.543580131208997 0.913</pos><!-- 580 725 -->
          <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
          <path>./_inc/images/utility/icon-players.svg</path>
          <color>${metadataIconColor}</color>
