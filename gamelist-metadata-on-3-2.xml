@@ -85,15 +85,15 @@ Gamelist View Style - Metadata On & Metadata On (Miximage) - 3:2
 
    <view name="video">
       <image name="md_thumbnail">
-         <visible ifSubset="gamelist-layout:metadata-on">true</visible>
-         <visible ifSubset="gamelist-layout:metadata-on-miximage">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
          <origin>0 1</origin>
          <pos>0.4833333333333333 0.63125</pos><!-- 580 505 -->
          <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->
       </image>
       <image name="md_marquee">
-         <visible ifSubset="gamelist-layout:metadata-on">true</visible>
-         <visible ifSubset="gamelist-layout:metadata-on-miximage">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
          <origin>1 1</origin>
          <pos>0.95 0.675</pos><!-- 1140 540 -->
          <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->

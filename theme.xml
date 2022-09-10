@@ -41,6 +41,7 @@ license:       creative commons CC-BY-NC-SA
       <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
       <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />
       <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
+      <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="16-10" displayName="16:10" />
    </subset>
 
    <!-- Color Scheme -->
@@ -93,7 +94,7 @@ license:       creative commons CC-BY-NC-SA
          <size ifSubset="aspect-ratio:4-3">.14 .08</size>
          <size ifSubset="aspect-ratio:5-3">.110 .08</size>
          <size ifSubset="aspect-ratio:3-2">.110 .08</size>
-         <size ifSubset="aspect-ratio:16-9">.115 .08</size>
+         <size ifSubset="aspect-ratio:16-9|16-10">.115 .08</size>
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>${systemBackgroundColor}</color>
@@ -310,11 +311,11 @@ license:       creative commons CC-BY-NC-SA
          <color>ffffff99</color>
          <itemSpacing>0</itemSpacing>
       </batteryIndicator>
-      <batteryIndicator ifSubset="aspect-ratio:5-3|16-9" name="batteryIndicator">
+      <batteryIndicator ifSubset="aspect-ratio:5-3|16-9|16-10" name="batteryIndicator">
          <pos>0.022 0.011</pos>
          <pos ifSubset="status-bar:off">1 1</pos>
          <size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
-         <size ifSubset="aspect-ratio:16-9">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
+         <size ifSubset="aspect-ratio:16-9|16-10">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
          <full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
          <at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
          <at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
@@ -347,6 +348,7 @@ license:       creative commons CC-BY-NC-SA
    <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
    <include ifSubset="aspect-ratio:5-3">./aspect-ratio-5-3.xml</include>
    <include ifSubset="aspect-ratio:3-2">./aspect-ratio-3-2.xml</include>
+   <include ifSubset="aspect-ratio:16-10">./aspect-ratio-16-10.xml</include>
 
    <!-- User Customizations -->
    <include>${themeCustomizationsPath}theme.xml</include>
