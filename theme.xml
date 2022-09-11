@@ -62,8 +62,8 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- Status Bar Display -->
    <subset name="status-bar" displayName="Status Bar Display">
-      <include name="off" displayName="Off" />
       <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
    </subset>
 
    <!-- System View Style -->
