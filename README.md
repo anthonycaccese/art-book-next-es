@@ -10,6 +10,10 @@ This version of the theme works with all distributions that leverage the Batocer
 |----|----|
 | ![Screen Shot 2022-07-21 at 12 51 34](https://user-images.githubusercontent.com/1454947/180350112-d2d1f712-3fd2-4177-8007-4e60b37118a6.png) | ![Screen Shot 2022-07-21 at 12 47 54](https://user-images.githubusercontent.com/1454947/180350136-649904ec-9563-48e7-9976-3219326e2156.png) |
 
+## **Video Walkthrough**
+[![Video Walkthrough](https://img.youtube.com/vi/6UzjDi7o3e8/0.jpg)](https://www.youtube.com/watch?v=6UzjDi7o3e8)
+
+
 ## **Configuration Options**
 
 - The theme has a simple set of options that can be changed directly through the `UI Settings > Theme Configuration` menu in EmulationStation
