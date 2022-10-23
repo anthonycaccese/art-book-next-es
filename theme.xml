@@ -68,8 +68,9 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- System View Style -->
    <subset name="system-view" displayName="System View Style">
-      <include name="centered-default" displayName="Centered" />
-      <include name="multi" displayName="Multi" />
+      <include name="centered-default" displayName="Centered + Multi Logo" />
+      <include name="multi" displayName="Multi System" />
+      <include name="centered-single" displayName="Centered + Single Logo" />
       <include name="no-artwork" displayName="No Artwork" />
       <include name="centered-custom" displayName="Centered + Custom Artwork" />
       <include name="fullscreen-custom" displayName="Fullscreen + Custom Artwork" />
@@ -122,20 +123,21 @@ license:       creative commons CC-BY-NC-SA
          <logoScale>2</logoScale>
          <logoSize>0.25 0.15</logoSize>
          <maxLogoCount>1.5</maxLogoCount>
+         <maxLogoCount ifSubset="system-view:centered-single">1</maxLogoCount>
       </carousel>
       <text name="systemInfo">
          <pos>1 1</pos>
       </text>
-      <!-- System View Mask: Centered & Centered Custom -->
-      <image ifSubset="system-view:centered-default|centered-custom" name="background-art-mask" extra="true">
+      <!-- System View Mask: Centered, Centered Single System & Centered Custom -->
+      <image ifSubset="system-view:centered-default|centered-single|centered-custom" name="background-art-mask" extra="true">
          <origin>0.5 0</origin>
          <pos>0.5 0</pos>
          <size>0 1</size>
          <zIndex>2</zIndex>
          <color>${systemBackgroundColor}</color>
       </image>
-      <!-- System View Art: Centered, Centered Custom & Fullscreen Custom -->
-      <image ifSubset="system-view:centered-default" name="background-art" extra="true">
+      <!-- System View Art: Centered, Centered Single System, Centered Custom & Fullscreen Custom -->
+      <image ifSubset="system-view:centered-default|centered-single" name="background-art" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
          <size>0 1</size>
