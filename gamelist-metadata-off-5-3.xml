@@ -1,0 +1,38 @@
+<!--
+Gamelist View Style - Metadata Off & Metadata Off (Zoomed) - 5:3
+(based on 1333x800 Resolution)
+-->
+
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <subset ifSubset="gamelist-layout:metadata-off-zoomed" name="gamelist-marquee-display" displayName="Gamelist Marquee Display">
+      <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
+   </subset>
+
+   <view name="detailed">
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.695423855963991 0.5</pos><!-- 927 400 -->
+         <maxSize ifSubset="gamelist-layout:metadata-off">0.54013503375844 0.9</maxSize><!-- 720 720 -->
+         <maxSize ifSubset="gamelist-layout:metadata-off-zoomed">1.111777944486122 1.1725</maxSize><!-- 1482 938 -->
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_marquee">
+         <visible ifSubset="gamelist-marquee-display:on">true</visible>
+         <visible ifSubset="gamelist-marquee-display:off">false</visible>
+         <pos>0.695423855963991 0.5</pos><!-- 927 400 -->
+         <maxSize>0.420105026256564 0.75</maxSize><!-- 560 600 -->
+      </image>
+      <video name="md_video">
+         <pos>0.695423855963991 0.5</pos><!-- 927 400 -->
+         <maxSize ifSubset="gamelist-layout:metadata-off">0.54013503375844 0.9</maxSize><!-- 720 720 -->
+         <maxSize ifSubset="gamelist-layout:metadata-off-zoomed">1.111777944486122 1.1725</maxSize><!-- 1482 938 -->
+      </video>
+   </view>
+
+</theme>

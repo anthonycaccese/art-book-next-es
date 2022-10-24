@@ -1,0 +1,108 @@
+<!--
+Gamelist View Style - Metadata On & Metadata On (Miximage) - 4:3
+(based on 1067x800 Resolution)
+-->
+
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed,video">
+      <text name="md_description">
+         <pos>0.543580131208997 0.546</pos><!-- 580 420 -->
+         <size>0.418931583880037 0.208</size><!-- 447 191 -->
+         <lineSpacing>1.36</lineSpacing>
+         <fontSize>0.03</fontSize><!-- 24 -->
+      </text>
+      <rating name="md_rating">
+         <pos>0.543580131208997 0.802</pos><!-- 580 652 -->
+         <size>0 0.026</size><!-- x 24 -->
+         <filledPath>./_inc/images/utility/star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/utility/star-empty.svg</unfilledPath>
+      </rating>
+      <text name="md_genre">
+         <pos>0.543580131208997 0.857</pos><!-- 580 686 -->
+         <size>0.1875 0.025</size><!-- 120 20 -->
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </text>
+      <image name="md_players_icon" extra="true">
+         <origin>0 0</origin>
+         <pos>0.543580131208997 0.913</pos><!-- 580 725 -->
+         <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
+         <path>./_inc/images/utility/icon-players.svg</path>
+         <color>${metadataIconColor}</color>
+      </image>
+      <text name="md_players">
+         <pos>0.567947516401125 0.908</pos><!-- 606 720 -->
+         <size>0.1875 0.025</size><!-- 120 20 -->
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </text>
+      <image name="md_releasedate_icon" extra="true">
+         <origin>0 0</origin>
+         <pos>0.764761012183693 0.806</pos><!-- 816 656 -->
+         <maxSize>00.016401124648547 0.025</maxSize><!-- 17.5 20 -->
+         <path>./_inc/images/utility/icon-calendar.svg</path>
+         <color>${metadataIconColor}</color>
+      </image>
+      <datetime name="md_releasedate">
+         <pos>0.78912839737582 0.806</pos><!-- 842 656 -->
+         <size>0.1875 0.025</size><!-- 120 20 -->
+         <format>%Y-%m-%d</format>
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </datetime>
+      <image name="md_developer_icon" extra="true">
+         <origin>0 0</origin>
+         <pos>0.764761012183693 0.859</pos><!-- 816 691 -->
+         <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
+         <path>./_inc/images/utility/icon-wrench.svg</path>
+         <color>${metadataIconColor}</color>
+      </image>
+      <text name="md_developer">
+         <pos>0.78912839737582 0.857</pos><!-- 842 689 -->
+         <size>0.159325210871603 0.025</size><!-- 170 20 -->
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </text>
+      <image name="md_publisher_icon" extra="true">
+         <origin>0 0</origin>
+         <pos>0.764761012183693 0.912</pos><!-- 816 725 -->
+         <maxSize>0.016401124648547 0.025</maxSize><!-- 17.5 20 -->
+         <path>./_inc/images/utility/icon-ship.svg</path>
+         <color>${metadataIconColor}</color>
+      </image>
+      <text name="md_publisher">
+         <pos>0.78912839737582 0.908</pos><!-- 842 725 -->
+         <size>0.159325210871603 0.025</size><!-- 170 20 -->
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </text>
+   </view>
+
+   <view name="detailed">
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.743673851921275 0.272</pos><!-- 793.5 217.6 -->
+         <maxSize>0.418931583880037 0.419</maxSize><!-- 447 335.2 -->
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_thumbnail">
+         <visible ifSubset="gamelist-layout:metadata-on">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
+         <origin>0 1</origin>
+         <pos>0.543580131208997 0.5</pos><!-- 580 395.2 -->
+         <maxSize>0.15 0.2</maxSize><!-- 130 130 -->
+      </image>
+      <image name="md_marquee">
+         <visible ifSubset="gamelist-layout:metadata-on">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
+         <origin>1 1</origin>
+         <pos>0.943767572633552 0.5</pos><!-- 1007 395.2 -->
+         <maxSize>0.1484375 0.2375</maxSize><!-- 190 190 -->
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.743673851921275 0.272</pos><!-- 793.5 217.6 -->
+         <maxSize>0.418931583880037 0.419</maxSize><!-- 447 335.2 -->
+      </video>
+   </view>
+
+</theme>

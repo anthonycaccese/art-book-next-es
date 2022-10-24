@@ -1,0 +1,59 @@
+<!--
+Gamelist View Style - Metadata On & Metadata On (Miximage) - 3:2
+(based on 1200x800 Resolution)
+-->
+
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed,video">
+      <rating name="md_rating">
+         <pos>0.4833333333333333 0.66</pos><!-- 580 532 -->
+         <size>0 0.03</size><!-- x 24 -->
+         <filledPath>./_inc/images/utility/star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/utility/star-empty.svg</unfilledPath>
+      </rating>
+      <image name="md_releasedate_icon" extra="true">
+         <pos>0.61 0.66</pos><!-- 708 532 -->
+         <size>0 0.03</size><!-- 17.5 24 -->
+         <path>./_inc/images/utility/icon-calendar.svg</path>
+         <color>${metadataIconColor}</color>
+      </image>
+      <datetime name="md_releasedate">
+         <pos>0.64 0.66</pos><!-- 1140 532 -->
+         <size>0.12 0.03</size><!-- 106 24 -->
+         <format>%Y-%m-%d</format>
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </datetime>
+      <text name="md_description">
+         <pos>0.4833333333333333 0.73375</pos><!-- 580 584 -->
+         <size>0.466666666666667 0.22</size><!-- 560 186 -->
+         <lineSpacing>1.48</lineSpacing>
+         <fontSize>0.03</fontSize><!-- 24 -->
+      </text>
+   </view>
+
+   <view name="detailed">
+      <image name="md_image">
+         <origin>0.5 0</origin>
+         <pos>0.7166666666666667 0.0625</pos><!-- 860 50 -->
+         <maxSize>0.4833333333333333 0.54375</maxSize><!-- 580 435 -->
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_thumbnail">
+         <visible ifSubset="gamelist-layout:metadata-on">false</visible>
+         <visible ifSubset="gamelist-layout:metadata-on-miximage">true</visible>
+         <origin>1 1</origin>
+         <pos>0.95 0.69375</pos><!-- 580 515 -->
+         <maxSize>0.1583333333333333 0.2375</maxSize><!-- 190 190 -->
+      </image>
+      <video name="md_video">
+         <origin>0.5 0</origin>
+         <pos>0.7166666666666667 0.0625</pos><!-- 860 50 -->
+         <maxSize>0.4833333333333333 0.54375</maxSize><!-- 580 435 -->
+      </video>
+   </view>
+
+</theme>

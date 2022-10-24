@@ -1,0 +1,55 @@
+<!--
+16:9 Apsect Ratio - Defaults
+(based on 1422x800 Resolution)
+-->
+
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <subset name="gamelist-font-size" displayName="Gamelist Font Size">
+      <include name="default" displayName="Default" />
+      <include name="small" displayName="Small" />
+   </subset>
+
+   <view name="system">
+      <text name="logoText">
+         <fontSize>0.15</fontSize>
+      </text>
+      <image ifSubset="system-view:centered-default|centered-custom" name="background-art-mask" extra="true">
+         <path>./_inc/images/utility/background-art-mask-16-9.png</path>
+      </image>
+      <carousel ifSubset="system-view:multi" name="systemcarousel">
+         <maxLogoCount>5</maxLogoCount>
+      </carousel>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <pos>0.182489451476793 0.131875</pos><!-- 259.5 105.5 -->
+         <maxSize>0.282700421940928 0.10375</maxSize><!-- 402 83 -->
+      </image>
+      <text name="logoText">
+         <pos>0.182489451476793 0.131875</pos><!-- 259.5 105.5 -->
+         <size>0.282700421940928 0.10375</size><!-- 402 83 -->
+         <fontSize>0.05</fontSize>
+      </text>
+      <textlist name="gamelist">
+         <pos>0.035161744022504 0.24</pos><!-- 50 192 -->
+         <size>0.288326300984529 0.75</size><!-- 410 542.5 -->
+         <lineSpacing>1.66</lineSpacing>
+         <fontSize>0.04</fontSize><!-- 32 -->
+         <fontSize ifSubset="gamelist-font-size:small">0.03</fontSize><!-- 24 -->
+      </textlist>
+      <image name="gamelist-background" extra="true">
+         <size>0.365682137834037 1</size><!-- 520 800 -->
+      </image>
+   </view>
+
+   <subset name="gamelist-layout" displayName="Gamelist View Style">
+      <include name="metadata-on" displayName="Metadata On">./gamelist-metadata-on-16-9.xml</include>
+      <include name="metadata-on-miximage" displayName="Metadata On (Miximage)">./gamelist-metadata-on-16-9.xml</include>
+      <include name="metadata-off" displayName="Metadata Off">./gamelist-metadata-off-16-9.xml</include>
+      <include name="metadata-off-zoomed" displayName="Metadata Off (Zoomed)">./gamelist-metadata-off-16-9.xml</include>
+   </subset>
+
+</theme>
