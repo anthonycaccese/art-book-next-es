@@ -22,8 +22,8 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- Distribution -->
    <subset name="distribution" displayName="Distribution">
-      <include name="jelos" displayName="JELOS" />
       <include name="batocera" displayName="Batocera" />
+      <include name="jelos" displayName="JELOS" />
       <include name="retrobat" displayName="RetroBat" />
       <include name="amberelec" displayName="AmberElec" />
       <include name="emuelec" displayName="EmuElec" />
@@ -31,18 +31,13 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- Aspect Ratio -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include name="16-9" displayName="16:9" />
-      <include name="16-10" displayName="16:10" />
-      <include name="4-3" displayName="4:3" />
-      <include name="3-2" displayName="3:2" />
-      <include name="5-3" displayName="5:3" />
-      <!--<include if="${screen.width} == '1152' && ${screen.height} == '1920'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="${screen.width} == '1152' && ${screen.height} == '1920'" name="5-3" displayName="5:3 (Detected)" />
       <include if="${screen.width} == '1200' && ${screen.height} == '720'" name="5-3" displayName="5:3 (Detected)" />
       <include if="${screen.width} == '1800' && ${screen.height} == '1080'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
+      <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />
       <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
       <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
-      <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
-      <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />-->
    </subset>
 
    <!-- Color Scheme -->
