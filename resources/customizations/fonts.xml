@@ -1,0 +1,9 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="basic,detailed,video">
+      <textlist name="gamelist">
+         <fontSize>0.039583333333333</fontSize>
+         <lineSpacing>1.585</lineSpacing>
+      </textlist>
+   </view>
+</theme>

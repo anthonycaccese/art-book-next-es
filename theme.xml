@@ -1,261 +1,446 @@
 <!--
-theme name:    Art Book Next (Batocera Edition)
+theme name:    Art Book Next
 author:        Anthony Caccese
-contributor:   Szalik
 license:       creative commons CC-BY-NC-SA
 -->
-
 <theme defaultTransition="instant">
    <formatVersion>7</formatVersion>
 
-   <!-- User Customizations -->
-   <include>${themeCustomizationsPath}theme.xml</include>
-
-   <!-- Distribution -->
-   <subset ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="distribution" displayName="Distribution">
-      <include name="batocera" displayName="Batocera" />
-      <include name="emuelec" displayName="EmuElec" />
-      <include name="retrobat" displayName="RetroBat" />
-   </subset>
-
    <!-- Variables -->
    <variables>
-      <logoFont>./_inc/fonts/ChangaOne-Italic.ttf</logoFont>
-      <bodyFont>./_inc/fonts/Oxygen-Bold.ttf</bodyFont>
-      <spacerImage>./_inc/images/utility/space.png</spacerImage>
-      <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
-      <distributionPath ifSubset="distribution:emuelec">~/roms/emuelec/</distributionPath>
-      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
-      <distributionPath ifArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v">~/roms/jelos/</distributionPath>
-      <distributionPath ifArch="amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v">~/roms/amberelec/</distributionPath>
-      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <themeCustomizationsPathJELOS>~/roms/jelos/theme-customizations/art-book-next/</themeCustomizationsPathJELOS>
+      <themeCustomizationsPathBatocera>~/</themeCustomizationsPathBatocera>
+      <themeCustomizationsPathRetroBat>~/.emulationstation/theme-customizations/art-book-next/</themeCustomizationsPathRetroBat>
+      <themeCustomizationsPathAmberElec>~/roms/amberelec/theme-customizations/art-book-next/</themeCustomizationsPathAmberElec>
+      <themeCustomizationsPathEmuElec>~/roms/emuelec/jelos/theme-customizations/art-book-next/</themeCustomizationsPathEmuElec>
    </variables>
+
+   <!-- Distribution -->
+   <subset name="distribution" displayName="Distribution">
+      <include name="jelos" displayName="JELOS" />
+      <include name="batocera" displayName="Batocera" />
+      <include name="retrobat" displayName="RetroBat" />
+      <include name="amberelec" displayName="AmberElec" />
+      <include name="emuelec" displayName="EmuElec" />
+   </subset>
 
    <!-- Aspect Ratio -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" /> 
-      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />
-      <include ifArch="rg353p,rg351mp,rg351v,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <include ifArch="handheld,rg353p,rg503,rg552,amberelec-rg353,amberelec-rg503,amberelec-rg552" name="16-9" displayName="16:9" />
-      <include ifArch="handheld" name="16-10" displayName="16:10" />
-      <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
-      <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />
-      <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
-      <include ifNotArch="handheld,rg503,rg552,rg351p,rg353p,rg351mp,rg351v,amberelec-rg503,amberelec-rg552,amberelec-rg351p,amberelec-rg353p,amberelec-rg351mp,amberelec-rg351v" name="16-10" displayName="16:10" />
+      <include name="16-9" displayName="16:9" />
+      <include name="16-10" displayName="16:10" />
+      <include name="4-3" displayName="4:3" />
+      <include name="3-2" displayName="3:2" />
+      <include name="5-3" displayName="5:3" />
+      <!--<include if="${screen.width} == '1152' && ${screen.height} == '1920'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="${screen.width} == '1200' && ${screen.height} == '720'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="${screen.width} == '1800' && ${screen.height} == '1080'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
+      <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
+      <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
+      <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />-->
    </subset>
 
    <!-- Color Scheme -->
    <subset name="color-scheme" displayName="Color Scheme">
-      <include name="art-book-next" displayName="Art Book Next">./color-scheme-art-book-next.xml</include>
-      <include name="art-book" displayName="Art Book">./color-scheme-art-book.xml</include>
-      <include name="snes" displayName="SNES">./color-scheme-snes.xml</include>
-      <include name="famicom" displayName="Famicom">./color-scheme-famicom.xml</include>
-      <include name="steam-deck" displayName="Steam Deck">./color-scheme-steam-deck.xml</include>
+      <include name="art-book-next" displayName="Art Book Next" />
+      <include name="art-book" displayName="Art Book" />
+      <include name="steam-os" displayName="Steam OS" />
+      <include name="snes" displayName="SNES" />
+      <include name="famicom" displayName="Famicom" />
+      <include name="black" displayName="Black" />
+      <include name="grayscale" displayName="Grayscale" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+   <include>./colors.xml</include>
+   <include ifSubset="color-scheme:custom,distribution:jelos">${themeCustomizationsPathJELOS}colors.xml</include>
+   <include ifSubset="color-scheme:custom,distribution:batocera">${themeCustomizationsPathBatocera}colors.xml</include>
+   <include ifSubset="color-scheme:custom,distribution:retrobat">${themeCustomizationsPathRetroBat}colors.xml</include>
+   <include ifSubset="color-scheme:custom,distribution:amberelec">${themeCustomizationsPathAmberElec}colors.xml</include>
+   <include ifSubset="color-scheme:custom,distribution:emuelec">${themeCustomizationsPathEmuElec}colors.xml</include>
+
+   <!-- Fonts -->
+   <subset name="fonts" displayName="Fonts">
+      <include name="default" displayName="Default" />
       <include name="custom" displayName="Custom" />
    </subset>
 
-   <!-- Scroll Sound -->
-   <subset name="scroll-sound" displayName="Scroll Sound">
-      <include name="steam-deck" displayName="Steam Deck" />
-      <include name="es-de" displayName="ES-DE" />
-   </subset>
-
    <!-- Status Bar Display -->
-   <subset name="status-bar" displayName="Status Bar Display">
-      <include name="on" displayName="On" />
+   <subset name="status-bar-display" displayName="Status Bar Display">
+      <include name="battery-text-network" displayName="Battery (%) + Network" />
+      <include name="battery-network" displayName="Battery + Network" />
+      <include name="battery-text" displayName="Battery (%)" />
+      <include name="battery" displayName="Battery" />
       <include name="off" displayName="Off" />
    </subset>
 
-   <!-- System View Style -->
-   <subset name="system-view" displayName="System View Style">
-      <include name="centered-default" displayName="Centered + Multi Logo" />
-      <include name="multi" displayName="Multi System" />
-      <include name="centered-single" displayName="Centered + Single Logo" />
-      <include name="no-artwork" displayName="No Artwork" />
-      <include name="centered-custom" displayName="Centered + Custom Artwork" />
-      <include name="fullscreen-custom" displayName="Fullscreen + Custom Artwork" />
+   <!-- Status Bar Transparency -->
+   <subset name="status-bar-transparency" displayName="Status Bar Transparency">
+      <include name="100-percent" displayName="100%" />
+      <include name="50-percent" displayName="50%" />
+      <include name="0-percent" displayName="0%" />
    </subset>
 
-   <view name="system,basic,detailed,video">
-      <helpsystem name="help">
+   <!-- System View Style -->
+   <subset name="system-view-style" displayName="System View Style">
+      <include name="multi" displayName="Multi Artwork" />
+      <include name="centered" displayName="Centered Artwork (Multiple Logos)" />
+      <include name="centered-one-logo" displayName="Centered Artwork (Single Logo)" />
+      <include name="no-artwork" displayName="No Artwork" />
+      <include name="centered-custom" displayName="Centered Artwork (Custom)" />
+      <include name="multi-custom" displayName="Multi Artwork (Custom)" />
+      <include name="fullscreen-custom" displayName="Fullscreen Artwork (Custom)" />
+   </subset>
+
+   <!-- Gamelist View Style -->
+   <subset name="gamelist-view-style" displayName="Gamelist View Style">
+      <include name="metadata-on" displayName="Metadata On" />
+      <include name="metadata-on-immersive" displayName="Metadata On (Immersive)" />
+      <include name="metadata-off" displayName="Metadata Off" />
+      <include name="metadata-off-immersive" displayName="Metadata Off (Immersive)" />
+   </subset>
+
+   <view name="screen">
+      <controllerActivity name="controllerActivity">
+         <visible>false</visible>
+      </controllerActivity>
+      <text name="clock">
          <pos>1 1</pos>
-      </helpsystem>
+      </text>
+      <batteryIndicator ifSubset="status-bar-display:off" name="batteryIndicator">
+         <pos>1 1</pos>
+      </batteryIndicator>
+      <batteryIndicator ifSubset="status-bar-display:battery-network|battery-text-network|battery|battery-text" name="batteryIndicator">
+         <color>${statusBarIconColor}</color>
+         <itemSpacing>0</itemSpacing>
+         <full>./_inc/images/battery-100-vertical.svg</full>
+         <at75>./_inc/images/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/wifi-vertical.svg</networkIcon>
+      </batteryIndicator>
+   </view>
+
+   <view name="system,basic,detailed,video">
       <image name="logo">
-         <path>./_inc/images/systems/${system.theme}.svg</path>
+         <path>./_inc/systems/${system.theme}.svg</path>
+         <path ifSubset="color-scheme:custom,distribution:jelos">${themeCustomizationsPathJELOS}logos/${system.theme}.svg</path>
+         <path ifSubset="color-scheme:custom,distribution:jelos">${themeCustomizationsPathJELOS}logos/${system.theme}.png</path>
+         <path ifSubset="color-scheme:custom,distribution:batocera">${themeCustomizationsPathBatocera}logos/${system.theme}.svg</path>
+         <path ifSubset="color-scheme:custom,distribution:batocera">${themeCustomizationsPathBatocera}logos/${system.theme}.png</path>
+         <path ifSubset="color-scheme:custom,distribution:retrobat">${themeCustomizationsPathRetroBat}logos/${system.theme}.svg</path>
+         <path ifSubset="color-scheme:custom,distribution:retrobat">${themeCustomizationsPathRetroBat}logos/${system.theme}.png</path>
+         <path ifSubset="color-scheme:custom,distribution:amberelec">${themeCustomizationsPathAmberElec}logos/${system.theme}.svg</path>
+         <path ifSubset="color-scheme:custom,distribution:amberelec">${themeCustomizationsPathAmberElec}logos/${system.theme}.png</path>
+         <path ifSubset="color-scheme:custom,distribution:emuelec">${themeCustomizationsPathEmuElec}logos/${system.theme}.svg</path>
+         <path ifSubset="color-scheme:custom,distribution:emuelec">${themeCustomizationsPathEmuElec}logos/${system.theme}.png</path>
       </image>
       <text name="logoText">
-         <fontPath>${logoFont}</fontPath>
+         <fontPath>${fontLogo}</fontPath>
          <forceUppercase>true</forceUppercase>
          <lineSpacing>1</lineSpacing>
          <alignment>center</alignment>
-         <color>${logoTextColor}</color>
       </text>
-      <image ifSubset="status-bar:on" name="status-bar" extra="true">
-         <origin>1 0</origin>
-         <pos>1 0</pos>
-         <size ifSubset="aspect-ratio:4-3">.14 .08</size>
-         <size ifSubset="aspect-ratio:5-3">.110 .08</size>
-         <size ifSubset="aspect-ratio:3-2">.160 .12</size>
-         <size ifSubset="aspect-ratio:16-9|16-10">.115 .08</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>${systemBackgroundColor}</color>
-         <zIndex>50</zIndex>
-      </image>
-   </view>
-
-   <view name="system">
       <image name="background" extra="true">
          <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
          <path>${spacerImage}</path>
          <tile>true</tile>
-         <color>${systemBackgroundColor}</color>
          <zIndex>0</zIndex>
       </image>
+      <image ifSubset="status-bar-display:battery-network|battery-text-network|battery|battery-text" name="status-bar-background" extra="static">
+         <origin>1 0</origin>
+         <pos>1 0</pos>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${statusBarBackgroundColor}</color>
+         <opacity ifSubset="status-bar-transparency:0-percent">1</opacity>
+         <opacity ifSubset="status-bar-transparency:50-percent">0.5</opacity>
+         <opacity ifSubset="status-bar-transparency:100-percent">0</opacity>
+      </image>
+   </view>
+
+   <view name="system">
+      <image name="logo">
+         <color>${systemLogoColor}</color>
+      </image>
+      <text name="logoText">
+         <color>${systemLogoColor}</color>
+         <fontSize>0.15</fontSize>
+      </text>
       <carousel name="systemcarousel">
          <origin>0 0</origin>
          <pos>0 0</pos>
-         <type>horizontal</type>
-         <color>00000000</color>
          <size>1 1</size>
+         <color>00000000</color>
+         <type>horizontal</type>
          <logoScale>2</logoScale>
          <logoSize>0.25 0.15</logoSize>
-         <maxLogoCount>1.5</maxLogoCount>
-         <maxLogoCount ifSubset="system-view:centered-single">1</maxLogoCount>
+         <maxLogoCount>2</maxLogoCount>
+         <maxLogoCount ifSubset="system-view-style:centered-one-logo">1</maxLogoCount>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+         <defaultTransition>instant</defaultTransition>
       </carousel>
       <text name="systemInfo">
          <pos>1 1</pos>
       </text>
-      <!-- System View Mask: Centered, Centered Single System & Centered Custom -->
-      <image ifSubset="system-view:centered-default|centered-single|centered-custom" name="background-art-mask" extra="true">
+      <!-- System View Mask: Centered Artwork -->
+      <image ifSubset="system-view-style:centered|centered-custom|centered-one-logo" name="system-art-mask" extra="true">
          <origin>0.5 0</origin>
          <pos>0.5 0</pos>
          <size>0 1</size>
+         <color>${systemMaskColor}</color>
+         <zIndex>4</zIndex>
+      </image>
+      <image ifSubset="system-view-style:centered|centered-custom|centered-one-logo" name="system-art-fade" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${systemArtFade}</color>
+         <zIndex>3</zIndex>
+      </image>
+      <image ifSubset="system-view-style:centered|centered-custom|centered-one-logo" name="system-art" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>0 1</size>
+         <path>./_inc/systems/_default.png</path>
+         <path>./_inc/systems/${system.theme}.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/_default.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/_default.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/_default.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/_default.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/_default.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="system-view-style:centered-custom,distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/${system.theme}.png</path>
+         <color>${systemArtColor}</color>
+         <saturation>${systemArtSaturation}</saturation>
          <zIndex>2</zIndex>
-         <color>${systemBackgroundColor}</color>
       </image>
-      <!-- System View Art: Centered, Centered Single System, Centered Custom & Fullscreen Custom -->
-      <image ifSubset="system-view:centered-default|centered-single" name="background-art" extra="true">
+      <!-- System View Mask: Multi Artwork -->
+      <image ifSubset="system-view-style:multi|multi-custom" name="logo">
+         <path>./_inc/systems/_default.png</path>
+         <path>./_inc/systems/${system.theme}.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/${system.theme}.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/_default.png</path>
+         <path ifSubset="system-view-style:multi-custom,distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/${system.theme}.png</path>
+         <color>ffffffcc</color>
+         <saturation>${systemArtSaturation}</saturation>
+      </image>
+      <carousel ifSubset="system-view-style:multi|multi-custom" name="systemcarousel">
+         <size>1 1</size>
+         <logoScale>1</logoScale>
+         <logoSize>1 1</logoSize>
+         <zIndex>3</zIndex>
+      </carousel>
+      <image ifSubset="system-view-style:multi|multi-custom" name="system-art" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <maxSize>0.5 0.3</maxSize>
+         <color>${systemLogoColor}</color>
+         <path>./_inc/systems/${system.theme}.svg</path>
+         <zIndex>50</zIndex>
+      </image>
+      <!-- System View: Fullscreen Artwork -->
+      <image ifSubset="system-view-style:fullscreen-custom" name="system-art-fade" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${systemArtFade}</color>
+         <zIndex>3</zIndex>
+      </image>
+      <image ifSubset="system-view-style:fullscreen-custom" name="system-art" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
          <size>0 1</size>
-         <color>ffffffcc</color>
-         <path>./_inc/images/systems/${system.theme}.png</path>
-         <zIndex>1</zIndex>
-      </image>
-      <image ifSubset="system-view:centered-custom|fullscreen-custom" name="background-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <size>0 1</size>
-         <color>ffffffcc</color>
-         <path ifSubset="system-view:centered-custom">./_inc/images/systems/${system.theme}.png</path>
-         <path>${themeCustomizationsPath}backgrounds/default.jpg</path>
-         <path>${themeCustomizationsPath}backgrounds/default.png</path>
-         <path>${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-         <path>${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-         <zIndex>1</zIndex>
+         <path ifSubset="distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/_default.jpg</path>
+         <path ifSubset="distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/_default.png</path>
+         <path ifSubset="distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="distribution:jelos">${themeCustomizationsPathJELOS}backgrounds/${system.theme}.png</path>
+         <path ifSubset="distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/_default.jpg</path>
+         <path ifSubset="distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/_default.png</path>
+         <path ifSubset="distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="distribution:batocera">${themeCustomizationsPathBatocera}backgrounds/${system.theme}.png</path>
+         <path ifSubset="distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/_default.jpg</path>
+         <path ifSubset="distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/_default.png</path>
+         <path ifSubset="distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="distribution:retrobat">${themeCustomizationsPathRetroBat}backgrounds/${system.theme}.png</path>
+         <path ifSubset="distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/_default.jpg</path>
+         <path ifSubset="distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/_default.png</path>
+         <path ifSubset="distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="distribution:amberelec">${themeCustomizationsPathAmberElec}backgrounds/${system.theme}.png</path>
+         <path ifSubset="distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/_default.jpg</path>
+         <path ifSubset="distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/_default.png</path>
+         <path ifSubset="distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/${system.theme}.jpg</path>
+         <path ifSubset="distribution:emuelec">${themeCustomizationsPathEmuElec}backgrounds/${system.theme}.png</path>
+         <saturation>${systemArtSaturation}</saturation>
+         <zIndex>2</zIndex>
       </image>
       <!-- System View: No Artwork -->
-      <image ifSubset="system-view:no-artwork" name="background-art" extra="true">
+      <image ifSubset="system-view-style:no-artwork" name="system-art" extra="true">
          <origin>0.5 0</origin>
          <pos>0.5 0</pos>
          <size>1 1</size>
          <tile>true</tile>
          <color>${systemBackgroundColor}</color>
          <path>${spacerImage}</path>
-         <zIndex>1</zIndex>
+         <zIndex>2</zIndex>
       </image>
-      <!-- System View: Multi System -->
-      <carousel ifSubset="system-view:multi" name="systemcarousel">
-         <size>1 1</size>
-         <logoScale>1</logoScale>
-         <logoSize>1 1</logoSize>
-         <zIndex>3</zIndex>
-      </carousel>
-      <image ifSubset="system-view:multi" name="logo-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <maxSize>0.5 0.3</maxSize>
-         <color>ffffff</color>
-         <path>./_inc/images/systems/${system.theme}.svg</path>
-         <zIndex>50</zIndex>
-      </image>
-      <image ifSubset="system-view:multi" name="logo">
-         <path>./_inc/images/utility/background-missing.png</path>
-         <path>./_inc/images/systems/${system.theme}.png</path>
-         <color>ffffffcc</color>
+      <image name="background" extra="true">
+         <color>000000</color>
       </image>
    </view>
 
    <view name="basic,detailed,video">
       <image name="logo">
          <origin>0.5 0.5</origin>
-         <color>${logoColor}</color>
+         <color>${gamelistListLogoColor}</color>
          <zIndex>5</zIndex>
       </image>
       <text name="logoText">
          <origin>0.5 0.5</origin>
-         <color>${logoTextColor}</color>
+         <color>${gamelistListLogoColor}</color>
          <zIndex>5</zIndex>
       </text>
       <textlist name="gamelist">
          <origin>0 0</origin>
          <alignment>left</alignment>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${fontBold}</fontPath>
          <selectorColor>00000000</selectorColor>
-         <selectedColor>${gamelistSelectedColor}</selectedColor>
-         <primaryColor>${gamelistUnSelectedColor}</primaryColor>
-         <secondaryColor>${gamelistUnSelectedColor}</secondaryColor>
-         <scrollSound ifSubset="scroll-sound:es-de">./_inc/sounds/es-de/scroll.wav</scrollSound>
-         <scrollSound ifSubset="scroll-sound:steam-deck">./_inc/sounds/steam-deck/scroll.wav</scrollSound>
+         <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
+         <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
+         <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>5</zIndex>
       </textlist>
       <image name="gamelist-background" extra="true">
          <origin>0 0</origin>
          <path>${spacerImage}</path>
          <tile>true</tile>
-         <color>${gamelistBackgroundColor}</color>
+         <color>${gamelistListTextlistBackgroundColor}</color>
          <zIndex>4</zIndex>
       </image>
       <image name="background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
          <color>${backgroundColor}</color>
-         <zIndex>0</zIndex>
+         <zIndex>1</zIndex>
+      </image>
+   </view>
+
+   <view name="basic">
+      <textlist name="gamelist">
+         <origin>0.5 0</origin>
+         <alignment>center</alignment>
+      </textlist>
+      <image name="gamelist-background" extra="true">
+         <size>1 1</size>
       </image>
    </view>
 
    <view name="detailed,video">
       <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
+         <origin>0 0.5</origin>
          <pos>1 1</pos>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${fontBold}</fontPath>
          <alignment>left</alignment>
-      </text>
-      <text name="md_genre,md_lbl_players,md_players">
-         <color>${metadataColor}</color>
-      </text>
-      <text name="md_description">
-         <color>${descriptionColor}</color>
-      </text>
-      <text name="md_lbl_lastplayed,md_lbl_playcount,md_playcount,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_gametime,md_gametime">
-         <color>${metadataColor}</color>
+         <color>${gamelistListMetadataColor}</color>
+         <forceUppercase>true</forceUppercase>
       </text>
       <datetime name="md_releasedate,md_lastplayed">
+         <origin>0 0.5</origin>
          <pos>1 1</pos>
-         <fontPath>${bodyFont}</fontPath>
-         <color>${metadataColor}</color>
+         <fontPath>${fontBold}</fontPath>
+         <color>${gamelistListMetadataColor}</color>
          <alignment>left</alignment>
+         <forceUppercase>true</forceUppercase>
+         <format>%Y-%m-%d</format>
       </datetime>
       <rating name="md_rating">
+         <origin>0 0.5</origin>
          <pos>1 1</pos>
-         <color>${ratingColor}</color>
+         <color>${gamelistListRatingColor}</color>
+         <filledPath>./_inc/images/icon-star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/icon-star-unfilled.svg</unfilledPath>
       </rating>
+      <image name="md_releasedate_icon,md_players_icon,md_developer_icon,md_publisher_icon,md_genre_icon,md_lastplayed_icon,md_playcount_icon,md_gametime_icon" extra="true">
+         <origin>0 0.5</origin>
+         <pos>1 1</pos>
+         <color>${gamelistListMetadataIconColor}</color>
+      </image>
+      <image name="md_releasedate_icon">
+         <path>./_inc/images/icon-releasedate.svg</path>
+      </image>
+      <image name="md_players_icon">
+         <path>./_inc/images/icon-players.svg</path>
+      </image>
+      <image name="md_playcount_icon">
+         <path>./_inc/images/icon-playcount.svg</path>
+      </image>
+      <image name="md_gametime_icon">
+         <path>./_inc/images/icon-gametime.svg</path>
+      </image>
+      <image name="md_lastplayed_icon">
+         <path>./_inc/images/icon-lastplayed.svg</path>
+      </image>
+      <image name="md_genre_icon">
+         <path>./_inc/images/icon-genre.svg</path>
+      </image>
+      <image name="md_developer_icon">
+         <path>./_inc/images/icon-developer.svg</path>
+      </image>
+      <image name="md_publisher_icon">
+         <path>./_inc/images/icon-publisher.svg</path>
+      </image>
+      <text name="md_description">
+         <origin>0 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <color>${gamelistListDescriptionColor}</color>
+         <forceUppercase>false</forceUppercase>
+      </text>
+      <image ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive|metadata-off" name="game-metadata-background" extra="true">
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistListMetadataBackgroundColor}</color>
+         <zIndex>2</zIndex>
+      </image>
+   </view>
+
+   <view name="detailed">
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <color ifSubset="gamelist-view-style:metadata-on-immersive|metadata-off-immersive">FFFFFF99</color>
+         <zIndex>3</zIndex>
+      </image>
    </view>
 
    <view name="video">
@@ -265,96 +450,82 @@ license:       creative commons CC-BY-NC-SA
          <effect>none</effect>
          <showSnapshotDelay>true</showSnapshotDelay>
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
-         <zIndex>1</zIndex>
+         <color ifSubset="gamelist-view-style:metadata-on-immersive">FFFFFFDD</color>
+         <color ifSubset="gamelist-view-style:metadata-off-immersive">FFFFFF99</color>
+         <zIndex>3</zIndex>
       </video>
    </view>
 
    <view name="menu">
       <menuText name="menutitle">
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.04</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.03</fontSize>
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${fontLight}</fontPath>
          <fontSize>0.025</fontSize>
-         <color>777777ff</color>
+         <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${fontBold}</fontPath>
          <fontSize>0.035</fontSize>
-         <color>777777</color>
-         <separatorColor>111111</separatorColor>
-         <selectorColor>555555</selectorColor>
+         <color>ffffff77</color>
+         <separatorColor>ffffff11</separatorColor>
          <selectedColor>ffffff</selectedColor>
       </menuText>
       <menuTextSmall name="menutextsmall">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${fontBold}</fontPath>
          <fontSize>0.0325</fontSize>
-         <color>777777</color>
+         <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${fontRegular}</fontPath>
          <fontSize>0.0325</fontSize>
          <color>ffffff</color>
-         <separatorColor>999999</separatorColor>
+         <separatorColor>ffffff99</separatorColor>
          <backgroundColor>00000000</backgroundColor>
          <lineSpacing>2.5</lineSpacing>
       </menuGroup>
+      <menuTextEdit name="menutextedit">
+         <inactive>./_inc/images/menu-textinput.png</inactive>
+         <active>./_inc/images/menu-textinput-active.png</active>
+      </menuTextEdit>
       <menuBackground name="menubg">
-         <color>111111</color>
+         <color>${menuBackgroundColor}</color>
          <cornerSize>20 20</cornerSize>
       </menuBackground>
-   </view>
-
-   <view name="screen">
-      <text name="clock">
-         <pos>1 1</pos>
-      </text>
-      <batteryIndicator name="batteryIndicator">
-         <color>ffffff99</color>
-         <itemSpacing>0</itemSpacing>
-      </batteryIndicator>
-      <batteryIndicator ifSubset="aspect-ratio:5-3|16-9|16-10" name="batteryIndicator">
-         <pos>0.022 0.011</pos>
-         <pos ifSubset="status-bar:off">1 1</pos>
-         <size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
-         <size ifSubset="aspect-ratio:16-9|16-10">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
-         <full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
-         <at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/utility/icons/bigscreen/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/utility/icons/bigscreen/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/utility/icons/bigscreen/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
-      </batteryIndicator>
-      <batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
-         <pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos>
-         <size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size><!-- 464 20 - sized off of 480x320 to make the icon clear -->
-         <pos ifSubset="aspect-ratio:4-3">0.036 0.012</pos>
-         <size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
-         <pos ifSubset="status-bar:off">1 1</pos>
-         <full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
-         <at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/utility/icons/tinyscreen/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/utility/icons/tinyscreen/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/utility/icons/tinyscreen/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/utility/icons/tinyscreen/wifi-vertical.svg</networkIcon>
-      </batteryIndicator>
-      <controllerActivity name="controllerActivity">
-         <visible>false</visible>
-      </controllerActivity>
+      <menuIcons name="menuicons">
+         <iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
+         <iconUpdates>./_inc/images/menu-icon-update.svg</iconUpdates>
+         <iconControllers>./_inc/images/menu-icon-controller.svg</iconControllers>
+         <iconGames>./_inc/images/menu-icon-games.svg</iconGames>
+         <iconUI>./_inc/images/menu-icon-ui.svg</iconUI>
+         <iconSound>./_inc/images/menu-icon-sound.svg</iconSound>
+         <iconNetwork>./_inc/images/menu-icon-network.svg</iconNetwork>
+         <iconScraper>./_inc/images/menu-icon-scraper.svg</iconScraper>
+         <iconAdvanced>./_inc/images/menu-icon-advanced.svg</iconAdvanced>
+         <iconQuit>./_inc/images/menu-icon-quit.svg</iconQuit>
+         <iconRetroachievements>./_inc/images/menu-icon-achievements.svg</iconRetroachievements>
+         <iconKodi>./_inc/images/menu-icon-kodi.svg</iconKodi>
+         <iconRestart>./_inc/images/menu-icon-restart.svg</iconRestart>
+         <iconShutdown>./_inc/images/menu-icon-shutdown.svg</iconShutdown>
+         <iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
+      </menuIcons>
    </view>
 
    <!-- Aspect Ratio -->
    <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
-   <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
-   <include ifSubset="aspect-ratio:5-3">./aspect-ratio-5-3.xml</include>
-   <include ifSubset="aspect-ratio:3-2">./aspect-ratio-3-2.xml</include>
    <include ifSubset="aspect-ratio:16-10">./aspect-ratio-16-10.xml</include>
+   <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:3-2">./aspect-ratio-3-2.xml</include>
+   <include ifSubset="aspect-ratio:5-3">./aspect-ratio-5-3.xml</include>
 
-   <!-- User Customizations -->
-   <include>${themeCustomizationsPath}theme.xml</include>
+   <!-- Custom Fonts -->
+   <include ifSubset="fonts:custom,distribution:jelos">${themeCustomizationsPathJELOS}fonts.xml</include>
+   <include ifSubset="fonts:custom,distribution:batocera">${themeCustomizationsPathBatocera}fonts.xml</include>
+   <include ifSubset="fonts:custom,distribution:retrobat">${themeCustomizationsPathRetroBat}fonts.xml</include>
+   <include ifSubset="fonts:custom,distribution:amberelec">${themeCustomizationsPathAmberElec}fonts.xml</include>
+   <include ifSubset="fonts:custom,distribution:emuelec">${themeCustomizationsPathEmuElec}fonts.xml</include>
 
 </theme>

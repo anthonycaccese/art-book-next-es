@@ -1,0 +1,31 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+      <backgroundColor>000000</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>111111</systemBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>111111</systemMaskColor>
+      <systemLogoColor>dddddd</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gamelistListMetadataBackgroundColor>222222</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffff55</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff22</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>ffffff44</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <statusBarBackgroundColor>11111199</statusBarBackgroundColor>
+      <statusBarIconColor>bbbbbb</statusBarIconColor>
+   </variables>
+</theme>

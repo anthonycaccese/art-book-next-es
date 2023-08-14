@@ -1,21 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <theme>
    <formatVersion>7</formatVersion>
    <view name="splash">
       <splash name="splash">
-         <backgroundColor>111111</backgroundColor>
+         <backgroundColor>010101</backgroundColor>
       </splash>
       <image name="background">
          <!-- Leave default for better OS/device portability -->
       </image>
       <image name="progressbar">
-         <color>333333</color>
-         <colorEnd>333333</colorEnd>
-         <roundCorners>0.01</roundCorners>
+         <color>222222</color>
+         <colorEnd>222222</colorEnd>
       </image>
       <image name="progressbar:active">
-         <color>777777</color>
-         <colorEnd>777777</colorEnd>
+         <color>444444</color>
+         <colorEnd>444444</colorEnd>
       </image>
       <text name="label">
          <alignment>center</alignment>
