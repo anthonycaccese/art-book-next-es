@@ -2,7 +2,7 @@
 A simple theme for the version of EmulationStation used in [Batocera](https://retropie.org.uk/).  
 Based on the style of a coffee table book.
 
-This version of the theme works with all distributions that leverage the Batocera version of EmulationStation.  This includes [AmberELEC](https://amberelec.org/), [JELOS](https://github.com/JustEnoughLinuxOS/distribution), [EmuElec](https://github.com/EmuELEC/EmuELEC) and [RetroBat](https://www.retrobat.ovh/)
+This version of the theme works with all distributions that leverage the Batocera version of EmulationStation.  This includes [JELOS](https://github.com/JustEnoughLinuxOS/distribution), [AmberELEC](https://amberelec.org/), [EmuElec](https://github.com/EmuELEC/EmuELEC) and [RetroBat](https://www.retrobat.ovh/)
 
 ## **Preview**
 
