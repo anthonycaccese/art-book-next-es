@@ -4,6 +4,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>111111</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
       <systemArtColor>ffffff</systemArtColor>
       <systemArtSaturation>1</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>

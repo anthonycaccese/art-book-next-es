@@ -4,6 +4,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>111111</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
       <systemArtColor>ffffff</systemArtColor>
       <systemArtSaturation>1</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>
@@ -32,6 +33,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>111111</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
       <systemArtColor>ffffff</systemArtColor>
       <systemArtSaturation>1</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>
@@ -60,6 +62,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>0D141C</systemBackgroundColor>
+      <systemCarouselBackgroundColor>0D141C</systemCarouselBackgroundColor>
       <systemArtColor>ffffff</systemArtColor>
       <systemArtSaturation>1</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>
@@ -88,6 +91,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>231942</systemBackgroundColor>
+      <systemCarouselBackgroundColor>191526</systemCarouselBackgroundColor>
       <systemArtColor>ffffff</systemArtColor>
       <systemArtSaturation>1</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>
@@ -116,6 +120,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>711521</systemBackgroundColor>
+      <systemCarouselBackgroundColor>2f1619</systemCarouselBackgroundColor>
       <systemArtColor>DCD6B6</systemArtColor>
       <systemArtSaturation>0.5</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>
@@ -144,6 +149,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>000000</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
       <systemArtColor>ffffff</systemArtColor>
       <systemArtSaturation>1</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>
@@ -172,6 +178,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- System View -->
       <systemBackgroundColor>777777</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
       <systemArtColor>cccccc</systemArtColor>
       <systemArtSaturation>0</systemArtSaturation>
       <systemArtFade>00000044</systemArtFade>

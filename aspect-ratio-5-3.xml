@@ -4,25 +4,10 @@
    <include>./help-system.xml</include>
 
    <view name="screen">
-      <batteryIndicator ifSubset="status-bar-display:battery-network|battery-text-network|battery|battery-text" name="batteryIndicator">
+      <batteryIndicator name="batteryIndicator">
          <pos>0 0.018518518518519</pos><!-- 0 20 -->
          <size>0.989583333333333 0.041666666666667</size><!-- 1900 50 -->
       </batteryIndicator>
-   </view>
-
-   <view name="system,basic,detailed,video">
-      <image ifSubset="status-bar-display:battery-text-network" name="status-bar-background" extra="true">
-         <size>0.104166666666667 0.08</size><!-- 200 96 -->
-      </image>
-      <image ifSubset="status-bar-display:battery-network" name="status-bar-background" extra="true">
-         <size>0.077083333333333 0.08</size><!-- 148 96 -->
-      </image>
-      <image ifSubset="status-bar-display:battery-text" name="status-bar-background" extra="true">
-         <size>0.076041666666667 0.08</size><!-- 146 96 -->
-      </image>
-      <image ifSubset="status-bar-display:battery" name="status-bar-background" extra="true">
-         <size>0.047916666666667 0.08</size><!-- 92 96 -->
-      </image>
    </view>
 
    <view name="system">
@@ -63,8 +48,8 @@
       </text>
       <textlist name="gamelist">
          <pos>0.5 0.233333333333333</pos><!-- 50% 280 -->
-         <size ifSubset="help-system-display:on">0.895833333333333 0.62</size><!-- 1720 744(62X12) -->
-         <size ifSubset="help-system-display:off">0.895833333333333 0.723333333333333</size><!-- 1720 868(62X14) -->
+         <size ifHelpPrompts="true">0.895833333333333 0.62</size><!-- 1720 744(62X12) -->
+         <size ifHelpPrompts="false">0.895833333333333 0.723333333333333</size><!-- 1720 868(62X14) -->
       </textlist>
    </view>
 
@@ -77,8 +62,8 @@
       </text>
       <textlist name="gamelist">
          <pos>0.033854166666667 0.233333333333333</pos><!-- 65 280 -->
-         <size ifSubset="help-system-display:on">0.307291666666667 0.62</size><!-- 590 744(62X12) -->
-         <size ifSubset="help-system-display:off">0.307291666666667 0.723333333333333</size><!-- 590 868(62X14) -->
+         <size ifHelpPrompts="true">0.307291666666667 0.62</size><!-- 590 744(62X12) -->
+         <size ifHelpPrompts="false">0.307291666666667 0.723333333333333</size><!-- 590 868(62X14) -->
       </textlist>
       <image name="gamelist-background" extra="true">
          <size>0.375 1</size><!-- 720 1200 -->
@@ -87,10 +72,10 @@
 
    <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed,video">
       <text name="md_description">
-         <pos ifSubset="help-system-display:on">0.408333333333333 0.71</pos><!-- 784 852 -->
-         <size ifSubset="help-system-display:on">0.395833333333333 0.14</size><!-- 760 168 -->
-         <pos ifSubset="help-system-display:off">0.408333333333333 0.71</pos><!-- 784 852 -->
-         <size ifSubset="help-system-display:off">0.395833333333333 0.233333333333333</size><!-- 760 280 -->
+         <pos ifHelpPrompts="true">0.408333333333333 0.71</pos><!-- 784 852 -->
+         <size ifHelpPrompts="true">0.395833333333333 0.14</size><!-- 760 168 -->
+         <pos ifHelpPrompts="false">0.408333333333333 0.71</pos><!-- 784 852 -->
+         <size ifHelpPrompts="false">0.395833333333333 0.233333333333333</size><!-- 760 280 -->
          <fontSize>0.033333333333333</fontSize><!-- 40 -->
          <lineSpacing>1.5</lineSpacing>
       </text>
@@ -114,19 +99,19 @@
          <pos>0.884375 0.834166666666667</pos><!-- 1698 1001 -->
          <fontSize>0.023333333333333</fontSize><!-- 28 -->
       </text>
-      <image ifSubset="help-system-display:off" name="md_gametime_icon">
+      <image ifHelpPrompts="false" name="md_gametime_icon">
          <pos>0.854166666666667 0.881666666666667</pos><!-- 1640 1058 -->
          <maxSize>0.01875 0.03</maxSize><!-- 36 36 -->
       </image>
-      <text ifSubset="help-system-display:off" name="md_gametime">
+      <text ifHelpPrompts="false" name="md_gametime">
          <pos>0.884375 0.881666666666667</pos><!-- 1698 1058 -->
          <fontSize>0.023333333333333</fontSize><!-- 28 -->
       </text>
-      <image ifSubset="help-system-display:off" name="md_playcount_icon">
+      <image ifHelpPrompts="false" name="md_playcount_icon">
          <pos>0.854166666666667 0.93</pos><!-- 1640 1116 -->
          <maxSize>0.020833333333333 0.033333333333333</maxSize><!-- 40 40 -->
       </image>
-      <text ifSubset="help-system-display:off" name="md_playcount">
+      <text ifHelpPrompts="false" name="md_playcount">
          <pos>0.884375 0.93</pos><!-- 1698 1116 -->
          <fontSize>0.023333333333333</fontSize><!-- 28 -->
       </text>
@@ -135,8 +120,8 @@
          <size ifSubset="gamelist-view-style:metadata-on">0.625 1</size><!-- 1200 1080-->
          <zIndex ifSubset="gamelist-view-style:metadata-on">1</zIndex>
          <pos ifSubset="gamelist-view-style:metadata-on-immersive">0.375 0.658333333333333</pos><!-- 720 790 -->
-         <size ifSubset="help-system-display:on,gamelist-view-style:metadata-on-immersive">0.625 0.2375</size><!-- 1200 285-->
-         <size ifSubset="help-system-display:off,gamelist-view-style:metadata-on-immersive">0.625 0.341666666666667</size><!-- 1200 410-->
+         <size ifHelpPrompts="true" ifSubset="gamelist-view-style:metadata-on-immersive">0.625 0.2375</size><!-- 1200 285-->
+         <size ifHelpPrompts="false" ifSubset="gamelist-view-style:metadata-on-immersive">0.625 0.341666666666667</size><!-- 1200 410-->
       </image>
       <image ifSubset="gamelist-view-style:metadata-on-immersive" name="md_marquee">
          <origin>1 1</origin>
@@ -163,26 +148,26 @@
 
    <view ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive" name="detailed,video">
       <image ifSubset="gamelist-view-style:metadata-off-immersive" name="md_marquee">
-         <pos ifSubset="help-system-display:on">0.6875 0.447916666666667</pos><!-- 1320 537.5 -->
-         <pos ifSubset="help-system-display:off">0.6875 0.5</pos><!-- 1320 600 -->
+         <pos ifHelpPrompts="true">0.6875 0.447916666666667</pos><!-- 1320 537.5 -->
+         <pos ifHelpPrompts="false">0.6875 0.5</pos><!-- 1320 600 -->
          <maxSize>0.40625 0.754166666666667</maxSize><!-- 780 905 -->
       </image>
    </view>
    <view ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive" name="detailed">
       <image name="md_image">
-         <pos ifSubset="help-system-display:on">0.6875 0.447916666666667</pos><!-- 1320 537.5 -->
-         <pos ifSubset="help-system-display:off">0.6875 0.5</pos><!-- 1320 600 -->
-         <maxSize ifSubset="help-system-display:on,gamelist-view-style:metadata-off">0.5625 0.795833333333333</maxSize><!-- 1080 955 -->
-         <maxSize ifSubset="help-system-display:off,gamelist-view-style:metadata-off">0.5625 0.9</maxSize><!-- 1080 1080 -->
+         <pos ifHelpPrompts="true">0.6875 0.447916666666667</pos><!-- 1320 537.5 -->
+         <pos ifHelpPrompts="false">0.6875 0.5</pos><!-- 1320 600 -->
+         <maxSize ifHelpPrompts="true" ifSubset="gamelist-view-style:metadata-off">0.5625 0.795833333333333</maxSize><!-- 1080 955 -->
+         <maxSize ifHelpPrompts="false" ifSubset="gamelist-view-style:metadata-off">0.5625 0.9</maxSize><!-- 1080 1080 -->
          <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.1 1.1</maxSize>
       </image>
    </view>
    <view ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive" name="video">
       <video name="md_video">
-         <pos ifSubset="help-system-display:on">0.6875 0.447916666666667</pos><!-- 1320 537.5 -->
-         <pos ifSubset="help-system-display:off">0.6875 0.5</pos><!-- 1320 600 -->
-         <maxSize ifSubset="help-system-display:on,gamelist-view-style:metadata-off">0.5625 0.795833333333333</maxSize><!-- 1080 955 -->
-         <maxSize ifSubset="help-system-display:off,gamelist-view-style:metadata-off">0.5625 0.9</maxSize><!-- 1080 1080 -->
+         <pos ifHelpPrompts="true">0.6875 0.447916666666667</pos><!-- 1320 537.5 -->
+         <pos ifHelpPrompts="false">0.6875 0.5</pos><!-- 1320 600 -->
+         <maxSize ifHelpPrompts="true" ifSubset="gamelist-view-style:metadata-off">0.5625 0.795833333333333</maxSize><!-- 1080 955 -->
+         <maxSize ifHelpPrompts="false" ifSubset="gamelist-view-style:metadata-off">0.5625 0.9</maxSize><!-- 1080 1080 -->
          <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.1 1.1</maxSize>
       </video>
    </view>

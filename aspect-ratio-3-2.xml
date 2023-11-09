@@ -2,25 +2,13 @@
    <formatVersion>7</formatVersion>
 
    <view name="screen">
-      <batteryIndicator ifSubset="status-bar-display:battery-network|battery-text-network|battery|battery-text" name="batteryIndicator">
+      <batteryIndicator name="batteryIndicator">
          <pos>0 0.03125</pos><!-- 0 15 -->
          <size>0.980555555555556 0.066666666666667</size><!-- 706 32 -->
       </batteryIndicator>
    </view>
 
    <view name="system,basic,detailed,video">
-      <image ifSubset="status-bar-display:battery-text-network" name="status-bar-background" extra="true">
-         <size>0.180555555555556 0.133333333333333</size><!-- 130 64 -->
-      </image>
-      <image ifSubset="status-bar-display:battery-network" name="status-bar-background" extra="true">
-         <size>0.131944444444444 0.133333333333333</size><!-- 95 64 -->
-      </image>
-      <image ifSubset="status-bar-display:battery-text" name="status-bar-background" extra="true">
-         <size>0.133333333333333 0.133333333333333</size><!-- 96 64 -->
-      </image>
-      <image ifSubset="status-bar-display:battery" name="status-bar-background" extra="true">
-         <size>0.086111111111111 0.133333333333333</size><!-- 62 64 -->
-      </image>
       <helpsystem name="help">
          <origin>0 0</origin>
          <pos>1 1</pos>

@@ -1,28 +1,26 @@
 <theme>
    <formatVersion>7</formatVersion>
-   <subset name="help-system-display" displayName="Help System Display">
-      <include name="on" displayName="On" />
-      <include name="off" displayName="Off" />
-   </subset>
-   <subset name="swap-a-b" displayName="Swap A/B Buttons">
+   <subset ifSubset="distribution:jelos" name="swap-a-b" displayName="Switch A &amp; B Buttons in EmulationStation">
       <include name="false" displayName="False" />
       <include name="true" displayName="True" />
    </subset>
    <view name="system,basic,detailed,video">
-      <helpsystem ifSubset="help-system-display:on" name="help">
+      <helpsystem ifHelpPrompts="true" name="help">
          <textColor>FFFFFF77</textColor>
          <iconColor>FFFFFF77</iconColor>
          <iconUpDown>./_inc/images/help-dpad-updown.svg</iconUpDown>
          <iconLeftRight>./_inc/images/help-dpad-leftright.svg</iconLeftRight>
          <iconUpDownLeftRight>./_inc/images/help-dpad-updownleftright.svg</iconUpDownLeftRight>
-         <iconA ifSubset="swap-a-b:true">./_inc/images/help-button-east.svg</iconA>
-         <iconB ifSubset="swap-a-b:true">./_inc/images/help-button-south.svg</iconB>
-         <iconA ifSubset="swap-a-b:false">./_inc/images/help-button-south.svg</iconA>
-         <iconB ifSubset="swap-a-b:false">./_inc/images/help-button-east.svg</iconB>
+         <iconA>./_inc/images/help-button-east.svg</iconA>
+         <iconB>./_inc/images/help-button-south.svg</iconB>
+         <iconA ifSubset="distribution:jelos,swap-a-b:true">./_inc/images/help-button-east.svg</iconA>
+         <iconB ifSubset="distribution:jelos,swap-a-b:true">./_inc/images/help-button-south.svg</iconB>
+         <iconA ifSubset="distribution:jelos,swap-a-b:false">./_inc/images/help-button-south.svg</iconA>
+         <iconB ifSubset="distribution:jelos,swap-a-b:false">./_inc/images/help-button-east.svg</iconB>
          <iconX>./_inc/images/help-button-north.svg</iconX>
          <iconY>./_inc/images/help-button-west.svg</iconY>
       </helpsystem>
-      <helpsystem ifSubset="help-system-display:on" name="help">
+      <helpsystem ifHelpPrompts="true" name="help">
          <origin>0.5 0.5</origin>
          <pos ifSubset="aspect-ratio:16-9">0.5 0.941666666666667</pos><!-- 50% 1017 -->
          <fontSize ifSubset="aspect-ratio:16-9">0.031481481481481</fontSize><!-- 34 -->
@@ -31,7 +29,7 @@
          <pos ifSubset="aspect-ratio:5-3">0.5 0.9475</pos><!-- 50% 1137 -->
          <fontSize ifSubset="aspect-ratio:5-3">0.028333333333333</fontSize><!-- 34 -->
       </helpsystem>
-      <image ifSubset="help-system-display:on" name="help-background" extra="static">
+      <image ifHelpPrompts="true" name="help-background" extra="static">
          <origin>0 1</origin>
          <pos>0 1</pos>
          <size>1 0.104166666666667</size><!-- 100% 125 -->
@@ -42,7 +40,7 @@
          <size ifSubset="aspect-ratio:16-10">1 0.104166666666667</size><!-- 100% 125 -->
          <size ifSubset="aspect-ratio:5-3">1 0.104166666666667</size><!-- 100% 125 -->
       </image>
-      <helpsystem ifSubset="help-system-display:off" name="help">
+      <helpsystem ifHelpPrompts="false" name="help">
          <origin>0 0</origin>
          <pos>1 1</pos>
       </helpsystem>
