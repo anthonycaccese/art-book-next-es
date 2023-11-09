@@ -2,7 +2,7 @@
 A simple theme for the version of EmulationStation used in [Batocera](https://retropie.org.uk/).  
 Based on the style of a coffee table book.
 
-This version of the theme works with all distributions that leverage the Batocera version of EmulationStation.  This includes [JELOS](https://github.com/JustEnoughLinuxOS/distribution), [AmberELEC](https://amberelec.org/), [EmuElec](https://github.com/EmuELEC/EmuELEC) and [RetroBat](https://www.retrobat.ovh/)
+This version of the theme works with all distributions that leverage the Batocera fork of EmulationStation.  This includes [Batocera](https://batocera.org/), [JELOS](https://jelos.org/) and [RetroBat](https://www.retrobat.org/)
 
 ## **Preview**
 
@@ -18,16 +18,14 @@ This version of the theme works with all distributions that leverage the Batocer
 
 - The theme has a simple set of options that can be changed directly through the `UI Settings > Theme Configuration` menu in EmulationStation
    - Options:
-   - `Distribution` - sets the distribution you are using (e.g. Amberelec, Batocera, EmuElec, RetroBat, JELOS).  This setting is used to define the folder where User Customizations will be stored.
+   - `Distribution` - sets the distribution you are using (e.g. Batocera, RetroBat, JELOS).  This setting is used to define the folder where User Customizations will be stored.
    - `Aspect Ratio` - sets the aspect ratio the theme will render at. If needed, this should be changed to match the aspect ratio of your screen.
    - `Color Scheme`- sets the color scheme that is used for the overall theme on all views.
-   - `Scroll Sound`- sets the sound effect used for scolling in the gamelist view.
-   - `Status Bar Display`- allows you to turn the Wifi/Battery indicator on or off
    - `System View Style`- sets the layout used for the system view
    - `Gamelist View Style`- sets the layout used for the gamelist view when media & metadata are scraped for your games
    
-- 16:9, 5:3 and 4:3 aspect ratios are currently supported
-- there are 3 gamelist layouts to choose from (metadata-on & metadata-off & metadata-off-zoomed)
+- 16:9, 16:10, 4:3, 3:2, 5:3 and 1:1 aspect ratios are currently supported
+- there are 4 gamelist layouts to choose from (metadata-on, metadata-on-immersive & metadata-off & metadata-off-immersive)
 - and 4 pre-built color schemes are currently available with the option of creating your own customized color scheme through a simple XML file (details below)
 
 ### Preview of the Aspect Ratio & Layout Variants
@@ -54,18 +52,22 @@ When using the theme on Batocera you can make the following changes through `UI 
 Change this value to match your screen aspect ratio (default is 16-9)
 ```
 Options:
-5:3
 16:9
+16:10
 4:3
+5:3
+3:2
+1:1
 ```
 
 ### Gamelist Style... 
 Change this value to match your preferred gamelist layout (default is Metadata On)
 ```
 Options:
-Metadata On
+Metadata On 
+Metadata On (Immersive)
 Metadata Off
-Metadata Off (Zoomed)
+Metadata Off (Immersive)
 ```
 
 ### Color Scheme...
@@ -82,7 +84,6 @@ If you change the color scheme option to `custom` then you can provide an XML fi
 
 ## **To-Do**
 (a quick list of items I am looking to add)
-* Add 3:2 Aspect Ratio
 * Create and add any missing background art
 
 ## **Additional Notes**
@@ -96,7 +97,7 @@ If you change the color scheme option to `custom` then you can provide an XML fi
 
 ### Versions for other ES forks:
 * If you use Retropie... then check out the version [here](https://github.com/anthonycaccese/art-book-next-retropie).  The Retropie version has all the same base features but you have to change them through the XML directly (as Retropie's theme engine does not have a menu for changing theme options)
-* If you use ES-DE... then the retropie version [here](https://github.com/anthonycaccese/art-book-next-retropie) will work out of the box with that distribution.  When used with ES-DE the theme comes with additional support for navigation sound sets.  I'm also working on a version to support the 2.0 theme engine that the ES-DE team is working on and will post that here when available.
+* If you use ES-DE... then the ES-DE version [here](https://github.com/anthonycaccese/art-book-next-es-de) will work out of the box with that distribution.  When used with ES-DE the theme comes with additional support for navigation sound sets.
 
 ## **Acknowledgments**
 * Most system logos were sourced and modified from the excellent work done by Dan Patrick [here](https://archive.org/details/console-logos-professionally-redrawn-plus-official-versions).  I modified each to be compatible with EmulationStation's current SVG support.
