@@ -1,4 +1,4 @@
-# Art Book Next (Batocera Version)
+# Art Book Next for EmulationStation
 A simple theme for the version of EmulationStation used in [Batocera](https://retropie.org.uk/).  
 Based on the style of a coffee table book.
 
