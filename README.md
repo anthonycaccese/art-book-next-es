@@ -24,7 +24,7 @@ The following options can be changed directly from the main menu under `UI Setti
 | Setting | Description | Options |
 | -- | -- | -- |
 | Distribution | Used to define which folder to look in for Theme Customization files. | `Batocera`, `JELOS`, `RetroBat` | 
-| Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  JELOS supports 16:9, 4:3, 16:10, 5:3, 3:2 and 1:1 aspect ratios.  We default this automatically so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. | `16:9`, `16:10`, `4:3`, `3:2`, `5:3`, `1:1` |
+| Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  This will automatically set itself so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. | `16:9`, `16:10`, `4:3`, `3:2`, `5:3`, `1:1` |
 | Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`).  You can see details on customizations below under [Theme Customziations](#theme-customizations). | `Art Book Next`, `Art Book`, `Steam OS`, `SNES`, `Famicom`, `Black`, `Grayscale`, `Custom` |
 | Font Size | When this is set to custom it allows you to define custom font sizes for the gamelist.  You can see details on customizations below under [Theme Customziations](#theme-customizations). | `Default`, `Custom` |
 | System View Style | Defines the layout/design used for the System View | `Multi Artwork`, `Centered Artwork (Multiple Logos)`, `Centered Artwork (Single Logo)`, `No Artwork`, `Custom` | 
@@ -62,9 +62,19 @@ The artwork used on the system view can be customized with your own images.  You
     - Fullscreen Artwork (Custom)
     - *I added these options so you could switch off custom artwork without needing to delete your customizations*
 
-To create `centered` artwork that matches the mask used in the theme you can use the `system-art-mask` files I supply in the theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations).  I have tried to include a mask that works in the major editing programs.
+To create `centered` artwork that matches the mask used in the theme you can use the `system-art-mask` files I supply in the theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations).  I have tried to include a mask that should work in each major editing program.
 
-If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
+If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next) 
+
+### Color Schemes
+
+You can create your own custom color scheme to use for the theme
+
+- Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/colors.xml
+- Upload it in the path you created above and make sure its called `colors.xml`
+- Change any values in the template to the colors you prefer.  
+- I tried to make the values as self explanatory as possible but if you have questions regarding which property does what please don't hesitate to ask.
+- After your colors are defined; in theme configuration change `Color Scheme` to `Custom`
 
 ### Logos
 
@@ -77,17 +87,7 @@ The logos used on the system and gamelist views can be customized with your own 
     - ${system.theme}.png
 - The theme will look them them up in that order.  I recommend SVGs as they scale better on different resolutions.
 - `${system.theme}.svg/png` should be named for the system you are looking to override.  For example if you wanted to override the artwork for `snes` you would create an image called `snes.svg` or `snes.png` in the logos folder
-- once your images are in place you turn on custom logos by changing the Color Scheme to `Custom` 
-
-### Color Schemes
-
-You can create your own custom color scheme to use for the theme
-
-- Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/colors.xml
-- Upload it in the path you created above and make sure its called `colors.xml`
-- Change any values in the template to the colors you prefer.  
-- I tried to make the values as self explanatory as possible but if you have questions regarding which property does what please don't hesitate to ask.
-- After your colors are defined; in theme configuration change `Color Scheme` to `Custom`
+- Once your images are in place you turn on custom logos by changing the Color Scheme to `Custom`
 
 ### Fonts
 
