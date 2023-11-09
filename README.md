@@ -5,17 +5,10 @@ Based on the style of a coffee table book.
 This version of the theme works with all distributions that leverage the Batocera fork of EmulationStation.  This includes [Batocera](https://batocera.org/), [JELOS](https://jelos.org/) and [RetroBat](https://www.retrobat.org/)
 
 ## Preview
+| ![system view](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/c0252388-2268-444c-ae3d-07f15b87a98c) | ![menu](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/39653703-f6e8-4940-98fc-66ce1c5af271) | 
+| -- | -- |
+| ![gamelist-view-1](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/e8251f3c-f033-43ed-8b55-f3a93c28131a) | ![gamelist-view-2](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/fadfba3e-54a4-48e2-a11c-39c52797dc56) |
 
-<table>
-  <tr>
-    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/212ee5e9-56c2-484c-b260-008f94cbc6b2"/></td>
-    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/9c03a66d-59b1-4805-9cfb-73da3e611fe3"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/5064e4f7-e0f0-4827-9b2a-b2ff3fcd322d"/></td>
-    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/c58d25ae-27bf-4fbc-93ba-04c9e1d8da8a"/></td>
-  </tr>
-</table>
 
 ## Theme Configuration
 
