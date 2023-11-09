@@ -4,102 +4,107 @@ Based on the style of a coffee table book.
 
 This version of the theme works with all distributions that leverage the Batocera fork of EmulationStation.  This includes [Batocera](https://batocera.org/), [JELOS](https://jelos.org/) and [RetroBat](https://www.retrobat.org/)
 
-## **Preview**
+## Preview
 
-| System View | Gamelist View |
-|----|----|
-| ![Screen Shot 2022-07-21 at 12 51 34](https://user-images.githubusercontent.com/1454947/180350112-d2d1f712-3fd2-4177-8007-4e60b37118a6.png) | ![Screen Shot 2022-07-21 at 12 47 54](https://user-images.githubusercontent.com/1454947/180350136-649904ec-9563-48e7-9976-3219326e2156.png) |
+<table>
+  <tr>
+    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/212ee5e9-56c2-484c-b260-008f94cbc6b2"/></td>
+    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/9c03a66d-59b1-4805-9cfb-73da3e611fe3"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/5064e4f7-e0f0-4827-9b2a-b2ff3fcd322d"/></td>
+    <td><img src="https://github.com/anthonycaccese/art-book-next-es/assets/1454947/c58d25ae-27bf-4fbc-93ba-04c9e1d8da8a"/></td>
+  </tr>
+</table>
 
-## **Video Walkthrough**
-[![Video Walkthrough](https://img.youtube.com/vi/6UzjDi7o3e8/0.jpg)](https://www.youtube.com/watch?v=6UzjDi7o3e8)
+## Theme Configuration
 
+The following options can be changed directly from the main menu under `UI Settings > Theme Configuration`
 
-## **Configuration Options**
+| Setting | Description | Options |
+| -- | -- | -- |
+| Distribution | Used to define which folder to look in for Theme Customization files. | `Batocera`, `JELOS`, `RetroBat` | 
+| Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  JELOS supports 16:9, 4:3, 16:10, 5:3, 3:2 and 1:1 aspect ratios.  We default this automatically so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. | `16:9`, `16:10`, `4:3`, `3:2`, `5:3`, `1:1` |
+| Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`).  You can see details on customizations below under [Theme Customziations](#theme-customizations). | `Art Book Next`, `Art Book`, `Steam OS`, `SNES`, `Famicom`, `Black`, `Grayscale`, `Custom` |
+| Font Size | When this is set to custom it allows you to define custom font sizes for the gamelist.  You can see details on customizations below under [Theme Customziations](#theme-customizations). | `Default`, `Custom` |
+| System View Style | Defines the layout/design used for the System View | `Multi Artwork`, `Centered Artwork (Multiple Logos)`, `Centered Artwork (Single Logo)`, `No Artwork`, `Custom` | 
+| Gamelist View Style | Defines the layout/design used for the Gamelist View | `Metadata On`, `Metadata On (Immersive)`, `Metadata Off`, `Metadata Off (Immersive)` | 
 
-- The theme has a simple set of options that can be changed directly through the `UI Settings > Theme Configuration` menu in EmulationStation
-   - Options:
-   - `Distribution` - sets the distribution you are using (e.g. Batocera, RetroBat, JELOS).  This setting is used to define the folder where User Customizations will be stored.
-   - `Aspect Ratio` - sets the aspect ratio the theme will render at. If needed, this should be changed to match the aspect ratio of your screen.
-   - `Color Scheme`- sets the color scheme that is used for the overall theme on all views.
-   - `System View Style`- sets the layout used for the system view
-   - `Gamelist View Style`- sets the layout used for the gamelist view when media & metadata are scraped for your games
-   
-- 16:9, 16:10, 4:3, 3:2, 5:3 and 1:1 aspect ratios are currently supported
-- there are 4 gamelist layouts to choose from (metadata-on, metadata-on-immersive & metadata-off & metadata-off-immersive)
-- and 4 pre-built color schemes are currently available with the option of creating your own customized color scheme through a simple XML file (details below)
+## Theme Customizations
 
-### Preview of the Aspect Ratio & Layout Variants
+Art Book Next allows customizations to artwork, colors and fonts without the need to edit the source XML.  This enables you to change the look of the theme and still retain any changes when your OS is updated.
 
-| Aspect Ratio | Gamelist - Metadata On | Gamelist - Metadata Off |
-|----|----|----|
-| 16:9 | ![art-book-next-16-9-metadata-on](https://user-images.githubusercontent.com/1454947/175848140-4b202408-52ba-42d8-a8c8-8cfa95d9b8fb.png) | ![art-book-next-16-9-metadata-off](https://user-images.githubusercontent.com/1454947/175848185-3a630599-e954-4dc7-8e7a-a385c97436fd.png) |
-| 16:10 | ![art-book-next-16-10-metadata-on](https://user-images.githubusercontent.com/1454947/175848326-e77272eb-4370-43a9-ae12-7d7a5a79728c.png) | ![art-book-next-16-10-metadata-off](https://user-images.githubusercontent.com/1454947/175848355-5696ed70-52a3-4bc9-9c81-0fe7e1a1a5d7.png) |
-| 4:3 | ![art-book-next-4-3-metadata-on](https://user-images.githubusercontent.com/1454947/175848384-cc4529e1-bded-417b-a823-8894fece0c38.png) | ![art-book-next-4-3-metadata-off](https://user-images.githubusercontent.com/1454947/175848424-a49ed090-f49f-456b-bb42-8e88229d0309.png) |
+### Start Here 
+- Make sure your the `Distribution` value is set to the correct value for your current OS (e.g. Batocera, JELOS or RetroBat)
+- This value determines the folder where you will add your customizations
+    - Batocera = `userdata/theme-customizations/art-book-next/`
+    - JELOS = `storage/roms/jelos/theme-customizations/art-book-next/`
+    - Retrobat = `C:\RetroBat\emulationstation\.emulationstation\theme-customizations\art-book-next\`
+- Make sure the path that matches your distribution is created and then move on to the options below... 
 
-### Preview of the pre-built Color Schemes
+### Background Art
 
-| Color | Preview |
-|----|----|
-| Art Book Next  | ![art-book-next-16-9-metadata-on](https://user-images.githubusercontent.com/1454947/175848140-4b202408-52ba-42d8-a8c8-8cfa95d9b8fb.png) |
-| Art Book (based on my original theme from [2017](https://retropie.org.uk/forum/topic/11728/theme-art-book)) | ![Screen Shot 2022-07-21 at 12 11 33](https://user-images.githubusercontent.com/1454947/180265407-3ad891fd-2180-4054-8322-891bfdb20ca1.png) |
-| Steam OS (being used as the default for [RetroDeck](https://github.com/XargonWan/RetroDECK/)) | ![Screen Shot 2022-07-21 at 12 13 12](https://user-images.githubusercontent.com/1454947/180265431-719688ab-6b6b-4c68-821d-77b7a6da7c1e.png) | 
-| SNES (simply made for fun as the SNES was my first console) | ![Screen Shot 2022-07-21 at 12 12 26](https://user-images.githubusercontent.com/1454947/180265452-4a687612-d138-4e15-89bf-dc082f45f155.png) |
+The artwork used on the system view can be customized with your own images.  You can create either `centered` or `full screen` variations.
 
-## User Customizations
-When using the theme on Batocera you can make the following changes through `UI Settings > Theme Configuration` to tailor the look to your setup
+- Create a folder in the path you created above called `backgrounds`
+- Upload your custom background images to that folder
+- They can be named:
+    - _default.jpg
+    - _default.png
+    - ${system.theme}.jpg
+    - ${system.theme}.png
+- The theme will look them them up in that order.  If a given image is not found in your folder then the the images from the theme will be used as a fallback.  This allows you to customize only the images you want and still have images displayed for all systems.
+- `_default.jpg/png` can be used for creating a single image that is used for all systems OR a fallback for systems that you did not create a custom image for (if you don't want to use the fallback that already exists in the theme)
+- `${system.theme}.jpg/png` should be named for the system you are looking to override.  For example if you wanted to override the artwork for `snes` you would create an image called `snes.jpg` or `snes.png` in the backgrounds folder
+- once your images are in place you turn on custom images by changing the System View Style to either... 
+    - Centered Artwork (Custom)
+    - Multi Artwork (Custom)
+    - Fullscreen Artwork (Custom)
+    - *I added these options so you could switch off custom artwork without needing to delete your customizations*
 
-### Aspect Ratio... 
-Change this value to match your screen aspect ratio (default is 16-9)
-```
-Options:
-16:9
-16:10
-4:3
-5:3
-3:2
-1:1
-```
+To create `centered` artwork that matches the mask used in the theme you can use the `system-art-mask` files I supply in the theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations).  I have tried to include a mask that works in the major editing programs.
 
-### Gamelist Style... 
-Change this value to match your preferred gamelist layout (default is Metadata On)
-```
-Options:
-Metadata On 
-Metadata On (Immersive)
-Metadata Off
-Metadata Off (Immersive)
-```
+If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
 
-### Color Scheme...
-Change this value to match your preferred color scheme (default is Art Book Next)
-```
-Options:
-Art Book Next
-Art Book
-SNES
-Steam Deck
-Custom
-```
-If you change the color scheme option to `custom` then you can provide an XML file with your customizations to match the colors you prefer.  I am happy to add additional colors to the pre-built list too; so if you create one that you are comfortable with sharing please post it here: https://retropie.org.uk/forum/topic/33010/theme-art-book-next
+### Logos
 
-## **To-Do**
-(a quick list of items I am looking to add)
-* Create and add any missing background art
+The logos used on the system and gamelist views can be customized with your own images.
+
+- Create a folder in the path you created above called `logos`
+- Upload your custom logo images to that folder
+- They can be named:
+    - ${system.theme}.svg
+    - ${system.theme}.png
+- The theme will look them them up in that order.  I recommend SVGs as they scale better on different resolutions.
+- `${system.theme}.svg/png` should be named for the system you are looking to override.  For example if you wanted to override the artwork for `snes` you would create an image called `snes.svg` or `snes.png` in the logos folder
+- once your images are in place you turn on custom logos by changing the Color Scheme to `Custom` 
+
+### Color Schemes
+
+You can create your own custom color scheme to use for the theme
+
+- Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/colors.xml
+- Upload it in the path you created above and make sure its called `colors.xml`
+- Change any values in the template to the colors you prefer.  
+- I tried to make the values as self explanatory as possible but if you have questions regarding which property does what please don't hesitate to ask.
+- After your colors are defined; in theme configuration change `Color Scheme` to `Custom`
+
+### Fonts
+
+You can modify the font size used to display gamelists
+
+- Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/fonts.xml
+- Upload it in the path you created above and make sure its called `fonts.xml`
+- Change any values in the above template to the sizes you like. 
+- After your sizes are defined; in theme configuration change `Font Size` to `Custom`
 
 ## **Additional Notes**
-
-### Scraping:
-* To create the layout in the metadata-on variation i rely on the md_thumbnail, md_video and md_marquee tags.  So to get the same look these are my recommended scrape settings:
-   * `md_image` = screenshot
-   * `md_marquee` = wheel (the transparent wheel art)
-   * `md_thumbnail` = 2D boxart
-   * `md_video` = video (though this is optional as the theme also works with just md_image)
 
 ### Versions for other ES forks:
 * If you use Retropie... then check out the version [here](https://github.com/anthonycaccese/art-book-next-retropie).  The Retropie version has all the same base features but you have to change them through the XML directly (as Retropie's theme engine does not have a menu for changing theme options)
 * If you use ES-DE... then the ES-DE version [here](https://github.com/anthonycaccese/art-book-next-es-de) will work out of the box with that distribution.  When used with ES-DE the theme comes with additional support for navigation sound sets.
 
-## **Acknowledgments**
+### **Acknowledgments**
 * Most system logos were sourced and modified from the excellent work done by Dan Patrick [here](https://archive.org/details/console-logos-professionally-redrawn-plus-official-versions).  I modified each to be compatible with EmulationStation's current SVG support.
 * ChangaOne font is by [Eduardo Tunni](https://www.fontsquirrel.com/fonts/changa)
 * Oxygen font is by [Vernon Adams](https://www.fontsquirrel.com/fonts/oxygen)
