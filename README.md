@@ -28,12 +28,12 @@ The following options can be changed directly from the main menu under `UI Setti
 Art Book Next allows customizations to artwork, colors and fonts without the need to edit the source XML.  This enables you to change the look of the theme and still retain any changes when your OS is updated.
 
 ### Start Here 
-- Make sure your the `Distribution` value is set to the correct value for your current OS (e.g. Batocera, JELOS or RetroBat)
+- Make sure the `Distribution` setting is set to the correct value for your current OS (e.g. Batocera, JELOS or RetroBat)
 - This value determines the folder where you will add your customizations
     - Batocera = `userdata/theme-customizations/art-book-next/`
     - JELOS = `storage/roms/jelos/theme-customizations/art-book-next/`
     - Retrobat = `C:\RetroBat\emulationstation\.emulationstation\theme-customizations\art-book-next\`
-- Make sure the path that matches your distribution is created and then move on to the options below... 
+- Create the folders that matche your distribution and then move on to the options below... 
 
 ### Background Art
 
