@@ -1,9 +1,5 @@
 <theme>
    <formatVersion>7</formatVersion>
-   <subset ifSubset="distribution:jelos" name="swap-a-b" displayName="Switch A &amp; B Buttons in EmulationStation">
-      <include name="false" displayName="False" />
-      <include name="true" displayName="True" />
-   </subset>
    <view name="system,basic,detailed,video">
       <helpsystem ifHelpPrompts="true" name="help">
          <textColor>FFFFFF77</textColor>
@@ -13,10 +9,6 @@
          <iconUpDownLeftRight>./_inc/images/help-dpad-updownleftright.svg</iconUpDownLeftRight>
          <iconA>./_inc/images/help-button-east.svg</iconA>
          <iconB>./_inc/images/help-button-south.svg</iconB>
-         <iconA ifSubset="distribution:jelos,swap-a-b:true">./_inc/images/help-button-east.svg</iconA>
-         <iconB ifSubset="distribution:jelos,swap-a-b:true">./_inc/images/help-button-south.svg</iconB>
-         <iconA ifSubset="distribution:jelos,swap-a-b:false">./_inc/images/help-button-south.svg</iconA>
-         <iconB ifSubset="distribution:jelos,swap-a-b:false">./_inc/images/help-button-east.svg</iconB>
          <iconX>./_inc/images/help-button-north.svg</iconX>
          <iconY>./_inc/images/help-button-west.svg</iconY>
       </helpsystem>

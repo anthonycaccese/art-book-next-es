@@ -9,7 +9,6 @@ license:       creative commons CC-BY-NC-SA
    <!-- Distribution -->
    <subset name="distribution" displayName="Distribution">
       <include name="batocera" displayName="Batocera" />
-      <include name="jelos" displayName="JELOS" />
       <include name="retrobat" displayName="Retrobat" />
    </subset>
 
@@ -20,22 +19,21 @@ license:       creative commons CC-BY-NC-SA
       <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
       <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
-      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
-      <distributionPath ifSubset="distribution:jelos">~/roms/jelos/</distributionPath><!-- storage/roms/jelos/ -->
       <distributionPath ifSubset="distribution:batocera">./../../</distributionPath><!-- userdata/ -->
+      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
    <!-- Aspect Ratio -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include ifSubset="distribution:batocera,retrobat" if="${screen.width} == '1152' && ${screen.height} == '1920'" name="5-3" displayName="5:3 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="${screen.width} == '1200' && ${screen.height} == '720'" name="5-3" displayName="5:3 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="${screen.width} == '1800' && ${screen.height} == '1080'" name="5-3" displayName="5:3 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="${screen.width} == '720' && ${screen.height} == '720'" name="1-1" displayName="1:1 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
-      <include ifSubset="distribution:batocera,retrobat" if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
+      <include if="${screen.width} == '1152' && ${screen.height} == '1920'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="${screen.width} == '1200' && ${screen.height} == '720'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="${screen.width} == '1800' && ${screen.height} == '1080'" name="5-3" displayName="5:3 (Detected)" />
+      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="1-1" displayName="1:1 (Detected)" />
+      <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
+      <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />
+      <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
+      <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
       <include name="16-9" displayName="16:9" />
       <include name="16-10" displayName="16:10" />
       <include name="4-3" displayName="4:3" />
