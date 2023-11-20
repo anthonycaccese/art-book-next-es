@@ -63,7 +63,7 @@ license:       creative commons CC-BY-NC-SA
    </subset>
 
    <!-- System View Style -->
-   <subset name="system-view-style" displayName="System View Style">
+   <subset name="system-view-style" displayName="System View: Style">
       <include name="multi" displayName="Multi Artwork" />
       <include name="centered" displayName="Centered Artwork (Multiple Logos)" />
       <include name="centered-one-logo" displayName="Centered Artwork (Single Logo)" />
@@ -74,11 +74,17 @@ license:       creative commons CC-BY-NC-SA
    </subset>
 
    <!-- Gamelist View Style -->
-   <subset name="gamelist-view-style" displayName="Gamelist View Style">
+   <subset name="gamelist-view-style" displayName="Gamelist View: Style">
       <include name="metadata-on" displayName="Metadata On" />
       <include name="metadata-on-immersive" displayName="Metadata On (Immersive)" />
       <include name="metadata-off" displayName="Metadata Off" />
       <include name="metadata-off-immersive" displayName="Metadata Off (Immersive)" />
+   </subset>
+
+   <!-- Gamelist View Loop Video -->
+   <subset name="gamelist-loop-video" displayName="Gamelist View: Loop Video">
+      <include name="off" displayName="Off" />
+      <include name="on" displayName="On" />
    </subset>
 
    <view name="screen">
@@ -380,6 +386,8 @@ license:       creative commons CC-BY-NC-SA
          <color ifSubset="gamelist-view-style:metadata-on-immersive">FFFFFFDD</color>
          <color ifSubset="gamelist-view-style:metadata-off-immersive">FFFFFF99</color>
          <zIndex>3</zIndex>
+         <loops ifSubset="gamelist-loop-video:off">0</loops>
+         <loops ifSubset="gamelist-loop-video:on">-1</loops>
       </video>
    </view>
 
