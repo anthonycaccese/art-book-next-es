@@ -19,8 +19,8 @@ license:       creative commons CC-BY-NC-SA
       <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
       <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
-      <distributionPath ifSubset="distribution:batocera">./../../</distributionPath><!-- userdata/ -->
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
+      <distributionPath ifSubset="distribution:batocera">./../../</distributionPath><!-- userdata/ -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
