@@ -101,6 +101,7 @@ You can modify the font size used to display gamelists
 * Most system logos were sourced and modified from the excellent work done by Dan Patrick [here](https://archive.org/details/console-logos-professionally-redrawn-plus-official-versions).  I modified each to be compatible with EmulationStation's current SVG support.
 * ChangaOne font is by [Eduardo Tunni](https://www.fontsquirrel.com/fonts/changa)
 * Oxygen font is by [Vernon Adams](https://www.fontsquirrel.com/fonts/oxygen)
+* Auto-Collection Genre background art created by [@nautipuss](https://github.com/nautipuss)
 
 ## **License**
 Creative Commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/2.0/
