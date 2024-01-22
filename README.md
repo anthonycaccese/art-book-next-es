@@ -18,8 +18,8 @@ The following options can be changed directly from the main menu under `UI Setti
 | -- | -- | -- |
 | Distribution | Used to define which folder to look in for Theme Customization files. | `Batocera`, `RetroBat` | 
 | Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  This will automatically set itself so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. | `16:9`, `16:10`, `4:3`, `3:2`, `5:3`, `1:1` |
-| Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`).  You can see details on customizations below under [Theme Customziations](#theme-customizations). | `Art Book Next`, `Art Book`, `Steam OS`, `SNES`, `Famicom`, `Black`, `Grayscale`, `Custom` |
-| Font Size | When this is set to custom it allows you to define custom font sizes for the gamelist.  You can see details on customizations below under [Theme Customziations](#theme-customizations). | `Default`, `Custom` |
+| Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`).  You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Art Book Next`, `Art Book`, `Steam OS`, `SNES`, `Famicom`, `Black`, `Grayscale`, `Custom` |
+| Font Size | When this is set to custom it allows you to define custom font sizes for the gamelist.  You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Default`, `Custom` |
 | System View Style | Defines the layout/design used for the System View | `Multi Artwork`, `Centered Artwork (Multiple Logos)`, `Centered Artwork (Single Logo)`, `No Artwork`, `Custom` | 
 | Gamelist View Style | Defines the layout/design used for the Gamelist View | `Metadata On`, `Metadata On (Immersive)`, `Metadata Off`, `Metadata Off (Immersive)` | 
 
@@ -32,7 +32,7 @@ Art Book Next allows customizations to artwork, colors and fonts without the nee
 - This value determines the folder where you will add your customizations
     - Batocera = `userdata/theme-customizations/art-book-next/`
     - Retrobat = `C:\RetroBat\emulationstation\.emulationstation\theme-customizations\art-book-next\`
-- Create the folders that matche your distribution and then move on to the options below... 
+- Create the folders that match your distribution and then move on to the options below... 
 
 ### Background Art
 
@@ -105,6 +105,6 @@ You can modify the font size used to display gamelists
 
 ## **License**
 Creative Commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/2.0/
-You are free to share and adapt this theme as long as you provide attribution back to me (and the above credits) as well share any updates you make under the same licence terms.
+You are free to share and adapt this theme as long as you provide attribution back to me (and the above credits) as well share any updates you make under the same license terms.
 
 Thank you for taking a look at this 😄
