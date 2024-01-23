@@ -9,7 +9,6 @@ This version of the theme works with all distributions that leverage the Batocer
 | -- | -- |
 | ![gamelist-view-1](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/e8251f3c-f033-43ed-8b55-f3a93c28131a) | ![gamelist-view-2](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/fadfba3e-54a4-48e2-a11c-39c52797dc56) |
 
-
 ## Theme Configuration
 
 The following options can be changed directly from the main menu under `UI Settings > Theme Configuration`
