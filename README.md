@@ -102,6 +102,7 @@ You can modify the font size used to display gamelists
 * Oxygen font is by [Vernon Adams](https://www.fontsquirrel.com/fonts/oxygen)
 * Auto-Collection Genre background art created by [@nautipuss](https://github.com/nautipuss)
 * Metadata Icons sourced from [FontAwesome](https://fontawesome.com/search?o=r&m=free)
+* Thank you to [GenoCL](https://genocl.carrd.co/) for the idea of the multi-artwork system view.  It got me to think about ES themes in a different way when building it out and it came out awesome.
 
 ## **License**
 Creative Commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/2.0/
