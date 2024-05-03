@@ -1,7 +1,9 @@
+<!-- 
+16:9 aspect ratio
+based on 853x480
+-->
 <theme>
    <formatVersion>7</formatVersion>
-
-   <include>./help-system.xml</include>
 
    <view name="screen">
       <batteryIndicator name="batteryIndicator">
@@ -10,21 +12,28 @@
       </batteryIndicator>
    </view>
 
-   <view name="system">
-      <text name="logoText">
-         <fontSize>0.1</fontSize><!-- 108 -->
-      </text>
-      <image ifSubset="system-view-style:centered|centered-custom|centered-one-logo" name="system-art-mask" extra="true">
-         <path>./_inc/images/system-art-mask-16-9.png</path>
+   <view name="system,basic,detailed,video">
+      <image ifHelpPrompts="true" name="help-background" extra="static">
+         <size>1 0.114583333333333</size><!-- 853 55 -->
       </image>
-      <carousel ifSubset="system-view-style:multi|multi-custom" name="systemcarousel">
+      <helpsystem ifHelpPrompts="true" name="help">
+         <pos>0.5 0.942708333333333</pos><!-- 426.5 452.5 -->
+         <fontSize ifSubset="font-size:default|large">0.0375</fontSize><!-- 18 -->
+         <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
+      </helpsystem>
+   </view>
+
+   <view name="system">
+      <carousel name="systemcarousel">
          <logoSize>1.1 1.1</logoSize>
          <maxLogoCount>5</maxLogoCount>
       </carousel>
-      <image ifSubset="system-view-style:fullscreen-custom" name="system-art" extra="true">
-         <size>1 0</size>
-      </image>
    </view>
+
+
+
+
+   
 
    <view name="basic,detailed,video">
       <image name="logo">
