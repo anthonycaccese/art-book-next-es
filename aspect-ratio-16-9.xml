@@ -5,24 +5,36 @@ based on 853x480
 <theme>
    <formatVersion>7</formatVersion>
 
+   <!--
+   ///
+   View: Screen
+   ///
+   -->
    <view name="screen">
-      <batteryIndicator name="batteryIndicator">
-         <pos>0 0.018518518518519</pos><!-- 0 20 -->
-         <size>0.989583333333333 0.046296296296296</size><!-- 1900 50 -->
-      </batteryIndicator>
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.981242672919109</w><!-- 837 -->
+         <separator>10</separator>
+      </stackpanel>
    </view>
 
+   <!--
+   ///
+   View: All
+   ///
+   -->
    <view name="system,basic,detailed,video">
-      <image ifHelpPrompts="true" name="help-background" extra="static">
-         <size>1 0.114583333333333</size><!-- 853 55 -->
-      </image>
       <helpsystem ifHelpPrompts="true" name="help">
-         <pos>0.5 0.942708333333333</pos><!-- 426.5 452.5 -->
+         <pos>0.5 0.942708333333333</pos><!-- 50% 452.5 -->
          <fontSize ifSubset="font-size:default|large">0.0375</fontSize><!-- 18 -->
          <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
       </helpsystem>
    </view>
 
+   <!--
+   ///
+   View: System
+   ///
+   -->
    <view name="system">
       <carousel name="systemcarousel">
          <logoSize>1.1 1.1</logoSize>
@@ -33,7 +45,7 @@ based on 853x480
 
 
 
-   
+
 
    <view name="basic,detailed,video">
       <image name="logo">

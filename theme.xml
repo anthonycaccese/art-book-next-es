@@ -10,6 +10,9 @@ stackpanel
 bindings https://discord.com/channels/357518249883205632/857328707763961886/1185266395089481920
 itemtemplate
 
+Notes:
+Rect is "left top right bottom"
+
 -->
 <theme defaultTransition="instant">
    <formatVersion>7</formatVersion>
@@ -90,14 +93,34 @@ itemtemplate
 
    <!--
    ///
-   Subset: System View Images
+   Subset: System View Artwork
    ///
    -->
-   <subset name="system-view-images" displayName="System View Images">
+   <subset name="system-view-images" displayName="System View Artwork">
       <include name="default" displayName="Default" />
       <include name="noir" displayName="Noir" />
       <include name="classic" displayName="Classic" />
       <include name="custom" displayName="Custom" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Gamelist View Metadata
+   ///
+   -->
+   <subset name="gamelist-view-metadata" displayName="Gamelist View Metadata">
+      <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Gamelist Media Display
+   ///
+   -->
+   <subset name="gamelist-view-artwork" displayName="Gamelist View Artwork">
+      <include name="boxart" displayName="Boxart" />
+      <include name="screenshot-marquee" displayName="Screenshot &amp; Marquee" />
    </subset>
 
    <!--
@@ -107,8 +130,8 @@ itemtemplate
    -->
    <subset name="gamelist-view-layout" displayName="Gamelist View Layout">
       <include name="list-metadata-boxart" displayName="Metadata &amp; Boxart" />
-      <include name="list-metadata-screenshot-marquee" displayName="Metadata, Screenshot &amp; Marquee" />
       <include name="list-boxart" displayName="Boxart" />
+      <include name="list-metadata-screenshot-marquee" displayName="Metadata, Screenshot &amp; Marquee" />
       <include name="list-screenshot-marquee" displayName="Screenshot &amp; Marquee" />
    </subset>
 
@@ -118,35 +141,49 @@ itemtemplate
    ///
    -->
    <view name="screen">
+      <!-- Start: Resets -->
       <controllerActivity name="controllerActivity">
          <visible>false</visible>
       </controllerActivity>
+      <batteryIndicator name="batteryIndicator">
+         <visible>false</visible>
+      </batteryIndicator>
+      <text name="clock">
+         <pos>1 1</pos>
+      </text>
+      <!-- End: Resets -->
       <stackpanel name="system-indicators" extra="true">
-         <origin>1 0</origin>
-         <pos>1 0</pos>
-         <size>1 0.05</size><!-- 100% 24 -->
+         <h>0.05</h><!-- 24 -->
+         <pos>0 0.033333333333333</pos><!-- 0 16 -->
          <orientation>horizontal</orientation>
-         <separator>2</separator>
          <reverse>true</reverse>
          <batteryText name="system-battery-text">
             <color>${statusBarIconColor}</color>
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>0.033333333333333</fontSize><!-- 16 -->
+            <lineSpacing>1</lineSpacing>
          </batteryText>
          <batteryIcon name="system-battery-icon">
+            <maxSize>1 1</maxSize>
             <color>${statusBarIconColor}</color>
-            <full>./_inc/images/battery-100-vertical.svg</full>
-            <at75>./_inc/images/battery-75-vertical.svg</at75>
-            <at50>./_inc/images/battery-50-vertical.svg</at50>
-            <at25>./_inc/images/battery-25-vertical.svg</at25>
-            <empty>./_inc/images/battery-0-vertical.svg</empty>
-            <incharge>./_inc/images/battery-charging-vertical.svg</incharge>
+            <full>./_inc/images/battery-icon-100.svg</full>
+            <at75>./_inc/images/battery-icon-75.svg</at75>
+            <at50>./_inc/images/battery-icon-50.svg</at50>
+            <at25>./_inc/images/battery-icon-25.svg</at25>
+            <empty>./_inc/images/battery-icon-0.svg</empty>
+            <incharge>./_inc/images/battery-icon-charging.svg</incharge>
          </batteryIcon>
          <networkIcon name="system-network-icon">
+            <maxSize>1 1</maxSize>
             <color>${statusBarIconColor}</color>
-            <networkIcon>./_inc/images/wifi-vertical.svg</networkIcon>
-            <planemodeIcon>./_inc/images/wifi-vertical.svg</planemodeIcon>
+            <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+            <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
          </networkIcon>
          <clock name="system-clock">
             <color>${statusBarIconColor}</color>
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>0.033333333333333</fontSize><!-- 16 -->
+            <lineSpacing>1</lineSpacing>
          </clock>
       </stackpanel>
    </view>
@@ -158,7 +195,6 @@ itemtemplate
    -->
    <view name="system,basic,detailed,video">
       <image name="background" extra="true">
-         <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
          <path>${spacerImage}</path>
@@ -168,6 +204,7 @@ itemtemplate
       <image ifHelpPrompts="true" name="help-background" extra="true">
          <origin>0 1</origin>
          <pos>0 1</pos>
+         <size>1 0.114583333333333</size><!-- 100% 55 -->
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>${helpBackgroundColor}</color>
@@ -185,7 +222,6 @@ itemtemplate
          <iconY>./_inc/images/help-button-west.svg</iconY>
       </helpsystem>
       <helpsystem ifHelpPrompts="false" name="help">
-         <origin>0 0</origin>
          <pos>1 1</pos>
       </helpsystem>
    </view>
@@ -196,12 +232,14 @@ itemtemplate
    ///
    -->
    <view name="system">
+      <!-- Start: Resets -->
       <text name="systemInfo">
          <pos>1 1</pos>
       </text>
       <text name="logoText">
          <pos>1 1</pos>
       </text>
+      <!-- End: Resets -->
       <image name="logo">
          <path ifSubset="system-view-images:default">./_inc/systems/images-default/_default.png</path>
          <path ifSubset="system-view-images:default">./_inc/systems/images-default/${system.theme}.png</path>
