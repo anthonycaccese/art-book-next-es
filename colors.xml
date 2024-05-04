@@ -18,6 +18,7 @@
       <gamelistListRatingColor>ffffff33</gamelistListRatingColor>
       <!-- Menu View -->
       <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuSelectorColor>444444</menuSelectorColor>
       <!-- Screen View -->
       <systemIndicatorColor>eeeeee</systemIndicatorColor>
       <!-- Help System -->
@@ -25,67 +26,56 @@
       <helpIconColor>444444</helpIconColor>
       <helpTextColor>666666</helpTextColor>
    </variables>
-
-
-
-
-
    <variables ifSubset="color-scheme:light">
-      <backgroundColor>000000</backgroundColor>
       <!-- System View -->
-      <systemBackgroundColor>111111</systemBackgroundColor>
-      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
-      <systemArtColor>ffffff</systemArtColor>
+      <systemBackgroundColor>000000</systemBackgroundColor>
       <systemArtSaturation>1</systemArtSaturation>
-      <systemArtFade>00000044</systemArtFade>
-      <systemMaskColor>111111</systemMaskColor>
-      <systemLogoColor>eeeeee</systemLogoColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemLogoColor>ffffff</systemLogoColor>
       <!-- Gamelist View - List Variants -->
+      <gamelistListBackgroundColor>dddddd</gamelistListBackgroundColor>
       <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
       <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
       <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
       <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
-      <gamelistListMetadataBackgroundColor>dddddd</gamelistListMetadataBackgroundColor>
       <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
       <gamelistListMetadataIconColor>00000055</gamelistListMetadataIconColor>
       <gamelistListDescriptionColor>000000dd</gamelistListDescriptionColor>
       <gamelistListRatingColor>00000055</gamelistListRatingColor>
+      <!-- Menu View -->
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Screen View -->
+      <systemIndicatorColor>eeeeee</systemIndicatorColor>
       <!-- Help System -->
       <helpBackgroundColor>000000</helpBackgroundColor>
-      <helpIconColor>ffffff66</helpIconColor>
-      <helpTextColor>ffffff66</helpTextColor>
-      <!-- Menu System -->
-      <menuBackgroundColor>111111</menuBackgroundColor>
-      <statusBarBackgroundColor>111111</statusBarBackgroundColor>
-      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <helpIconColor>444444</helpIconColor>
+      <helpTextColor>666666</helpTextColor>
    </variables>
    <variables ifSubset="color-scheme:steam-os">
-      <backgroundColor>000000</backgroundColor>
       <!-- System View -->
-      <systemBackgroundColor>0D141C</systemBackgroundColor>
-      <systemCarouselBackgroundColor>0D141C</systemCarouselBackgroundColor>
-      <systemArtColor>ffffff</systemArtColor>
+      <systemBackgroundColor>000000</systemBackgroundColor>
       <systemArtSaturation>1</systemArtSaturation>
-      <systemArtFade>00000044</systemArtFade>
-      <systemMaskColor>0D141C</systemMaskColor>
-      <systemLogoColor>eeeeee</systemLogoColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemLogoColor>ffffff</systemLogoColor>
       <!-- Gamelist View - List Variants -->
+      <gamelistListBackgroundColor>23262F</gamelistListBackgroundColor>
       <gamelistListTextlistBackgroundColor>0D141C</gamelistListTextlistBackgroundColor>
       <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
       <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
       <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
-      <gamelistListMetadataBackgroundColor>23262F</gamelistListMetadataBackgroundColor>
       <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
       <gamelistListMetadataIconColor>ffffff33</gamelistListMetadataIconColor>
       <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
       <gamelistListRatingColor>ffffff33</gamelistListRatingColor>
+      <!-- Menu View -->
+      <menuBackgroundColor>0D141C</menuBackgroundColor>
+      <menuSelectorColor>444a5c</menuSelectorColor>
+      <!-- Screen View -->
+      <systemIndicatorColor>eeeeee</systemIndicatorColor>
       <!-- Help System -->
       <helpBackgroundColor>000000</helpBackgroundColor>
-      <helpIconColor>ffffff66</helpIconColor>
-      <helpTextColor>ffffff66</helpTextColor>
-      <!-- Menu System -->
-      <menuBackgroundColor>0D141C</menuBackgroundColor>
-      <statusBarBackgroundColor>0D141C</statusBarBackgroundColor>
-      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <helpIconColor>444444</helpIconColor>
+      <helpTextColor>666666</helpTextColor>
    </variables>
 </theme>

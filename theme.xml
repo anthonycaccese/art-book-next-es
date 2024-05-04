@@ -13,6 +13,84 @@ itemtemplate
 
    <!--
    ///
+   Subset: Aspect Ratio
+   ///
+   -->
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="1-1-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Automatic" />
+      <include name="16-9" displayName="16:9" />
+      <include name="16-10" displayName="16:10" />
+      <include name="4-3" displayName="4:3" />
+      <include name="3-2" displayName="3:2" />
+      <include name="1-1" displayName="1:1" />
+   </subset>
+
+   <!--
+   ///
+   Subset: System View Artwork
+   ///
+   -->
+   <subset name="system-view-artwork" displayName="System Artwork">
+      <include name="default" displayName="Default" />
+      <include name="noir" displayName="Noir" />
+      <include name="classic" displayName="Classic" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Gamelist Media Artwork
+   ///
+   -->
+   <subset name="gamelist-view-artwork" displayName="Game Artwork">
+      <include name="boxart" displayName="Boxart" />
+      <include name="image-cropped" displayName="Image (Cropped)" />
+      <include name="image" displayName="Image" />
+      <include name="fanart" displayName="Fanart" />
+      <include name="mix" displayName="Mix" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Gamelist View Metadata
+   ///
+   -->
+   <subset name="gamelist-view-metadata" displayName="Game Metadata">
+      <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Font Size
+   ///
+   -->
+   <subset name="font-size" displayName="Font Size">
+      <include name="default" displayName="Default" />
+      <include name="large" displayName="Large" />
+      <include name="small" displayName="Small" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Color Scheme
+   ///
+   -->
+   <subset name="color-scheme" displayName="Color Scheme">
+      <include name="default" displayName="Default" />
+      <include name="light" displayName="Light" />
+      <include name="steam-os" displayName="SteamOS" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+   <include>./colors.xml</include>
+   <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
+
+   <!--
+   ///
    Subset: Distribution
    ///
    -->
@@ -39,81 +117,6 @@ itemtemplate
 
    <!--
    ///
-   Subset: Aspect Ratio
-   ///
-   -->
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="1-1" displayName="1:1 (Detected)" />
-      <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
-      <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" />
-      <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
-      <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
-      <include name="16-9" displayName="16:9" />
-      <include name="16-10" displayName="16:10" />
-      <include name="4-3" displayName="4:3" />
-      <include name="3-2" displayName="3:2" />
-      <include name="1-1" displayName="1:1" />
-   </subset>
-
-   <!--
-   ///
-   Subset: Color Scheme
-   ///
-   -->
-   <subset name="color-scheme" displayName="Color Scheme">
-      <include name="default" displayName="Default" />
-      <include name="light" displayName="Light" />
-      <include name="steam-os" displayName="SteamOS" />
-      <include name="custom" displayName="Custom" />
-   </subset>
-   <include>./colors.xml</include>
-   <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
-
-   <!--
-   ///
-   Subset: Font Size
-   ///
-   -->
-   <subset name="font-size" displayName="Font Size">
-      <include name="default" displayName="Default" />
-      <include name="large" displayName="Large" />
-      <include name="small" displayName="Small" />
-   </subset>
-
-   <!--
-   ///
-   Subset: System View Artwork
-   ///
-   -->
-   <subset name="system-view-artwork" displayName="System View Artwork">
-      <include name="default" displayName="Default" />
-      <include name="noir" displayName="Noir" />
-      <include name="classic" displayName="Classic" />
-      <include name="custom" displayName="Custom" />
-   </subset>
-
-   <!--
-   ///
-   Subset: Gamelist View Metadata
-   ///
-   -->
-   <subset name="gamelist-view-metadata" displayName="Gamelist View Metadata">
-      <include name="on" displayName="On" />
-      <include name="off" displayName="Off" />
-   </subset>
-
-   <!--
-   ///
-   Subset: Gamelist Media Display
-   ///
-   -->
-   <subset name="gamelist-view-artwork" displayName="Gamelist View Artwork">
-      <include name="boxart" displayName="Boxart" />
-      <include name="image" displayName="Image" />
-   </subset>
-
-   <!--
-   ///
    View: Screen
    ///
    -->
@@ -130,14 +133,17 @@ itemtemplate
       </text>
       <!-- End: Resets -->
       <stackpanel name="system-indicators" extra="true">
-         <h>0.05</h><!-- 24 -->
-         <pos>0 0.0208333333333333</pos><!-- 0 10 -->
+         <h ifSubset="font-size:small">0.033333333333333</h><!-- 16 -->
+         <h ifSubset="font-size:default">0.041666666666667</h><!-- 20 -->
+         <h ifSubset="font-size:large">0.05</h><!-- 24 -->
+         <pos>0 0.041666666666667</pos><!-- 0 20 -->
          <orientation>horizontal</orientation>
          <reverse>true</reverse>
          <batteryText name="system-battery-text">
             <color>${systemIndicatorColor}</color>
             <fontPath>${fontBold}</fontPath>
-            <fontSize>0.033333333333333</fontSize><!-- 16 -->
+            <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
+            <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
             <lineSpacing>1</lineSpacing>
          </batteryText>
          <batteryIcon name="system-battery-icon">
@@ -159,7 +165,8 @@ itemtemplate
          <clock name="system-clock">
             <color>${systemIndicatorColor}</color>
             <fontPath>${fontBold}</fontPath>
-            <fontSize>0.033333333333333</fontSize><!-- 16 -->
+            <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
+            <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
             <lineSpacing>1</lineSpacing>
          </clock>
       </stackpanel>
@@ -274,7 +281,7 @@ itemtemplate
    <view name="basic,detailed">
       <image name="background" extra="true">
          <color>${gamelistListBackgroundColor}</color>
-         <color ifSubset="gamelist-view-artwork:boxart,gamelist-view-metadata:off">${gamelistListTextlistBackgroundColor}</color>
+         <color ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">${gamelistListTextlistBackgroundColor}</color>
       </image>
       <image name="gamelist-background" extra="true">
          <origin>0 0</origin>
@@ -308,6 +315,10 @@ itemtemplate
          <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
          <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
          <zIndex>5</zIndex>
+         <scrollbarColor ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">ffffff11</scrollbarColor>
+         <scrollbarSize ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">0.01</scrollbarSize>
+         <scrollbarCorner ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">0.5</scrollbarCorner>
+         <scrollbarAlignment ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">outer right</scrollbarAlignment>
       </textlist>
    </view>
 
@@ -347,9 +358,13 @@ itemtemplate
       <!-- End: Resets -->
       <image name="game-artwork" extra="true">
          <origin>0.5 0.5</origin>
-         <zIndex>3</zIndex>
          <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
-         <path ifSubset="gamelist-view-artwork:image">{game:image}</path>
+         <path ifSubset="gamelist-view-artwork:image-cropped|image">{game:image}</path>
+         <path ifSubset="gamelist-view-artwork:fanart">{game:fanart}</path>
+         <path ifSubset="gamelist-view-artwork:mix">{game:mix}</path>
+         <roundCorners ifSubset="gamelist-view-artwork:boxart|image">0.02</roundCorners>
+         <autoFade>false</autoFade>
+         <zIndex>3</zIndex>
       </image>
       <!--<image ifSubset="gamelist-view-artwork:image" name="game-logo">
          <origin>0.5 0.5</origin>
@@ -409,8 +424,9 @@ itemtemplate
          <fontPath>${fontBold}</fontPath>
          <fontSize>0.035</fontSize>
          <color>ffffff77</color>
-         <separatorColor>ffffff11</separatorColor>
+         <separatorColor>111111</separatorColor>
          <selectedColor>ffffff</selectedColor>
+         <selectorColor>${menuSelectorColor}</selectorColor>
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
@@ -457,11 +473,10 @@ itemtemplate
    Include: Aspect Ratios
    ///
    -->
-   <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
-   <!--<include ifSubset="aspect-ratio:16-10">./aspect-ratio-16-10.xml</include>
-   <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
-   <include ifSubset="aspect-ratio:3-2">./aspect-ratio-3-2.xml</include>
-   <include ifSubset="aspect-ratio:5-3">./aspect-ratio-5-3.xml</include>
-   <include ifSubset="aspect-ratio:1-1">./aspect-ratio-1-1.xml</include>-->
+   <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
+   <!--<include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
+   <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
+   <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>-->
 
 </theme>
