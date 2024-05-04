@@ -1,15 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 theme name:    Art Book Next (Batocera Edition)
 author:        Anthony Caccese
 license:       creative commons CC-BY-NC-SA
 https://github.com/anthonycaccese/art-book-next-es
-
-ToDo:
-bindings https://discord.com/channels/357518249883205632/857328707763961886/1185266395089481920
-itemtemplate
 -->
 <theme defaultTransition="instant">
    <formatVersion>7</formatVersion>
+
+   <!--
+   ///
+   Subset: Distribution
+   ///
+   -->
+   <subset name="distribution" displayName="Distribution">
+      <include name="batocera" displayName="Batocera" />
+      <include name="retrobat" displayName="Retrobat" />
+   </subset>
+
+   <!--
+   ///
+   Variables
+   ///
+   -->
+   <variables>
+      <fontRegular>./_inc/fonts/Roboto-Regular.ttf</fontRegular>
+      <fontBold>./_inc/fonts/Roboto-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Roboto-Light.ttf</fontLight>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
+      <distributionPath ifSubset="distribution:batocera">./../../</distributionPath><!-- userdata/ -->
+      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+   </variables>
 
    <!--
    ///
@@ -51,7 +74,6 @@ itemtemplate
       <include name="image-cropped" displayName="Image (Cropped)" />
       <include name="image" displayName="Image" />
       <include name="fanart" displayName="Fanart" />
-      <include name="mix" displayName="Mix" />
    </subset>
 
    <!--
@@ -88,32 +110,6 @@ itemtemplate
    </subset>
    <include>./colors.xml</include>
    <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
-
-   <!--
-   ///
-   Subset: Distribution
-   ///
-   -->
-   <subset name="distribution" displayName="Distribution">
-      <include name="batocera" displayName="Batocera" />
-      <include name="retrobat" displayName="Retrobat" />
-   </subset>
-
-   <!--
-   ///
-   Variables
-   ///
-   -->
-   <variables>
-      <fontRegular>./_inc/fonts/Roboto-Regular.ttf</fontRegular>
-      <fontBold>./_inc/fonts/Roboto-Bold.ttf</fontBold>
-      <fontLight>./_inc/fonts/Roboto-Light.ttf</fontLight>
-      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
-      <spacerImage>./_inc/images/space.png</spacerImage>
-      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
-      <distributionPath ifSubset="distribution:batocera">./../../</distributionPath><!-- userdata/ -->
-      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
-   </variables>
 
    <!--
    ///
@@ -195,6 +191,7 @@ itemtemplate
       </image>
       <helpsystem ifHelpPrompts="true" name="help">
          <origin>0.5 0.5</origin>
+         <pos>0.5 0.942708333333333</pos><!-- 50% 452.5 -->
          <textColor>${helpTextColor}</textColor>
          <iconColor>${helpIconColor}</iconColor>
          <iconUpDown>./_inc/images/help-dpad-updown.svg</iconUpDown>
@@ -204,6 +201,7 @@ itemtemplate
          <iconB>./_inc/images/help-button-south.svg</iconB>
          <iconX>./_inc/images/help-button-north.svg</iconX>
          <iconY>./_inc/images/help-button-west.svg</iconY>
+         <fontSize>0.033333333333333</fontSize><!-- 16 -->
       </helpsystem>
       <helpsystem ifHelpPrompts="false" name="help">
          <pos>1 1</pos>
@@ -361,30 +359,26 @@ itemtemplate
          <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
          <path ifSubset="gamelist-view-artwork:image-cropped|image">{game:image}</path>
          <path ifSubset="gamelist-view-artwork:fanart">{game:fanart}</path>
-         <path ifSubset="gamelist-view-artwork:mix">{game:mix}</path>
          <roundCorners ifSubset="gamelist-view-artwork:boxart|image">0.02</roundCorners>
          <autoFade>false</autoFade>
          <zIndex>3</zIndex>
       </image>
-      <!--<image ifSubset="gamelist-view-artwork:image" name="game-logo">
-         <origin>0.5 0.5</origin>
-         <zIndex>3</zIndex>
+      <image ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-logo" extra="true">
+         <origin ifSubset="gamelist-view-metadata:on">0 1</origin>
+         <origin ifSubset="gamelist-view-metadata:off">0.5 0.5</origin>
          <path>{game:marquee}</path>
-      </image>-->
-
-      <!--<image name="md_image">
-         <origin>0.5 0.5</origin>
-         <zIndex>3</zIndex>
+         <autoFade>false</autoFade>
+         <zIndex ifSubset="gamelist-view-metadata:off">6</zIndex>
+         <zIndex ifSubset="gamelist-view-metadata:off">4</zIndex>
       </image>
-      <video name="md_video">
+      <video name="game-video" extra="true">
          <origin>0.5 0.5</origin>
-         <delay>2</delay>
+         <path>{game:video}</path>
+         <delay>3</delay>
          <effect>none</effect>
-         <showSnapshotDelay>true</showSnapshotDelay>
-         <showSnapshotNoVideo>true</showSnapshotNoVideo>
-         <zIndex>3</zIndex>
          <loops>0</loops>
-      </video>-->
+         <zIndex>5</zIndex>
+      </video>
    </view>
 
    <!--
