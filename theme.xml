@@ -246,6 +246,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <type>horizontal</type>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <defaultTransition>instant</defaultTransition>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>1</zIndex>
       </carousel>
       <image name="system-logo" extra="true">
@@ -312,11 +313,12 @@ https://github.com/anthonycaccese/art-book-next-es
          <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
          <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
          <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
-         <zIndex>5</zIndex>
          <scrollbarColor ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">ffffff11</scrollbarColor>
          <scrollbarSize ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">0.01</scrollbarSize>
          <scrollbarCorner ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">0.5</scrollbarCorner>
          <scrollbarAlignment ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">outer right</scrollbarAlignment>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+         <zIndex>5</zIndex>
       </textlist>
    </view>
 
@@ -374,10 +376,13 @@ https://github.com/anthonycaccese/art-book-next-es
       <video name="game-video" extra="true">
          <origin>0.5 0.5</origin>
          <path>{game:video}</path>
-         <delay>3</delay>
+         <delay>2</delay>
          <effect>none</effect>
          <loops>0</loops>
          <zIndex>5</zIndex>
+         <storyboard>
+            <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+         </storyboard>
       </video>
    </view>
 
