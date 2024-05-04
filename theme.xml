@@ -4,7 +4,6 @@ author:        Anthony Caccese
 license:       creative commons CC-BY-NC-SA
 https://github.com/anthonycaccese/art-book-next-es
 
-
 ToDo:
 stackpanel
 bindings https://discord.com/channels/357518249883205632/857328707763961886/1185266395089481920
@@ -154,7 +153,7 @@ Rect is "left top right bottom"
       <!-- End: Resets -->
       <stackpanel name="system-indicators" extra="true">
          <h>0.05</h><!-- 24 -->
-         <pos>0 0.033333333333333</pos><!-- 0 16 -->
+         <pos>0 0.0208333333333333</pos><!-- 0 10 -->
          <orientation>horizontal</orientation>
          <reverse>true</reverse>
          <batteryText name="system-battery-text">
@@ -193,7 +192,7 @@ Rect is "left top right bottom"
    View: All
    ///
    -->
-   <view name="system,basic,detailed,video">
+   <view name="system,basic,detailed">
       <image name="background" extra="true">
          <pos>0 0</pos>
          <size>1 1</size>
@@ -232,14 +231,16 @@ Rect is "left top right bottom"
    ///
    -->
    <view name="system">
+      <image name="background" extra="true">
+         <color>${systemBackgroundColor}</color>
+      </image>
       <!-- Start: Resets -->
-      <text name="systemInfo">
-         <pos>1 1</pos>
-      </text>
-      <text name="logoText">
-         <pos>1 1</pos>
+      <text name="systemInfo,logoText">
+         <visible>false</visible>
+         <color>00000000</color>
       </text>
       <!-- End: Resets -->
+      <!-- Start: Image for 'systemcarousel' -->
       <image name="logo">
          <path ifSubset="system-view-images:default">./_inc/systems/images-default/_default.png</path>
          <path ifSubset="system-view-images:default">./_inc/systems/images-default/${system.theme}.png</path>
@@ -252,9 +253,7 @@ Rect is "left top right bottom"
          <color>${systemArtColor}dd</color>
          <saturation>${systemArtSaturation}</saturation>
       </image>
-      <image name="background" extra="true">
-         <color>${systemBackgroundColor}</color>
-      </image>
+      <!-- End: Image for 'systemcarousel' -->
       <carousel name="systemcarousel">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -274,6 +273,19 @@ Rect is "left top right bottom"
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <zIndex>2</zIndex>
       </image>
+      <!--<text name="system-name" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>0.5 0.3</size>
+         <fontSize>0.1125</fontSize>
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <alignment>center</alignment>
+         <lineSpacing>.8</lineSpacing>
+         <color>${systemLogoColor}</color>
+         <text>${system.fullName}</text>
+         <zIndex>2</zIndex>
+      </text>-->
    </view>
 
    <!--
@@ -281,7 +293,10 @@ Rect is "left top right bottom"
    View: Gamelist (All)
    ///
    -->
-   <view name="basic,detailed,video">
+   <view name="basic,detailed">
+      <image name="background">
+         <color>${gamelistListBackgroundColor}</color>
+      </image>
       <image name="logo">
          <origin>0.5 0.5</origin>
          <zIndex>5</zIndex>
@@ -310,17 +325,6 @@ Rect is "left top right bottom"
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>5</zIndex>
       </textlist>
-      <image name="gamelist-background" extra="true">
-         <origin>0 0</origin>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>${gamelistListTextlistBackgroundColor}</color>
-         <zIndex>4</zIndex>
-      </image>
-      <image name="background" extra="true">
-         <color>${backgroundColor}</color>
-         <zIndex>1</zIndex>
-      </image>
    </view>
 
    <!--
@@ -333,9 +337,6 @@ Rect is "left top right bottom"
          <origin>0.5 0</origin>
          <alignment>center</alignment>
       </textlist>
-      <image name="gamelist-background" extra="true">
-         <size>1 1</size>
-      </image>
    </view>
 
    <!--
@@ -343,7 +344,7 @@ Rect is "left top right bottom"
    View: Gamelist (Detailed & Video)
    ///
    -->
-   <view name="detailed,video">
+   <view name="detailed">
       <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
          <origin>0 0.5</origin>
          <pos>1 1</pos>
@@ -423,14 +424,6 @@ Rect is "left top right bottom"
          <color ifSubset="gamelist-view-layout:metadata-on-immersive|metadata-off-immersive">FFFFFF99</color>
          <zIndex>3</zIndex>
       </image>
-   </view>
-
-   <!--
-   ///
-   View: Gamelist (Video)
-   ///
-   -->
-   <view name="video">
       <video name="md_video">
          <origin>0.5 0.5</origin>
          <delay>2</delay>

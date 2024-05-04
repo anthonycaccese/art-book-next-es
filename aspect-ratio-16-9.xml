@@ -22,7 +22,7 @@ based on 853x480
    View: All
    ///
    -->
-   <view name="system,basic,detailed,video">
+   <view name="system,basic,detailed">
       <helpsystem ifHelpPrompts="true" name="help">
          <pos>0.5 0.942708333333333</pos><!-- 50% 452.5 -->
          <fontSize ifSubset="font-size:default|large">0.0375</fontSize><!-- 18 -->
@@ -47,7 +47,7 @@ based on 853x480
 
 
 
-   <view name="basic,detailed,video">
+   <view name="basic,detailed">
       <image name="logo">
          <maxSize>0.276041666666667 0.111111111111111</maxSize><!-- 530 120 -->
       </image>
@@ -58,6 +58,7 @@ based on 853x480
       <textlist name="gamelist">
          <fontSize>0.038888888888889</fontSize><!-- 42 -->
          <lineSpacing>1.476190476190476</lineSpacing><!-- 62 -->
+         <lines>10</lines>
       </textlist>
    </view>
 
@@ -75,7 +76,7 @@ based on 853x480
       </textlist>
    </view>
 
-   <view name="detailed,video">
+   <view name="detailed">
       <image name="logo">
          <pos>0.1875 0.134259259259259</pos><!-- 360 145 -->
       </image>
@@ -92,7 +93,7 @@ based on 853x480
       </image>
    </view>
 
-   <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed,video">
+   <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed">
       <text name="md_description">
          <pos ifHelpPrompts="true">0.408333333333333 0.677777777777778</pos><!-- 784 732 -->
          <size ifHelpPrompts="true">0.395833333333333 0.155555555555556</size><!-- 760 168 -->
@@ -158,8 +159,6 @@ based on 853x480
          <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.625 1</maxSize><!-- 1200 1080 -->
          <zIndex>2</zIndex>
       </image>
-   </view>
-   <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="video">
       <video name="md_video">
          <pos>0.6875 0.324074074074074</pos><!-- 1320 350 -->
          <maxSize ifSubset="gamelist-view-style:metadata-on">0.5625 0.518518518518519</maxSize><!-- 1080 560 -->
@@ -168,7 +167,7 @@ based on 853x480
       </video>
    </view>
 
-   <view ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive" name="detailed,video">
+   <view ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive" name="detailed">
       <image ifSubset="gamelist-view-style:metadata-off-immersive" name="md_marquee">
          <pos ifHelpPrompts="true">0.6875 0.44212962962963</pos><!-- 1320 477.5 -->
          <pos ifHelpPrompts="false">0.6875 0.5</pos><!-- 1320 600 -->
@@ -183,8 +182,6 @@ based on 853x480
          <maxSize ifHelpPrompts="false" ifSubset="gamelist-view-style:metadata-off">0.5625 0.888888888888889</maxSize><!-- 1080 960 -->
          <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.1 1.1</maxSize>
       </image>
-   </view>
-   <view ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive" name="video">
       <video name="md_video">
          <pos ifHelpPrompts="true">0.6875 0.44212962962963</pos><!-- 1320 477.5 -->
          <pos ifHelpPrompts="false">0.6875 0.5</pos><!-- 1320 600 -->
