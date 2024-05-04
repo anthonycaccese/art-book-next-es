@@ -106,19 +106,7 @@ based on 853x480
    ///
    -->
    <view name="detailed" ifSubset="gamelist-view-metadata:on">
-      <text name="game-description" extra="true">
-         <x>0.415005861664713</x><!-- 354 -->
-         <w>0.386869871043376</w><!-- 330 -->
-         <y ifHelpPrompts="true">0.645833333333333</y><!-- 310 -->
-         <h ifHelpPrompts="true">0.1875</h><!-- 90 -->
-         <y ifHelpPrompts="false">0.69375</y><!-- 333 -->
-         <h ifHelpPrompts="false">0.25</h><!-- 120 -->
-         <fontSize ifSubset="font-size:default|large">0.041666666666667</fontSize><!-- 20 -->
-         <lineSpacing ifSubset="font-size:default|large">1.49</lineSpacing>
-         <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
-         <lineSpacing ifSubset="font-size:small" ifHelpPrompts="true">1.375</lineSpacing>
-         <lineSpacing ifSubset="font-size:small" ifHelpPrompts="false">1.475</lineSpacing>
-      </text>
+
       <!-- Video -->
       <video ifHelpPrompts="true" name="game-video" extra="true">
          <pos>0.68757327080891 0.296875</pos><!-- 586.5 142.5 -->
@@ -155,6 +143,58 @@ based on 853x480
          <maxSize>0.140679953106682 0.125</maxSize><!-- 120 60 -->
          <pos>0.824736225087925 0.666666666666667</pos><!-- 703.5 320 -->
       </image>
+
+      <!-- Start: Definitions -->
+      <image name="
+         game-releasedate-icon,
+         game-players-icon,
+         game-playcount-icon,
+         game-gametime-icon" extra="true">
+         <maxSize>0.021101992966002 0.0375</maxSize><!-- 20 20 -->
+      </image>
+      <!-- End: Definitions -->
+
+      <text name="game-description" extra="true">
+         <x>0.415005861664713</x><!-- 354 -->
+         <w>0.386869871043376</w><!-- 330 -->
+      </text>
+
+      <stackpanel name="game-metadata" extra="true">
+         <orientation>vertical</orientation>
+         <rating name="game-rating" extra="true">
+         </rating>
+         <stackpanel name="game-releasedate" extra="true">
+            <orientation>horizontal</orientation>
+            <image name="game-releasedate-icon" extra="true">
+            </image>
+            <datetime name="game-releasedate-text" extra="true">
+            </datetime>
+         </stackpanel>
+         <stackpanel name="game-players" extra="true">
+            <orientation>horizontal</orientation>
+            <image name="game-players-icon" extra="true">
+            </image>
+            <text name="game-players-text" extra="true">
+            </text>
+         </stackpanel>
+         <container ifHelpPrompts="false">
+            <stackpanel name="game-playcount" extra="true">
+               <orientation>horizontal</orientation>
+               <image name="game-playcount-icon" extra="true">
+               </image>
+               <text name="game-playcount-text" extra="true">
+               </text>
+            </stackpanel>
+            <stackpanel name="game-gametime" extra="true">
+               <orientation>horizontal</orientation>
+               <image name="game-gametime-icon" extra="true">
+               </image>
+               <text name="game-gametime-text" extra="true">
+               </text>
+            </stackpanel>
+         </container>
+      </stackpanel>
+
    </view>
 
    <!--
