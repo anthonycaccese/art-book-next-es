@@ -255,7 +255,6 @@ https://github.com/anthonycaccese/art-book-next-es
       <image name="system-logo" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
-         <maxSize>0.5 0.3</maxSize>
          <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <zIndex>2</zIndex>
@@ -295,12 +294,15 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <image name="logo">
          <origin>0.5 0.5</origin>
+         <y>0.130208333333333</y><!-- 62.5 -->
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <color>${gamelistListLogoColor}</color>
          <zIndex>5</zIndex>
       </image>
       <text name="logoText">
          <origin>0.5 0.5</origin>
+         <y>0.130208333333333</y><!-- 62.5 -->
+         <fontSize>0.05</fontSize><!-- 24 -->
          <fontPath>${fontLogo}</fontPath>
          <forceUppercase>true</forceUppercase>
          <lineSpacing>1</lineSpacing>
@@ -310,8 +312,22 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <textlist name="gamelist">
          <origin>0 0</origin>
-         <alignment>left</alignment>
+         <h ifHelpPrompts="true">0.5875</h><!-- 282 -->
+         <h ifHelpPrompts="false">0.7</h><!-- 336 -->
+         <!-- small font -->
+         <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
+         <lines ifSubset="font-size:small" ifHelpPrompts="true">11</lines>
+         <lines ifSubset="font-size:small" ifHelpPrompts="false">13</lines>
+         <!-- default font -->
+         <fontSize ifSubset="font-size:default">0.041666666666667</fontSize><!-- 20 -->
+         <lines ifSubset="font-size:default" ifHelpPrompts="true">9</lines>
+         <lines ifSubset="font-size:default" ifHelpPrompts="false">11</lines>
+         <!-- large font -->
+         <fontSize ifSubset="font-size:large">0.05</fontSize><!-- 24 -->
+         <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
+         <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
          <fontPath>${fontBold}</fontPath>
+         <alignment>left</alignment>
          <selectorColor>00000000</selectorColor>
          <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
          <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
@@ -546,8 +562,8 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
-   <!--<include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
    <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
+   <!--<include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
    <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
    <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>-->
 

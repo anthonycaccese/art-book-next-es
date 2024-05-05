@@ -27,6 +27,9 @@ based on 853x480
          <logoSize>1.1 1.1</logoSize>
          <maxLogoCount>5</maxLogoCount>
       </carousel>
+      <image name="system-logo">
+         <maxSize>0.5 0.3</maxSize>
+      </image>
    </view>
 
    <!--
@@ -36,30 +39,13 @@ based on 853x480
    -->
    <view name="basic,detailed">
       <image name="logo">
-         <y>0.130208333333333</y><!-- 62.5 -->
          <maxSize>0.269636576787808 0.104166666666667</maxSize><!-- 230 50 -->
       </image>
       <text name="logoText">
-         <y>0.130208333333333</y><!-- 62.5 -->
          <size>0.269636576787808 0.104166666666667</size><!-- 230 50 -->
-         <fontSize>0.05</fontSize><!-- 24 -->
       </text>
       <textlist name="gamelist">
          <pos>0.041031652989449 0.25</pos><!-- 35 120 -->
-         <h ifHelpPrompts="true">0.5875</h><!-- 282 -->
-         <h ifHelpPrompts="false">0.7</h><!-- 336 -->
-         <!-- small font -->
-         <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
-         <lines ifSubset="font-size:small" ifHelpPrompts="true">11</lines>
-         <lines ifSubset="font-size:small" ifHelpPrompts="false">13</lines>
-         <!-- default font -->
-         <fontSize ifSubset="font-size:default">0.041666666666667</fontSize><!-- 20 -->
-         <lines ifSubset="font-size:default" ifHelpPrompts="true">9</lines>
-         <lines ifSubset="font-size:default" ifHelpPrompts="false">11</lines>
-         <!-- large font -->
-         <fontSize ifSubset="font-size:large">0.05</fontSize><!-- 24 -->
-         <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
       </textlist>
    </view>
 
