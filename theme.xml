@@ -73,7 +73,6 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="boxart" displayName="Boxart" />
       <include name="image-cropped" displayName="Image (Cropped)" />
       <include name="image" displayName="Image" />
-      <include name="fanart" displayName="Fanart" />
    </subset>
 
    <!--
@@ -106,6 +105,10 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="default" displayName="Default" />
       <include name="light" displayName="Light" />
       <include name="steam-os" displayName="SteamOS" />
+      <include name="snes" displayName="SNES" />
+      <include name="famicom" displayName="Famicom" />
+      <include name="dmg" displayName="DMG" />
+      <include name="oled" displayName="OLED" />
       <include name="custom" displayName="Custom" />
    </subset>
    <include>./colors.xml</include>
@@ -233,7 +236,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-view-artwork:classic">./_inc/systems/artwork-classic/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.png</path>
-         <color>${systemArtColor}dd</color>
+         <color>${systemArtColor}</color>
          <saturation>${systemArtSaturation}</saturation>
       </image>
       <!-- End: Image for 'systemcarousel' -->
@@ -280,7 +283,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="basic,detailed">
       <image name="background" extra="true">
          <color>${gamelistListBackgroundColor}</color>
-         <color ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">${gamelistListTextlistBackgroundColor}</color>
+         <color ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">${gamelistListTextlistBackgroundColor}</color>
       </image>
       <image name="gamelist-background" extra="true">
          <origin>0 0</origin>
@@ -313,10 +316,10 @@ https://github.com/anthonycaccese/art-book-next-es
          <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
          <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
          <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
-         <scrollbarColor ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">ffffff11</scrollbarColor>
-         <scrollbarSize ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">0.01</scrollbarSize>
-         <scrollbarCorner ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">0.5</scrollbarCorner>
-         <scrollbarAlignment ifSubset="gamelist-view-artwork:boxart|image|fanart,gamelist-view-metadata:off">outer right</scrollbarAlignment>
+         <scrollbarColor ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">ffffff11</scrollbarColor>
+         <scrollbarSize ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">0.01</scrollbarSize>
+         <scrollbarCorner ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">0.5</scrollbarCorner>
+         <scrollbarAlignment ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">outer right</scrollbarAlignment>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>5</zIndex>
       </textlist>
@@ -360,12 +363,11 @@ https://github.com/anthonycaccese/art-book-next-es
          <origin>0.5 0.5</origin>
          <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
          <path ifSubset="gamelist-view-artwork:image-cropped|image">{game:image}</path>
-         <path ifSubset="gamelist-view-artwork:fanart">{game:fanart}</path>
          <roundCorners ifSubset="gamelist-view-artwork:boxart|image">0.02</roundCorners>
          <autoFade>false</autoFade>
          <zIndex>3</zIndex>
       </image>
-      <image ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-logo" extra="true">
+      <image ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
          <origin ifSubset="gamelist-view-metadata:on">0 1</origin>
          <origin ifSubset="gamelist-view-metadata:off">0.5 0.5</origin>
          <path>{game:marquee}</path>
@@ -494,7 +496,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <fontPath>${fontBold}</fontPath>
          <fontSize>0.035</fontSize>
          <color>ffffff77</color>
-         <separatorColor>111111</separatorColor>
+         <separatorColor>00000000</separatorColor>
          <selectedColor>ffffff</selectedColor>
          <selectorColor>${menuSelectorColor}</selectorColor>
       </menuText>

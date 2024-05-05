@@ -124,21 +124,21 @@ based on 853x480
          <pos>0.68757327080891 0.34375</pos><!-- 586.5 165 -->
          <maxSize>0.555099648300117 0.5625</maxSize><!-- 473.5 270 -->
       </image>
-      <!-- Image (Cropped) & Fanart -->
-      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-artwork" extra="true">
+      <!-- Image (Cropped) -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
          <pos>0.68757327080891 0.296875</pos><!-- 586.5 142.5 -->
          <minSize>0.624853458382181 0.59375</minSize><!-- 533 285 -->
       </image>
-      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-artwork" extra="true">
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
          <pos>0.68757327080891 0.317708333333333</pos><!-- 586.5 152.5 -->
          <minSize>0.624853458382181 0.635416666666667</minSize><!-- 533 305 -->
       </image>
       <!-- Marquee -->
-      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-logo" extra="true">
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
          <maxSize>0.140679953106682 0.125</maxSize><!-- 120 60 -->
          <pos>0.824736225087925 0.625</pos><!-- 703.5 300 -->
       </image>
-      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-logo" extra="true">
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
          <maxSize>0.140679953106682 0.125</maxSize><!-- 120 60 -->
          <pos>0.824736225087925 0.666666666666667</pos><!-- 703.5 320 -->
       </image>
@@ -247,21 +247,21 @@ based on 853x480
          <pos>0.675849941383353 0.5</pos><!-- 576.5 240 -->
          <maxSize>0.554513481828839 0.864583333333333</maxSize><!-- 473 415 -->
       </image>
-      <!-- Image (Cropped) & Fanart -->
-      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-artwork" extra="true">
+      <!-- Image (Cropped) -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
          <pos>0.68757327080891 0.442708333333333</pos><!-- 586.5 212.5 -->
          <minSize>0.624853458382181 0.885416666666667</minSize><!-- 533 425 -->
       </image>
-      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-artwork" extra="true">
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
          <pos>0.68757327080891 0.5</pos><!-- 586.5 240 -->
          <minSize>0.624853458382181 1</minSize><!-- 533 480-->
       </image>
       <!-- Marquee -->
-      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-logo" extra="true">
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
             <pos>0.68757327080891 0.442708333333333</pos><!-- 586.5 212.5 -->
             <maxSize>0.363423212192263 0.625</maxSize><!-- 310 300 -->
       </image>
-      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped|fanart" name="game-logo" extra="true">
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
             <pos>0.68757327080891 0.5</pos><!-- 586.5 240 -->
             <maxSize>0.363423212192263 0.625</maxSize><!-- 310 300 -->
       </image>
