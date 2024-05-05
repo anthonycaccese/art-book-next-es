@@ -106,7 +106,6 @@ based on 853x480
    ///
    -->
    <view name="detailed" ifSubset="gamelist-view-metadata:on">
-
       <!-- Video -->
       <video ifHelpPrompts="true" name="game-video" extra="true">
          <pos>0.68757327080891 0.296875</pos><!-- 586.5 142.5 -->
@@ -143,8 +142,6 @@ based on 853x480
          <maxSize>0.140679953106682 0.125</maxSize><!-- 120 60 -->
          <pos>0.824736225087925 0.666666666666667</pos><!-- 703.5 320 -->
       </image>
-
-      <!-- Start: Definitions -->
       <image name="
          game-releasedate-icon,
          game-players-icon,
@@ -152,49 +149,78 @@ based on 853x480
          game-gametime-icon" extra="true">
          <maxSize>0.021101992966002 0.0375</maxSize><!-- 20 20 -->
       </image>
-      <!-- End: Definitions -->
-
       <text name="game-description" extra="true">
          <x>0.415005861664713</x><!-- 354 -->
          <w>0.386869871043376</w><!-- 330 -->
       </text>
-
-      <stackpanel name="game-metadata" extra="true">
-         <orientation>vertical</orientation>
-         <rating name="game-rating" extra="true">
-         </rating>
-         <stackpanel name="game-releasedate" extra="true">
-            <orientation>horizontal</orientation>
-            <image name="game-releasedate-icon" extra="true">
-            </image>
-            <datetime name="game-releasedate-text" extra="true">
-            </datetime>
-         </stackpanel>
-         <stackpanel name="game-players" extra="true">
-            <orientation>horizontal</orientation>
-            <image name="game-players-icon" extra="true">
-            </image>
-            <text name="game-players-text" extra="true">
-            </text>
-         </stackpanel>
-         <container ifHelpPrompts="false">
-            <stackpanel name="game-playcount" extra="true">
-               <orientation>horizontal</orientation>
-               <image name="game-playcount-icon" extra="true">
-               </image>
-               <text name="game-playcount-text" extra="true">
-               </text>
-            </stackpanel>
-            <stackpanel name="game-gametime" extra="true">
-               <orientation>horizontal</orientation>
-               <image name="game-gametime-icon" extra="true">
-               </image>
-               <text name="game-gametime-text" extra="true">
-               </text>
-            </stackpanel>
-         </container>
-      </stackpanel>
-
+   </view>
+   <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:on">
+      <rating name="md_rating">
+         <pos>0.836459554513482 0.6796875</pos><!-- 713.5 326.25 -->
+         <visible>true</visible>
+      </rating>
+      <image name="
+         game-releasedate-icon,
+         game-players-icon
+         ">
+         <visible>true</visible>
+      </image>
+      <image name="game-releasedate-icon">
+         <pos>0.836459554513482 0.7421875</pos><!-- 713.5 356.25 -->
+      </image>
+      <image name="game-players-icon">
+         <pos>0.836459554513482 0.802083333333333</pos><!-- 713.5 385 -->
+      </image>
+      <text name="game-releasedate-text">
+         <pos>0.863423212192263 0.7421875</pos><!-- 736.5 356.25 -->
+         <visible>true</visible>
+      </text>
+      <text name="game-players-text">
+         <pos>0.863423212192263 0.802083333333333</pos><!-- 736.5 385 -->
+         <visible>true</visible>
+      </text>
+   </view>
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
+      <rating name="md_rating">
+         <pos>0.836459554513482 0.713541666666667</pos><!-- 713.5 342.5 -->
+         <visible>true</visible>
+      </rating>
+      <image name="
+         game-releasedate-icon,
+         game-players-icon,
+         game-playcount-icon,
+         game-gametime-icon
+         ">
+         <visible>true</visible>
+      </image>
+      <image name="game-releasedate-icon">
+         <pos>0.836459554513482 0.767708333333333</pos><!-- 713.5 368.5 -->
+      </image>
+      <image name="game-players-icon">
+         <pos>0.836459554513482 0.81875</pos><!-- 713.5 393 -->
+      </image>
+      <image name="game-gametime-icon">
+         <pos>0.836459554513482 0.866666666666667</pos><!-- 713.5 416 -->
+      </image>
+      <image name="game-playcount-icon">
+         <pos>0.836459554513482 0.917708333333333</pos><!-- 713.5 440.5 -->
+      </image>
+      <text name="game-releasedate-text">
+         <pos>0.863423212192263 0.767708333333333</pos><!-- 736.5 368.5 -->
+         <visible>true</visible>
+      </text>
+      <text name="game-players-text">
+         <pos>0.863423212192263 0.81875</pos><!-- 736.5 393 -->
+         <visible>true</visible>
+      </text>
+      <text name="game-gametime-text">
+         <pos>0.863423212192263 0.866666666666667</pos><!-- 736.5 416 -->
+         <visible>true</visible>
+      </text>
+      <text name="game-playcount-text">
+         <pos>0.863423212192263 0.917708333333333</pos><!-- 736.5 440.5 -->
+         <visible>true</visible>
+      </text>
    </view>
 
    <!--

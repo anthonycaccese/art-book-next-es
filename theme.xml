@@ -391,7 +391,30 @@ https://github.com/anthonycaccese/art-book-next-es
    View: Gamelist (Detailed - Metadata On)
    ///
    -->
+   <variables>
+      <gamelistMetadataFontSize ifSubset="font-size:small">0.029166666666667</gamelistMetadataFontSize><!-- 14 -->
+      <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
+      <gamelistMetadataFontSize ifSubset="font-size:default">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
+   </variables>
    <view name="detailed" ifSubset="gamelist-view-metadata:on">
+      <text name="game-description" extra="true">
+         <origin>0 0</origin>
+         <y ifHelpPrompts="true">0.6479166666666667</y><!-- 311 -->
+         <h ifHelpPrompts="true">0.1875</h><!-- 90 -->
+         <y ifHelpPrompts="false">0.69375</y><!-- 333 -->
+         <h ifHelpPrompts="false">0.25</h><!-- 120 -->
+         <text>{game:desc}</text>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize ifSubset="font-size:default|large">0.041666666666667</fontSize><!-- 20 -->
+         <lineSpacing ifSubset="font-size:default|large">1.49</lineSpacing>
+         <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
+         <lineSpacing ifSubset="font-size:small" ifHelpPrompts="true">1.375</lineSpacing>
+         <lineSpacing ifSubset="font-size:small" ifHelpPrompts="false">1.475</lineSpacing>
+         <color>${gamelistListDescriptionColor}</color>
+         <emptyTextDefaults>none</emptyTextDefaults>
+         <verticalAlignment>top</verticalAlignment>
+         <autoScroll>vertical</autoScroll>
+      </text>
       <!-- Start: Definitions -->
       <image name="
          game-releasedate-icon,
@@ -414,7 +437,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <image name="game-gametime-icon" extra="true">
          <path>./_inc/images/metadata-icon-gametime.svg</path>
       </image>
-      <rating name="game-rating" extra="true">
+      <rating name="md_rating">
          <origin>0 0.5</origin>
          <size>0 0.0375</size><!-- - 18 -->
          <filledPath>./_inc/images/metadata-icon-star-filled.svg</filledPath>
@@ -422,20 +445,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>${gamelistListRatingColor}</color>
          <visible>false</visible>
       </rating>
-      <variables>
-         <gamelistMetadataFontSize ifSubset="font-size:small">0.029166666666667</gamelistMetadataFontSize><!-- 14 -->
-         <gamelistMetadataFontSize ifSubset="font-size:default">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
-         <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
-      </variables>
-      <datetime name="game-releasedate-text" extra="true">
-         <origin>0 0.5</origin>
-         <fontSize>${gamelistMetadataFontSize}</fontSize>
-         <fontPath>${fontBold}</fontPath>
-         <lineSpacing>1</lineSpacing>
-         <text>{game:releasedate}</text>
-         <visible>false</visible>
-      </datetime>
       <text name="
+         game-releasedate-text,
          game-players-text,
          game-playcount-text,
          game-gametime-text" extra="true">
@@ -444,36 +455,23 @@ https://github.com/anthonycaccese/art-book-next-es
          <fontPath>${fontBold}</fontPath>
          <lineSpacing>1</lineSpacing>
          <color>${gamelistListMetadataColor}</color>
+         <emptyTextDefaults>none</emptyTextDefaults>
          <visible>false</visible>
+      </text>
+      <text name="game-releasedate-text" extra="true">
+         <text ifSubset="font-size:small|default">{game:releasedate}</text>
+         <text ifSubset="font-size:large">{game:releaseyear}</text>
       </text>
       <text name="game-players-text" extra="true">
          <text>{game:players}</text>
       </text>
-      <text name="game-playcount-text" extra="true">
-         <text>{game:playcount}</text>
-      </text>
       <text name="game-gametime-text" extra="true">
          <text>{game:gametime}</text>
       </text>
-      <!-- End: Definitions -->
-      <text name="game-description" extra="true">
-         <origin>0 0</origin>
-         <y ifHelpPrompts="true">0.645833333333333</y><!-- 310 -->
-         <h ifHelpPrompts="true">0.1875</h><!-- 90 -->
-         <y ifHelpPrompts="false">0.69375</y><!-- 333 -->
-         <h ifHelpPrompts="false">0.25</h><!-- 120 -->
-         <text>{game:desc}</text>
-         <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:default|large">0.041666666666667</fontSize><!-- 20 -->
-         <lineSpacing ifSubset="font-size:default|large">1.49</lineSpacing>
-         <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
-         <lineSpacing ifSubset="font-size:small" ifHelpPrompts="true">1.375</lineSpacing>
-         <lineSpacing ifSubset="font-size:small" ifHelpPrompts="false">1.475</lineSpacing>
-         <color>${gamelistListDescriptionColor}</color>
-         <emptyTextDefaults>none</emptyTextDefaults>
-         <verticalAlignment>top</verticalAlignment>
-         <autoScroll>vertical</autoScroll>
+      <text name="game-playcount-text" extra="true">
+         <text>{game:playcount}</text>
       </text>
+      <!-- End: Definitions -->
    </view>
 
    <!--
