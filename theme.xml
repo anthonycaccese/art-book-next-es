@@ -259,7 +259,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <zIndex>2</zIndex>
       </image>
-      <!--<text name="system-name" extra="true">
+      <text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
          <size>0.5 0.3</size>
@@ -271,7 +271,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>${systemLogoColor}</color>
          <text>${system.fullName}</text>
          <zIndex>2</zIndex>
-      </text>-->
+         <visible>false</visible>
+      </text>
    </view>
 
    <!--
@@ -563,8 +564,9 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>
    <!--<include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
    <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
-   <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>-->
+   -->
 
 </theme>
