@@ -1,0 +1,186 @@
+<!-- 
+1:1 aspect ratio
+based on 480x480
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <!--
+   ///
+   View: Screen
+   ///
+   -->
+   <view name="screen">
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.958333333333333</w><!-- 460 -->
+         <separator>10</separator>
+      </stackpanel>
+   </view>
+
+   <!--
+   ///
+   View: System
+   ///
+   -->
+   <view name="system">
+      <carousel name="systemcarousel">
+         <logoSize>1.025 1.025</logoSize>
+         <maxLogoCount>3</maxLogoCount>
+      </carousel>
+      <image name="system-logo">
+         <maxSize>0.7 0.5</maxSize>
+      </image>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (All)
+   ///
+   -->
+   <view name="basic,detailed">
+      <image name="logo">
+         <maxSize>0.3125 0.104166666666667</maxSize><!-- 150 50 -->
+      </image>
+      <text name="logoText">
+         <size>0.3125 0.104166666666667</size><!-- 150 50 -->
+      </text>
+      <textlist name="gamelist">
+         <pos>0.072916666666667 0.25</pos><!-- 35 120 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Basic)
+   ///
+   -->
+   <view name="basic">
+      <image name="logo">
+         <x>0.5</x><!-- 50% -->
+      </image>
+      <text name="logoText">
+         <x>0.5</x><!-- 50% -->
+      </text>
+      <textlist name="gamelist">
+         <w>0.854166666666667</w><!-- 410 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Detailed)
+   ///
+   -->
+   <view name="detailed">
+      <image name="gamelist-background" extra="true">
+         <size>0.5 1</size><!-- 240 480 -->
+      </image>
+      <image name="logo">
+         <x>0.25</x><!-- 120 -->
+      </image>
+      <text name="logoText">
+         <x>0.25</x><!-- 120 -->
+      </text>
+      <textlist name="gamelist">
+         <w>0.333333333333333</w><!-- 160 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Detailed - Metadata On)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-metadata:on">
+      <!-- Video -->
+      <video name="game-video" extra="true">
+         <pos>0.75 0.25</pos><!-- 480 120 -->
+         <minSize>0.5 0.541666666666667</minSize><!-- 320 260 -->
+      </video>
+      <!-- Boxart & Image -->
+      <image ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.75 0.2916666666666667</pos><!-- 480 140 -->
+         <maxSize>0.40625 0.4583333333333333</maxSize><!-- 260 220 -->
+      </image>
+      <!-- Image (Cropped) -->
+      <image ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.75 0.25</pos><!-- 480 120 -->
+         <minSize>0.5 0.541666666666667</minSize><!-- 320 260 -->
+      </image>
+      <!-- Marquee -->
+      <image ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <origin>0.5 1</origin>
+         <pos>0.75 0.541666666666667</pos><!-- 480 260 -->
+         <maxSize>0.296875 0.125</maxSize><!-- 190 60 -->
+      </image>
+      <text name="game-description" extra="true">
+         <x>0.55078125</x><!-- 352.5 -->
+         <y ifHelpPrompts="true">0.583333333333333</y><!-- 280 -->
+         <y ifHelpPrompts="false">0.682291666666667</y><!-- 327.5 -->
+         <w>0.3984375</w><!-- 255 -->
+         <h>0.25</h><!-- 120 -->
+      </text>
+   </view>
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
+      <rating name="md_rating">
+         <origin>1 0.5</origin>
+         <pos>0.953125 0.614583333333333</pos><!-- 610 295 -->
+         <size>0 0.041666666666667</size><!-- - 20 -->
+         <visible>true</visible>
+      </rating>
+      <image name="game-releasedate-icon">
+         <pos>0.55078125 0.616666666666667</pos><!-- 352.5 296 -->
+         <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
+         <visible>true</visible>
+      </image>
+      <text name="game-releasedate-text">
+         <pos>0.59375 0.616666666666667</pos><!-- 380 296 -->
+         <visible>true</visible>
+      </text>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Detailed - Metadata Off)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-metadata:off">
+      <!-- Video -->
+      <video ifHelpPrompts="true" name="game-video" extra="true">
+         <pos>0.75 0.442708333333333</pos><!-- 480 212.5 -->
+         <minSize>0.5 0.885416666666667</minSize><!-- 320 425 -->
+      </video>
+      <video ifHelpPrompts="false" name="game-video" extra="true">
+         <pos>0.75 0.5</pos><!-- 480 240 -->
+         <minSize>0.5 1</minSize><!-- 320 480-->
+      </video>
+      <!-- Boxart & Image -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.734375 0.447916666666667</pos><!-- 470 215 -->
+         <maxSize>0.40625 0.75</maxSize><!-- 260 360 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.734375 0.5</pos><!-- 470 240 -->
+         <maxSize>0.40625 0.864583333333333</maxSize><!-- 260 415 -->
+      </image>
+      <!-- Image (Cropped) -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.75 0.442708333333333</pos><!-- 480 212.5 -->
+         <minSize>0.5 0.885416666666667</minSize><!-- 320 425 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.75 0.5</pos><!-- 480 240 -->
+         <minSize>0.5 1</minSize><!-- 320 480-->
+      </image>
+      <!-- Marquee -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <pos>0.75 0.442708333333333</pos><!-- 480 212.5 -->
+         <maxSize>0.359375 0.625</maxSize><!-- 230 300 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <pos>0.75 0.5</pos><!-- 480 240 -->
+         <maxSize>0.359375 0.625</maxSize><!-- 230 300 -->
+      </image>
+   </view>
+
+</theme>
