@@ -135,20 +135,25 @@ based on 853x480
          game-gametime-icon" extra="true">
          <maxSize>0.021101992966002 0.0375</maxSize><!-- 20 20 -->
       </image>
-      <text name="game-releasedate-text">
-         <text ifSubset="font-size:small|default">year({game:releasedate}) + "-" +month({game:releasedate}) + "-" +day({game:releasedate})</text>
-         <text ifSubset="font-size:large">year({game:releasedate}) + "-" +month({game:releasedate})</text>
-         <visible>true</visible>
-      </text>
       <text name="game-description" extra="true">
          <x>0.415005861664713</x><!-- 354 -->
          <w>0.386869871043376</w><!-- 330 -->
+      </text>
+      <rating name="md_rating">
+         <visible>true</visible>
+      </rating>
+      <datetime name="md_releasedate">
+         <format ifSubset="font-size:small|default">%Y-%m-%d</format>
+         <format ifSubset="font-size:large">%Y-%m</format>
+         <visible>true</visible>
+      </datetime>
+      <text name="md_players">
+         <visible>true</visible>
       </text>
    </view>
    <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:on">
       <rating name="md_rating">
          <pos>0.836459554513482 0.6796875</pos><!-- 713.5 326.25 -->
-         <visible>true</visible>
       </rating>
       <image name="
          game-releasedate-icon,
@@ -159,54 +164,52 @@ based on 853x480
       <image name="game-releasedate-icon">
          <pos>0.836459554513482 0.7421875</pos><!-- 713.5 356.25 -->
       </image>
+      <datetime name="md_releasedate">
+         <pos>0.863423212192263 0.7421875</pos><!-- 736.5 356.25 -->
+      </datetime>
       <image name="game-players-icon">
          <pos>0.836459554513482 0.802083333333333</pos><!-- 713.5 385 -->
       </image>
-      <text name="game-releasedate-text">
-         <pos>0.863423212192263 0.7421875</pos><!-- 736.5 356.25 -->
-      </text>
-      <text name="game-players-text">
+      <text name="md_players">
          <pos>0.863423212192263 0.802083333333333</pos><!-- 736.5 385 -->
-         <visible>true</visible>
       </text>
    </view>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
       <rating name="md_rating">
          <pos>0.836459554513482 0.713541666666667</pos><!-- 713.5 342.5 -->
-         <visible>true</visible>
       </rating>
       <image name="
          game-releasedate-icon,
          game-players-icon,
-         game-playcount-icon,
-         game-gametime-icon
+         game-gametime-icon,
+         game-playcount-icon
          ">
          <visible>true</visible>
       </image>
       <image name="game-releasedate-icon">
          <pos>0.836459554513482 0.767708333333333</pos><!-- 713.5 368.5 -->
       </image>
+      <datetime name="md_releasedate">
+         <pos>0.863423212192263 0.767708333333333</pos><!-- 736.5 368.5 -->
+      </datetime>
       <image name="game-players-icon">
          <pos>0.836459554513482 0.81875</pos><!-- 713.5 393 -->
       </image>
-      <image name="game-gametime-icon">
-         <pos>0.836459554513482 0.866666666666667</pos><!-- 713.5 416 -->
-      </image>
-      <image name="game-playcount-icon">
-         <pos>0.836459554513482 0.917708333333333</pos><!-- 713.5 440.5 -->
-      </image>
-      <text name="game-releasedate-text">
-         <pos>0.863423212192263 0.767708333333333</pos><!-- 736.5 368.5 -->
-      </text>
-      <text name="game-players-text">
+      <text name="md_players">
          <pos>0.863423212192263 0.81875</pos><!-- 736.5 393 -->
          <visible>true</visible>
       </text>
-      <text name="game-gametime-text">
+      <image name="game-gametime-icon">
+         <pos>0.836459554513482 0.866666666666667</pos><!-- 713.5 416 -->
+      </image>
+      <text name="md_gametime">
          <pos>0.863423212192263 0.866666666666667</pos><!-- 736.5 416 -->
          <visible>true</visible>
       </text>
-      <text name="game-playcount-text">
+      <image name="game-playcount-icon">
+         <pos>0.836459554513482 0.917708333333333</pos><!-- 713.5 440.5 -->
+      </image>
+      <text name="md_playcount">
          <pos>0.863423212192263 0.917708333333333</pos><!-- 736.5 440.5 -->
          <visible>true</visible>
       </text>

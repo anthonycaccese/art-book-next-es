@@ -438,15 +438,29 @@ https://github.com/anthonycaccese/art-book-next-es
       <image name="
          game-releasedate-icon,
          game-players-icon,
-         game-playcount-icon,
-         game-gametime-icon" extra="true">
+         game-gametime-icon,
+         game-playcount-icon" extra="true">
          <origin>0 0.5</origin>
          <color>${gamelistListMetadataIconColor}</color>
          <visible>false</visible>
       </image>
+      <rating name="md_rating">
+         <origin>0 0.5</origin>
+         <size>0 0.0375</size><!-- - 18 -->
+         <filledPath>./_inc/images/metadata-icon-star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/metadata-icon-star-unfilled.svg</unfilledPath>
+         <color>${gamelistListRatingColor}</color>
+      </rating>
       <image name="game-releasedate-icon" extra="true">
          <path>./_inc/images/metadata-icon-releasedate.svg</path>
       </image>
+      <datetime name="md_releasedate">
+         <origin>0 0.5</origin>
+         <fontSize>${gamelistMetadataFontSize}</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <lineSpacing>1</lineSpacing>
+         <color>${gamelistListMetadataColor}</color>
+      </datetime>
       <image name="game-players-icon" extra="true">
          <path>./_inc/images/metadata-icon-players.svg</path>
       </image>
@@ -456,37 +470,15 @@ https://github.com/anthonycaccese/art-book-next-es
       <image name="game-gametime-icon" extra="true">
          <path>./_inc/images/metadata-icon-gametime.svg</path>
       </image>
-      <rating name="md_rating">
-         <origin>0 0.5</origin>
-         <size>0 0.0375</size><!-- - 18 -->
-         <filledPath>./_inc/images/metadata-icon-star-filled.svg</filledPath>
-         <unfilledPath>./_inc/images/metadata-icon-star-unfilled.svg</unfilledPath>
-         <color>${gamelistListRatingColor}</color>
-         <visible>false</visible>
-      </rating>
       <text name="
-         game-releasedate-text,
-         game-players-text,
-         game-playcount-text,
-         game-gametime-text" extra="true">
+         md_gametime
+         md_playcount
+         md_players">
          <origin>0 0.5</origin>
          <fontSize>${gamelistMetadataFontSize}</fontSize>
          <fontPath>${fontBold}</fontPath>
          <lineSpacing>1</lineSpacing>
          <color>${gamelistListMetadataColor}</color>
-         <emptyTextDefaults>none</emptyTextDefaults>
-         <visible>false</visible>
-      </text>
-      <text name="game-players-text" extra="true">
-         <text>{game:players}</text>
-      </text>
-      <text name="game-gametime-text" extra="true">
-         <text>{game:gametime}</text>
-         <emptyTextDefaults>yes</emptyTextDefaults>
-      </text>
-      <text name="game-playcount-text" extra="true">
-         <text>{game:playcount}</text>
-         <emptyTextDefaults>yes</emptyTextDefaults>
       </text>
       <!-- End: Definitions -->
    </view>

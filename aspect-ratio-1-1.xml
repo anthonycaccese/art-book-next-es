@@ -133,12 +133,12 @@ based on 480x480
          <size>0.0416666666666667 0.041666666666667</size><!-- - 20 -->
          <visible>true</visible>
       </image>
-      <text name="game-releasedate-text">
+      <datetime name="md_releasedate">
          <pos>0.619791666666667 0.616666666666667</pos><!-- 297.5 296 -->
-         <text ifSubset="font-size:small">year({game:releasedate}) + "-" +month({game:releasedate})</text>
-         <text ifSubset="font-size:default|large">year({game:releasedate})</text>
+         <format ifSubset="font-size:small">%Y-%m</format>
+         <format ifSubset="font-size:default|large">%Y</format>
          <visible>true</visible>
-      </text>
+      </datetime>
    </view>
 
    <!--
