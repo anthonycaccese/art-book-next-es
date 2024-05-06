@@ -135,6 +135,11 @@ based on 853x480
          game-gametime-icon" extra="true">
          <maxSize>0.021101992966002 0.0375</maxSize><!-- 20 20 -->
       </image>
+      <text name="game-releasedate-text">
+         <text ifSubset="font-size:small|default">year({game:releasedate}) + "-" +month({game:releasedate}) + "-" +day({game:releasedate})</text>
+         <text ifSubset="font-size:large">year({game:releasedate}) + "-" +month({game:releasedate})</text>
+         <visible>true</visible>
+      </text>
       <text name="game-description" extra="true">
          <x>0.415005861664713</x><!-- 354 -->
          <w>0.386869871043376</w><!-- 330 -->
@@ -159,7 +164,6 @@ based on 853x480
       </image>
       <text name="game-releasedate-text">
          <pos>0.863423212192263 0.7421875</pos><!-- 736.5 356.25 -->
-         <visible>true</visible>
       </text>
       <text name="game-players-text">
          <pos>0.863423212192263 0.802083333333333</pos><!-- 736.5 385 -->
@@ -193,7 +197,6 @@ based on 853x480
       </image>
       <text name="game-releasedate-text">
          <pos>0.863423212192263 0.767708333333333</pos><!-- 736.5 368.5 -->
-         <visible>true</visible>
       </text>
       <text name="game-players-text">
          <pos>0.863423212192263 0.81875</pos><!-- 736.5 393 -->

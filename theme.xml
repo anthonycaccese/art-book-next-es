@@ -477,18 +477,16 @@ https://github.com/anthonycaccese/art-book-next-es
          <emptyTextDefaults>none</emptyTextDefaults>
          <visible>false</visible>
       </text>
-      <text name="game-releasedate-text" extra="true">
-         <text ifSubset="font-size:small|default">{game:releasedate}</text>
-         <text ifSubset="font-size:large">{game:releaseyear}</text>
-      </text>
       <text name="game-players-text" extra="true">
          <text>{game:players}</text>
       </text>
       <text name="game-gametime-text" extra="true">
          <text>{game:gametime}</text>
+         <emptyTextDefaults>yes</emptyTextDefaults>
       </text>
       <text name="game-playcount-text" extra="true">
          <text>{game:playcount}</text>
+         <emptyTextDefaults>yes</emptyTextDefaults>
       </text>
       <!-- End: Definitions -->
    </view>
