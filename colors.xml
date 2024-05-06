@@ -138,10 +138,10 @@
       <systemLogoColor>dbd8d6</systemLogoColor>
       <!-- Gamelist View - List Variants -->
       <gamelistListBackgroundColor>AAA7A6</gamelistListBackgroundColor>
-      <gamelistListTextlistBackgroundColor>868381</gamelistListTextlistBackgroundColor>
-      <gamelistListLogoColor>000000cc</gamelistListLogoColor>
-      <gamelistListTextlistSelectedColor>000000cc</gamelistListTextlistSelectedColor>
-      <gamelistListTextlistUnselectedColor>00000055</gamelistListTextlistUnselectedColor>
+      <gamelistListTextlistBackgroundColor>0f180f</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>dbd8d6</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>dbd8d6</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
       <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
       <gamelistListMetadataIconColor>3d0d22</gamelistListMetadataIconColor>
       <gamelistListRatingColor>3d0d22</gamelistListRatingColor>
