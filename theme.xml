@@ -204,7 +204,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <iconB>./_inc/images/help-button-south.svg</iconB>
          <iconX>./_inc/images/help-button-north.svg</iconX>
          <iconY>./_inc/images/help-button-west.svg</iconY>
-         <fontSize>0.033333333333333</fontSize><!-- 16 -->
+         <fontSize>0.03125</fontSize><!-- 15 -->
       </helpsystem>
       <helpsystem ifHelpPrompts="false" name="help">
          <pos>1 1</pos>

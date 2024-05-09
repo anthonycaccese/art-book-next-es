@@ -46,6 +46,8 @@ based on 640x480
       </text>
       <textlist name="gamelist">
          <pos>0.0546875 0.25</pos><!-- 35 120 -->
+         <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
+         <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
       </textlist>
    </view>
 
@@ -82,7 +84,7 @@ based on 640x480
          <x>0.25</x><!-- 160 -->
       </text>
       <textlist name="gamelist">
-         <w>0.375</w><!-- 240 -->
+         <w>0.365625</w><!-- 234 -->
       </textlist>
    </view>
 
@@ -116,9 +118,10 @@ based on 640x480
       <text name="game-description" extra="true">
          <x>0.55078125</x><!-- 352.5 -->
          <y ifHelpPrompts="true">0.583333333333333</y><!-- 280 -->
-         <y ifHelpPrompts="false">0.682291666666667</y><!-- 327.5 -->
+         <y ifHelpPrompts="false">0.69375</y><!-- 333 -->
          <w>0.3984375</w><!-- 255 -->
          <h>0.25</h><!-- 120 -->
+         <lineSpacing ifSubset="font-size:default|large">1.2</lineSpacing>
       </text>
    </view>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
