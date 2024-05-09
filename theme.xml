@@ -70,9 +70,9 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-view-artwork" displayName="Game Artwork">
-      <include name="boxart" displayName="Boxart" />
-      <include name="image-cropped" displayName="Image (Cropped)" />
       <include name="image" displayName="Image" />
+      <include name="image-cropped" displayName="Image (Cropped)" />
+      <include name="boxart" displayName="Boxart" />
    </subset>
 
    <!--

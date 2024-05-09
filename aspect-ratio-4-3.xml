@@ -121,6 +121,7 @@ based on 640x480
          <y ifHelpPrompts="false">0.69375</y><!-- 333 -->
          <w>0.3984375</w><!-- 255 -->
          <h>0.25</h><!-- 120 -->
+         <lineSpacing ifSubset="font-size:small">1.15</lineSpacing>
          <lineSpacing ifSubset="font-size:default|large">1.2</lineSpacing>
       </text>
    </view>
