@@ -117,12 +117,11 @@ based on 640x480
       </image>
       <text name="game-description" extra="true">
          <x>0.55078125</x><!-- 352.5 -->
-         <y ifHelpPrompts="true">0.583333333333333</y><!-- 280 -->
+         <y ifHelpPrompts="true">0.579166666666667</y><!-- 278 -->
          <y ifHelpPrompts="false">0.69375</y><!-- 333 -->
          <w>0.3984375</w><!-- 255 -->
          <h>0.25</h><!-- 120 -->
-         <lineSpacing ifSubset="font-size:small">1.15</lineSpacing>
-         <lineSpacing ifSubset="font-size:default|large">1.2</lineSpacing>
+         <lineSpacing>1.2</lineSpacing>
       </text>
    </view>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
