@@ -14,7 +14,7 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="distribution" displayName="Distribution">
-      <include name="batocera" displayName="Batocera" />
+      <include name="batocera" displayName="Batocera/Knulli" />
       <include name="retrobat" displayName="Retrobat" />
    </subset>
 
@@ -30,7 +30,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
-      <distributionPath ifSubset="distribution:batocera">./../../</distributionPath><!-- userdata/ -->
+      <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
 
