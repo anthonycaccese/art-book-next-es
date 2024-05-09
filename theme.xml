@@ -60,7 +60,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <subset name="system-view-artwork" displayName="System Artwork">
       <include name="default" displayName="Default" />
       <include name="noir" displayName="Noir" />
-      <include name="classic" displayName="Classic" />
+      <!--<include name="classic" displayName="Classic" />-->
       <include name="custom" displayName="Custom" />
    </subset>
 
