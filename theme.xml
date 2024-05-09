@@ -456,6 +456,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <datetime name="md_releasedate">
          <origin>0 0.5</origin>
+         <size>0 ${gamelistMetadataFontSize}</size>
          <fontSize>${gamelistMetadataFontSize}</fontSize>
          <fontPath>${fontBold}</fontPath>
          <lineSpacing>1</lineSpacing>
