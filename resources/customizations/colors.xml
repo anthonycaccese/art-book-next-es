@@ -1,32 +1,29 @@
 <theme>
    <formatVersion>7</formatVersion>
    <variables>
-      <backgroundColor>000000</backgroundColor>
       <!-- System View -->
-      <systemBackgroundColor>111111</systemBackgroundColor>
-      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
-      <systemArtColor>ffffff</systemArtColor>
+      <systemBackgroundColor>000000</systemBackgroundColor>
       <systemArtSaturation>1</systemArtSaturation>
-      <systemArtFade>00000044</systemArtFade>
-      <systemMaskColor>111111</systemMaskColor>
-      <systemLogoColor>dddddd</systemLogoColor>
+      <systemArtColor>ffffffdd</systemArtColor>
+      <systemLogoColor>ffffff</systemLogoColor>
       <!-- Gamelist View - List Variants -->
+      <gamelistListBackgroundColor>222222</gamelistListBackgroundColor>
       <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
       <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
       <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
       <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
-      <gamelistListMetadataBackgroundColor>222222</gamelistListMetadataBackgroundColor>
-      <gamelistListMetadataColor>ffffff55</gamelistListMetadataColor>
-      <gamelistListMetadataIconColor>ffffff22</gamelistListMetadataIconColor>
+      <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff33</gamelistListMetadataIconColor>
+      <gamelistListRatingColor>ffffff33</gamelistListRatingColor>
       <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
-      <gamelistListRatingColor>ffffff44</gamelistListRatingColor>
+      <!-- Menu View -->
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Screen View -->
+      <systemIndicatorColor>eeeeee</systemIndicatorColor>
       <!-- Help System -->
       <helpBackgroundColor>000000</helpBackgroundColor>
-      <helpIconColor>ffffff66</helpIconColor>
-      <helpTextColor>ffffff66</helpTextColor>
-      <!-- Menu System -->
-      <menuBackgroundColor>111111</menuBackgroundColor>
-      <statusBarBackgroundColor>11111199</statusBarBackgroundColor>
-      <statusBarIconColor>bbbbbb</statusBarIconColor>
+      <helpIconColor>ffffff88</helpIconColor>
+      <helpTextColor>ffffffaa</helpTextColor>
    </variables>
 </theme>
