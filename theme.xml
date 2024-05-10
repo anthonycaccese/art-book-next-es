@@ -227,6 +227,8 @@ https://github.com/anthonycaccese/art-book-next-es
       <!-- End: Resets -->
       <!-- Start: Image for 'systemcarousel' -->
       <image name="logo">
+         <path>./_inc/systems/artwork-default/_default.png</path>
+         <path>./_inc/systems/artwork-default/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:default">./_inc/systems/artwork-default/_default.png</path>
          <path ifSubset="system-view-artwork:default">./_inc/systems/artwork-default/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:noir">./_inc/systems/artwork-noir/_default.png</path>
