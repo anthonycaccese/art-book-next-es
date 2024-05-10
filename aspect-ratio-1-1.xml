@@ -19,6 +19,17 @@ based on 480x480
 
    <!--
    ///
+   View: All
+   ///
+   -->
+   <view name="system,basic,detailed">
+      <helpsystem ifHelpPrompts="true" name="help">
+         <fontSize>0.03125</fontSize><!-- 15 -->
+      </helpsystem>
+   </view>
+
+   <!--
+   ///
    View: System
    ///
    -->

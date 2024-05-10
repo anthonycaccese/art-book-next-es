@@ -60,7 +60,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <subset name="system-view-artwork" displayName="System Artwork">
       <include name="default" displayName="Default" />
       <include name="noir" displayName="Noir" />
-      <include name="classic" displayName="Classic" />
+      <!--<include name="classic" displayName="Classic" />-->
       <include name="custom" displayName="Custom" />
    </subset>
 
@@ -70,9 +70,9 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-view-artwork" displayName="Game Artwork">
-      <include name="boxart" displayName="Boxart" />
-      <include name="image-cropped" displayName="Image (Cropped)" />
       <include name="image" displayName="Image" />
+      <include name="image-cropped" displayName="Image (Cropped)" />
+      <include name="boxart" displayName="Boxart" />
    </subset>
 
    <!--
@@ -204,7 +204,6 @@ https://github.com/anthonycaccese/art-book-next-es
          <iconB>./_inc/images/help-button-south.svg</iconB>
          <iconX>./_inc/images/help-button-north.svg</iconX>
          <iconY>./_inc/images/help-button-west.svg</iconY>
-         <fontSize>0.033333333333333</fontSize><!-- 16 -->
       </helpsystem>
       <helpsystem ifHelpPrompts="false" name="help">
          <pos>1 1</pos>
@@ -456,6 +455,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <datetime name="md_releasedate">
          <origin>0 0.5</origin>
+         <size>0 ${gamelistMetadataFontSize}</size>
          <fontSize>${gamelistMetadataFontSize}</fontSize>
          <fontPath>${fontBold}</fontPath>
          <lineSpacing>1</lineSpacing>
