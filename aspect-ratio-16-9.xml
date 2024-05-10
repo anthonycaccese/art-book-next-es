@@ -261,12 +261,12 @@ based on 853x480
       </image>
       <!-- Marquee -->
       <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
-            <pos>0.68757327080891 0.442708333333333</pos><!-- 586.5 212.5 -->
-            <maxSize>0.363423212192263 0.625</maxSize><!-- 310 300 -->
+         <pos>0.68757327080891 0.442708333333333</pos><!-- 586.5 212.5 -->
+         <maxSize>0.363423212192263 0.625</maxSize><!-- 310 300 -->
       </image>
       <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
-            <pos>0.68757327080891 0.5</pos><!-- 586.5 240 -->
-            <maxSize>0.363423212192263 0.625</maxSize><!-- 310 300 -->
+         <pos>0.68757327080891 0.5</pos><!-- 586.5 240 -->
+         <maxSize>0.363423212192263 0.625</maxSize><!-- 310 300 -->
       </image>
    </view>
 
