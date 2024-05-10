@@ -22,7 +22,7 @@
          <origin>0.5 0.5</origin>
          <pos>0.5 0.6</pos>
          <alignment>center</alignment>
-         <fontPath>./_inc/fonts/Oxygen-Bold.ttf</fontPath>
+         <fontPath>./_inc/fonts/Roboto-Bold.ttf</fontPath>
          <fontSize>0.04</fontSize>
          <color>ffffff</color>
          <forceUppercase>true</forceUppercase>
