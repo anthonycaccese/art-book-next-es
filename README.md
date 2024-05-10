@@ -64,6 +64,13 @@ You can create your own custom color scheme to use for the theme
 
 ## **Additional Notes**
 
+### Media Scraping:
+
+* To make game artwork look as good as possible the recommneded settings for the built-in scraper are:
+    * Image Source = `Screenshot`
+    * Box Source = `Box 2D`
+    * Logo Source = `Marquee`
+
 ### Versions for other ES forks:
 * If you use Retropie... then check out the version [here](https://github.com/anthonycaccese/art-book-next-retropie).  The Retropie version has all the same base features but you have to change them through the XML directly (as Retropie's theme engine does not have a menu for changing theme options)
 * If you use ES-DE... then the ES-DE version [here](https://github.com/anthonycaccese/art-book-next-es-de) will work out of the box with that distribution.  When used with ES-DE the theme comes with additional support for navigation sound sets.
