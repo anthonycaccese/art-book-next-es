@@ -38,10 +38,10 @@ Art Book Next allows customizations to system artwork and color schemes without 
 
 The artwork used on the system view can be customized with your own images.
 
-- Create your custom artwork using one of the masks i've supplied in this theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations). I have tried to include a mask that should work in all major image editing programs.
-- Export each custom image as a transparent png.
+- Create your custom artwork using one of the masks i've supplied in this theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations). I've included a set of masks that should work in all major image editing programs.
+- Export your final images as transparent pngs
 - Create a folder in the path you created above called `artwork`
-- Upload your custom images to that folder
+- Upload your images to that folder
 - They can be named:
     - _default.png
     - ${system.theme}.png
