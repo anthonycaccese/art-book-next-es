@@ -1,0 +1,264 @@
+<!-- 
+16:10 aspect ratio
+based on 768x480
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <!--
+   ///
+   View: Screen
+   ///
+   -->
+   <view name="screen">
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.9739583333333333</w><!-- 748 -->
+         <separator>10</separator>
+      </stackpanel>
+   </view>
+
+   <!--
+   ///
+   View: System
+   ///
+   -->
+   <view name="system">
+      <carousel name="systemcarousel">
+         <logoSize>1 1</logoSize>
+         <maxLogoCount>5</maxLogoCount>
+      </carousel>
+      <image name="system-logo">
+         <maxSize>0.5 0.3</maxSize>
+      </image>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (All)
+   ///
+   -->
+   <view name="basic,detailed">
+      <image name="logo">
+         <maxSize>0.2734375 0.104166666666667</maxSize><!-- 210 50 -->
+      </image>
+      <text name="logoText">
+         <size>0.2734375 0.104166666666667</size><!-- 210 50 -->
+      </text>
+      <textlist name="gamelist">
+         <pos>0.045572916666667 0.25</pos><!-- 35 120 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Basic)
+   ///
+   -->
+   <view name="basic">
+      <image name="logo">
+         <x>0.5</x><!-- 50% -->
+      </image>
+      <text name="logoText">
+         <x>0.5</x><!-- 50% -->
+      </text>
+      <textlist name="gamelist">
+         <w>0.9088541666666667</w><!-- 698 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Detailed)
+   ///
+   -->
+   <view name="detailed">
+      <image name="gamelist-background" extra="true">
+         <size>0.375 1</size><!-- 288 480 -->
+      </image>
+      <image name="logo">
+         <x>0.1875</x><!-- 144 -->
+      </image>
+      <text name="logoText">
+         <x>0.1875</x><!-- 144 -->
+      </text>
+      <textlist name="gamelist">
+         <w>0.2734375</w><!-- 210 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Detailed - Metadata On)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-metadata:on">
+      <!-- Video -->
+      <video ifHelpPrompts="true" name="game-video" extra="true">
+         <pos>0.68757327080891 0.296875</pos><!-- 586.5 142.5 -->
+         <minSize>0.625 0.59375</minSize><!-- 480 285 -->
+      </video>
+      <video ifHelpPrompts="false" name="game-video" extra="true">
+         <pos>0.68757327080891 0.317708333333333</pos><!-- 586.5 152.5 -->
+         <minSize>0.625 0.635416666666667</minSize><!-- 480 305 -->
+      </video>
+      <!-- Boxart & Image -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.6875 0.322916666666667</pos><!-- 528 155 -->
+         <maxSize>0.546875 0.520833333333333</maxSize><!-- 420 250 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.6875 0.34375</pos><!-- 528 165 -->
+         <maxSize>0.546875 0.5625</maxSize><!-- 420 270 -->
+      </image>
+      <!-- Image (Cropped) -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.6875 0.296875</pos><!-- 528 142.5 -->
+         <minSize>0.625 0.59375</minSize><!-- 480 285 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.6875 0.317708333333333</pos><!-- 528 152.5 -->
+         <minSize>0.625 0.635416666666667</minSize><!-- 480 305 -->
+      </image>
+      <!-- Marquee -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <pos>0.805338541666667 0.625</pos><!-- 618.5 300 -->
+         <maxSize>0.15625 0.125</maxSize><!-- 120 60 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <pos>0.805338541666667 0.666666666666667</pos><!-- 618.5 320 -->
+         <maxSize>0.15625 0.125</maxSize><!-- 120 60 -->
+      </image>
+
+
+      <image name="
+         game-releasedate-icon,
+         game-players-icon,
+         game-playcount-icon,
+         game-gametime-icon" extra="true">
+         <maxSize>0.0260416666666667 0.0375</maxSize><!-- 20 20 -->
+      </image>
+      <text name="game-description" extra="true">
+         <x>0.417317708333333</x><!-- 320.5 -->
+         <w>0.364583333333333</w><!-- 280 -->
+      </text>
+      <rating name="md_rating">
+         <visible>true</visible>
+      </rating>
+      <datetime name="md_releasedate">
+         <format ifSubset="font-size:small|default">%Y-%m-%d</format>
+         <format ifSubset="font-size:large">%Y-%m</format>
+         <visible>true</visible>
+      </datetime>
+      <text name="md_players">
+         <visible>true</visible>
+      </text>
+   </view>
+   <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:on">
+      <image name="
+         game-releasedate-icon,
+         game-players-icon
+         ">
+         <visible>true</visible>
+      </image>
+      <rating name="md_rating">
+         <pos>0.8203125 0.6796875</pos><!-- 630 326.25 -->
+      </rating>
+      <image name="game-releasedate-icon">
+         <pos>0.8203125 0.7421875</pos><!-- 630 356.25 -->
+      </image>
+      <datetime name="md_releasedate">
+         <pos>0.846354166666667 0.7421875</pos><!-- 650 356.25 -->
+      </datetime>
+      <image name="game-players-icon">
+         <pos>0.8203125 0.802083333333333</pos><!-- 630 385 -->
+      </image>
+      <text name="md_players">
+         <pos>0.846354166666667 0.802083333333333</pos><!-- 650 385 -->
+      </text>
+   </view>
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
+      <image name="
+         game-releasedate-icon,
+         game-players-icon,
+         game-gametime-icon,
+         game-playcount-icon
+         ">
+         <visible>true</visible>
+      </image>
+      <rating name="md_rating">
+         <pos>0.8203125 0.713541666666667</pos><!-- 630 342.5 -->
+      </rating>
+      <image name="game-releasedate-icon">
+         <pos>0.8203125 0.767708333333333</pos><!-- 630 368.5 -->
+      </image>
+      <datetime name="md_releasedate">
+         <pos>0.846354166666667 0.767708333333333</pos><!-- 650 368.5 -->
+      </datetime>
+      <image name="game-players-icon">
+         <pos>0.8203125 0.81875</pos><!-- 630 393 -->
+      </image>
+      <text name="md_players">
+         <pos>0.846354166666667 0.81875</pos><!-- 650 393 -->
+         <visible>true</visible>
+      </text>
+      <image name="game-gametime-icon">
+         <pos>0.8203125 0.866666666666667</pos><!-- 630 416 -->
+      </image>
+      <text name="md_gametime">
+         <pos>0.846354166666667 0.866666666666667</pos><!-- 650 416 -->
+         <visible>true</visible>
+      </text>
+      <image name="game-playcount-icon">
+         <pos>0.8203125 0.917708333333333</pos><!-- 630 440.5 -->
+      </image>
+      <text name="md_playcount">
+         <pos>0.846354166666667 0.917708333333333</pos><!-- 650 440.5 -->
+         <visible>true</visible>
+      </text>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Detailed - Metadata Off)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-metadata:off">
+      <!-- Video -->
+      <video ifHelpPrompts="true" name="game-video" extra="true">
+         <pos>0.6875 0.442708333333333</pos><!-- 528 212.5 -->
+         <minSize>0.625 0.885416666666667</minSize><!-- 480 425 -->
+      </video>
+      <video ifHelpPrompts="false" name="game-video" extra="true">
+         <pos>0.6875 0.5</pos><!-- 528 240 -->
+         <minSize>0.625 1</minSize><!-- 480 480-->
+      </video>
+      <!-- Boxart & Image -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.674479166666667 0.447916666666667</pos><!-- 518 215 -->
+         <maxSize>0.546875 0.75</maxSize><!-- 420 360 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+         <pos>0.674479166666667 0.5</pos><!-- 518 240 -->
+         <maxSize>0.546875 0.864583333333333</maxSize><!-- 420 415 -->
+      </image>
+      <!-- Image (Cropped) -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.6875 0.442708333333333</pos><!-- 528 212.5 -->
+         <minSize>0.625 0.885416666666667</minSize><!-- 480 425 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
+         <pos>0.6875 0.5</pos><!-- 528 240 -->
+         <minSize>0.625 1</minSize><!-- 480 480-->
+      </image>
+      <!-- Marquee -->
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <pos>0.6875 0.442708333333333</pos><!-- 528 212.5 -->
+         <cropSize>0.625 0.885416666666667</cropSize><!-- 480 425 -->
+      </image>
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
+         <pos>0.6875 0.5</pos><!-- 528 240 -->
+         <maxSize>0.377604166666667 0.625</maxSize><!-- 290 300 -->
+      </image>
+   </view>
+
+</theme>
