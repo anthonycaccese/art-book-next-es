@@ -11,7 +11,7 @@ This version of the theme only works with distributions that use the latest Bato
 
 ## Theme Configuration
 
-The following options can be changed directly from the main menu under `UI Settings > Theme Configuration`
+The following options can be changed directly from the main menu under `User Interface Settings > Theme Configuration`
 
 | Setting | Description | Options |
 | -- | -- | -- |
@@ -22,6 +22,13 @@ The following options can be changed directly from the main menu under `UI Setti
 | Game Metadata | Sets if metadata (e.g. description, release date, etc...) should be displayed for a game | `On`, `Off` |
 | Font Size | Set the size for text elements throughout the theme. | `Default`, `Small`, `Large` |
 | Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`). You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Default`, `Light`, `Steam OS`, `SNES`, `Famicom`, `DMG`, `OLED`, `Custom` |
+
+### Additional UI Settings 
+
+The following EmulationStation settings can also be changed and will update the look of the theme accordingly:
+* `User Interface Settings > Show Clock` - This will allow you to turn the system clock on or off
+* `User Interface Settings > On-Screen Help` - This will turn the display of EmulationStation's help system on or off (the theme's layout will automatically adapt to the available space)
+* `User Interface Settings > Show Battery Status` - This will allow you to change what is displayed for the battery status.
 
 ## Theme Customizations
 
@@ -38,17 +45,17 @@ Art Book Next allows customizations to system artwork and color schemes without 
 
 The artwork used on the system view can be customized with your own images.
 
-- Create your custom artwork using one of the masks i've supplied in this theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations). I've included a set of masks that should work in all major image editing programs.
-- Export your final images as transparent pngs
-- Create a folder in the path you created above called `artwork`
-- Upload your images to that folder
-- They can be named:
-    - _default.png
-    - ${system.theme}.png
-- The theme will look them them up in that order. If a given image is not found in your folder then the the images from the theme will be used as a fallback.  This allows you to customize only the images you want and still have images displayed for all systems.
-- `_default.png` can be used for creating a single image that is used for all systems OR a fallback for systems that you did not create a custom image for (if you don't want to use the fallback that already exists in the theme)
-- `${system.theme}.png` should be named for the system you are looking to override. For example if you wanted to override the artwork for `snes` you would create an image called `snes.png` in the artwork folder.
-- Once your images are in place you turn on custom images by changing the `System Artwork` setting to `Custom`
+* Create your custom artwork using one of the masks i've supplied in this theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations). I've included a set of masks that should work in all major image editing programs.
+* Export your final images as transparent pngs
+* Create a folder in the path you created above called `artwork`
+* Upload your images to that folder
+* They can be named:
+    * `_default.png`
+    * `${system.theme}.png`
+    * The theme will look them them up in that order. If a given image is not found in your folder then the the images from the theme will be used as a fallback.  This allows you to customize only the images you want and still have images displayed for all systems.
+    * `_default.png` can be used for creating a single image that is used for all systems OR a fallback for systems that you did not create a custom image for (if you don't want to use the fallback that already exists in the theme)
+    * `${system.theme}.png` should be named for the system you are looking to override. For example if you wanted to override the artwork for `snes` you would create an image called `snes.png` in the artwork folder.
+* Once your images are in place you turn on custom images by changing the `System Artwork` setting to `Custom`
 
 If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
 
@@ -56,11 +63,11 @@ If you create a set of images that you would like to share with the community pl
 
 You can create your own custom color scheme to use for the theme
 
-- Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/colors.xml
-- Upload it in the path you created above and make sure its called `colors.xml`
-- Change any values in the template to the colors you prefer.
-- I tried to make the values as self explanatory as possible but if you have questions regarding which property does what please don't hesitate to ask.
-- After your colors are defined; in theme configuration change `Color Scheme` to `Custom`
+* Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/colors.xml
+* Upload it in the path you created above and make sure its called `colors.xml`
+* Change any values in the template to the colors you prefer.
+* I tried to make the values as self explanatory as possible but if you have questions regarding which property does what please don't hesitate to ask.
+* After your colors are defined; in theme configuration change `Color Scheme` to `Custom`
 
 ## **Additional Notes**
 
