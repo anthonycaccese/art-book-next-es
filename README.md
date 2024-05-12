@@ -17,7 +17,7 @@ The following options can be changed directly from the main menu under `User Int
 | -- | -- | -- |
 | Distribution | Used to define which folder to look in for Theme Customization files. | `Batocera/Knulli`, `RetroBat` |
 | Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  This will automatically set itself so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. | `16:9`, `16:10`, `4:3`, `3:2`, `1:1` |
-| System Artwork | Defines the set of artwork that is displayed on the system view | `Default`, `Noir`, `Custom` |
+| System Artwork | Defines the set of artwork that is displayed on the system view | `Default`, `Noir`, `Custom`, `Custom (Fullscreen)` |
 | Game Artwork | Defines the type of artwork used to represent a game. These are sourced from the the selections you make in the scraper menu. Image will display the image you selected to scrape for `Image Source`.  Image (Cropped) will display that same image zoomed in to fill the screen.  Boxart will display the image you selected to scrape for `Box Source` | `Image`, `Image (Cropped)`, `Boxart` |
 | Game Metadata | Sets if metadata (e.g. description, release date, etc...) should be displayed for a game | `On`, `Off` |
 | Font Size | Set the size for text elements throughout the theme. | `Default`, `Small`, `Large` |
@@ -45,7 +45,7 @@ Art Book Next allows customizations to system artwork and color schemes without 
 
 The artwork used on the system view can be customized with your own images.
 
-#### For angled artwork
+#### For angled artwork:
 
 * Create your custom artwork using one of the masks i've supplied in this theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations). I've included a set of masks that should work in all major image editing programs.
 * Export your final images as transparent pngs
@@ -59,7 +59,7 @@ The artwork used on the system view can be customized with your own images.
     * `${system.theme}.png` should be named for the system you are looking to override. For example if you wanted to override the artwork for `snes` you would create an image called `snes.png` in the artwork folder.
 * Once your images are in place you turn on custom images by changing the `System Artwork` setting to `Custom`
 
-#### For fullscreen artwork
+#### For fullscreen artwork:
 
 * Create a folder in the path you created above called `artwork-fullscreen`
 * Upload your images to that folder
@@ -73,7 +73,7 @@ The artwork used on the system view can be customized with your own images.
     * `${system.theme}.png/jpg` should be named for the system you are looking to override. For example if you wanted to override the artwork for `snes` you would create an image called `snes.png` or `snes.jpg` in the artwork folder.
 * Once your images are in place you turn on custom images by changing the `System Artwork` setting to `Custom (Fullscreen)`
 
->>> If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
+> If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
 
 ### Color Schemes
 
