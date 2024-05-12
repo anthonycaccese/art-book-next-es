@@ -45,6 +45,8 @@ Art Book Next allows customizations to system artwork and color schemes without 
 
 The artwork used on the system view can be customized with your own images.
 
+#### For angled artwork
+
 * Create your custom artwork using one of the masks i've supplied in this theme's resources directory [here](https://github.com/anthonycaccese/art-book-next-es/tree/main/resources/customizations). I've included a set of masks that should work in all major image editing programs.
 * Export your final images as transparent pngs
 * Create a folder in the path you created above called `artwork`
@@ -57,7 +59,21 @@ The artwork used on the system view can be customized with your own images.
     * `${system.theme}.png` should be named for the system you are looking to override. For example if you wanted to override the artwork for `snes` you would create an image called `snes.png` in the artwork folder.
 * Once your images are in place you turn on custom images by changing the `System Artwork` setting to `Custom`
 
-If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
+#### For fullscreen artwork
+
+* Create a folder in the path you created above called `artwork-fullscreen`
+* Upload your images to that folder
+* They can be named:
+    * `_default.png`
+    * `_default.jpg`
+    * `${system.theme}.png`
+    * `${system.theme}.jpg`
+    * The theme will look them them up in that order.
+    * `_default.png/jpg` can be used for creating a single image that is used for all systems OR a fallback for systems that you did not create a custom image for (if you don't want to use the fallback that already exists in the theme)
+    * `${system.theme}.png/jpg` should be named for the system you are looking to override. For example if you wanted to override the artwork for `snes` you would create an image called `snes.png` or `snes.jpg` in the artwork folder.
+* Once your images are in place you turn on custom images by changing the `System Artwork` setting to `Custom (Fullscreen)`
+
+>>> If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
 
 ### Color Schemes
 
