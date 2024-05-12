@@ -62,6 +62,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="noir" displayName="Noir" />
       <!--<include name="classic" displayName="Classic" />-->
       <include name="custom" displayName="Custom" />
+      <include name="custom-fullscreen" displayName="Custom (Fullscreen)" />
    </subset>
 
    <!--
@@ -225,7 +226,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>00000000</color>
       </text>
       <!-- End: Resets -->
-      <!-- Start: Image for 'systemcarousel' -->
+   </view>
+   <view name="system" ifSubset="system-view-artwork:default|noir|custom">
       <image name="logo">
          <path>./_inc/systems/artwork-default/_default.png</path>
          <path>./_inc/systems/artwork-default/${system.theme}.png</path>
@@ -240,7 +242,6 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>${systemArtColor}</color>
          <saturation>${systemArtSaturation}</saturation>
       </image>
-      <!-- End: Image for 'systemcarousel' -->
       <carousel name="systemcarousel">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -248,7 +249,6 @@ https://github.com/anthonycaccese/art-book-next-es
          <logoScale>1</logoScale>
          <color>00000000</color>
          <type>horizontal</type>
-         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <defaultTransition>instant</defaultTransition>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>1</zIndex>
@@ -260,7 +260,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <zIndex>2</zIndex>
       </image>
-      <text name="system-name" extra="true">
+      <!--<text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
          <size>0.5 0.3</size>
@@ -273,7 +273,34 @@ https://github.com/anthonycaccese/art-book-next-es
          <text>${system.fullName}</text>
          <zIndex>2</zIndex>
          <visible>false</visible>
-      </text>
+      </text>-->
+   </view>
+   <view name="system" ifSubset="system-view-artwork:custom-fullscreen">
+      <image name="system-artwork" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <minSize>1 1</minSize>
+         <path>${themeCustomizationsPath}artwork-fullscreen/_default.png</path>
+         <path>${themeCustomizationsPath}artwork-fullscreen/_default.jpg</path>
+         <path>${themeCustomizationsPath}artwork-fullscreen/${system.theme}.png</path>
+         <path>${themeCustomizationsPath}artwork-fullscreen/${system.theme}.jpg</path>
+         <zIndex>1</zIndex>
+      </image>
+      <image name="logo">
+         <path>./_inc/systems/logos/${system.theme}.svg</path>
+      </image>
+      <carousel name="systemcarousel">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <logoScale>1</logoScale>
+         <maxLogoCount>1</maxLogoCount>
+         <color>00000000</color>
+         <type>horizontal</type>
+         <defaultTransition>fade & slide</defaultTransition>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+         <zIndex>2</zIndex>
+      </carousel>
    </view>
 
    <!--

@@ -33,7 +33,7 @@ based on 720x480
    View: System
    ///
    -->
-   <view name="system">
+   <view name="system" ifSubset="system-view-artwork:default|noir|custom">
       <carousel name="systemcarousel">
          <logoSize>1.16 1.16</logoSize>
          <maxLogoCount>4</maxLogoCount>
@@ -41,6 +41,11 @@ based on 720x480
       <image name="system-logo">
          <maxSize>0.6 0.3</maxSize>
       </image>
+   </view>
+   <view name="system" ifSubset="system-view-artwork:custom-fullscreen">
+      <carousel name="systemcarousel">
+         <logoSize>0.6 0.3</logoSize>
+      </carousel>
    </view>
 
    <!--
