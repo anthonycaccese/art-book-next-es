@@ -85,6 +85,18 @@ You can create your own custom color scheme to use for the theme
 * I tried to make the values as self explanatory as possible but if you have questions regarding which property does what please don't hesitate to ask.
 * After your colors are defined; in theme configuration change `Color Scheme` to `Custom`
 
+### Logos
+
+System logos can be customized by adding your own images
+
+* Create a folder in the path you created above called `logos`
+* Upload your images to that folder
+* They can be named:
+    * `${system.theme}.svg`
+    * `${system.theme}.png`
+    * The theme will look them them up in that order. If a given image is not found in your folder then the the images from the theme will be used as a fallback.  This allows you to customize only the images you want and still have images displayed for all systems.
+    * `${system.theme}.svg/png` should be named for the system you are looking to override. For example if you wanted to override the logo for `snes` you would create an image called `snes.svg` or `snes.png` in the logos folder.
+
 ## **Additional Notes**
 
 ### Media Scraping:
