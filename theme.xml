@@ -54,7 +54,7 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
-   Subset: System View Artwork
+   Subset: System Artwork
    ///
    -->
    <subset name="system-view-artwork" displayName="System Artwork">
@@ -67,7 +67,17 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
-   Subset: Gamelist Media Artwork
+   Subset: System Logos
+   ///
+   -->
+   <subset name="system-logos" displayName="System Logos">
+      <include name="default" displayName="Default" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Game Artwork
    ///
    -->
    <subset name="gamelist-view-artwork" displayName="Game Artwork">
@@ -78,7 +88,7 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
-   Subset: Gamelist View Metadata
+   Subset: Game Metadata
    ///
    -->
    <subset name="gamelist-view-metadata" displayName="Game Metadata">
@@ -258,8 +268,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <pos>0.5 0.5</pos>
          <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
-         <path>${themeCustomizationsPath}logos/${system.theme}.svg</path>
-         <path>${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
          <zIndex>2</zIndex>
       </image>
       <!--<text name="system-name" extra="true">
@@ -290,8 +300,8 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <image name="logo">
          <path>./_inc/systems/logos/${system.theme}.svg</path>
-         <path>${themeCustomizationsPath}logos/${system.theme}.svg</path>
-         <path>${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
       </image>
       <carousel name="systemcarousel">
          <origin>0 0</origin>
@@ -329,8 +339,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <origin>0.5 0.5</origin>
          <y>0.130208333333333</y><!-- 62.5 -->
          <path>./_inc/systems/logos/${system.theme}.svg</path>
-         <path>${themeCustomizationsPath}logos/${system.theme}.svg</path>
-         <path>${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
          <color>${gamelistListLogoColor}</color>
          <zIndex>5</zIndex>
       </image>
