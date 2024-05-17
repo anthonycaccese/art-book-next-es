@@ -272,10 +272,10 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
          <zIndex>2</zIndex>
       </image>
-      <!--<text name="system-name" extra="true">
+      <text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
-         <size>0.5 0.3</size>
+         <size>0.8 0.4</size>
          <fontSize>0.1125</fontSize>
          <fontPath>${fontLogo}</fontPath>
          <forceUppercase>true</forceUppercase>
@@ -284,8 +284,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>${systemLogoColor}</color>
          <text>${system.fullName}</text>
          <zIndex>2</zIndex>
-         <visible>false</visible>
-      </text>-->
+         <visible>!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
+      </text>
    </view>
    <view name="system" ifSubset="system-view-artwork:custom-fullscreen">
       <image name="system-artwork" extra="true">
