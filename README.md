@@ -1,8 +1,8 @@
 # Art Book Next for EmulationStation
-A simple theme for the version of EmulationStation used in [Batocera (v39 and above)](https://batocera.org/).
+A simple theme for the version of EmulationStation used in [Batocera (v40 and above)](https://batocera.org/).
 Based on the style of a coffee table book.
 
-This version of the theme only works with distributions that use the latest Batocera (v39 and above) fork of EmulationStation.  Specifically [Batocera](https://batocera.org/), [Knulli](https://www.knulli.org/) and [RetroBat](https://www.retrobat.org/)
+This version of the theme only works with distributions that use the latest Batocera (v40 and above) fork of EmulationStation.  Specifically [Batocera](https://batocera.org/), [Knulli](https://www.knulli.org/) and [RetroBat](https://www.retrobat.org/)
 
 ## Preview
 | ![system view](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/c0252388-2268-444c-ae3d-07f15b87a98c) | ![menu](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/39653703-f6e8-4940-98fc-66ce1c5af271) |
