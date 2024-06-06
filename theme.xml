@@ -284,7 +284,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>${systemLogoColor}</color>
          <text>${system.fullName}</text>
          <zIndex>2</zIndex>
-         <visible>!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
+         <visible ifSubset="system-logos:default">!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
+         <visible ifSubset="system-logos:custom">!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg") &amp;&amp; !exists("${themeCustomizationsPath}logos/" + {system:theme} + ".png") &amp;&amp; !exists("${themeCustomizationsPath}logos/" + {system:theme} + ".svg")</visible>
       </text>
    </view>
    <view name="system" ifSubset="system-view-artwork:custom-fullscreen">
