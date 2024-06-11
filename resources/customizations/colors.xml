@@ -25,5 +25,11 @@
       <helpBackgroundColor>000000</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
 </theme>

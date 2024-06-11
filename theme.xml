@@ -127,6 +127,16 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: Splash screen background
+   ///
+   -->
+   <subset name="splash-screen-background" displayName="Splash Screen Background">
+      <include name="none" displayName="None" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+
+   <!--
+   ///
    View: Screen
    ///
    -->

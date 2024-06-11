@@ -1,22 +1,43 @@
 <theme>
+
+   <!--
+   ///
+   Variables
+   ///
+   -->
+   <variables>
+      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
+      <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
+      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+   </variables>
+   
+   <include>./colors.xml</include>
+   <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
+
    <formatVersion>7</formatVersion>
    <view name="splash">
       <splash name="splash">
-         <backgroundColor>000000</backgroundColor>
+		 <backgroundColor>${splashBackgroundColor}</backgroundColor>
       </splash>
-      <image name="background">
+      <image ifSubset="splash-screen-background:custom" name="background">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+		 <path>./_inc/images/splash.png</path>
+		 <path>${themeCustomizationsPath}splash.png</path>
+      </image>
+	  <image ifSubset="splash-screen-background:none" name="background">
          <origin>0 0</origin>
          <pos>1 1</pos>
       </image>
       <image name="progressbar">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
-         <color>222222</color>
-         <colorEnd>222222</colorEnd>
+         <color>${splashProgressBarColor}</color>
+         <colorEnd>${splashProgressBarColorEnd}</colorEnd>
       </image>
       <image name="progressbar:active">
-         <color>333333</color>
-         <colorEnd>333333</colorEnd>
+         <color>${splashProgressBarActiveColor}</color>
+         <colorEnd>${splashProgressBarActiveColorEnd}</colorEnd>
       </image>
       <text name="label">
          <origin>0.5 0.5</origin>
@@ -24,7 +45,7 @@
          <alignment>center</alignment>
          <fontPath>./_inc/fonts/Roboto-Bold.ttf</fontPath>
          <fontSize>0.04</fontSize>
-         <color>ffffff</color>
+         <color>${splashProgressBarTextColor}</color>
          <forceUppercase>true</forceUppercase>
       </text>
    </view>
