@@ -25,6 +25,7 @@
       <helpBackgroundColor>000000</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>

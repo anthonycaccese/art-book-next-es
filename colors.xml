@@ -25,6 +25,7 @@
       <helpBackgroundColor>000000</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
@@ -57,6 +58,7 @@
       <helpBackgroundColor>070707</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
@@ -89,6 +91,7 @@
       <helpBackgroundColor>070a0f</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
@@ -121,6 +124,7 @@
       <helpBackgroundColor>140e26</helpBackgroundColor>
       <helpIconColor>a293d5</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
@@ -153,6 +157,7 @@
       <helpBackgroundColor>1e0609</helpBackgroundColor>
       <helpIconColor>DCD6B688</helpIconColor>
       <helpTextColor>DCD6B6aa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
@@ -185,6 +190,7 @@
       <helpBackgroundColor>959290</helpBackgroundColor>
       <helpIconColor>3d0d22</helpIconColor>
       <helpTextColor>000000cc</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
@@ -217,6 +223,7 @@
       <helpBackgroundColor>070707</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
       <splashBackgroundColor>000000</splashBackgroundColor>
       <splashProgressBarColor>222222</splashProgressBarColor>
       <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
