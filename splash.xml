@@ -22,6 +22,7 @@
       <image ifSubset="splash-screen-background:custom" name="background">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
+		 <minSize>1 1</minSize>
 		 <path>./_inc/images/splash.png</path>
 		 <path>${themeCustomizationsPath}splash.png</path>
 		 <path>${themeCustomizationsPath}splash.jpg</path>
