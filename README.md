@@ -23,7 +23,7 @@ The following options can be changed directly from the main menu under `User Int
 | Game Metadata | Sets if metadata (e.g. description, release date, etc...) should be displayed for a game | `On`, `Off` |
 | Font Size | Set the size for text elements throughout the theme. | `Default`, `Small`, `Large` |
 | Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`). You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Default`, `Light`, `Steam OS`, `SNES`, `Famicom`, `DMG`, `OLED`, `Custom` |
-| Splash Screen Background | Toggles an optional custom splash screen background which will be displayed when EmulationStation is loading and/or scanning for ROMs. | `None`, `Custom` |
+| Splash Screen | Toggles an optional custom splash screen which will be displayed when EmulationStation is loading and/or scanning for ROMs. | `Default`, `Custom` |
 
 ### Additional UI Settings 
 
@@ -77,13 +77,13 @@ The artwork used on the system view can be customized with your own images.
 
 > If you create a set of images that you would like to share with the community please let me know about it [here](https://retropie.org.uk/forum/topic/33010/theme-art-book-next)
 
-### Splash Screen Background
+### Splash Screen
 
 * Upload your image to the foledr you created above
 * It can be named:
     * `splash.png`
     * `splash.jpg`
-* One your image is in place you turn on your splash screen background by changing `Splash Screen Background` to `Custom`
+* One your image is in place you turn on your splash screen by changing `Splash Screen` to `Custom`
 
 ### Color Schemes
 
