@@ -19,15 +19,14 @@
       <splash name="splash">
 		 <backgroundColor>${splashBackgroundColor}</backgroundColor>
       </splash>
-      <image ifSubset="splash-screen-background:custom" name="background">
+      <image ifSubset="splash-screen:custom" name="background">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.5</pos>
-		 <minSize>1 1</minSize>
-		 <path>./_inc/images/splash.png</path>
-		 <path>${themeCustomizationsPath}splash.png</path>
-		 <path>${themeCustomizationsPath}splash.jpg</path>
+         <minSize>1 1</minSize>
+         <path>${themeCustomizationsPath}splash.png</path>
+         <path>${themeCustomizationsPath}splash.jpg</path>
       </image>
-	  <image ifSubset="splash-screen-background:none" name="background">
+      <image ifSubset="splash-screen:default" name="background">
          <origin>0 0</origin>
          <pos>1 1</pos>
       </image>
