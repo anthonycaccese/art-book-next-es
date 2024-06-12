@@ -25,6 +25,13 @@
       <helpBackgroundColor>000000</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
    <variables ifSubset="color-scheme:light">
       <!-- System View -->
@@ -51,6 +58,13 @@
       <helpBackgroundColor>070707</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
    <variables ifSubset="color-scheme:steam-os">
       <!-- System View -->
@@ -77,6 +91,13 @@
       <helpBackgroundColor>070a0f</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
    <variables ifSubset="color-scheme:snes">
       <!-- System View -->
@@ -103,6 +124,13 @@
       <helpBackgroundColor>140e26</helpBackgroundColor>
       <helpIconColor>a293d5</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
    <variables ifSubset="color-scheme:famicom">
       <!-- System View -->
@@ -129,6 +157,13 @@
       <helpBackgroundColor>1e0609</helpBackgroundColor>
       <helpIconColor>DCD6B688</helpIconColor>
       <helpTextColor>DCD6B6aa</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
    <variables ifSubset="color-scheme:dmg">
       <!-- System View -->
@@ -155,6 +190,13 @@
       <helpBackgroundColor>959290</helpBackgroundColor>
       <helpIconColor>3d0d22</helpIconColor>
       <helpTextColor>000000cc</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
    <variables ifSubset="color-scheme:oled">
       <!-- System View -->
@@ -181,5 +223,12 @@
       <helpBackgroundColor>070707</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
+      <!-- Splash Screen -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
+      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
+      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
 </theme>
