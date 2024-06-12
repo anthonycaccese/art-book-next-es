@@ -79,7 +79,7 @@ The artwork used on the system view can be customized with your own images.
 
 ### Splash Screen
 
-* Upload your image to the foledr you created above
+* Upload your image to the folder you created above
 * It can be named:
     * `splash.png`
     * `splash.jpg`
