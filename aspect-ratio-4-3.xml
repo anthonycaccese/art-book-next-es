@@ -143,8 +143,8 @@ based on 640x480
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
       <rating name="md_rating" ifSubset="gamelist-view-metadata-style:default|history">
          <origin>1 0.5</origin>
-         <pos>0.953125 0.614583333333333</pos> 610 295 
-         <size>0 0.041666666666667</size> - 20 
+         <pos>0.953125 0.614583333333333</pos><!-- 610 295 --> 
+         <size>0 0.041666666666667</size><!-- - 20 --> 
          <visible>true</visible>
       </rating>
       <image name="game-gametime-icon" ifSubset="gamelist-view-metadata-style:stats|history-stats">
