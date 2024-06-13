@@ -98,6 +98,18 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: Game Metadata Style
+   ///
+   -->
+   <subset if="{screen.ratio} == '4/3'" name="gamelist-view-metadata-style" displayName="Game Metadata Style">
+      <include name="default" displayName="Default" />
+      <include name="history" displayName="History" />
+      <include name="stats" displayName="Stats" />
+      <include name="history-stats" displayName="History/Stats" />
+   </subset>
+
+   <!--
+   ///
    Subset: Font Size
    ///
    -->

@@ -141,23 +141,41 @@ based on 640x480
       </text>
    </view>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
-      <rating name="md_rating">
+      <rating name="md_rating" ifSubset="gamelist-view-metadata-style:default|history">
          <origin>1 0.5</origin>
-         <pos>0.953125 0.614583333333333</pos><!-- 610 295 -->
-         <size>0 0.041666666666667</size><!-- - 20 -->
+         <pos>0.953125 0.614583333333333</pos> 610 295 
+         <size>0 0.041666666666667</size> - 20 
          <visible>true</visible>
       </rating>
-      <image name="game-releasedate-icon">
+      <image name="game-gametime-icon" ifSubset="gamelist-view-metadata-style:stats|history-stats">
+         <pos>0.765625 0.616666666666667</pos><!-- 490 296 -->
+         <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
+         <visible>true</visible>
+      </image>
+      <text name="md_gametime" ifSubset="gamelist-view-metadata-style:stats|history-stats">
+         <pos>0.8085938 0.616666666666667</pos><!-- 517.5 296 -->
+         <visible>true</visible>
+      </text>
+      <image name="game-releasedate-icon" ifSubset="gamelist-view-metadata-style:default|history|history-stats">
          <pos>0.55078125 0.616666666666667</pos><!-- 352.5 296 -->
          <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
          <visible>true</visible>
       </image>
-      <datetime name="md_releasedate">
+      <datetime name="md_releasedate" ifSubset="gamelist-view-metadata-style:default|history|history-stats">
          <pos>0.59375 0.616666666666667</pos><!-- 380 296 -->
          <format ifSubset="font-size:small|default">%Y-%m-%d</format>
          <format ifSubset="font-size:large">%Y-%m</format>
          <visible>true</visible>
       </datetime>
+      <image name="game-playcount-icon" ifSubset="gamelist-view-metadata-style:stats">
+         <pos>0.55078125 0.616666666666667</pos><!-- 352.5 296 -->
+         <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
+         <visible>true</visible>
+      </image>
+      <text name="md_playcount" ifSubset="gamelist-view-metadata-style:stats">
+         <pos>0.59375 0.616666666666667</pos><!-- 380 296 -->
+         <visible>true</visible>
+      </text>
    </view>
 
    <!--
