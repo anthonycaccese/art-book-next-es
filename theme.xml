@@ -548,6 +548,15 @@ https://github.com/anthonycaccese/art-book-next-es
          <lineSpacing>1</lineSpacing>
          <color>${gamelistListMetadataColor}</color>
       </text>
+      <text name="game-gametime-short" extra="true">
+         <visible>false</visible>
+         <origin>0 0.5</origin>
+         <fontSize>${gamelistMetadataFontSize}</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <lineSpacing>1</lineSpacing>
+         <color>${gamelistListMetadataColor}</color>
+         <text>{game:gametime} > 0 ? formatseconds({game:gametime}) : "Never"</text>
+      </text>
       <!-- End: Definitions -->
    </view>
 

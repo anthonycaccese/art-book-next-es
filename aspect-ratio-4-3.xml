@@ -152,7 +152,7 @@ based on 640x480
          <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
          <visible>true</visible>
       </image>
-      <text name="md_gametime" ifSubset="gamelist-view-metadata-style:stats|history-stats">
+      <text name="game-gametime-short" ifSubset="gamelist-view-metadata-style:stats|history-stats">
          <pos>0.8085938 0.616666666666667</pos><!-- 517.5 296 -->
          <visible>true</visible>
       </text>
