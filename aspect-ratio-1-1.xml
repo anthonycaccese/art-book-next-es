@@ -109,7 +109,7 @@ based on 480x480
    View: Gamelist (Detailed - Metadata On)
    ///
    -->
-   <view name="detailed" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
+   <view name="detailed" ifSubset="gamelist-view-metadata:on|on-history|on-stats|on-mixed">
       <!-- Video -->
       <video name="game-video" extra="true">
          <pos>0.75 0.25</pos><!-- 360 120 -->
@@ -140,7 +140,7 @@ based on 480x480
          <lineSpacing>1.2</lineSpacing>
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on|on-history|on-stats|on-mixed">
       <rating name="md_rating">
          <origin>1 0.5</origin>
          <pos>0.9479166666666667 0.614583333333333</pos><!-- 455 295 -->

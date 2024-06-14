@@ -109,7 +109,7 @@ based on 640x480
    View: Gamelist (Detailed - Metadata On)
    ///
    -->
-   <view name="detailed" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
+   <view name="detailed" ifSubset="gamelist-view-metadata:on|on-history|on-stats|on-mixed">
       <!-- Video -->
       <video name="game-video" extra="true">
          <pos>0.75 0.25</pos><!-- 480 120 -->
@@ -140,39 +140,39 @@ based on 640x480
          <lineSpacing>1.2</lineSpacing>
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
-      <rating name="md_rating" ifSubset="gamelist-view-metadata:default|history">
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on|on-history|on-stats|on-mixed">
+      <rating name="md_rating" ifSubset="gamelist-view-metadata:on|on-history">
          <origin>1 0.5</origin>
          <pos>0.953125 0.614583333333333</pos><!-- 610 295 --> 
          <size>0 0.041666666666667</size><!-- - 20 --> 
          <visible>true</visible>
       </rating>
-      <image name="game-gametime-icon" ifSubset="gamelist-view-metadata:stats|mixed">
+      <image name="game-gametime-icon" ifSubset="gamelist-view-metadata:on-stats|on-mixed">
          <pos>0.765625 0.616666666666667</pos><!-- 490 296 -->
          <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
          <visible>true</visible>
       </image>
-      <text name="game-gametime-short" ifSubset="gamelist-view-metadata:stats|mixed">
+      <text name="game-gametime-short" ifSubset="gamelist-view-metadata:on-stats|on-mixed">
          <pos>0.8085938 0.616666666666667</pos><!-- 517.5 296 -->
          <visible>true</visible>
       </text>
-      <image name="game-releasedate-icon" ifSubset="gamelist-view-metadata:default|history|mixed">
+      <image name="game-releasedate-icon" ifSubset="gamelist-view-metadata:on|on-history|on-mixed">
          <pos>0.55078125 0.616666666666667</pos><!-- 352.5 296 -->
          <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
          <visible>true</visible>
       </image>
-      <datetime name="md_releasedate" ifSubset="gamelist-view-metadata:default|history|mixed">
+      <datetime name="md_releasedate" ifSubset="gamelist-view-metadata:on|on-history|on-mixed">
          <pos>0.59375 0.616666666666667</pos><!-- 380 296 -->
          <format ifSubset="font-size:small|default">%Y-%m-%d</format>
          <format ifSubset="font-size:large">%Y-%m</format>
          <visible>true</visible>
       </datetime>
-      <image name="game-playcount-icon" ifSubset="gamelist-view-metadata:stats">
+      <image name="game-playcount-icon" ifSubset="gamelist-view-metadata:on-stats">
          <pos>0.55078125 0.616666666666667</pos><!-- 352.5 296 -->
          <maxSize>0.03125 0.0416666666666667</maxSize><!-- 20 20 -->
          <visible>true</visible>
       </image>
-      <text name="md_playcount" ifSubset="gamelist-view-metadata:stats">
+      <text name="md_playcount" ifSubset="gamelist-view-metadata:on-stats">
          <pos>0.59375 0.616666666666667</pos><!-- 380 296 -->
          <visible>true</visible>
       </text>
