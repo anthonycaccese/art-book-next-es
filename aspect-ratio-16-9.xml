@@ -218,7 +218,7 @@ based on 853x480
       <image name="game-gametime-icon">
          <pos>0.836459554513482 0.866666666666667</pos><!-- 713.5 416 -->
       </image>
-      <text name="md_gametime">
+      <text name="game-gametime-short">
          <pos>0.863423212192263 0.866666666666667</pos><!-- 736.5 416 -->
          <visible>true</visible>
       </text>
