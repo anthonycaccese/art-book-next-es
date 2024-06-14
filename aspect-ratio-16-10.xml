@@ -107,7 +107,7 @@ based on 768x480
    View: Gamelist (Detailed - Metadata On)
    ///
    -->
-   <view name="detailed" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
       <!-- Video -->
       <video ifHelpPrompts="true" name="game-video" extra="true">
          <pos>0.68757327080891 0.296875</pos><!-- 586.5 142.5 -->
@@ -169,7 +169,7 @@ based on 768x480
          <visible>true</visible>
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
       <image name="
          game-releasedate-icon,
          game-players-icon
@@ -192,7 +192,7 @@ based on 768x480
          <pos>0.846354166666667 0.802083333333333</pos><!-- 650 385 -->
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:default|history|stats|mixed">
       <image name="
          game-releasedate-icon,
          game-players-icon,
