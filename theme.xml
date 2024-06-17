@@ -93,9 +93,9 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="gamelist-view-metadata" displayName="Game Metadata">
       <include name="on" displayName="On" />
-      <include name="on-history" displayName="On (History Focus)" />
-	  <include name="on-stats" displayName="On (Stat Focus)" />
-	  <include name="on-mixed" displayName="On (Mixed Focus)" />
+      <include if="{screen.ratio} == '4/3' || (${screen.width} == '720' && ${screen.height} == '720')" name="on-history" displayName="On (History Focus)" />
+	  <include if="{screen.ratio} == '4/3' || (${screen.width} == '720' && ${screen.height} == '720')" name="on-stats" displayName="On (Stat Focus)" />
+	  <include if="{screen.ratio} == '4/3' || (${screen.width} == '720' && ${screen.height} == '720')" name="on-mixed" displayName="On (Mixed Focus)" />
 	  <include name="off" displayName="Off" />
    </subset>
 
