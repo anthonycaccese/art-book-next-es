@@ -107,7 +107,7 @@ based on 853x480
    View: Gamelist (Detailed - Metadata On)
    ///
    -->
-   <view name="detailed" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifSubset="gamelist-view-metadata:on|play-stats">
       <!-- Video -->
       <video ifHelpPrompts="true" name="game-video" extra="true">
          <pos>0.68757327080891 0.296875</pos><!-- 586.5 142.5 -->
@@ -167,7 +167,7 @@ based on 853x480
          <visible>true</visible>
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifHelpPrompts="true" ifSubset="gamelist-view-metadata:on|play-stats">
       <rating name="md_rating">
          <pos>0.836459554513482 0.6796875</pos><!-- 713.5 326.25 -->
       </rating>
@@ -190,7 +190,7 @@ based on 853x480
          <pos>0.863423212192263 0.802083333333333</pos><!-- 736.5 385 -->
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on|play-stats">
       <rating name="md_rating">
          <pos>0.836459554513482 0.713541666666667</pos><!-- 713.5 342.5 -->
       </rating>
@@ -218,7 +218,7 @@ based on 853x480
       <image name="game-gametime-icon">
          <pos>0.836459554513482 0.866666666666667</pos><!-- 713.5 416 -->
       </image>
-      <text name="md_gametime">
+      <text name="game-gametime-formatted">
          <pos>0.863423212192263 0.866666666666667</pos><!-- 736.5 416 -->
          <visible>true</visible>
       </text>
