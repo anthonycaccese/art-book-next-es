@@ -93,7 +93,8 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="gamelist-view-metadata" displayName="Game Metadata">
       <include name="on" displayName="Default" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="Play Stats" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="mixed" displayName="Release Date &amp; Play Time" />
       <include name="off" displayName="Off" />
    </subset>
 
@@ -441,7 +442,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <zIndex>3</zIndex>
       </image>
       <image ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
-         <origin ifSubset="gamelist-view-metadata:on|play-stats">0 1</origin>
+         <origin ifSubset="gamelist-view-metadata:on|play-stats|mixed">0 1</origin>
          <origin ifSubset="gamelist-view-metadata:off">0.5 0.5</origin>
          <path>{game:marquee}</path>
          <autoFade>false</autoFade>
@@ -471,7 +472,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <gamelistMetadataFontSize ifSubset="font-size:default">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
       <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
    </variables>
-   <view name="detailed" ifSubset="gamelist-view-metadata:on|play-stats">
+   <view name="detailed" ifSubset="gamelist-view-metadata:on|play-stats|mixed">
       <text name="game-description" extra="true">
          <origin>0 0</origin>
          <y ifHelpPrompts="true">0.6479166666666667</y><!-- 311 -->
