@@ -92,7 +92,9 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-view-metadata" displayName="Game Metadata">
-      <include name="on" displayName="On" />
+      <include name="on" displayName="Default" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="mixed" displayName="Release Date &amp; Play Time" />
       <include name="off" displayName="Off" />
    </subset>
 
@@ -372,14 +374,14 @@ https://github.com/anthonycaccese/art-book-next-es
          <h ifHelpPrompts="false">0.7</h><!-- 336 -->
          <!-- small font -->
          <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
-         <lines ifSubset="font-size:small" ifHelpPrompts="true">11</lines>
-         <lines ifSubset="font-size:small" ifHelpPrompts="false">13</lines>
+         <lines ifSubset="font-size:small" ifHelpPrompts="true">9</lines>
+         <lines ifSubset="font-size:small" ifHelpPrompts="false">11</lines>
          <!-- default font -->
          <fontSize ifSubset="font-size:default">0.041666666666667</fontSize><!-- 20 -->
-         <lines ifSubset="font-size:default" ifHelpPrompts="true">9</lines>
-         <lines ifSubset="font-size:default" ifHelpPrompts="false">11</lines>
+         <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
+         <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
          <!-- large font -->
-         <fontSize ifSubset="font-size:large">0.05</fontSize><!-- 24 -->
+         <fontSize ifSubset="font-size:large">0.045833333333333</fontSize><!-- 22 -->
          <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
          <fontPath>${fontBold}</fontPath>
@@ -440,7 +442,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <zIndex>3</zIndex>
       </image>
       <image ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
-         <origin ifSubset="gamelist-view-metadata:on">0 1</origin>
+         <origin ifSubset="gamelist-view-metadata:on|play-stats|mixed">0 1</origin>
          <origin ifSubset="gamelist-view-metadata:off">0.5 0.5</origin>
          <path>{game:marquee}</path>
          <autoFade>false</autoFade>
@@ -467,10 +469,10 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <variables>
       <gamelistMetadataFontSize ifSubset="font-size:small">0.029166666666667</gamelistMetadataFontSize><!-- 14 -->
-      <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
       <gamelistMetadataFontSize ifSubset="font-size:default">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
+      <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
    </variables>
-   <view name="detailed" ifSubset="gamelist-view-metadata:on">
+   <view name="detailed" ifSubset="gamelist-view-metadata:on|play-stats|mixed">
       <text name="game-description" extra="true">
          <origin>0 0</origin>
          <y ifHelpPrompts="true">0.6479166666666667</y><!-- 311 -->
@@ -527,14 +529,24 @@ https://github.com/anthonycaccese/art-book-next-es
          <path>./_inc/images/metadata-icon-gametime.svg</path>
       </image>
       <text name="
-         md_gametime
          md_playcount
-         md_players">
+         md_players
+         md_gametime
+         ">
          <origin>0 0.5</origin>
          <fontSize>${gamelistMetadataFontSize}</fontSize>
          <fontPath>${fontBold}</fontPath>
          <lineSpacing>1</lineSpacing>
          <color>${gamelistListMetadataColor}</color>
+      </text>
+      <text name="game-gametime-formatted" extra="true">
+         <visible>false</visible>
+         <origin>0 0.5</origin>
+         <fontSize>${gamelistMetadataFontSize}</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <lineSpacing>1</lineSpacing>
+         <color>${gamelistListMetadataColor}</color>
+         <text>{game:gametime} > 0 ? formatseconds({game:gametime}) : "Never"</text>
       </text>
       <!-- End: Definitions -->
    </view>
