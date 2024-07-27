@@ -84,6 +84,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="image" displayName="Image" />
       <include name="image-cropped" displayName="Image (Cropped)" />
       <include name="boxart" displayName="Boxart" />
+      <include name="logo" displayName="Logo" />
    </subset>
 
    <!--
@@ -338,7 +339,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="basic,detailed">
       <image name="background" extra="true">
          <color>${gamelistListBackgroundColor}</color>
-         <color ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">${gamelistListTextlistBackgroundColor}</color>
+         <color ifSubset="gamelist-view-artwork:boxart|logo|image,gamelist-view-metadata:off">${gamelistListTextlistBackgroundColor}</color>
       </image>
       <image name="gamelist-background" extra="true">
          <origin>0 0</origin>
@@ -390,10 +391,10 @@ https://github.com/anthonycaccese/art-book-next-es
          <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
          <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
          <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
-         <scrollbarColor ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">ffffff11</scrollbarColor>
-         <scrollbarSize ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">0.01</scrollbarSize>
-         <scrollbarCorner ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">0.5</scrollbarCorner>
-         <scrollbarAlignment ifSubset="gamelist-view-artwork:boxart|image,gamelist-view-metadata:off">outer right</scrollbarAlignment>
+         <scrollbarColor ifSubset="gamelist-view-artwork:boxart|logo|image,gamelist-view-metadata:off">ffffff11</scrollbarColor>
+         <scrollbarSize ifSubset="gamelist-view-artwork:boxart|logo|image,gamelist-view-metadata:off">0.01</scrollbarSize>
+         <scrollbarCorner ifSubset="gamelist-view-artwork:boxart|logo|image,gamelist-view-metadata:off">0.5</scrollbarCorner>
+         <scrollbarAlignment ifSubset="gamelist-view-artwork:boxart|logo|image,gamelist-view-metadata:off">outer right</scrollbarAlignment>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>5</zIndex>
       </textlist>
@@ -436,6 +437,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <image name="game-artwork" extra="true">
          <origin>0.5 0.5</origin>
          <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
+         <path ifSubset="gamelist-view-artwork:logo">{game:marquee}</path>
          <path ifSubset="gamelist-view-artwork:image-cropped|image">{game:image}</path>
          <roundCorners ifSubset="gamelist-view-artwork:boxart|image">0.02</roundCorners>
          <autoFade>false</autoFade>

@@ -118,7 +118,7 @@ based on 640x480
          <minSize>0.5 0.541666666666667</minSize><!-- 320 260 -->
       </video>
       <!-- Boxart & Image -->
-      <image ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+      <image ifSubset="gamelist-view-artwork:boxart|logo|image" name="game-artwork" extra="true">
          <pos>0.75 0.2916666666666667</pos><!-- 480 140 -->
          <maxSize>0.40625 0.4583333333333333</maxSize><!-- 260 220 -->
       </image>
@@ -245,11 +245,11 @@ based on 640x480
          <minSize>0.5 1</minSize><!-- 320 480-->
       </video>
       <!-- Boxart & Image -->
-      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+      <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|logo|image" name="game-artwork" extra="true">
          <pos>0.734375 0.447916666666667</pos><!-- 470 215 -->
          <maxSize>0.40625 0.75</maxSize><!-- 260 360 -->
       </image>
-      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:boxart|image" name="game-artwork" extra="true">
+      <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:boxart|logo|image" name="game-artwork" extra="true">
          <pos>0.734375 0.5</pos><!-- 470 240 -->
          <maxSize>0.40625 0.864583333333333</maxSize><!-- 260 415 -->
       </image>
