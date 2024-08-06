@@ -67,6 +67,16 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: System Count
+   ///
+   -->
+   <subset name="system-count" displayName="System Count">
+      <include name="off" displayName="Off" />
+      <include name="on" displayName="On" />
+   </subset>
+
+   <!--
+   ///
    Subset: System Logos
    ///
    -->
@@ -249,6 +259,16 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>00000000</color>
       </text>
       <!-- End: Resets -->
+      <text name="system-count" extra="true" ifSubset="system-count:on">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.7</pos>
+         <size>0 0.05</size>
+         <alignment>center</alignment>
+         <fontSize>0.041666666666667</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <text>{system:total} GAMES</text>
+         <color>ffffff</color>
+      </text>
    </view>
    <view name="system" ifSubset="system-view-artwork:default|noir|custom">
       <image name="logo">
