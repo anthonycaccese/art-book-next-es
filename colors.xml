@@ -206,7 +206,7 @@
       <systemLogoColor>ffffff</systemLogoColor>
       <!-- Gamelist View - List Variants -->
       <gamelistListBackgroundColor>000000</gamelistListBackgroundColor>
-      <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
+      <gamelistListTextlistBackgroundColor>000000</gamelistListTextlistBackgroundColor>
       <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
       <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
       <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
@@ -220,7 +220,7 @@
       <!-- Screen View -->
       <systemIndicatorColor>ffffff</systemIndicatorColor>
       <!-- Help System -->
-      <helpBackgroundColor>070707</helpBackgroundColor>
+      <helpBackgroundColor>000000</helpBackgroundColor>
       <helpIconColor>ffffff88</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
       <!-- Splash Screen -->
