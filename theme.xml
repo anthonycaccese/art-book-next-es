@@ -62,6 +62,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <subset name="system-view-artwork" displayName="System Artwork">
       <include name="default" displayName="Default" />
       <include name="noir" displayName="Noir" />
+      <include name="nintendont" displayName="Nintendon't" />
       <!--<include name="classic" displayName="Classic" />-->
       <include name="custom" displayName="Custom" />
       <include name="custom-fullscreen" displayName="Custom (Fullscreen)" />
@@ -280,6 +281,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-view-artwork:default">./_inc/systems/artwork-default/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:noir">./_inc/systems/artwork-noir/_default.png</path>
          <path ifSubset="system-view-artwork:noir">./_inc/systems/artwork-noir/${system.theme}.png</path>
+         <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/_default.png</path>
+         <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:classic">./_inc/systems/artwork-classic/_default.png</path>
          <path ifSubset="system-view-artwork:classic">./_inc/systems/artwork-classic/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
