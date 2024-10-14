@@ -63,7 +63,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="default" displayName="Default" />
       <include name="noir" displayName="Noir" />
       <include name="nintendont" displayName="Nintendon't" />
-      <!--<include name="classic" displayName="Classic" />-->
+      <include name="classic" displayName="Classic" />
       <include name="custom" displayName="Custom" />
       <include name="custom-fullscreen" displayName="Custom (Fullscreen)" />
    </subset>
