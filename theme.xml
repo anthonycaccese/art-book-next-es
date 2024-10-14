@@ -273,7 +273,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <color>ffffff</color>
       </text>
    </view>
-   <view name="system" ifSubset="system-view-artwork:default|noir|custom">
+   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|classic|custom">
       <image name="logo">
          <path>./_inc/systems/artwork-default/_default.png</path>
          <path>./_inc/systems/artwork-default/${system.theme}.png</path>
