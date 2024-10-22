@@ -42,11 +42,12 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="1-1-auto" displayName="Automatic" />
+      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="720-square-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="Automatic" />
       <include name="16-9" displayName="16:9" />
       <include name="16-10" displayName="16:10" />
       <include name="4-3" displayName="4:3" />
@@ -650,7 +651,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
    <include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
-   <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>
+   <include ifSubset="aspect-ratio:1-1|1-1-auto|720-square-auto">./aspect-ratio-1-1.xml</include>
    <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
 
 </theme>
