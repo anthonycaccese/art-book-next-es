@@ -25,15 +25,35 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <variables>
-      <fontRegular>./_inc/fonts/Roboto-Regular.ttf</fontRegular>
-      <fontBold>./_inc/fonts/Roboto-Bold.ttf</fontBold>
-      <fontLight>./_inc/fonts/Roboto-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/NanumSquareNeo-bRg.ttf</fontRegular>
+      <fontBold>./_inc/fonts/NanumSquareNeo-cBd.ttf</fontBold>
+      <fontLight>./_inc/fonts/NanumSquareNeo-aLt.ttf</fontLight>
       <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
       <distributionPath ifSubset="distribution:rocknix">~/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+      <font_menutitle>0.038</font_menutitle>
+      <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
+      <font_menutitle ifSubset="aspect-ratio:4-3" >0.038</font_menutitle>
+      <font_menutitle ifSubset="aspect-ratio:5-3" >0.038</font_menutitle>
+      <font_menufooter>0.025</font_menufooter>
+      <font_menufooter ifSubset="aspect-ratio:3-2" >0.025</font_menufooter>
+      <font_menufooter ifSubset="aspect-ratio:4-3" >0.025</font_menufooter>
+      <font_menufooter ifSubset="aspect-ratio:5-3" >0.025</font_menufooter>
+      <font_menutext>0.042</font_menutext>
+      <font_menutext ifSubset="aspect-ratio:3-2" >0.042</font_menutext>
+      <font_menutext ifSubset="aspect-ratio:4-3" >0.043</font_menutext>
+      <font_menutext ifSubset="aspect-ratio:5-3" >0.044</font_menutext>
+      <font_menutextsmall>0.040</font_menutextsmall>
+      <font_menutextsmall ifSubset="aspect-ratio:3-2" >0.020</font_menutextsmall>
+      <font_menutextsmall ifSubset="aspect-ratio:4-3" >0.026</font_menutextsmall>
+      <font_menutextsmall ifSubset="aspect-ratio:5-3" >0.022</font_menutextsmall>
+      <font_menugroup>0.038</font_menugroup>
+      <font_menugroup ifSubset="aspect-ratio:3-2" >0.038</font_menugroup>
+      <font_menugroup ifSubset="aspect-ratio:4-3" >0.038</font_menugroup>
+      <font_menugroup ifSubset="aspect-ratio:5-3" >0.038</font_menugroup>
    </variables>
 
    <!--
@@ -587,17 +607,17 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.03</fontSize>
+         <fontSize>${font_menutitle}</fontSize>
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize>${font_menufooter}</fontSize>
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.035</fontSize>
+         <fontSize>${font_menutext}</fontSize>
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
          <selectedColor>ffffff</selectedColor>
@@ -605,12 +625,12 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize>${font_menutextsmall}</fontSize>
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.0325</fontSize>
+         <fontSize>${font_menugroup}</fontSize>
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>
          <backgroundColor>00000000</backgroundColor>
@@ -622,7 +642,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuTextEdit>
       <menuBackground name="menubg">
          <color>${menuBackgroundColor}</color>
-         <cornerSize>20 20</cornerSize>
+         <cornerSize>10 10</cornerSize>
       </menuBackground>
       <menuIcons name="menuicons">
          <iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
