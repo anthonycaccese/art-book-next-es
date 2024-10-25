@@ -149,7 +149,7 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Color Scheme
    ///
    -->
-   <subset name="color-scheme" displayName="컬러 세트">
+   <subset name="color-scheme" displayName="컬러세트">
       <include name="default" displayName="기본" />
       <include name="light" displayName="Light" />
       <include name="steam-os" displayName="SteamOS" />
