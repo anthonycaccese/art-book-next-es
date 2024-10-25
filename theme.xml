@@ -13,7 +13,7 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Distribution
    ///
    -->
-   <subset name="distribution" displayName="Distribution">
+   <subset name="distribution" displayName="배포판">
       <include name="batocera" displayName="Batocera/Knulli" />
       <include name="rocknix" displayName="RockNIX" />
       <include name="retrobat" displayName="Retrobat" />
@@ -35,25 +35,25 @@ https://github.com/anthonycaccese/art-book-next-es
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
       <font_menutitle>0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:4-3" >0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:5-3" >0.038</font_menutitle>
+      <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
+      <font_menutitle ifSubset="aspect-ratio:1-1" >0.038</font_menutitle>
       <font_menufooter>0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:3-2" >0.025</font_menufooter>
       <font_menufooter ifSubset="aspect-ratio:4-3" >0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:5-3" >0.025</font_menufooter>
+      <font_menufooter ifSubset="aspect-ratio:3-2" >0.025</font_menufooter>
+      <font_menufooter ifSubset="aspect-ratio:1-1" >0.025</font_menufooter>
       <font_menutext>0.042</font_menutext>
+      <font_menutext ifSubset="aspect-ratio:4-3" >0.042</font_menutext>
       <font_menutext ifSubset="aspect-ratio:3-2" >0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:4-3" >0.043</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:5-3" >0.044</font_menutext>
+      <font_menutext ifSubset="aspect-ratio:1-1" >0.042</font_menutext>
       <font_menutextsmall>0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:3-2" >0.020</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:4-3" >0.026</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:5-3" >0.022</font_menutextsmall>
+      <font_menutextsmall ifSubset="aspect-ratio:4-3" >0.040</font_menutextsmall>
+      <font_menutextsmall ifSubset="aspect-ratio:3-2" >0.040</font_menutextsmall>
+      <font_menutextsmall ifSubset="aspect-ratio:1-1" >0.040</font_menutextsmall>
       <font_menugroup>0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:3-2" >0.038</font_menugroup>
       <font_menugroup ifSubset="aspect-ratio:4-3" >0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:5-3" >0.038</font_menugroup>
+      <font_menugroup ifSubset="aspect-ratio:3-2" >0.038</font_menugroup>
+      <font_menugroup ifSubset="aspect-ratio:1-1" >0.038</font_menugroup>
    </variables>
 
    <!--
@@ -61,13 +61,13 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Aspect Ratio
    ///
    -->
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="720-square-auto" displayName="Automatic" />
-      <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Automatic" />
-      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Automatic" />
-      <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Automatic" />
-      <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Automatic" />
-      <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="Automatic" />
+   <subset name="aspect-ratio" displayName="화면비율">
+      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="720-square-auto" displayName="자동" />
+      <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="자동" />
+      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="자동" />
+      <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="자동" />
+      <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="자동" />
+      <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="자동" />
       <include name="16-9" displayName="16:9" />
       <include name="16-10" displayName="16:10" />
       <include name="4-3" displayName="4:3" />
@@ -80,13 +80,13 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: System Artwork
    ///
    -->
-   <subset name="system-view-artwork" displayName="System Artwork">
-      <include name="default" displayName="Default" />
+   <subset name="system-view-artwork" displayName="시스템 아트워크">
+      <include name="default" displayName="기본" />
       <include name="noir" displayName="Noir" />
       <include name="nintendont" displayName="Nintendon't" />
-      <include name="classic" displayName="Classic" />
-      <include name="custom" displayName="Custom" />
-      <include name="custom-fullscreen" displayName="Custom (Fullscreen)" />
+      <include name="classic" displayName="클래식" />
+      <include name="custom" displayName="커스텀" />
+      <include name="custom-fullscreen" displayName="커스텀 (풀스크린)" />
    </subset>
 
    <!--
@@ -94,9 +94,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: System Count
    ///
    -->
-   <subset name="system-count" displayName="System Count">
-      <include name="off" displayName="Off" />
-      <include name="on" displayName="On" />
+   <subset name="system-count" displayName="시스템 갯수">
+      <include name="off" displayName="끄기" />
+      <include name="on" displayName="켜기" />
    </subset>
 
    <!--
@@ -104,9 +104,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: System Logos
    ///
    -->
-   <subset name="system-logos" displayName="System Logos">
-      <include name="default" displayName="Default" />
-      <include name="custom" displayName="Custom" />
+   <subset name="system-logos" displayName="시스템 로고">
+      <include name="default" displayName="기본" />
+      <include name="custom" displayName="커스텀" />
    </subset>
 
    <!--
@@ -114,11 +114,11 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Game Artwork
    ///
    -->
-   <subset name="gamelist-view-artwork" displayName="Game Artwork">
-      <include name="image" displayName="Image" />
-      <include name="image-cropped" displayName="Image (Cropped)" />
-      <include name="boxart" displayName="Boxart" />
-      <include name="logo" displayName="Logo" />
+   <subset name="gamelist-view-artwork" displayName="게임 아트워크">
+      <include name="image" displayName="이미지" />
+      <include name="image-cropped" displayName="이미지 (크롭)" />
+      <include name="boxart" displayName="박스아트" />
+      <include name="logo" displayName="로고" />
    </subset>
 
    <!--
@@ -126,11 +126,11 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Game Metadata
    ///
    -->
-   <subset name="gamelist-view-metadata" displayName="Game Metadata">
-      <include name="on" displayName="Default" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="mixed" displayName="Release Date &amp; Play Time" />
-      <include name="off" displayName="Off" />
+   <subset name="gamelist-view-metadata" displayName="게임설명">
+      <include name="on" displayName="기본" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="플레이 시간 &amp; 플레이 횟수" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="mixed" displayName="출시일 &amp; 플레이 시간" />
+      <include name="off" displayName="끄기" />
    </subset>
 
    <!--
@@ -138,10 +138,10 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Font Size
    ///
    -->
-   <subset name="font-size" displayName="Font Size">
-      <include name="default" displayName="Default" />
-      <include name="large" displayName="Large" />
-      <include name="small" displayName="Small" />
+   <subset name="font-size" displayName="폰트크기">
+      <include name="default" displayName="기본" />
+      <include name="large" displayName="크게" />
+      <include name="small" displayName="작게" />
    </subset>
 
    <!--
@@ -149,15 +149,15 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Color Scheme
    ///
    -->
-   <subset name="color-scheme" displayName="Color Scheme">
-      <include name="default" displayName="Default" />
+   <subset name="color-scheme" displayName="컬러 세트">
+      <include name="default" displayName="기본" />
       <include name="light" displayName="Light" />
       <include name="steam-os" displayName="SteamOS" />
       <include name="snes" displayName="SNES" />
       <include name="famicom" displayName="Famicom" />
       <include name="dmg" displayName="DMG" />
       <include name="oled" displayName="OLED" />
-      <include name="custom" displayName="Custom" />
+      <include name="custom" displayName="커스텀" />
    </subset>
    <include>./colors.xml</include>
    <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
@@ -167,9 +167,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Splash Screen
    ///
    -->
-   <subset name="splash-screen" displayName="Splash Screen">
-      <include name="default" displayName="Default" />
-      <include name="custom" displayName="Custom" />
+   <subset name="splash-screen" displayName="스플래시 스크린">
+      <include name="default" displayName="기본" />
+      <include name="custom" displayName="커스텀" />
    </subset>
 
    <!--
