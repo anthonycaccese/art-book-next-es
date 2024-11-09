@@ -108,6 +108,21 @@ System logos can be customized by adding your own images
     * `${system.theme}.svg/png` should be named for the system you are looking to override. For example if you wanted to override the logo for `snes` you would create an image called `snes.svg` or `snes.png` in the logos folder.
 * Once your images are in place you turn on custom images by changing the `System Logos` setting to `Custom`
 
+### Fonts
+
+You can supply your own fonts for each of the font types defined in the theme
+
+* There are 4 font types:
+    * Bold: Used for the Clock, Battery, Gamelist, Game Count, Game Release Date, Game Play Time, Game Playcount, Menu Items
+    * Regular: Used for Game Description, Menu Groups
+    * Light: Used for Menu Footer
+    * Logo: Used for System Names if a logo image does not exist
+* Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/fonts.xml
+* Upload it in the path you created above and make sure its called `fonts.xml`
+* Create a sub folder in that same path called `/fonts` and upload your custom font for each type into it
+* Add the filename for each font into the `fonts.xml` file 
+* Once your fonts are in place you turn on custom fonts by changing the `Fonts` setting to `Custom`
+
 ## **Additional Notes**
 
 ### Media Scraping:
