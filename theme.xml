@@ -14,7 +14,7 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <include>./_inc/lang/default_en.xml</include>
-   <include lang="ar,ca,de,es,eu,fr,gl,he,it,ja,pl,pt,ru,zh">./_inc/${lang}.xml</include>
+   <include lang="ar,ca,de,es,eu,fr,gl,he,it,ja,pl,pt,ru,zh">./_inc/lang/${lang}.xml</include>
 
    <!--
    ///
@@ -278,6 +278,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <size>0 0.05</size>
          <alignment>center</alignment>
          <fontSize>0.041666666666667</fontSize>
+         <fontSize ifSubset="font-size:small|default">0.041666666666667</fontSize><!-- 20 -->
+         <fontSize ifSubset="font-size:large">0.05</fontSize><!-- 24 -->
          <fontPath>${fontBold}</fontPath>
          <color>ffffff</color>
       </text>
