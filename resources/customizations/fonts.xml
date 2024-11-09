@@ -1,0 +1,9 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables ifSubset="fonts:custom">
+      <fontBold>${themeCustomizationsPath}fonts/</fontBold>
+      <fontRegular>${themeCustomizationsPath}fonts/</fontRegular>
+      <fontLight>${themeCustomizationsPath}fonts/</fontLight>
+      <fontLogo>${themeCustomizationsPath}fonts/</fontLogo>
+   </variables>
+</theme>
