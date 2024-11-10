@@ -21,6 +21,7 @@ The following options can be changed directly from the main menu under `User Int
 | System Logos | Defines the logo set used on all views | `Default`, `Custom` |
 | Game Artwork | Defines the type of artwork used to represent a game. These are sourced from the the selections you make in the scraper menu. Image will display the image you selected to scrape for `Image Source`.  Image (Cropped) will display that same image zoomed in to fill the screen.  Boxart will display the image you selected to scrape for `Box Source` | `Image`, `Image (Cropped)`, `Boxart`, `Logo` |
 | Game Metadata | Sets if metadata (e.g. description, release date, etc...) should be displayed for a game | `On`, `Off` |
+| Fonts | Define the fonts used throughout the theme. | `Default`, `Custom` |
 | Font Size | Set the size for text elements throughout the theme. | `Default`, `Small`, `Large` |
 | Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`). You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Default`, `Light`, `Steam OS`, `SNES`, `Famicom`, `DMG`, `OLED`, `Custom` |
 | Splash Screen | Toggles an optional custom splash screen which will be displayed when EmulationStation is loading and/or scanning for ROMs. | `Default`, `Custom` |
@@ -107,6 +108,21 @@ System logos can be customized by adding your own images
     * The theme will look them them up in that order. If a given image is not found in your folder then the the images from the theme will be used as a fallback.  This allows you to customize only the images you want and still have images displayed for all systems.
     * `${system.theme}.svg/png` should be named for the system you are looking to override. For example if you wanted to override the logo for `snes` you would create an image called `snes.svg` or `snes.png` in the logos folder.
 * Once your images are in place you turn on custom images by changing the `System Logos` setting to `Custom`
+
+### Fonts
+
+You can supply your own fonts for each of the font types defined in the theme
+
+* There are 4 font types:
+    * Bold: Used for the Clock, Battery, Gamelist, Game Count, Game Release Date, Game Play Time, Game Playcount, Menu Items
+    * Regular: Used for Game Description, Menu Groups
+    * Light: Used for Menu Footer
+    * Logo: Used for System Names if a logo image does not exist
+* Download this template: https://github.com/anthonycaccese/art-book-next-es/blob/main/resources/customizations/fonts.xml
+* Upload it in the path you created above and make sure its called `fonts.xml`
+* Create a sub folder in that same path called `/fonts` and upload your custom font for each type into it
+* Add the filename for each font into the `fonts.xml` file 
+* Once your fonts are in place you turn on custom fonts by changing the `Fonts` setting to `Custom`
 
 ## **Additional Notes**
 

@@ -1,0 +1,9 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables ifSubset="fonts:default|custom">
+      <fontBold>./_inc/fonts/Roboto-Bold.ttf</fontBold>
+      <fontRegular>./_inc/fonts/Roboto-Regular.ttf</fontRegular>
+      <fontLight>./_inc/fonts/Roboto-Light.ttf</fontLight>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+   </variables>
+</theme>

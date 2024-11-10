@@ -1,0 +1,17 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables ifSubset="fonts:custom">
+      <!-- 
+      add the filename of your font after the ${themeCustomizationsPath}fonts/ value on each line
+
+      for example if you were customizing <fontBold> then the line would change to:
+      <fontBold>${themeCustomizationsPath}fonts/roboto-bold.ttf</fontBold>
+
+      you only need to customize the fonts you want to change. for any fonts you do not they will fallback to the default font from the theme.
+      -->
+      <fontBold>${themeCustomizationsPath}fonts/</fontBold>
+      <fontRegular>${themeCustomizationsPath}fonts/</fontRegular>
+      <fontLight>${themeCustomizationsPath}fonts/</fontLight>
+      <fontLogo>${themeCustomizationsPath}fonts/</fontLogo>
+   </variables>
+</theme>
