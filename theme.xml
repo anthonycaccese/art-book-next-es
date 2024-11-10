@@ -35,7 +35,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <variables>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
-      <distributionPath ifSubset="distribution:rocknix">~/</distributionPath>
+      <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
    </variables>
