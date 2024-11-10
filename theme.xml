@@ -185,6 +185,15 @@ https://github.com/anthonycaccese/art-book-next-es
          <pos>1 1</pos>
       </text>
       <!-- End: Resets -->
+   </view>
+
+   <!--
+   ///
+   View: All
+   ///
+   -->
+   <view name="system,basic,detailed">
+      <!-- Start: System Indicators -->
       <stackpanel name="system-indicators" extra="true">
          <h ifSubset="font-size:small">0.033333333333333</h><!-- 16 -->
          <h ifSubset="font-size:default">0.041666666666667</h><!-- 20 -->
@@ -223,14 +232,7 @@ https://github.com/anthonycaccese/art-book-next-es
             <lineSpacing>1</lineSpacing>
          </clock>
       </stackpanel>
-   </view>
-
-   <!--
-   ///
-   View: All
-   ///
-   -->
-   <view name="system,basic,detailed">
+      <!-- End: System Indicators -->
       <image name="background" extra="true">
          <pos>0 0</pos>
          <size>1 1</size>
