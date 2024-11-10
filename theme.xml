@@ -137,6 +137,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <subset name="font-size" displayName="Font Size">
       <include name="default" displayName="Default" />
       <include name="large" displayName="Large" />
+      <include name="xlarge" displayName="Extra Large" />
       <include name="small" displayName="Small" />
    </subset>
 
@@ -198,6 +199,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <h ifSubset="font-size:small">0.033333333333333</h><!-- 16 -->
          <h ifSubset="font-size:default">0.041666666666667</h><!-- 20 -->
          <h ifSubset="font-size:large">0.05</h><!-- 24 -->
+         <h ifSubset="font-size:xlarge">0.05833333</h><!-- 28 -->
          <pos>0 0.041666666666667</pos><!-- 0 20 -->
          <orientation>horizontal</orientation>
          <reverse>true</reverse>
@@ -206,6 +208,7 @@ https://github.com/anthonycaccese/art-book-next-es
             <fontPath>${fontBold}</fontPath>
             <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
             <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
+            <fontSize ifSubset="font-size:xlarge">0.05</fontSize><!-- 24 -->
             <lineSpacing>1</lineSpacing>
          </batteryText>
          <batteryIcon name="system-battery-icon">
@@ -229,6 +232,7 @@ https://github.com/anthonycaccese/art-book-next-es
             <fontPath>${fontBold}</fontPath>
             <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
             <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
+            <fontSize ifSubset="font-size:xlarge">0.05</fontSize><!-- 24 -->
             <lineSpacing>1</lineSpacing>
          </clock>
       </stackpanel>
@@ -290,6 +294,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <fontSize>0.041666666666667</fontSize>
          <fontSize ifSubset="font-size:small|default">0.041666666666667</fontSize><!-- 20 -->
          <fontSize ifSubset="font-size:large">0.05</fontSize><!-- 24 -->
+         <fontSize ifSubset="font-size:xlarge">0.05833333</fontSize><!-- 28 -->
          <fontPath>${fontBold}</fontPath>
          <color>ffffff</color>
       </text>
@@ -440,6 +445,10 @@ https://github.com/anthonycaccese/art-book-next-es
          <fontSize ifSubset="font-size:large">0.045833333333333</fontSize><!-- 22 -->
          <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
+         <!-- extra large font -->
+         <fontSize ifSubset="font-size:xlarge">0.05416667</fontSize><!-- 26 -->
+         <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">7</lines>
+         <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">9</lines>
          <fontPath>${fontBold}</fontPath>
          <alignment>left</alignment>
          <selectorColor>00000000</selectorColor>
@@ -527,7 +536,7 @@ https://github.com/anthonycaccese/art-book-next-es
    <variables>
       <gamelistMetadataFontSize ifSubset="font-size:small">0.029166666666667</gamelistMetadataFontSize><!-- 14 -->
       <gamelistMetadataFontSize ifSubset="font-size:default">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
-      <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
+      <gamelistMetadataFontSize ifSubset="font-size:large|xlarge">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
    </variables>
    <view name="detailed" ifSubset="gamelist-view-metadata:on|play-stats|mixed">
       <text name="game-description" extra="true">
@@ -538,8 +547,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <h ifHelpPrompts="false">0.25</h><!-- 120 -->
          <text>{game:desc}</text>
          <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:default|large">0.041666666666667</fontSize><!-- 20 -->
-         <lineSpacing ifSubset="font-size:default|large">1.49</lineSpacing>
+         <fontSize ifSubset="font-size:default|large|xlarge">0.041666666666667</fontSize><!-- 20 -->
+         <lineSpacing ifSubset="font-size:default|large|xlarge">1.49</lineSpacing>
          <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
          <lineSpacing ifSubset="font-size:small" ifHelpPrompts="true">1.375</lineSpacing>
          <lineSpacing ifSubset="font-size:small" ifHelpPrompts="false">1.475</lineSpacing>
@@ -616,17 +625,20 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.03</fontSize>
+         <fontSize ifSubset="font-size:small|default|large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.035</fontSize>
+         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
          <selectedColor>ffffff</selectedColor>
@@ -634,16 +646,18 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.0325</fontSize>
+         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>
          <backgroundColor>00000000</backgroundColor>
-         <lineSpacing>2.5</lineSpacing>
+         <lineSpacing>2</lineSpacing>
       </menuGroup>
       <menuTextEdit name="menutextedit">
          <inactive>./_inc/images/menu-textinput.png</inactive>

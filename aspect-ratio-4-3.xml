@@ -16,7 +16,8 @@ based on 640x480
          <separator>10</separator>
       </stackpanel>
       <helpsystem ifHelpPrompts="true" name="help">
-         <fontSize>0.03125</fontSize><!-- 15 -->
+         <fontSize ifSubset="font-size:small|default|large">0.03125</fontSize><!-- 15 -->
+         <fontSize ifSubset="font-size:xlarge">0.03958333</fontSize><!-- 19 -->
       </helpsystem>
    </view>
 
