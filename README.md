@@ -132,7 +132,7 @@ You can supply your own fonts for each of the font types defined in the theme
 * To make game artwork look as good as possible the recommneded settings for the built-in scraper are:
     * Image Source = `Screenshot`
     * Box Source = `Box 2D`
-    * Logo Source = `Marquee`
+    * Logo Source = `Wheel`
 
 ### Versions for other ES forks:
 * If you use ES-DE... then the ES-DE version [here](https://github.com/anthonycaccese/art-book-next-es-de) will work out of the box with that distribution.  When used with ES-DE the theme comes with additional support for navigation sound sets.
