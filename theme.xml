@@ -42,7 +42,8 @@ https://github.com/anthonycaccese/art-book-next-es
       <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
-      <font_menutitle>0.038</font_menutitle>
+      <!-- 삭제대기 -->
+	  <font_menutitle>0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:4-3" >0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:1-1" >0.038</font_menutitle>
@@ -70,12 +71,12 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="aspect-ratio" displayName="화면비율">
-      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="720-square-auto" displayName="자동" />
-      <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="자동" />
-      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="자동" />
-      <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="자동" />
-      <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="자동" />
-      <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="자동" />
+      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="720-square-auto" displayName="?먮룞" />
+      <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="?먮룞" />
+      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="?먮룞" />
+      <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="?먮룞" />
+      <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="?먮룞" />
+      <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="?먮룞" />
       <include name="16-9" displayName="16:9" />
       <include name="16-10" displayName="16:10" />
       <include name="4-3" displayName="4:3" />
@@ -114,7 +115,7 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="system-logos" displayName="시스템 로고">
       <include name="default" displayName="기본" />
-      <include name="custom" displayName="커스텀" />
+      <include name="custom" displayName="커스텀" />
    </subset>
 
    <!--
@@ -123,8 +124,8 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-view-artwork" displayName="게임 아트워크">
-      <include name="image" displayName="이미지" />
-      <include name="image-cropped" displayName="이미지 (크롭)" />
+      <include name="image" displayName="이미지" />
+      <include name="image-cropped" displayName="이미지 (크롭)" />
       <include name="boxart" displayName="박스아트" />
       <include name="logo" displayName="로고" />
    </subset>
@@ -158,18 +159,11 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Font Size
    ///
    -->
-<<<<<<< HEAD
    <subset name="font-size" displayName="폰트크기">
       <include name="default" displayName="기본" />
       <include name="large" displayName="크게" />
+      <include name="xlarge" displayName="더 크게" />
       <include name="small" displayName="작게" />
-=======
-   <subset name="font-size" displayName="Font Size">
-      <include name="default" displayName="Default" />
-      <include name="large" displayName="Large" />
-      <include name="xlarge" displayName="Extra Large" />
-      <include name="small" displayName="Small" />
->>>>>>> 499685f008de725d5ff7c57d4b1c9a8f497677df
    </subset>
 
    <!--
@@ -659,32 +653,20 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-<<<<<<< HEAD
-         <fontSize>${font_menutitle}</fontSize>
-=======
          <fontSize ifSubset="font-size:small|default|large">0.02916667</fontSize><!-- 14 -->
          <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
->>>>>>> 499685f008de725d5ff7c57d4b1c9a8f497677df
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-<<<<<<< HEAD
-         <fontSize>${font_menufooter}</fontSize>
-=======
          <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
          <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
->>>>>>> 499685f008de725d5ff7c57d4b1c9a8f497677df
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-<<<<<<< HEAD
-         <fontSize>${font_menutext}</fontSize>
-=======
          <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
->>>>>>> 499685f008de725d5ff7c57d4b1c9a8f497677df
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
          <selectedColor>ffffff</selectedColor>
@@ -692,22 +674,14 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-<<<<<<< HEAD
-         <fontSize>${font_menutextsmall}</fontSize>
-=======
          <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
          <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
->>>>>>> 499685f008de725d5ff7c57d4b1c9a8f497677df
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-<<<<<<< HEAD
-         <fontSize>${font_menugroup}</fontSize>
-=======
          <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
->>>>>>> 499685f008de725d5ff7c57d4b1c9a8f497677df
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>
          <backgroundColor>00000000</backgroundColor>
