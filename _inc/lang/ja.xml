@@ -1,6 +1,7 @@
 ﻿<theme>
    <formatVersion>7</formatVersion>
    <variables lang="ja">
-      <lang.games>ゲーム</lang.games>			
+      <lang.games>ゲーム</lang.games>
+      <lang.game>ゲーム</lang.game>
    </variables>
 </theme>

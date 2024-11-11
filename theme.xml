@@ -285,9 +285,9 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <!-- End: Resets -->
       <!-- Start: System Count -->
-      <text name="system-count,system-count-null" extra="true" ifSubset="system-count:on">
+      <text name="system-count,system-count-single,system-count-null" extra="true" ifSubset="system-count:on">
          <origin>0.5 0.5</origin>
-         <pos>0.5 0.7</pos>
+         <pos>0.5 0.78</pos>
          <size>0 0.05</size>
          <alignment>center</alignment>
          <fontSize>0.041666666666667</fontSize>
@@ -299,7 +299,11 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <text name="system-count" extra="true" ifSubset="system-count:on">
          <text>{system:total} ${lang.games}</text>
-         <visible>{system:total} &gt; 0 ? 1 : 0</visible>
+         <visible>{system:total} &gt; 1 ? 1 : 0</visible>
+      </text>
+      <text name="system-count-single" extra="true" ifSubset="system-count:on">
+         <text>1 ${lang.game}</text>
+         <visible>{system:total} == 1 ? 1 : 0</visible>
       </text>
       <text name="system-count-null" extra="true" ifSubset="system-count:on">
          <text>0 ${lang.games}</text>

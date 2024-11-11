@@ -2,5 +2,6 @@
    <formatVersion>7</formatVersion>
    <variables lang="pt">
       <lang.games>Jogos</lang.games>
+      <lang.game>Jogo</lang.game>
    </variables>
 </theme>
