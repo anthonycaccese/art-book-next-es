@@ -152,7 +152,6 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="steam-os" displayName="SteamOS" />
       <include name="snes" displayName="SNES" />
       <include name="famicom" displayName="Famicom" />
-      <include name="dmg" displayName="DMG" />
       <include name="oled" displayName="OLED" />
       <include name="custom" displayName="Custom" />
    </subset>
