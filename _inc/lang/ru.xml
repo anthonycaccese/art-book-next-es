@@ -2,5 +2,6 @@
    <formatVersion>7</formatVersion>
    <variables lang="ru">
       <lang.games>игр</lang.games>
+      <lang.game>игра</lang.game>
    </variables>
 </theme>

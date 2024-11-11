@@ -7,22 +7,14 @@ based on 768x480
 
    <!--
    ///
-   View: Screen
-   ///
-   -->
-   <view name="screen">
-      <stackpanel name="system-indicators" extra="true">
-         <w>0.9739583333333333</w><!-- 748 -->
-         <separator>10</separator>
-      </stackpanel>
-   </view>
-
-   <!--
-   ///
    View: All
    ///
    -->
    <view name="system,basic,detailed">
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.9739583333333333</w><!-- 748 -->
+         <separator>10</separator>
+      </stackpanel>
       <helpsystem ifHelpPrompts="true" name="help">
          <fontSize>0.033333333333333</fontSize><!-- 16 -->
       </helpsystem>

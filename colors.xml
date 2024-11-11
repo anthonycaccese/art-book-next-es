@@ -165,39 +165,6 @@
       <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
       <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
    </variables>
-   <variables ifSubset="color-scheme:dmg">
-      <!-- System View -->
-      <systemBackgroundColor>000000</systemBackgroundColor>
-      <systemArtSaturation>0</systemArtSaturation>
-      <systemArtColor>4f7c4b</systemArtColor>
-      <systemLogoColor>dbd8d6</systemLogoColor>
-      <!-- Gamelist View - List Variants -->
-      <gamelistListBackgroundColor>AAA7A6</gamelistListBackgroundColor>
-      <gamelistListTextlistBackgroundColor>0f180f</gamelistListTextlistBackgroundColor>
-      <gamelistListLogoColor>dbd8d6</gamelistListLogoColor>
-      <gamelistListTextlistSelectedColor>dbd8d6</gamelistListTextlistSelectedColor>
-      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
-      <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
-      <gamelistListMetadataIconColor>3d0d22</gamelistListMetadataIconColor>
-      <gamelistListRatingColor>3d0d22</gamelistListRatingColor>
-      <gamelistListDescriptionColor>000000cc</gamelistListDescriptionColor>
-      <!-- Menu View -->
-      <menuBackgroundColor>111111</menuBackgroundColor>
-      <menuSelectorColor>3d0d22</menuSelectorColor>
-      <!-- Screen View -->
-      <systemIndicatorColor>222222</systemIndicatorColor>
-      <!-- Help System -->
-      <helpBackgroundColor>959290</helpBackgroundColor>
-      <helpIconColor>3d0d22</helpIconColor>
-      <helpTextColor>000000cc</helpTextColor>
-      <!-- Splash Screen -->
-      <splashBackgroundColor>000000</splashBackgroundColor>
-      <splashProgressBarColor>222222</splashProgressBarColor>
-      <splashProgressBarColorEnd>222222</splashProgressBarColorEnd>
-      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
-      <splashProgressBarActiveColorEnd>333333</splashProgressBarActiveColorEnd>
-      <splashProgressBarTextColor>ffffff</splashProgressBarTextColor>
-   </variables>
    <variables ifSubset="color-scheme:oled">
       <!-- System View -->
       <systemBackgroundColor>000000</systemBackgroundColor>

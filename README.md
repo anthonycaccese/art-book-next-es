@@ -2,7 +2,7 @@
 A simple theme for the version of EmulationStation used in [Batocera (v40 and above)](https://batocera.org/).
 Based on the style of a coffee table book.
 
-This version of the theme only works with distributions that use the latest Batocera (v40 and above) fork of EmulationStation.  Specifically [Batocera](https://batocera.org/), [Knulli](https://www.knulli.org/) and [RetroBat](https://www.retrobat.org/)
+This version of the theme only works with distributions that use the latest Batocera (v40 and above) fork of EmulationStation.  Specifically [Batocera](https://batocera.org/), [Knulli](https://www.knulli.org/), [RockNIX](https://rocknix.org/) and [RetroBat](https://www.retrobat.org/)
 
 ## Preview
 | ![system view](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/c0252388-2268-444c-ae3d-07f15b87a98c) | ![menu](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/39653703-f6e8-4940-98fc-66ce1c5af271) |
@@ -15,15 +15,15 @@ The following options can be changed directly from the main menu under `User Int
 
 | Setting | Description | Options |
 | -- | -- | -- |
-| Distribution | Used to define which folder to look in for Theme Customization files. | `Batocera/Knulli`, `RetroBat` |
+| Distribution | Used to define which folder to look in for Theme Customization files. | `Batocera/Knulli`, `RockNIX`, `RetroBat` |
 | Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  This will automatically set itself so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. | `16:9`, `16:10`, `4:3`, `3:2`, `1:1` |
 | System Artwork | Defines the set of artwork that is displayed on the system view | `Default`, `Noir`, `Custom`, `Custom (Fullscreen)` |
 | System Logos | Defines the logo set used on all views | `Default`, `Custom` |
 | Game Artwork | Defines the type of artwork used to represent a game. These are sourced from the the selections you make in the scraper menu. Image will display the image you selected to scrape for `Image Source`.  Image (Cropped) will display that same image zoomed in to fill the screen.  Boxart will display the image you selected to scrape for `Box Source` | `Image`, `Image (Cropped)`, `Boxart`, `Logo` |
 | Game Metadata | Sets if metadata (e.g. description, release date, etc...) should be displayed for a game | `On`, `Off` |
 | Fonts | Define the fonts used throughout the theme. | `Default`, `Custom` |
-| Font Size | Set the size for text elements throughout the theme. | `Default`, `Small`, `Large` |
-| Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`). You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Default`, `Light`, `Steam OS`, `SNES`, `Famicom`, `DMG`, `OLED`, `Custom` |
+| Font Size | Set the size for text elements throughout the theme. | `Default`, `Small`, `Large`, `Extra Large` |
+| Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`). You can see details on customizations below under [Theme Customizations](#theme-customizations). | `Default`, `Light`, `Steam OS`, `SNES`, `Famicom`, `OLED`, `Custom` |
 | Splash Screen | Toggles an optional custom splash screen which will be displayed when EmulationStation is loading and/or scanning for ROMs. | `Default`, `Custom` |
 
 ### Additional UI Settings 
@@ -41,6 +41,7 @@ Art Book Next allows customizations to system artwork and color schemes without 
 - Make sure the `Distribution` setting is set to the correct value for your current OS (e.g. Batocera/Knulli or RetroBat)
 - This value determines the folder where you will add your customizations
     - Batocera/Knulli = `/userdata/theme-customizations/art-book-next/`
+    - RockNIX = `/roms/_userdata/theme-customizations/art-book-next/`
     - Retrobat = `C:\RetroBat\emulationstation\.emulationstation\theme-customizations\art-book-next\`
 - Create the folders that match your distribution and then move on to the options below...
 
@@ -131,12 +132,10 @@ You can supply your own fonts for each of the font types defined in the theme
 * To make game artwork look as good as possible the recommneded settings for the built-in scraper are:
     * Image Source = `Screenshot`
     * Box Source = `Box 2D`
-    * Logo Source = `Marquee`
+    * Logo Source = `Wheel`
 
 ### Versions for other ES forks:
-* If you use Retropie... then check out the version [here](https://github.com/anthonycaccese/art-book-next-retropie).  The Retropie version has all the same base features but you have to change them through the XML directly (as Retropie's theme engine does not have a menu for changing theme options)
 * If you use ES-DE... then the ES-DE version [here](https://github.com/anthonycaccese/art-book-next-es-de) will work out of the box with that distribution.  When used with ES-DE the theme comes with additional support for navigation sound sets.
-* If you use JELOS... then the version [here](https://github.com/anthonycaccese/art-book-next-jelos) will work out of the box with that distribution.
 
 ### **Acknowledgments**
 * Most system logos were sourced and modified from the excellent work done by Dan Patrick [here](https://archive.org/details/console-logos-professionally-redrawn-plus-official-versions).  I modified each to be compatible with EmulationStation's current SVG support.

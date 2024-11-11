@@ -1,6 +1,7 @@
 ﻿<theme>
    <formatVersion>7</formatVersion>
    <variables lang="ar">
-      <lang.games>الألعاب</lang.games>       
+      <lang.games>ألعاب</lang.games>
+      <lang.game>لعبة</lang.game>
    </variables>
 </theme>

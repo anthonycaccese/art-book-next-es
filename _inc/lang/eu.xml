@@ -1,6 +1,7 @@
 ﻿<theme>
    <formatVersion>7</formatVersion>
    <variables lang="eu">
-      <lang.games>Jokoak</lang.games>   
+      <lang.games>Jokoak</lang.games>
+      <lang.game>Jokoa</lang.game>
    </variables>
 </theme>

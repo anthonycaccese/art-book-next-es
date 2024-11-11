@@ -4,25 +4,17 @@ based on 480x480
 -->
 <theme>
    <formatVersion>7</formatVersion>
-
-   <!--
-   ///
-   View: Screen
-   ///
-   -->
-   <view name="screen">
-      <stackpanel name="system-indicators" extra="true">
-         <w>0.958333333333333</w><!-- 460 -->
-         <separator>10</separator>
-      </stackpanel>
-   </view>
-
+   
    <!--
    ///
    View: All
    ///
    -->
    <view name="system,basic,detailed">
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.958333333333333</w><!-- 460 -->
+         <separator>10</separator>
+      </stackpanel>
       <helpsystem ifHelpPrompts="true" name="help">
          <fontSize>0.03125</fontSize><!-- 15 -->
       </helpsystem>
