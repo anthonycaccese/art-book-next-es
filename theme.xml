@@ -14,7 +14,7 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <include>./_inc/lang/default_en.xml</include>
-   <include lang="ar,ca,de,es,eu,fr,gl,he,it,ja,pl,pt,ru,zh">./_inc/lang/${lang}.xml</include>
+   <include lang="ar,ca,de,es,eu,fr,gl,he,it,ja,nl,pl,pt,ru,zh">./_inc/lang/${lang}.xml</include>
 
    <!--
    ///
