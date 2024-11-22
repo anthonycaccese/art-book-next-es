@@ -112,8 +112,8 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="gamelist-view-metadata" displayName="Game Metadata">
       <include name="on" displayName="Default" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="mixed" displayName="Release Date &amp; Play Time" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|720-square-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|720-square-auto" name="mixed" displayName="Release Date &amp; Play Time" />
       <include name="off" displayName="Off" />
    </subset>
 
