@@ -47,13 +47,13 @@ based on 720x480
    -->
    <view name="basic,detailed">
       <image name="logo">
-         <maxSize>0.2734375 0.104166666666667</maxSize><!-- 210 50 -->
+         <maxSize>0.319444444444444 0.104166666666667</maxSize><!-- 230 50 -->
       </image>
       <text name="logoText">
-         <size>0.2734375 0.104166666666667</size><!-- 210 50 -->
+         <size>0.319444444444444 0.104166666666667</size><!-- 230 50 -->
       </text>
       <textlist name="gamelist">
-         <pos>0.045572916666667 0.25</pos><!-- 35 120 -->
+         <pos>0.048611111111111 0.25</pos><!-- 35 120 -->
       </textlist>
    </view>
 
@@ -81,16 +81,16 @@ based on 720x480
    -->
    <view name="detailed">
       <image name="gamelist-background" extra="true">
-         <size>0.375 1</size><!-- 288 480 -->
+         <size>0.444444444444444 1</size><!-- 320 480 -->
       </image>
       <image name="logo">
-         <x>0.1875</x><!-- 144 -->
+         <x>0.222222222222222</x><!-- 160 -->
       </image>
       <text name="logoText">
-         <x>0.1875</x><!-- 144 -->
+         <x>0.222222222222222</x><!-- 160 -->
       </text>
       <textlist name="gamelist">
-         <w>0.2734375</w><!-- 210 -->
+         <w>0.347222222222222</w><!-- 250 -->
          <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
       </textlist>
@@ -234,38 +234,38 @@ based on 720x480
    <view name="detailed" ifSubset="gamelist-view-metadata:off">
       <!-- Video -->
       <video ifHelpPrompts="true" name="game-video" extra="true">
-         <pos>0.6875 0.442708333333333</pos><!-- 528 212.5 -->
-         <minSize>0.625 0.885416666666667</minSize><!-- 480 425 -->
+         <pos>0.72222222 0.442708333333333</pos><!-- 520 212.5 -->
+         <minSize>0.55555556 0.885416666666667</minSize><!-- 400 425 -->
       </video>
       <video ifHelpPrompts="false" name="game-video" extra="true">
-         <pos>0.6875 0.5</pos><!-- 528 240 -->
-         <minSize>0.625 1</minSize><!-- 480 480-->
+         <pos>0.72222222 0.5</pos><!-- 520 240 -->
+         <minSize>0.55555556 1</minSize><!-- 400 480-->
       </video>
       <!-- Boxart & Image -->
       <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|logo|image" name="game-artwork" extra="true">
-         <pos>0.674479166666667 0.447916666666667</pos><!-- 518 215 -->
-         <maxSize>0.546875 0.75</maxSize><!-- 420 360 -->
+         <pos>0.70833333 0.447916666666667</pos><!-- 510 215 -->
+         <maxSize>0.47222222 0.75</maxSize><!-- 340 360 -->
       </image>
       <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:boxart|logo|image" name="game-artwork" extra="true">
-         <pos>0.674479166666667 0.5</pos><!-- 518 240 -->
-         <maxSize>0.546875 0.864583333333333</maxSize><!-- 420 415 -->
+         <pos>0.70833333 0.5</pos><!-- 510 240 -->
+         <maxSize>0.47222222 0.864583333333333</maxSize><!-- 340 415 -->
       </image>
       <!-- Image (Cropped) -->
       <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
-         <pos>0.6875 0.442708333333333</pos><!-- 528 212.5 -->
-         <minSize>0.625 0.885416666666667</minSize><!-- 480 425 -->
+         <pos>0.72222222 0.442708333333333</pos><!-- 520 212.5 -->
+         <minSize>0.55555556 0.885416666666667</minSize><!-- 400 425 -->
       </image>
       <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-artwork" extra="true">
-         <pos>0.6875 0.5</pos><!-- 528 240 -->
-         <minSize>0.625 1</minSize><!-- 480 480-->
+         <pos>0.72222222 0.5</pos><!-- 520 240 -->
+         <minSize>0.55555556 1</minSize><!-- 400 480-->
       </image>
       <!-- Marquee -->
       <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
-         <pos>0.6875 0.442708333333333</pos><!-- 528 212.5 -->
+         <pos>0.72222222 0.442708333333333</pos><!-- 520 212.5 -->
          <maxSize>0.377604166666667 0.625</maxSize><!-- 290 300 -->
       </image>
       <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
-         <pos>0.6875 0.5</pos><!-- 528 240 -->
+         <pos>0.72222222 0.5</pos><!-- 520 240 -->
          <maxSize>0.377604166666667 0.625</maxSize><!-- 290 300 -->
       </image>
    </view>
