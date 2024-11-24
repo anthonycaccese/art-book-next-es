@@ -170,6 +170,16 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: Network Icon
+   ///
+   -->
+   <subset name="network-icon" displayName="Network Icon">
+      <include name="default" displayName="Default" />
+      <include name="ethernet" displayName="Ethernet" />
+   </subset>
+
+   <!--
+   ///
    View: Screen
    ///
    -->
@@ -223,7 +233,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <networkIcon name="system-network-icon">
             <maxSize>1 1</maxSize>
             <color>${systemIndicatorColor}</color>
-            <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+            <networkIcon ifSubset="network-icon:default">./_inc/images/network-icon-on.svg</networkIcon>
+            <networkIcon ifSubset="network-icon:ethernet">./_inc/images/network-icon-wired.svg</networkIcon>
             <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
          </networkIcon>
          <clock name="system-clock">
