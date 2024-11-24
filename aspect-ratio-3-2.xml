@@ -70,7 +70,7 @@ based on 720x480
          <x>0.5</x><!-- 50% -->
       </text>
       <textlist name="gamelist">
-         <w>0.9027777777777778</w><!-- 650 -->
+         <w>0.91666667</w><!-- 660 -->
       </textlist>
    </view>
 
@@ -91,8 +91,6 @@ based on 720x480
       </text>
       <textlist name="gamelist">
          <w>0.347222222222222</w><!-- 250 -->
-         <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
       </textlist>
    </view>
 
