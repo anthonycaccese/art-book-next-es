@@ -112,8 +112,8 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="gamelist-view-metadata" displayName="Game Metadata">
       <include name="on" displayName="Default" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|720-square-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|720-square-auto" name="mixed" displayName="Release Date &amp; Play Time" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|3-2|3-2-auto|720-square-auto" name="play-stats" displayName="Play Time &amp; Play Count" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|3-2|3-2-auto|720-square-auto" name="mixed" displayName="Release Date &amp; Play Time" />
       <include name="off" displayName="Off" />
    </subset>
 
@@ -460,9 +460,9 @@ https://github.com/anthonycaccese/art-book-next-es
          <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
          <!-- extra large font -->
-         <fontSize ifSubset="font-size:xlarge">0.05416667</fontSize><!-- 26 -->
-         <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">9</lines>
+         <fontSize ifSubset="font-size:xlarge">0.05</fontSize><!-- 24 -->
+         <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">5</lines>
+         <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">7</lines>
          <fontPath>${fontBold}</fontPath>
          <alignment>left</alignment>
          <selectorColor>00000000</selectorColor>
@@ -639,20 +639,20 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.02916667</fontSize><!-- 14 -->
-         <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
+         <fontSize ifSubset="font-size:small|default">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:large|xlarge">0.03333333</fontSize><!-- 16 -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:large|xlarge">0.02916667</fontSize><!-- 14 -->
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
-         <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
+         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:large|xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
          <selectedColor>ffffff</selectedColor>
@@ -660,14 +660,14 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:large|xlarge">0.02916667</fontSize><!-- 14 -->
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
-         <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
+         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:large|xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>
          <backgroundColor>00000000</backgroundColor>
