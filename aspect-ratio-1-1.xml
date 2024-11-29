@@ -71,8 +71,6 @@ based on 480x480
       </text>
       <textlist name="gamelist">
          <w>0.854166666666667</w><!-- 410 -->
-         <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
       </textlist>
    </view>
 
@@ -147,14 +145,14 @@ based on 480x480
       <datetime name="md_releasedate">
          <pos>0.619791666666667 0.616666666666667</pos><!-- 297.5 296 -->
          <format ifSubset="font-size:small">%Y-%m</format>
-         <format ifSubset="font-size:default|large">%Y</format>
+         <format ifSubset="font-size:default|large|xlarge">%Y</format>
          <visible>true</visible>
       </datetime>
    </view>
    <variables ifSubset="gamelist-view-metadata:play-stats|mixed">
       <gamelistMetadataFontSize ifSubset="font-size:small">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
-      <gamelistMetadataFontSize ifSubset="font-size:default|large,gamelist-view-metadata:play-stats">0.035416666666667</gamelistMetadataFontSize><!-- 17 -->
-      <gamelistMetadataFontSize ifSubset="gamelist-view-metadata:mixed">0.0291666666666667</gamelistMetadataFontSize><!-- 14 -->
+      <gamelistMetadataFontSize ifSubset="font-size:default|large|xlarge,gamelist-view-metadata:play-stats">0.0375</gamelistMetadataFontSize><!-- 18 -->
+      <gamelistMetadataFontSize ifSubset="font-size:default|large|xlarge,gamelist-view-metadata:mixed">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
    </variables>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:play-stats|mixed">
       <stackpanel name="gamedata" extra="true">
@@ -187,7 +185,7 @@ based on 480x480
          <text name="gamedata-gametime">
             <fontPath>${fontBold}</fontPath>
             <fontSize>${gamelistMetadataFontSize}</fontSize>
-            <text>{game:gametime} > 0 ? expandseconds({game:gametime}) : "Never Played"</text>
+            <text>{game:gametime} > 0 ? expandseconds({game:gametime}) : "Not Played"</text>
             <color>${gamelistListMetadataColor}</color>
          </text>
          <image ifSubset="gamelist-view-metadata:play-stats">
