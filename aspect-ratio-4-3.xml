@@ -13,7 +13,7 @@ based on 640x480
    <view name="system,basic,detailed">
       <stackpanel name="system-indicators" extra="true">
          <w>0.96875</w><!-- 620 -->
-         <separator>10</separator>
+         <separator>0.015625</separator>
       </stackpanel>
       <helpsystem ifHelpPrompts="true" name="help">
          <fontSize ifSubset="font-size:small|default|large">0.03125</fontSize><!-- 15 -->
@@ -55,10 +55,6 @@ based on 640x480
       </text>
       <textlist name="gamelist">
          <pos>0.0546875 0.25</pos><!-- 35 120 -->
-         <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
-         <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:large" ifHelpPrompts="false">7</lines>
       </textlist>
    </view>
 
@@ -140,6 +136,7 @@ based on 640x480
       <gamelistMetadataFontSize ifSubset="font-size:small">0.03125</gamelistMetadataFontSize><!-- 15 -->
       <gamelistMetadataFontSize ifSubset="font-size:default">0.035416666666667</gamelistMetadataFontSize><!-- 17 -->
       <gamelistMetadataFontSize ifSubset="font-size:large">0.039583333333333</gamelistMetadataFontSize><!-- 19 -->
+      <gamelistMetadataFontSize ifSubset="font-size:xlarge">0.04791667</gamelistMetadataFontSize><!-- 23 -->
    </variables>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
       <image name="game-releasedate-icon">
@@ -151,6 +148,7 @@ based on 640x480
          <pos>0.59375 0.616666666666667</pos><!-- 380 296 -->
          <format ifSubset="font-size:small">%Y-%m-%d</format>
          <format ifSubset="font-size:default|large">%Y-%m</format>
+         <format ifSubset="font-size:xlarge">%Y</format>
          <visible>true</visible>
          <fontSize>${gamelistMetadataFontSize}</fontSize>
       </datetime>
@@ -159,6 +157,7 @@ based on 640x480
          <pos>0.953125 0.614583333333333</pos><!-- 610 295 -->
          <size ifSubset="font-size:small">0 0.0375</size><!-- - 18 --> 
          <size ifSubset="font-size:default|large">0 0.045833333333333</size><!-- - 20 --> 
+         <size ifSubset="font-size:xlarge">0 0.05</size><!-- - 24 --> 
          <visible>true</visible>
       </rating>
    </view>
@@ -166,6 +165,8 @@ based on 640x480
       <gamelistMetadataFontSize ifSubset="font-size:small">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
       <gamelistMetadataFontSize ifSubset="font-size:default|large,gamelist-view-metadata:play-stats">0.0375</gamelistMetadataFontSize><!-- 18 -->
       <gamelistMetadataFontSize ifSubset="font-size:default|large,gamelist-view-metadata:mixed">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
+      <gamelistMetadataFontSize ifSubset="font-size:xlarge,gamelist-view-metadata:play-stats">0.05</gamelistMetadataFontSize><!-- 24 -->
+      <gamelistMetadataFontSize ifSubset="font-size:xlarge,gamelist-view-metadata:mixed">0.04583333</gamelistMetadataFontSize><!-- 22 -->
    </variables>
    <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:play-stats|mixed">
       <stackpanel name="gamedata" extra="true">
@@ -198,7 +199,7 @@ based on 640x480
          <text name="gamedata-gametime">
             <fontPath>${fontBold}</fontPath>
             <fontSize>${gamelistMetadataFontSize}</fontSize>
-            <text>{game:gametime} > 0 ? expandseconds({game:gametime}) : "Never Played"</text>
+            <text>{game:gametime} > 0 ? expandseconds({game:gametime}) : "Not Played"</text>
             <color>${gamelistListMetadataColor}</color>
          </text>
          <image ifSubset="gamelist-view-metadata:play-stats">
