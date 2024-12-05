@@ -387,6 +387,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <zIndex>1</zIndex>
       </image>
       <image name="logo">
+         <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
