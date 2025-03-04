@@ -25,7 +25,7 @@ based on 480x480
    View: System
    ///
    -->
-   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|classic|custom">
+   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">
       <carousel name="systemcarousel">
          <logoSize>1.025 1.025</logoSize>
          <maxLogoCount>3</maxLogoCount>
@@ -71,8 +71,6 @@ based on 480x480
       </text>
       <textlist name="gamelist">
          <w>0.854166666666667</w><!-- 410 -->
-         <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
       </textlist>
    </view>
 
@@ -132,7 +130,7 @@ based on 480x480
          <lineSpacing>1.2</lineSpacing>
       </text>
    </view>
-   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on|play-stats|mixed">
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:on">
       <rating name="md_rating">
          <origin>1 0.5</origin>
          <pos>0.9479166666666667 0.614583333333333</pos><!-- 455 295 -->
@@ -147,9 +145,68 @@ based on 480x480
       <datetime name="md_releasedate">
          <pos>0.619791666666667 0.616666666666667</pos><!-- 297.5 296 -->
          <format ifSubset="font-size:small">%Y-%m</format>
-         <format ifSubset="font-size:default|large">%Y</format>
+         <format ifSubset="font-size:default|large|xlarge">%Y</format>
          <visible>true</visible>
       </datetime>
+   </view>
+   <variables ifSubset="gamelist-view-metadata:play-stats|mixed">
+      <gamelistMetadataFontSize ifSubset="font-size:small">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
+      <gamelistMetadataFontSize ifSubset="font-size:default|large|xlarge,gamelist-view-metadata:play-stats">0.0375</gamelistMetadataFontSize><!-- 18 -->
+      <gamelistMetadataFontSize ifSubset="font-size:default|large|xlarge,gamelist-view-metadata:mixed">0.033333333333333</gamelistMetadataFontSize><!-- 16 -->
+   </variables>
+   <view name="detailed" ifHelpPrompts="false" ifSubset="gamelist-view-metadata:play-stats|mixed">
+      <stackpanel name="gamedata" extra="true">
+         <separator>0.015625</separator><!-- 10 -->
+         <pos>0.55078125 0.6</pos><!-- 352.5 288 -->
+         <size>0.3984375 0.0416666666666667</size>
+         <orientation>horizontal</orientation>
+         <zIndex>99</zIndex>
+         <image name="gamedata-releasedate-icon" ifSubset="gamelist-view-metadata:mixed">
+            <maxSize>1 1</maxSize>
+            <path>./_inc/images/metadata-icon-releasedate.svg</path>
+            <color>${gamelistListMetadataIconColor}</color>
+         </image>
+         <text name="gamedata-releasedate" ifSubset="gamelist-view-metadata:mixed">
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>${gamelistMetadataFontSize}</fontSize>
+            <text>{game:releaseyear}</text>
+            <color>${gamelistListMetadataColor}</color>
+         </text>
+         <image ifSubset="gamelist-view-metadata:mixed">
+            <maxSize>0.028125 1</maxSize><!-- 18 20 -->
+            <path>${spacerImage}</path>
+            <color>00000000</color>
+         </image>
+         <image name="gamedata-gametime-icon">
+            <maxSize>1 1</maxSize>
+            <path>./_inc/images/metadata-icon-gametime.svg</path>
+            <color>${gamelistListMetadataIconColor}</color>
+         </image>
+         <text name="gamedata-gametime">
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>${gamelistMetadataFontSize}</fontSize>
+            <text>{game:gametime} > 0 ? expandseconds({game:gametime}) : "Not Played"</text>
+            <color>${gamelistListMetadataColor}</color>
+         </text>
+         <image ifSubset="gamelist-view-metadata:play-stats">
+            <maxSize>0.028125 1</maxSize><!-- 18 20 -->
+            <path>${spacerImage}</path>
+            <color>00000000</color>
+         </image>
+         <image name="gamedata-playcount-icon" ifSubset="gamelist-view-metadata:play-stats">
+            <maxSize>1 1</maxSize>
+            <path>./_inc/images/metadata-icon-playcount.svg</path>
+            <color>${gamelistListMetadataIconColor}</color>
+            <visible>{game:gametime} > 0</visible>
+         </image>
+         <text name="gamedata-playcount" ifSubset="gamelist-view-metadata:play-stats">
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>${gamelistMetadataFontSize}</fontSize>
+            <text>{game:playcount}</text>
+            <color>${gamelistListMetadataColor}</color>
+            <visible>{game:gametime} > 0</visible>
+         </text>
+      </stackpanel>
    </view>
 
    <!--

@@ -93,7 +93,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="default" displayName="기본" />
       <include name="noir" displayName="Noir" />
       <include name="nintendont" displayName="Nintendon't" />
-      <include name="classic" displayName="클래식" />
+      <include name="circuit" displayName="Circuit" />
       <include name="custom" displayName="커스텀" />
       <include name="custom-fullscreen" displayName="커스텀 (풀스크린)" />
    </subset>
@@ -136,10 +136,10 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-view-metadata" displayName="게임설명">
-      <include name="on" displayName="기본" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="play-stats" displayName="플레이 시간 &amp; 플레이 횟수" />
-      <include ifSubset="aspect-ratio:4-3|4-3-auto" name="mixed" displayName="출시일 &amp; 플레이 시간" />
-      <include name="off" displayName="끄기" />
+      <include name="on" displayName="Default" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|3-2|3-2-auto|720-square-auto" name="play-stats" displayName="플레이 시간 &amp; 플레이 횟수" />
+      <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|3-2|3-2-auto|720-square-auto" name="mixed" displayName="출시일 &amp; 플레이 시간" />
+      <include name="off" displayName="Off" />
    </subset>
 
    <!--
@@ -195,6 +195,16 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: Network Icon
+   ///
+   -->
+   <subset name="network-icon" displayName="Network Icon">
+      <include name="default" displayName="Default" />
+      <include name="ethernet" displayName="Ethernet" />
+   </subset>
+
+   <!--
+   ///
    View: Screen
    ///
    -->
@@ -223,7 +233,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <h ifSubset="font-size:small">0.033333333333333</h><!-- 16 -->
          <h ifSubset="font-size:default">0.041666666666667</h><!-- 20 -->
          <h ifSubset="font-size:large">0.05</h><!-- 24 -->
-         <h ifSubset="font-size:xlarge">0.05833333</h><!-- 28 -->
+         <h ifSubset="font-size:xlarge">0.0625</h><!-- 30 -->
          <pos>0 0.041666666666667</pos><!-- 0 20 -->
          <orientation>horizontal</orientation>
          <reverse>true</reverse>
@@ -232,7 +242,7 @@ https://github.com/anthonycaccese/art-book-next-es
             <fontPath>${fontBold}</fontPath>
             <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
             <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
-            <fontSize ifSubset="font-size:xlarge">0.05</fontSize><!-- 24 -->
+            <fontSize ifSubset="font-size:xlarge">0.05416667</fontSize><!-- 26 -->
             <lineSpacing>1</lineSpacing>
          </batteryText>
          <batteryIcon name="system-battery-icon">
@@ -248,7 +258,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <networkIcon name="system-network-icon">
             <maxSize>1 1</maxSize>
             <color>${systemIndicatorColor}</color>
-            <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+            <networkIcon ifSubset="network-icon:default">./_inc/images/network-icon-on.svg</networkIcon>
+            <networkIcon ifSubset="network-icon:ethernet">./_inc/images/network-icon-wired.svg</networkIcon>
             <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
          </networkIcon>
          <clock name="system-clock">
@@ -336,7 +347,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <!-- End: System Count -->
    </view>
-   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|classic|custom">
+   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">
       <image name="logo">
          <path>./_inc/systems/artwork-default/_default.png</path>
          <path>./_inc/systems/artwork-default/${system.theme}.png</path>
@@ -346,8 +357,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-view-artwork:noir">./_inc/systems/artwork-noir/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/_default.png</path>
          <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/${system.theme}.png</path>
-         <path ifSubset="system-view-artwork:classic">./_inc/systems/artwork-classic/_default.png</path>
-         <path ifSubset="system-view-artwork:classic">./_inc/systems/artwork-classic/${system.theme}.png</path>
+         <path ifSubset="system-view-artwork:circuit">./_inc/systems/artwork-circuit/_default.png</path>
+         <path ifSubset="system-view-artwork:circuit">./_inc/systems/artwork-circuit/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.png</path>
          <color>${systemArtColor}</color>
@@ -401,6 +412,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <zIndex>1</zIndex>
       </image>
       <image name="logo">
+         <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
@@ -474,9 +486,9 @@ https://github.com/anthonycaccese/art-book-next-es
          <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
          <!-- extra large font -->
-         <fontSize ifSubset="font-size:xlarge">0.05416667</fontSize><!-- 26 -->
-         <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">7</lines>
-         <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">9</lines>
+         <fontSize ifSubset="font-size:xlarge">0.0625</fontSize><!-- 30 -->
+         <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">5</lines>
+         <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">7</lines>
          <fontPath>${fontBold}</fontPath>
          <alignment>left</alignment>
          <selectorColor>00000000</selectorColor>
@@ -575,8 +587,10 @@ https://github.com/anthonycaccese/art-book-next-es
          <h ifHelpPrompts="false">0.25</h><!-- 120 -->
          <text>{game:desc}</text>
          <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:default|large|xlarge">0.041666666666667</fontSize><!-- 20 -->
-         <lineSpacing ifSubset="font-size:default|large|xlarge">1.49</lineSpacing>
+         <fontSize ifSubset="font-size:default|large">0.041666666666667</fontSize><!-- 20 -->
+         <lineSpacing ifSubset="font-size:default|large">1.49</lineSpacing>
+         <fontSize ifSubset="font-size:xlarge">0.05</fontSize><!-- 24 -->
+         <lineSpacing ifSubset="font-size:xlarge">1.62</lineSpacing>
          <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
          <lineSpacing ifSubset="font-size:small" ifHelpPrompts="true">1.375</lineSpacing>
          <lineSpacing ifSubset="font-size:small" ifHelpPrompts="false">1.475</lineSpacing>
@@ -653,19 +667,22 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:small|default">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:large">0.02916667</fontSize><!-- 14 -->
          <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:large">0.0375</fontSize><!-- 18 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
@@ -674,13 +691,15 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
+         <fontSize ifSubset="font-size:large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:large">0.0375</fontSize><!-- 18 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>

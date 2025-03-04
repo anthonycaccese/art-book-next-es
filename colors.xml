@@ -106,22 +106,22 @@
       <systemArtColor>ffffffdd</systemArtColor>
       <systemLogoColor>ffffff</systemLogoColor>
       <!-- Gamelist View - List Variants -->
-      <gamelistListBackgroundColor>514689</gamelistListBackgroundColor>
-      <gamelistListTextlistBackgroundColor>231942</gamelistListTextlistBackgroundColor>
+      <gamelistListBackgroundColor>231942</gamelistListBackgroundColor>
+      <gamelistListTextlistBackgroundColor>140e26</gamelistListTextlistBackgroundColor>
       <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
       <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
       <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
-      <gamelistListMetadataColor>c6bde5</gamelistListMetadataColor>
-      <gamelistListMetadataIconColor>a293d5</gamelistListMetadataIconColor>
-      <gamelistListRatingColor>a293d5</gamelistListRatingColor>
+      <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff44</gamelistListMetadataIconColor>
+      <gamelistListRatingColor>ffffff44</gamelistListRatingColor>
       <gamelistListDescriptionColor>ffffff</gamelistListDescriptionColor>
       <!-- Menu View -->
-      <menuBackgroundColor>231942</menuBackgroundColor>
+      <menuBackgroundColor>140e26</menuBackgroundColor>
       <menuSelectorColor>514689</menuSelectorColor>
       <!-- Screen View -->
       <systemIndicatorColor>eeeeee</systemIndicatorColor>
       <!-- Help System -->
-      <helpBackgroundColor>140e26</helpBackgroundColor>
+      <helpBackgroundColor>0e091a</helpBackgroundColor>
       <helpIconColor>a293d5</helpIconColor>
       <helpTextColor>ffffffaa</helpTextColor>
       <!-- Splash Screen -->
