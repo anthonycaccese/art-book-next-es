@@ -53,7 +53,7 @@ based on 480x480
          <size>0.3125 0.104166666666667</size><!-- 150 50 -->
       </text>
       <textlist name="gamelist">
-         <pos>0.072916666666667 0.25</pos><!-- 35 120 -->
+         <pos>0.0625 0.25</pos><!-- 30 120 -->
       </textlist>
    </view>
 
@@ -90,7 +90,7 @@ based on 480x480
          <x>0.25</x><!-- 120 -->
       </text>
       <textlist name="gamelist">
-         <w>0.333333333333333</w><!-- 160 -->
+         <w>0.36458333</w><!-- 175 -->
       </textlist>
    </view>
 
