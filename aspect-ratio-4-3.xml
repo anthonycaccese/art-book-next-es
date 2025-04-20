@@ -26,7 +26,7 @@ based on 640x480
    View: System
    ///
    -->
-   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">
+   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|outline|custom">
       <carousel name="systemcarousel">
          <logoSize>1.025 1.025</logoSize>
          <maxLogoCount>4</maxLogoCount>
