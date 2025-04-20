@@ -369,7 +369,8 @@ https://github.com/anthonycaccese/art-book-next-es
       </carousel>
       <image name="system-logo" extra="true">
          <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
+         <pos ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">0.5 0.5</pos>
+         <pos ifSubset="system-view-artwork:outline">0.5 0.33</pos>
          <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
