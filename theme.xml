@@ -483,7 +483,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <fontSize ifSubset="font-size:xlarge">0.05833333</fontSize><!-- 28 -->
          <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">5</lines>
          <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">7</lines>
-         <fontPath>${fontRegular}</fontPath>
+         <fontPath>${fontBold}</fontPath>
          <alignment>left</alignment>
          <selectorColor>00000000</selectorColor>
          <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
@@ -666,22 +666,19 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.02916667</fontSize><!-- 14 -->
-         <fontSize ifSubset="font-size:large">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default|large">0.02916667</fontSize><!-- 14 -->
          <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
          <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
-         <fontSize ifSubset="font-size:large">0.0375</fontSize><!-- 18 -->
+         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
@@ -690,15 +687,13 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
          <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
-         <fontSize ifSubset="font-size:large">0.0375</fontSize><!-- 18 -->
+         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>
