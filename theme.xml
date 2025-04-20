@@ -96,6 +96,21 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: System Logo Animation
+   ///
+   -->
+   <subset name="system-logo-animation" displayName="System Logo Animation">
+      <include name="logo-sysa" displayName="Default" />
+      <include name="logo-fade-in" displayName="Fade In" />
+      <include name="logo-zoom" displayName="Zoom Bump" />
+      <include name="logo-swoop" displayName="Swoop" />
+      <include name="logo-dbeat" displayName="Drop" />
+      <include name="logo-skid" displayName="Skid" />
+      <include name="logo-spnr" displayName="Spinner" />
+   </subset>
+
+   <!--
+   ///
    Subset: Game Artwork
    ///
    -->
@@ -375,6 +390,29 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
          <zIndex>2</zIndex>
+         <storyboard ifSubset="system-logo-animation:logo-fade-in">
+            <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-zoom">
+            <animation property="opacity" from="0" to="1" duration="400" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-swoop">
+            <animation property="opacity" from="0" to="1" duration="450" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-dbeat">
+            <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="easeOut"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-skid">
+            <animation property="rotation" from="10" to="0" duration="350" mode="linear"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-spnr">
+            <animation property="rotation" from="360" to="0" begin="0" duration="350" mode="easeOut"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+         </storyboard>
       </image>
       <text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
@@ -391,6 +429,29 @@ https://github.com/anthonycaccese/art-book-next-es
          <zIndex>2</zIndex>
          <visible ifSubset="system-logos:default">!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
          <visible ifSubset="system-logos:custom">!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg") &amp;&amp; !exists("${themeCustomizationsPath}logos/" + {system:theme} + ".png") &amp;&amp; !exists("${themeCustomizationsPath}logos/" + {system:theme} + ".svg")</visible>
+         <storyboard ifSubset="system-logo-animation:logo-fade-in">
+            <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-zoom">
+            <animation property="opacity" from="0" to="1" duration="400" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-swoop">
+            <animation property="opacity" from="0" to="1" duration="450" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-dbeat">
+            <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="easeOut"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-skid">
+            <animation property="rotation" from="10" to="0" duration="350" mode="linear"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-spnr">
+            <animation property="rotation" from="360" to="0" begin="0" duration="350" mode="easeOut"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+         </storyboard>
       </text>
    </view>
    <view name="system" ifSubset="system-view-artwork:custom-fullscreen">
