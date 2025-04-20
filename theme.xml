@@ -124,11 +124,10 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="gamelist-video-delay" displayName="Game Video Delay">
       <include name="2-seconds" displayName="2 Seconds (Default)" />
-      <include name="instant" displayName="Instant" />
-      <include name="1-second" displayName="1 Second" />
       <include name="3-seconds" displayName="3 Seconds" />
       <include name="4-seconds" displayName="4 Seconds" />
       <include name="5-seconds" displayName="5 Seconds" />
+      <include name="instant" displayName="Instant" />
    </subset>
 
    <!--
@@ -440,7 +439,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <image name="logo">
          <origin>0.5 0.5</origin>
-         <y>0.130208333333333</y><!-- 62.5 -->
+         <y>0.13020833</y><!-- 62.5 -->
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
@@ -449,7 +448,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <text name="logoText">
          <origin>0.5 0.5</origin>
-         <y>0.130208333333333</y><!-- 62.5 -->
+         <y>0.13020833</y><!-- 62.5 -->
          <fontSize>0.05</fontSize><!-- 24 -->
          <fontPath>${fontLogo}</fontPath>
          <forceUppercase>true</forceUppercase>
@@ -460,25 +459,26 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <textlist name="gamelist">
          <origin>0 0</origin>
-         <h ifHelpPrompts="true">0.5875</h><!-- 282 -->
-         <h ifHelpPrompts="false">0.7</h><!-- 336 -->
+         <y>0.25520833</y><!-- 122.5 -->
+         <h ifHelpPrompts="true">0.57083333</h><!-- 274 -->
+         <h ifHelpPrompts="false">0.69791667</h><!-- 335 -->
          <!-- small font -->
          <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
          <lines ifSubset="font-size:small" ifHelpPrompts="true">9</lines>
          <lines ifSubset="font-size:small" ifHelpPrompts="false">11</lines>
          <!-- default font -->
-         <fontSize ifSubset="font-size:default">0.041666666666667</fontSize><!-- 20 -->
+         <fontSize ifSubset="font-size:default">0.0375</fontSize><!-- 18 -->
          <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
          <!-- large font -->
-         <fontSize ifSubset="font-size:large">0.045833333333333</fontSize><!-- 22 -->
+         <fontSize ifSubset="font-size:large">0.04166667</fontSize><!-- 20 -->
          <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
          <!-- extra large font -->
-         <fontSize ifSubset="font-size:xlarge">0.0625</fontSize><!-- 30 -->
+         <fontSize ifSubset="font-size:xlarge">0.05833333</fontSize><!-- 28 -->
          <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">5</lines>
          <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">7</lines>
-         <fontPath>${fontBold}</fontPath>
+         <fontPath>${fontRegular}</fontPath>
          <alignment>left</alignment>
          <selectorColor>00000000</selectorColor>
          <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
