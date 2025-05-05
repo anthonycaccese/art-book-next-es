@@ -43,7 +43,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
       <!-- 삭제대기 -->
-	  <font_menutitle>0.038</font_menutitle>
+      <font_menutitle>0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:4-3" >0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
       <font_menutitle ifSubset="aspect-ratio:1-1" >0.038</font_menutitle>
