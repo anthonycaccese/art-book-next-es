@@ -41,14 +41,14 @@
       <systemLogoColor>ffffff</systemLogoColor>
       <!-- Gamelist View - List Variants -->
       <gamelistListBackgroundColor>dddddd</gamelistListBackgroundColor>
-      <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
-      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
-      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
-      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
-      <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
+      <gamelistListTextlistBackgroundColor>eeeeee</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>000000cc</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>000000</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>aaaaaa</gamelistListTextlistUnselectedColor>
+      <gamelistListMetadataColor>000000</gamelistListMetadataColor>
       <gamelistListMetadataIconColor>00000055</gamelistListMetadataIconColor>
-      <gamelistListRatingColor>00000055</gamelistListRatingColor>
-      <gamelistListDescriptionColor>000000dd</gamelistListDescriptionColor>
+      <gamelistListRatingColor>000000cc</gamelistListRatingColor>
+      <gamelistListDescriptionColor>000000</gamelistListDescriptionColor>
       <!-- Menu View -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>

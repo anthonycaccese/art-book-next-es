@@ -94,6 +94,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <include name="noir" displayName="Noir" />
       <include name="nintendont" displayName="Nintendon't" />
       <include name="circuit" displayName="Circuit" />
+      <include name="outline" displayName="아웃라인" />
       <include name="custom" displayName="커스텀" />
       <include name="custom-fullscreen" displayName="커스텀 (풀스크린)" />
    </subset>
@@ -140,6 +141,20 @@ https://github.com/anthonycaccese/art-book-next-es
       <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|3-2|3-2-auto|720-square-auto" name="play-stats" displayName="플레이 시간 &amp; 플레이 횟수" />
       <include ifSubset="aspect-ratio:4-3|4-3-auto|1-1|1-1-auto|3-2|3-2-auto|720-square-auto" name="mixed" displayName="출시일 &amp; 플레이 시간" />
       <include name="off" displayName="Off" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Game Video Delay
+   ///
+   -->
+   <subset name="gamelist-video-delay" displayName="Game Video Delay">
+      <include name="2-seconds" displayName="2 Seconds (Default)" />
+      <include name="instant" displayName="Instant" />
+      <include name="1-second" displayName="1 Second" />
+      <include name="3-seconds" displayName="3 Seconds" />
+      <include name="4-seconds" displayName="4 Seconds" />
+      <include name="5-seconds" displayName="5 Seconds" />
    </subset>
 
    <!--
@@ -347,7 +362,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <!-- End: System Count -->
    </view>
-   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">
+   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|outline|custom">
       <image name="logo">
          <path>./_inc/systems/artwork-default/_default.png</path>
          <path>./_inc/systems/artwork-default/${system.theme}.png</path>
@@ -359,6 +374,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:circuit">./_inc/systems/artwork-circuit/_default.png</path>
          <path ifSubset="system-view-artwork:circuit">./_inc/systems/artwork-circuit/${system.theme}.png</path>
+         <path ifSubset="system-view-artwork:outline">./_inc/systems/artwork-outline/_default.png</path>
+         <path ifSubset="system-view-artwork:outline">./_inc/systems/artwork-outline/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.png</path>
          <color>${systemArtColor}</color>
@@ -377,7 +394,8 @@ https://github.com/anthonycaccese/art-book-next-es
       </carousel>
       <image name="system-logo" extra="true">
          <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
+         <pos ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">0.5 0.5</pos>
+         <pos ifSubset="system-view-artwork:outline">0.5 0.33</pos>
          <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
@@ -386,7 +404,8 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
+         <pos ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">0.5 0.5</pos>
+         <pos ifSubset="system-view-artwork:outline">0.5 0.33</pos>
          <size>0.8 0.4</size>
          <fontSize>0.1125</fontSize>
          <fontPath>${fontLogo}</fontPath>
@@ -558,7 +577,12 @@ https://github.com/anthonycaccese/art-book-next-es
       <video name="game-video" extra="true">
          <origin>0.5 0.5</origin>
          <path>{game:video}</path>
-         <delay>2</delay>
+         <delay ifSubset="gamelist-video-delay:instant">0</delay>
+         <delay ifSubset="gamelist-video-delay:1-second">1</delay>
+         <delay ifSubset="gamelist-video-delay:2-seconds">2</delay>
+         <delay ifSubset="gamelist-video-delay:3-seconds">3</delay>
+         <delay ifSubset="gamelist-video-delay:4-seconds">4</delay>
+         <delay ifSubset="gamelist-video-delay:5-seconds">5</delay>
          <effect>none</effect>
          <loops>0</loops>
          <zIndex>5</zIndex>
