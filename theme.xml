@@ -148,13 +148,13 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Game Video Delay
    ///
    -->
-   <subset name="gamelist-video-delay" displayName="Game Video Delay">
-      <include name="2-seconds" displayName="2 Seconds (Default)" />
-      <include name="instant" displayName="Instant" />
-      <include name="1-second" displayName="1 Second" />
-      <include name="3-seconds" displayName="3 Seconds" />
-      <include name="4-seconds" displayName="4 Seconds" />
-      <include name="5-seconds" displayName="5 Seconds" />
+   <subset name="gamelist-video-delay" displayName="비디오 딜레이">
+      <include name="2-seconds" displayName="2초 (기본)" />
+      <include name="instant" displayName="즉시" />
+      <include name="1-second" displayName="1초" />
+      <include name="3-seconds" displayName="3초" />
+      <include name="4-seconds" displayName="4초" />
+      <include name="5-seconds" displayName="5초" />
    </subset>
 
    <!--
@@ -162,9 +162,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Font
    ///
    -->
-   <subset name="fonts" displayName="Fonts">
-      <include name="default" displayName="Default" />
-      <include name="custom" displayName="Custom" />
+   <subset name="fonts" displayName="폰트">
+      <include name="default" displayName="기본" />
+      <include name="custom" displayName="커스텀" />
    </subset>
    <include>./fonts.xml</include>
    <include ifSubset="fonts:custom">${themeCustomizationsPath}fonts.xml</include>
@@ -213,9 +213,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Network Icon
    ///
    -->
-   <subset name="network-icon" displayName="Network Icon">
-      <include name="default" displayName="Default" />
-      <include name="ethernet" displayName="Ethernet" />
+   <subset name="network-icon" displayName="네트워크 아이콘">
+      <include name="default" displayName="기본" />
+      <include name="ethernet" displayName="이더넷" />
    </subset>
 
    <!--
