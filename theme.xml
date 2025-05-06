@@ -175,10 +175,10 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="font-size" displayName="폰트크기">
-      <include name="default" displayName="기본" />
-      <include name="large" displayName="크게" />
-      <include name="xlarge" displayName="더 크게" />
-      <include name="small" displayName="작게" />
+      <include name="large" displayName="기본" />
+      <include name="xlarge" displayName="크게" />
+      <include name="default" displayName="작게" />
+      <include name="small" displayName="더 작게" />
    </subset>
 
    <!--
