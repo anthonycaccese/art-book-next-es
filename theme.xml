@@ -33,10 +33,6 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <variables>
-      <fontRegular>./_inc/fonts/NanumSquareNeo-bRg.ttf</fontRegular>
-      <fontBold>./_inc/fonts/NanumSquareNeo-cBd.ttf</fontBold>
-      <fontLight>./_inc/fonts/NanumSquareNeo-aLt.ttf</fontLight>
-      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
       <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
