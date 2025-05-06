@@ -42,27 +42,6 @@ https://github.com/anthonycaccese/art-book-next-es
       <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
-      <!-- 삭제대기 -->
-      <font_menutitle>0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:4-3" >0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:1-1" >0.038</font_menutitle>
-      <font_menufooter>0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:4-3" >0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:3-2" >0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:1-1" >0.025</font_menufooter>
-      <font_menutext>0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:4-3" >0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:3-2" >0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:1-1" >0.042</font_menutext>
-      <font_menutextsmall>0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:4-3" >0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:3-2" >0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:1-1" >0.040</font_menutextsmall>
-      <font_menugroup>0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:4-3" >0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:3-2" >0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:1-1" >0.038</font_menugroup>
    </variables>
 
    <!--
