@@ -91,7 +91,7 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="system-logos" displayName="시스템 로고">
       <include name="default" displayName="기본" />
-      <include name="custom" displayName="커스텀" />
+      <include name="custom" displayName="커스텀" />
    </subset>
 
    <!--
@@ -100,8 +100,8 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-view-artwork" displayName="게임 아트워크">
-      <include name="image" displayName="이미지" />
-      <include name="image-cropped" displayName="이미지 (크롭)" />
+      <include name="image" displayName="이미지" />
+      <include name="image-cropped" displayName="이미지 (크롭)" />
       <include name="boxart" displayName="박스아트" />
       <include name="logo" displayName="로고" />
    </subset>
