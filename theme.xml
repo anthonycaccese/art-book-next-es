@@ -220,19 +220,14 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="system,basic,detailed">
       <!-- Start: System Indicators -->
       <stackpanel name="system-indicators" extra="true">
-         <h ifSubset="font-size:small">0.033333333333333</h><!-- 16 -->
-         <h ifSubset="font-size:default">0.041666666666667</h><!-- 20 -->
-         <h ifSubset="font-size:large">0.05</h><!-- 24 -->
-         <h ifSubset="font-size:xlarge">0.0625</h><!-- 30 -->
+         <h>0.033333333333333</h>
          <pos>0 0.041666666666667</pos><!-- 0 20 -->
          <orientation>horizontal</orientation>
          <reverse>true</reverse>
          <batteryText name="system-battery-text">
             <color>${systemIndicatorColor}</color>
             <fontPath>${fontBold}</fontPath>
-            <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
-            <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
-            <fontSize ifSubset="font-size:xlarge">0.05416667</fontSize><!-- 26 -->
+            <h>0.033333333333333</h>
             <lineSpacing>1</lineSpacing>
          </batteryText>
          <batteryIcon name="system-battery-icon">
@@ -255,9 +250,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <clock name="system-clock">
             <color>${systemIndicatorColor}</color>
             <fontPath>${fontBold}</fontPath>
-            <fontSize ifSubset="font-size:small|default">0.033333333333333</fontSize><!-- 16 -->
-            <fontSize ifSubset="font-size:large">0.041666666666667</fontSize><!-- 20 -->
-            <fontSize ifSubset="font-size:xlarge">0.05</fontSize><!-- 24 -->
+            <h>0.033333333333333</h>
             <lineSpacing>1</lineSpacing>
          </clock>
       </stackpanel>
