@@ -139,11 +139,8 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-video-delay" displayName="Game Video Delay">
-      <include name="2-seconds" displayName="2 Seconds (Default)" />
-      <include name="3-seconds" displayName="3 Seconds" />
-      <include name="4-seconds" displayName="4 Seconds" />
-      <include name="5-seconds" displayName="5 Seconds" />
-      <include name="instant" displayName="Instant" />
+      <include name="2-seconds" displayName="Default" />
+      <include name="5-seconds" displayName="Longer" />
    </subset>
 
    <!--
@@ -613,11 +610,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <video name="game-video" extra="true">
          <origin>0.5 0.5</origin>
          <path>{game:video}</path>
-         <delay ifSubset="gamelist-video-delay:instant">0</delay>
-         <delay ifSubset="gamelist-video-delay:1-second">1</delay>
          <delay ifSubset="gamelist-video-delay:2-seconds">2</delay>
-         <delay ifSubset="gamelist-video-delay:3-seconds">3</delay>
-         <delay ifSubset="gamelist-video-delay:4-seconds">4</delay>
          <delay ifSubset="gamelist-video-delay:5-seconds">5</delay>
          <effect>none</effect>
          <loops>0</loops>
