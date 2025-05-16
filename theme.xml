@@ -651,6 +651,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <emptyTextDefaults>none</emptyTextDefaults>
          <verticalAlignment>top</verticalAlignment>
          <autoScroll>vertical</autoScroll>
+         <autoScrollDelay>1000</autoScrollDelay>
+         <autoScrollSpeed>50</autoScrollSpeed>
       </text>
       <!-- Start: Definitions -->
       <image name="
