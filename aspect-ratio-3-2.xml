@@ -53,7 +53,7 @@ based on 720x480
          <size>0.319444444444444 0.104166666666667</size><!-- 230 50 -->
       </text>
       <textlist name="gamelist">
-         <pos>0.048611111111111 0.25</pos><!-- 35 120 -->
+         <x>0.04166667</x><!-- 30 -->
       </textlist>
    </view>
 
@@ -80,18 +80,18 @@ based on 720x480
    ///
    -->
    <view name="detailed">
+      <image name="gamelist-background" extra="true">
+         <size>0.5 1</size><!-- 50% 100% -->
+      </image>
       <image name="logo">
-         <x>0.25</x><!-- 180 -->
+         <x>0.25</x><!-- 25% -->
       </image>
       <text name="logoText">
-         <x>0.25</x><!-- 180 -->
+         <x>0.25</x><!-- 25% -->
       </text>
       <textlist name="gamelist">
-         <w>0.38888889</w><!-- 280 -->
+         <w>0.40277778</w><!-- 290 -->
       </textlist>
-      <image name="gamelist-background" extra="true">
-         <size>0.5 1</size><!-- 360 480 -->
-      </image>
    </view>
 
    <!--

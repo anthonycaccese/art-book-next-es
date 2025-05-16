@@ -96,6 +96,21 @@ https://github.com/anthonycaccese/art-book-next-es
 
    <!--
    ///
+   Subset: System Logo Animation
+   ///
+   -->
+   <subset name="system-logo-animation" displayName="System Logo Animation">
+      <include name="logo-sysa" displayName="Default" />
+      <include name="logo-fade-in" displayName="Fade In" />
+      <include name="logo-zoom" displayName="Zoom Bump" />
+      <include name="logo-swoop" displayName="Swoop" />
+      <include name="logo-dbeat" displayName="Drop" />
+      <include name="logo-skid" displayName="Skid" />
+      <include name="logo-spnr" displayName="Spinner" />
+   </subset>
+
+   <!--
+   ///
    Subset: Game Artwork
    ///
    -->
@@ -124,12 +139,8 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="gamelist-video-delay" displayName="비디오 딜레이">
-      <include name="2-seconds" displayName="2초 (기본)" />
-      <include name="instant" displayName="즉시" />
-      <include name="1-second" displayName="1초" />
-      <include name="3-seconds" displayName="3초" />
-      <include name="4-seconds" displayName="4초" />
-      <include name="5-seconds" displayName="5초" />
+      <include name="2-seconds" displayName="기본" />
+      <include name="5-seconds" displayName="길게" />
    </subset>
 
    <!--
@@ -369,6 +380,29 @@ https://github.com/anthonycaccese/art-book-next-es
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
          <zIndex>2</zIndex>
+         <storyboard ifSubset="system-logo-animation:logo-fade-in">
+            <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-zoom">
+            <animation property="opacity" from="0" to="1" duration="400" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-swoop">
+            <animation property="opacity" from="0" to="1" duration="450" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-dbeat">
+            <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="easeOut"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-skid">
+            <animation property="rotation" from="10" to="0" duration="350" mode="linear"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-spnr">
+            <animation property="rotation" from="360" to="0" begin="0" duration="350" mode="easeOut"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+         </storyboard>
       </image>
       <text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
@@ -385,6 +419,29 @@ https://github.com/anthonycaccese/art-book-next-es
          <zIndex>2</zIndex>
          <visible ifSubset="system-logos:default">!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
          <visible ifSubset="system-logos:custom">!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg") &amp;&amp; !exists("${themeCustomizationsPath}logos/" + {system:theme} + ".png") &amp;&amp; !exists("${themeCustomizationsPath}logos/" + {system:theme} + ".svg")</visible>
+         <storyboard ifSubset="system-logo-animation:logo-fade-in">
+            <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-zoom">
+            <animation property="opacity" from="0" to="1" duration="400" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-swoop">
+            <animation property="opacity" from="0" to="1" duration="450" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="Bump"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-dbeat">
+            <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="easeOut"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-skid">
+            <animation property="rotation" from="10" to="0" duration="350" mode="linear"/>
+         </storyboard>
+         <storyboard ifSubset="system-logo-animation:logo-spnr">
+            <animation property="rotation" from="360" to="0" begin="0" duration="350" mode="easeOut"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+         </storyboard>
       </text>
    </view>
    <view name="system" ifSubset="system-view-artwork:custom-fullscreen">
@@ -438,7 +495,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <image name="logo">
          <origin>0.5 0.5</origin>
-         <y>0.130208333333333</y><!-- 62.5 -->
+         <y>0.13020833</y><!-- 62.5 -->
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
@@ -447,7 +504,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <text name="logoText">
          <origin>0.5 0.5</origin>
-         <y>0.130208333333333</y><!-- 62.5 -->
+         <y>0.13020833</y><!-- 62.5 -->
          <fontSize>0.05</fontSize><!-- 24 -->
          <fontPath>${fontLogo}</fontPath>
          <forceUppercase>true</forceUppercase>
@@ -458,22 +515,23 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <textlist name="gamelist">
          <origin>0 0</origin>
-         <h ifHelpPrompts="true">0.5875</h><!-- 282 -->
-         <h ifHelpPrompts="false">0.7</h><!-- 336 -->
+         <y>0.25520833</y><!-- 122.5 -->
+         <h ifHelpPrompts="true">0.57083333</h><!-- 274 -->
+         <h ifHelpPrompts="false">0.69791667</h><!-- 335 -->
          <!-- small font -->
          <fontSize ifSubset="font-size:small">0.033333333333333</fontSize><!-- 16 -->
          <lines ifSubset="font-size:small" ifHelpPrompts="true">9</lines>
          <lines ifSubset="font-size:small" ifHelpPrompts="false">11</lines>
          <!-- default font -->
-         <fontSize ifSubset="font-size:default">0.041666666666667</fontSize><!-- 20 -->
+         <fontSize ifSubset="font-size:default">0.0375</fontSize><!-- 18 -->
          <lines ifSubset="font-size:default" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:default" ifHelpPrompts="false">9</lines>
          <!-- large font -->
-         <fontSize ifSubset="font-size:large">0.045833333333333</fontSize><!-- 22 -->
+         <fontSize ifSubset="font-size:large">0.04166667</fontSize><!-- 20 -->
          <lines ifSubset="font-size:large" ifHelpPrompts="true">7</lines>
          <lines ifSubset="font-size:large" ifHelpPrompts="false">9</lines>
          <!-- extra large font -->
-         <fontSize ifSubset="font-size:xlarge">0.0625</fontSize><!-- 30 -->
+         <fontSize ifSubset="font-size:xlarge">0.05833333</fontSize><!-- 28 -->
          <lines ifSubset="font-size:xlarge" ifHelpPrompts="true">5</lines>
          <lines ifSubset="font-size:xlarge" ifHelpPrompts="false">7</lines>
          <fontPath>${fontBold}</fontPath>
@@ -545,11 +603,7 @@ https://github.com/anthonycaccese/art-book-next-es
       <video name="game-video" extra="true">
          <origin>0.5 0.5</origin>
          <path>{game:video}</path>
-         <delay ifSubset="gamelist-video-delay:instant">0</delay>
-         <delay ifSubset="gamelist-video-delay:1-second">1</delay>
          <delay ifSubset="gamelist-video-delay:2-seconds">2</delay>
-         <delay ifSubset="gamelist-video-delay:3-seconds">3</delay>
-         <delay ifSubset="gamelist-video-delay:4-seconds">4</delay>
          <delay ifSubset="gamelist-video-delay:5-seconds">5</delay>
          <effect>none</effect>
          <loops>0</loops>
@@ -590,6 +644,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <emptyTextDefaults>none</emptyTextDefaults>
          <verticalAlignment>top</verticalAlignment>
          <autoScroll>vertical</autoScroll>
+         <autoScrollDelay>2000</autoScrollDelay>
+         <autoScrollSpeed>50</autoScrollSpeed>
       </text>
       <!-- Start: Definitions -->
       <image name="
@@ -659,22 +715,19 @@ https://github.com/anthonycaccese/art-book-next-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.02916667</fontSize><!-- 14 -->
-         <fontSize ifSubset="font-size:large">0.03333333</fontSize><!-- 16 -->
+         <fontSize ifSubset="font-size:small|default|large">0.02916667</fontSize><!-- 14 -->
          <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontLight}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
          <fontSize ifSubset="font-size:xlarge">0.03333333</fontSize><!-- 16 -->
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
-         <fontSize ifSubset="font-size:large">0.0375</fontSize><!-- 18 -->
+         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
@@ -683,15 +736,13 @@ https://github.com/anthonycaccese/art-book-next-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontBold}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.025</fontSize><!-- 12 -->
-         <fontSize ifSubset="font-size:large">0.02916667</fontSize><!-- 14 -->
+         <fontSize ifSubset="font-size:small|default|large">0.025</fontSize><!-- 12 -->
          <fontSize ifSubset="font-size:xlarge">0.0375</fontSize><!-- 18 -->
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize ifSubset="font-size:small|default">0.03333333</fontSize><!-- 16 -->
-         <fontSize ifSubset="font-size:large">0.0375</fontSize><!-- 18 -->
+         <fontSize ifSubset="font-size:small|default|large">0.03333333</fontSize><!-- 16 -->
          <fontSize ifSubset="font-size:xlarge">0.04166667</fontSize><!-- 20 -->
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>

@@ -54,7 +54,7 @@ based on 640x480
          <size>0.359375 0.104166666666667</size><!-- 230 50 -->
       </text>
       <textlist name="gamelist">
-         <pos>0.0546875 0.25</pos><!-- 35 120 -->
+         <x>0.046875</x><!-- 30 -->
       </textlist>
    </view>
 
@@ -82,16 +82,16 @@ based on 640x480
    -->
    <view name="detailed">
       <image name="gamelist-background" extra="true">
-         <size>0.5 1</size><!-- 320 480 -->
+         <size>0.5 1</size><!-- 50% 100% -->
       </image>
       <image name="logo">
-         <x>0.25</x><!-- 160 -->
+         <x>0.25</x><!-- 25% -->
       </image>
       <text name="logoText">
-         <x>0.25</x><!-- 160 -->
+         <x>0.25</x><!-- 25% -->
       </text>
       <textlist name="gamelist">
-         <w>0.365625</w><!-- 234 -->
+         <w>0.390625</w><!-- 250 -->
       </textlist>
    </view>
 
