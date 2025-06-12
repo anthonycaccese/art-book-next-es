@@ -90,7 +90,7 @@ based on 720x480
          <x>0.25</x><!-- 25% -->
       </text>
       <textlist name="gamelist">
-         <w>0.40277778</w><!-- 290 -->
+         <w>0.38888889</w><!-- 280 -->
       </textlist>
    </view>
 
