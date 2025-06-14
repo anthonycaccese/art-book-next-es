@@ -85,6 +85,7 @@ based on 720x480
       </image>
       <image name="logo">
          <x>0.25</x><!-- 25% -->
+         <y>0.13333333</y><!-- 64 -->
       </image>
       <text name="logoText">
          <x>0.25</x><!-- 25% -->
@@ -125,10 +126,12 @@ based on 720x480
          <x>0.55078125</x><!-- 352.5 -->
          <y ifHelpPrompts="true">0.58125</y><!-- 279 -->
          <y ifHelpPrompts="false">0.691666666666667</y><!-- 332 -->
-         <w>0.3984375</w><!-- 255 -->
+         <w>0.40277778</w><!-- 290 -->
          <h>0.25</h><!-- 120 -->
          <lineSpacing ifSubset="font-size:small">1.46</lineSpacing>
-         <lineSpacing ifSubset="font-size:default|large">1.21</lineSpacing>
+         <lineSpacing ifSubset="font-size:default">1.23</lineSpacing>
+         <lineSpacing ifSubset="font-size:large">1.25</lineSpacing>
+         <lineSpacing ifSubset="font-size:xlarge">1.3</lineSpacing>
       </text>
    </view>
    <variables ifSubset="gamelist-view-metadata:on">
@@ -152,7 +155,7 @@ based on 720x480
       </datetime>
       <rating name="md_rating">
          <origin>1 0.5</origin>
-         <pos>0.953125 0.614583333333333</pos><!-- 610 295 -->
+         <pos>0.95833333 0.614583333333333</pos><!-- 690 295 -->
          <size ifSubset="font-size:small">0 0.0375</size><!-- - 18 --> 
          <size ifSubset="font-size:default|large">0 0.045833333333333</size><!-- - 22 --> 
          <size ifSubset="font-size:xlarge">0 0.05</size><!-- - 24 --> 
@@ -250,7 +253,7 @@ based on 720x480
       </image>
       <image ifHelpPrompts="false" ifSubset="gamelist-view-artwork:image-cropped" name="game-logo" extra="true">
          <pos>0.75 0.5</pos><!-- 540 240 -->
-         <maxSize>0.41666667 0.864583333333333</maxSize><!-- 300 415 -->
+         <maxSize>0.36111111 0.864583333333333</maxSize><!-- 260 415 -->
       </image>
       <!-- Boxart, Logo & Image -->
       <image ifHelpPrompts="true" ifSubset="gamelist-view-artwork:boxart|logo|image" name="game-artwork" extra="true">
