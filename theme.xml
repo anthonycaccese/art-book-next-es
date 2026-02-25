@@ -221,7 +221,8 @@ https://github.com/anthonycaccese/art-book-next-es
          <pos>1 1</pos>
       </text>
       <notification name="notification">
-        <y>0.1</y>
+         <origin>0 1</origin>
+         <y>0.8645833</y><!-- 415 -->
       </notification>
       <!-- End: Resets -->
    </view>
